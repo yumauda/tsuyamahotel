@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.p-submit {
+  background: url(../images/common/bg_submit.jpg) no-repeat center center;
+  padding-top: rem(190);
+  padding-bottom: rem(226);
+}
+
+.p-submit__content {
+}
+
+.p-submit__title-wrapper {
+  text-align: center;
+}
+
+.p-submit__title {
+  font-family: $second-font-family;
+  font-size: rem(28);
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  line-height: calc(60 / 28);
+  font-weight: 500;
+}
+
+.p-submit__text {
+  font-size: rem(16);
+  line-height: calc(40 / 16);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: #fafafa;
+  margin-top: rem(30);
+}
+
+.p-submit__btn-wrapper {
+  margin-top: rem(50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(20);
+}
+
+.p-submit__btn {
+  color: #3d4043;
+  font-size: rem(26);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: $second-font-family;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(400);
+  height: rem(100);
+  background: linear-gradient(to bottom, #e8adad, #e8c2c2);
+}
+
+.p-submit__btn--food {
+  background: linear-gradient(to bottom, #eee7d3, #f5f2e8);
+}

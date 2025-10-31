@@ -38,10 +38,7 @@ function my_script_init()
 		wp_enqueue_style('splide', '//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css', 'all');
 	}
 	wp_enqueue_style('my', get_template_directory_uri() . '/css/styles.css', array(), filemtime(get_theme_file_path('/css/styles.css')), 'all');
-	if (is_front_page()) {
-		wp_enqueue_script('splide-js', '//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js', array('jquery'), "1.0.1", true);
-		wp_enqueue_script('js-splide', get_template_directory_uri() . '/js/splide.js', array('jquery'), filemtime(get_theme_file_path('/js/splide.js')), true);
-	}
+	
 	if (is_page('about')) {
 		wp_enqueue_script('splide-js', '//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js', array('jquery'), "1.0.1", true);
 		wp_enqueue_script('js-about-splide', get_template_directory_uri() . '/js/splide-about.js', array('jquery'), filemtime(get_theme_file_path('/js/splide-about.js')), true);
@@ -51,9 +48,9 @@ function my_script_init()
 		wp_enqueue_script('js-consultation-splide', get_template_directory_uri() . '/js/splide-consultation.js', array('jquery'), filemtime(get_theme_file_path('/js/splide-consultation.js')), true);
 	}
 	if (is_front_page()) {
-		wp_enqueue_script('gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', '', "1.0.1", true);
-		wp_enqueue_script('scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', '', "1.0.1", true);
-		wp_enqueue_script('js-gsap', get_template_directory_uri() . '/js/gsap.js', array('jquery'), filemtime(get_theme_file_path('/js/gsap.js')), true);
+		wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), filemtime(get_theme_file_path('/css/swiper-bundle.min.css')), 'all');
+		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
+		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
 	}
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', array('jquery'), filemtime(get_theme_file_path('/js/script.js')), true);
 }

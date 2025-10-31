@@ -1,5 +1,30 @@
 <?php get_header(); ?>
 <main class="p-top">
+  <!-- Slider main container -->
+  <div class="swiper slider2">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img1.jpg" alt="ご宿泊" width="850" height="580">
+      </div>
+      <div class="swiper-slide">
+        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img2.jpg" alt="レストラン" width="850" height="580">
+      </div>
+      <div class="swiper-slide">
+        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img3.jpg" alt="宴会・会議" width="850" height="580">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
   <section class="p-top-service">
     <div class="l-inner">
       <div class="p-top-service__content">
@@ -71,6 +96,68 @@
             多様なMICEイベントに対応可能です。<br>
             専任チームが企画から当日運営までをサポートいたします。
           </p>
+        </div>
+        <div class="p-top-life__about">
+          <div class="p-top-life__about-top">
+            <div class="p-top-life__about-titleWrapper">
+              <h3 class="p-top-life__about-title">miceとは</h3>
+              <p class="p-top-life__about-sub">About MICE</p>
+            </div>
+            <p class="p-top-life__about-text">会議（Meeting）、報奨・研修旅行（Incentivetravel）、国際会議（Convention）、イベント（Event）の多くの集客交流が見込まれるビジネスイベントの、4つの頭文字を組み合わせた造語です。<br>
+              利便性の良い立地と、大中小と多彩な宴会・会議室をご用意して人々の活発な交流の場を創出するお手伝いをいたします。</p>
+          </div>
+          <ul class="p-top-life__about-grid">
+            <li class="p-top-life__about-item">
+              <figure class="p-top-life__about-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about1.jpg" alt="会議" width="320" height="220">
+              </figure>
+              <div class="p-top-life__about-detail">
+                <p class="p-top-life__about-detailTitle">Meeting</p>
+                <p class="p-top-life__about-detailText">会議</p>
+              </div>
+            </li>
+            <li class="p-top-life__about-item">
+              <figure class="p-top-life__about-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about1.jpg" alt="会議" width="320" height="220">
+              </figure>
+              <div class="p-top-life__about-detail">
+                <p class="p-top-life__about-detailTitle">Meeting</p>
+                <p class="p-top-life__about-detailText">会議</p>
+              </div>
+            </li>
+            <li class="p-top-life__about-item">
+              <figure class="p-top-life__about-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about1.jpg" alt="会議" width="320" height="220">
+              </figure>
+              <div class="p-top-life__about-detail">
+                <p class="p-top-life__about-detailTitle">Meeting</p>
+                <p class="p-top-life__about-detailText">会議</p>
+              </div>
+            </li>
+            <li class="p-top-life__about-item">
+              <figure class="p-top-life__about-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about1.jpg" alt="会議" width="320" height="220">
+              </figure>
+              <div class="p-top-life__about-detail">
+                <p class="p-top-life__about-detailTitle">Meeting</p>
+                <p class="p-top-life__about-detailText">会議</p>
+              </div>
+            </li>
+          </ul>
+          <div class="p-top-life__bottom">
+            <a href="#" class="p-top-life__bottom-link">
+              <p class="p-top-life__bottom-text">宴会・会議会場を見る</p>
+              <div class="p-top-life__icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="15" height="8">
+              </div>
+            </a>
+            <a href="#" class="p-top-life__bottom-link">
+              <p class="p-top-life__bottom-text">ご予約はこちらから</p>
+              <div class="p-top-life__icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow_black.svg" alt="" width="15" height="8">
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

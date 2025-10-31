@@ -2,6 +2,7 @@
 
 .p-top-life {
   padding-top: rem(250);
+  padding-bottom: rem(130);
   overflow-x: clip;
 }
 .p-top-life__content {
@@ -22,7 +23,6 @@
   font-weight: 400;
   color: #fafafa;
 }
-
 
 .p-top-life__middle {
   margin-top: rem(80);
@@ -110,4 +110,115 @@
   letter-spacing: 0.2em;
   line-height: calc(60 / 32);
   letter-spacing: 0.2em;
+}
+.p-top-life__about {
+  margin-top: rem(70);
+  padding-top: rem(70);
+}
+
+.p-top-life__about-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-top-life__about-titleWrapper {
+}
+
+.p-top-life__about-title {
+  color: #fafafa;
+  font-size: rem(60);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: $second-font-family;
+}
+
+.p-top-life__about-sub {
+  margin-top: rem(10);
+  color: #fafafa;
+  font-size: rem(16);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-family: $second-font-family;
+}
+
+.p-top-life__about-text {
+  color: #fafafa;
+  font-size: rem(18);
+  line-height: calc(40 / 18);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.p-top-life__about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: rem(40);
+  margin-top: rem(50);
+}
+
+.p-top-life__about-item {
+}
+
+.p-top-life__about-img {
+}
+.p-top-life__about-img img {
+  aspect-ratio: 320 / 220;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-top-life__about-detail {
+  padding-top: rem(10);
+  text-align: center;
+}
+.p-top-life__about-detailTitle {
+  color: #fafafa;
+  font-size: rem(26);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+.p-top-life__about-detailText {
+  color: #fafafa;
+  font-size: rem(14);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  margin-top: rem(10);
+}
+
+.p-top-life__bottom {
+  display: flex;
+  justify-content: center;
+  gap: rem(30);
+  margin-top: rem(90);
+}
+
+.p-top-life__bottom-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: rem(470);
+  height: rem(80);
+  background: #2e4f77;
+  padding-left: rem(30);
+  padding-right: rem(50);
+  border-radius: rem(3);
+}
+
+.p-top-life__bottom-text {
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.p-top-life__icon {
+  width: rem(15);
+}
+.p-top-life__icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }

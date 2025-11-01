@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.p-parking {
+  padding-top: rem(100);
+  padding-bottom: rem(200);
+}
+
+.p-parking__content {
+  max-width: rem(1200);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.p-parking__row {
+  margin-top: rem(60);
+  display: grid;
+  grid-template-columns: rem(650) rem(490);
+  gap: rem(60);
+  direction: rtl;
+}
+
+.p-parking__img {
+}
+.p-parking__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-parking__text {
+  font-size: rem(18);
+  line-height: calc(40 / 18);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #fafafa;
+  direction: initial;
+
+}
+
+.p-parking__grid {
+  margin-top: rem(120);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(80);
+}
+
+.p-parking__item {
+}
+
+.p-parking__detail {
+  text-align: center;
+  padding-top: rem(20);
+}
+
+.p-parking__subTitle {
+  font-size: rem(22);
+  font-weight: 400;
+  color: #fafafa;
+  line-height: calc(31 / 22);
+  letter-spacing: 0.1em;
+  font-family: $second-font-family;
+}
+.p-parking__subText {
+  font-size: rem(16);
+  font-weight: 400;
+  color: #fafafa;
+  line-height: calc(36 / 16);
+  letter-spacing: 0.1em;
+  margin-top: rem(10);
+}

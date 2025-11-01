@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-page-mv {
-  
+  padding-top: rem(222);
 }
 
 .p-page-mv__inner {
@@ -30,7 +30,7 @@
 .p-page-mv__detail {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: rem(40);
   transform: translateY(-50%);
   width: 100%;
 }

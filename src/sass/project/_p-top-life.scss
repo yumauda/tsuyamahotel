@@ -97,10 +97,11 @@
   object-fit: cover;
   object-position: center center;
 }
-
 .p-top-life__center {
-  margin-top: rem(80);
+  padding-top: rem(80);
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .p-top-life__center-text {
@@ -114,31 +115,24 @@
 .p-top-life__about {
   margin-top: rem(70);
   padding-top: rem(70);
+  position: relative;
 }
-
+.p-top-life__about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  aspect-ratio: 1400 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  background: url(../images/common/top_life_line.png) no-repeat center
+    center/cover;
+}
 .p-top-life__about-top {
   display: flex;
   justify-content: space-between;
-}
-
-.p-top-life__about-titleWrapper {
-}
-
-.p-top-life__about-title {
-  color: #fafafa;
-  font-size: rem(60);
-  letter-spacing: 0.1em;
-  font-weight: 500;
-  font-family: $second-font-family;
-}
-
-.p-top-life__about-sub {
-  margin-top: rem(10);
-  color: #fafafa;
-  font-size: rem(16);
-  letter-spacing: 0.05em;
-  font-weight: 400;
-  font-family: $second-font-family;
+  gap: rem(144);
 }
 
 .p-top-life__about-text {
@@ -166,6 +160,7 @@
   object-fit: cover;
   width: 100%;
   height: auto;
+  border-radius: rem(5);
 }
 
 .p-top-life__about-detail {
@@ -174,9 +169,13 @@
 }
 .p-top-life__about-detailTitle {
   color: #fafafa;
+  font-family: $font-en;
   font-size: rem(26);
   letter-spacing: 0.05em;
   font-weight: 400;
+}
+.p-top-life__about-detailTitle span {
+  font-size: rem(40);
 }
 
 .p-top-life__about-detailText {
@@ -205,6 +204,9 @@
   padding-right: rem(50);
   border-radius: rem(3);
 }
+.p-top-life__bottom-link--black {
+  background: #e8c2c2;
+}
 
 .p-top-life__bottom-text {
   font-size: rem(20);
@@ -212,7 +214,9 @@
   font-weight: 400;
   color: #fafafa;
 }
-
+.p-top-life__bottom-text--black {
+  color: #333;
+}
 .p-top-life__icon {
   width: rem(15);
 }
@@ -221,4 +225,20 @@
   height: auto;
   object-fit: cover;
   object-position: center center;
+}
+.p-top-line__bg {
+  position: relative;
+  padding-bottom: rem(130);
+}
+.p-top-line__bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #2f4f77;
+  z-index: 0;
+  margin-inline: calc(50% - 50vw);
+  width: 100vw;
+  mix-blend-mode: multiply;
 }

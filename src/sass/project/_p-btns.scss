@@ -1,0 +1,73 @@
+@use "global" as *;
+
+.p-btns {
+  padding-top: rem(30);
+}
+
+.p-btns__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.p-btns__btn {
+  display: block;
+  position: relative;
+}
+
+.p-btns__detail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.p-btns__btn-text {
+  color: #FAFAFA;
+  font-size: rem(50);
+  font-family: $font-en;
+  font-weight: 400;
+  text-align: center;
+}
+
+.p-btns__btn-sub {
+  color: #FAFAFA;
+  text-align: center;
+  font-size: rem(20);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-family: $second-font-family;
+}
+
+.p-btns__text {
+  margin-top: rem(30);
+  padding-top: rem(30);
+  position: relative;
+  font-size: rem(16);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #FAFAFA;
+  text-align: center;
+}
+
+.p-btns__icon {
+  margin-top: rem(30);
+  width: rem(40);
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-btns__icon img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-btns__img {
+}
+.p-btns__img img {
+  aspect-ratio: 930 / 600;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}

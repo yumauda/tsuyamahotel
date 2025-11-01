@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="20" viewBox="0 0 40 20">
+  <g id="icon_arrow" transform="translate(-731 -487)">
+    <g id="長方形_32" data-name="長方形 32" transform="translate(731 487)" fill="none" stroke="#fafafa" stroke-width="1">
+      <rect width="40" height="20" rx="8" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="19" rx="7.5" fill="none"/>
+    </g>
+    <g id="icon_arrow-2" data-name="icon_arrow" transform="translate(744 487.648)">
+      <line id="線_5" data-name="線 5" x2="15" transform="translate(0 9.351)" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="パス_46" data-name="パス 46" d="M7,.223s1.875,4,6,4" transform="translate(2 5.128)" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <path id="パス_48" data-name="パス 48" d="M7,4.223s1.875-4,6-4" transform="translate(2 9.128)" fill="none" stroke="#fafafa" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

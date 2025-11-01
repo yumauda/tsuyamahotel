@@ -1,0 +1,119 @@
+@use "global" as *;
+
+.p-top-news {
+  padding: rem(100) 0 rem(120);
+  position: relative;
+  @include mq("md") {
+    padding: rem(160) 0 rem(200);
+  }
+}
+
+.p-top-news__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  @include mq(lg) {
+    gap: rem(162);
+  }
+}
+
+.p-top-news__header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: rem(60);
+
+  @include mq("md") {
+    margin-bottom: rem(80);
+  }
+}
+
+.p-top-news__list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.p-top-news__item {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: rem(20);
+  align-items: center;
+  padding-bottom: rem(20);
+  border-bottom: 1px solid #2f4f77;
+
+  @include mq("md") {
+    gap: rem(30);
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+  }
+}
+
+.p-top-news__item:first-child {
+  border-top: 1px solid #2f4f77;
+}
+.p-top-news__date {
+  color: #fafafa;
+  font-size: rem(14);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: $font-en;
+}
+
+.p-top-news__category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(130);
+  height: rem(30);
+  font-size: rem(12);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  background: #e8c2c2;
+  border-radius: rem(3);
+  @include mq("md") {
+    font-size: rem(14);
+  }
+}
+
+.p-top-news__text {
+  color: #fafafa;
+  font-size: rem(14);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: calc(40 / 18);
+
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
+.p-top-news__link-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(50);
+  margin-left: auto;
+}
+
+.p-top-news__link {
+  display: flex;
+  align-items: center;
+  gap: rem(30);
+}
+
+.p-top-news__link-text {
+  color: #fafafa;
+  font-size: rem(18);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.p-top-news__link-icon {
+  width: rem(40);
+}
+.p-top-news__link-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: rem(3);
+}

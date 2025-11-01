@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.p-page-mv {
+  
+}
+
+.p-page-mv__inner {
+  max-width: rem(1720);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.p-page-mv__content {
+  position: relative;
+}
+
+.p-page-mv__img {
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-left: rem(30);
+  padding-right: rem(30);
+}
+.p-page-mv__img img {
+  aspect-ratio: 1860 / 670;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-page-mv__detail {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.p-page-mv__title {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+}
+
+.p-page-mv__title-ja {
+  font-weight: 500;
+  font-size: rem(80);
+  color: #fafafa;
+  font-family: $second-font-family;
+}
+
+.p-page-mv__title-en {
+  letter-spacing: 0.05em;
+  color: #fafafa;
+  font-size: rem(26);
+  font-family: $font-en;
+  font-weight: 400;
+}

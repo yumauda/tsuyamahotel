@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.p-facilities {
+  padding-top: rem(113);
+  padding-bottom: rem(200);
+}
+
+.p-facilities__content {
+}
+
+.p-facilities__title {
+}
+
+.p-facilities__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(60);
+  margin-top: rem(80);
+}
+
+.p-facilities__item {
+}
+
+.p-facilities__img {
+}
+.p-facilities__img img {
+  border-radius: rem(5);
+  aspect-ratio: 360 / 230;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-facilities__detail {
+  padding-top: rem(20);
+}
+
+.p-facilities__item-title {
+  font-family: $second-font-family;
+  font-size: rem(24);
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  line-height: calc(35 / 24);
+  color: #fafafa;
+  text-align: center;
+}
+
+.p-facilities__item-text {
+  margin-top: rem(15);
+  color: #fafafa;
+  font-size: rem(16);
+  line-height: calc(36 / 16);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}

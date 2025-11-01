@@ -23,3 +23,22 @@
   font-weight: 400;
   font-family: $font-en;
 }
+
+.c-main-title__ja {
+  white-space: nowrap;
+  color: #fafafa;
+  font-size: rem(60);
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: $second-font-family;
+  text-transform: uppercase;
+}
+
+.c-main-title__en {
+  margin-top: rem(10);
+  color: #fafafa;
+  font-size: rem(16);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  font-family: $font-en;
+}

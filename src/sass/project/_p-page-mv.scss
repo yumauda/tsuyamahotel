@@ -54,4 +54,17 @@
   font-size: rem(26);
   font-family: $font-en;
   font-weight: 400;
+  position: relative;
+  padding-left: rem(40);
+}
+
+.p-page-mv__title-en::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: rem(25);
+  height: 2px;
+  background: linear-gradient(to right, #fafafa, transparent);
 }

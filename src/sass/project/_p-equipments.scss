@@ -1,0 +1,137 @@
+@use "global" as *;
+
+.p-equipments {
+  padding-top: rem(100);
+  padding-bottom: rem(100);
+}
+
+.p-equipments__title {
+}
+
+.p-equipments__content {
+  margin-top: rem(60);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(40);
+}
+
+.p-equipments__block {
+}
+
+.p-equipments__subtitle {
+  font-size: rem(18);
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  text-align: center;
+  position: relative;
+}
+.p-equipments__subtitle::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2e4f77;
+  mix-blend-mode: multiply;
+}
+
+.p-equipments__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-equipments__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(15) 0;
+  border-bottom: 1px solid #2f4f77;
+}
+
+.p-equipments__label {
+  font-size: rem(16);
+  letter-spacing: 0.1em;
+  line-height: calc(36 / 16);
+  color: #fafafa;
+  font-weight: 700;
+  padding-left: rem(10);
+}
+
+.p-equipments__value {
+  font-size: rem(16);
+  color: #fafafa;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: calc(36 / 16);
+  padding-right: rem(67);
+}
+
+.p-equipments__info-block {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: rem(30);
+}
+
+.p-equipments__info-title {
+  font-size: rem(20);
+  font-weight: 500;
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  padding-bottom: rem(15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: rem(20);
+}
+
+.p-equipments__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(15);
+  margin-bottom: rem(20);
+}
+
+.p-equipments__info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(10) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.p-equipments__info-label {
+  font-size: rem(16);
+  color: #fafafa;
+  letter-spacing: 0.05em;
+}
+
+.p-equipments__info-value {
+  font-size: rem(16);
+  color: #fafafa;
+  font-weight: 500;
+}
+
+.p-equipments__info-text {
+  font-size: rem(14);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+
+  &--address {
+    font-size: rem(15);
+    line-height: 1.8;
+  }
+}
+.p-equipments__text {
+  font-size: rem(14);
+  color: #fafafa;
+  line-height: calc(30 / 14);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin-top: rem(20);
+}
+.p-equipments__link {
+  text-decoration: underline;
+}

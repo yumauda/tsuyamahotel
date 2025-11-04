@@ -58,11 +58,29 @@ jQuery(function ($) {
     const tab_btn = $(".p-tab__btn");
     const tab_panel = $(".p-tab__panel");
     const tabID = "#" + tabButton.attr("aria-controls");
+    const $currentPanel = tab_panel.filter('[aria-hidden="false"]');
+    const $targetPanel = $(tabID);
+
+    // すでにアクティブなタブをクリックした場合は何もしない
+    if ($targetPanel.attr("aria-hidden") === "false") {
+      return;
+    }
 
     tab_btn.attr("aria-selected", false).attr("aria-expanded", false);
     tabButton.attr("aria-selected", true).attr("aria-expanded", true);
-    tab_panel.attr("aria-hidden", true);
-    $(tabID).attr("aria-hidden", false);
+
+    // 現在のパネルをフェードアウト
+    if ($currentPanel.length) {
+      $currentPanel.css("opacity", "0");
+      setTimeout(function () {
+        tab_panel.attr("aria-hidden", true);
+        $targetPanel.attr("aria-hidden", false);
+      }, 400); // CSSのtransition時間と合わせる
+    } else {
+      // 初回の場合は即座に表示
+      tab_panel.attr("aria-hidden", true);
+      $targetPanel.attr("aria-hidden", false);
+    }
   }
   $("#drawer a[href]").on("click", function (event) {
     $(".p-drawer-icon").trigger("click");
@@ -255,4 +273,35 @@ jQuery(".p-digital-modal__close").on("click", function (e) {
   e.preventDefault();
   jQuery(".p-digital-modal").removeClass("is-active");
   return false;
+});
+
+// 会議室タブ切り替え
+jQuery(document).ready(function ($) {
+  $(".p-rooms__tab").on("click", function () {
+    const targetTab = $(this).data("tab");
+    const $currentPanel = $(".p-rooms__panel--active");
+    const $targetPanel = $(`.p-rooms__panel[data-panel="${targetTab}"]`);
+
+    // すでにアクティブなタブをクリックした場合は何もしない
+    if ($targetPanel.hasClass("p-rooms__panel--active")) {
+      return;
+    }
+
+    // タブのアクティブ状態を切り替え
+    $(".p-rooms__tab").removeClass("p-rooms__tab--active");
+    $(this).addClass("p-rooms__tab--active");
+
+    // 現在のパネルをフェードアウト
+    if ($currentPanel.length) {
+      $currentPanel.css("opacity", "0");
+      setTimeout(function () {
+        $currentPanel.removeClass("p-rooms__panel--active");
+        // 新しいパネルを表示
+        $targetPanel.addClass("p-rooms__panel--active");
+      }, 400); // CSSのtransition時間と合わせる
+    } else {
+      // 初回の場合は即座に表示
+      $targetPanel.addClass("p-rooms__panel--active");
+    }
+  });
 });

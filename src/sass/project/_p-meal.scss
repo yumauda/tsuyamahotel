@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.p-meal {
+  padding-top: rem(200);
+  padding-bottom: rem(200);
+
+}
+
+.p-meal__content {
+  max-width: rem(1340);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.p-meal__text {
+  margin-top: rem(60);
+}
+
+.p-meal__text-item {
+  font-size: rem(18);
+  line-height: calc(40 / 18);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.p-meal__swiper {
+  margin-top: rem(60);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.swiper {
+}
+
+.slider4 {
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+}
+
+.p-meal__img {
+}
+.p-meal__img img {
+  aspect-ratio: 810 / 540;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}

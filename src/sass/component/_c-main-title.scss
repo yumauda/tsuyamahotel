@@ -33,7 +33,9 @@
   font-family: $second-font-family;
   text-transform: uppercase;
 }
-
+.c-main-title__ja--black {
+  color: #333;
+}
 .c-main-title__en {
   margin-top: rem(10);
   color: #fafafa;
@@ -41,4 +43,7 @@
   letter-spacing: 0.05em;
   font-weight: 400;
   font-family: $font-en;
+}
+.c-main-title__en--black {
+  color: #333;
 }

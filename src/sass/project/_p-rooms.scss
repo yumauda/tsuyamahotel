@@ -1,0 +1,195 @@
+@use "global" as *;
+
+.p-rooms {
+  padding-top: rem(180);
+  padding-bottom: rem(180);
+  background: url(../images/common/room_bg.svg) no-repeat center center / cover;
+}
+
+.p-rooms__inner {
+  max-width: rem(1340);
+  width: 100%;
+  margin-inline: auto;
+}
+
+.p-rooms__tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: rem(100);
+  gap: rem(80);
+}
+
+.p-rooms__tab {
+  flex: 1;
+  padding: rem(20) rem(30);
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-family: $second-font-family;
+  font-size: rem(24);
+  letter-spacing: 0.075em;
+  font-weight: 500;
+  border-bottom: 2px solid #f5f2e8;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  &--active {
+    color: #333;
+    border-bottom-color: #2c5f8d;
+    font-weight: 700;
+  }
+}
+
+.p-rooms__content {
+  margin-top: rem(107);
+}
+
+.p-rooms__panel {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+  &--active {
+    display: block;
+    animation: fadeIn 0.4s ease forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.p-rooms__item {
+  display: flex;
+  gap: rem(80);
+  align-items: start;
+}
+.p-rooms__item + .p-rooms__item {
+  margin-top: rem(100);
+}
+
+.p-rooms__img {
+  max-width: rem(750);
+  width: 100%;
+}
+
+.p-rooms__img img {
+  aspect-ratio: 750 / 500;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.p-rooms__detail {
+  max-width: rem(470);
+  flex: 1;
+  width: 100%;
+}
+
+.p-rooms__name {
+  font-size: rem(30);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: calc(44 / 30);
+  color: #333;
+  font-family: $second-font-family;
+}
+
+.p-rooms__description {
+  font-size: rem(16);
+  letter-spacing: 0.1em;
+  line-height: calc(36 / 16);
+  font-weight: 400;
+  color: #333;
+  margin-top: rem(24);
+}
+
+.p-rooms__info {
+  margin-top: rem(30);
+}
+
+.p-rooms__info-row {
+  display: grid;
+  grid-template-columns: rem(100) 1fr;
+  gap: rem(40);
+  padding: rem(15) 0;
+  border-bottom: 1px solid #c7c1b0;
+
+  &:first-child {
+    border-top: 1px solid #c7c1b0;
+  }
+}
+
+.p-rooms__info-label {
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #333;
+  line-height: calc(36 / 14);
+}
+
+.p-rooms__info-value {
+  font-size: rem(14);
+  color: #333;
+  line-height: calc(36 / 14);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.p-rooms__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(40);
+  gap: rem(7);
+}
+
+.p-rooms__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: rem(56);
+  padding-left: rem(30);
+  padding-right: rem(50);
+  border-radius: rem(4);
+  transition: all 0.3s ease;
+  background: #2e4f77;
+  border-radius: rem(3);
+}
+.p-rooms__top-textWrapper {
+  margin-top: rem(60);
+}
+
+.p-rooms__top-text {
+  font-size: rem(18);
+  line-height: calc(40 / 18);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #333;
+}
+.p-rooms__button-text {
+  font-size: rem(18);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #fafafa;
+  line-height: calc(40 / 18);
+}
+.p-rooms__button-icon {
+  width: rem(15);
+  display: inline-block;
+}
+.p-rooms__button-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}

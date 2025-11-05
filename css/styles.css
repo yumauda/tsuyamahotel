@@ -432,6 +432,109 @@ select::-ms-expand {
   color: #6d6d6d;
 }
 
+.p-about {
+  padding-top: 100px;
+  padding-top: 6.25rem;
+  padding-bottom: 200px;
+  padding-bottom: 12.5rem;
+}
+
+.p-about__content {
+  max-width: 1300px;
+  max-width: 81.25rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.p-about__img-wrapper {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  gap: 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1090px;
+  max-width: 68.125rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.p-about__img {
+  padding: 30px 68px;
+  padding: 1.875rem 4.25rem;
+  position: relative;
+}
+
+.p-about__img::before {
+  position: absolute;
+  content: "";
+  background: #2e4f77;
+  border-radius: 1.25rem;
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.p-about__img img,
+.p-about__img--cross img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.p-about__img--cross {
+  width: 50px;
+  width: 3.125rem;
+}
+
+.p-about__text-wrapper {
+  margin-top: 60px;
+  margin-top: 3.75rem;
+}
+
+.p-about__text {
+  color: #fafafa;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 2.5;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+
+.p-about__movie {
+  margin-top: 120px;
+  margin-top: 7.5rem;
+  max-width: 1120px;
+  max-width: 70rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.p-about__movie iframe {
+  aspect-ratio: 1120/630;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-about__reserve {
+  margin-top: 240px;
+  margin-top: 15rem;
+}
+
 .p-btns {
   padding-top: 30px;
   padding-top: 1.875rem;
@@ -2291,6 +2394,195 @@ input::placeholder {
   margin-top: 0.625rem;
 }
 
+.p-reserve__agreement {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  gap: 1.25rem;
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+  position: relative;
+}
+.p-reserve__agreement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2E4F77;
+  mix-blend-mode: multiply;
+}
+.p-reserve__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  z-index: 2;
+}
+.p-reserve__checkbox {
+  width: 20px;
+  width: 1.25rem;
+  height: 20px;
+  height: 1.25rem;
+  margin-right: 10px;
+  margin-right: 0.625rem;
+  cursor: pointer;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.p-reserve__checkbox-text {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #fafafa;
+}
+.p-reserve__button-wrapper {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 48px;
+  gap: 3rem;
+}
+.p-reserve__tel-wrapper {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+.p-reserve__tel {
+  font-size: 46px;
+  font-size: 2.875rem;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  color: #fafafa;
+  letter-spacing: 0.05em;
+}
+.p-reserve__small {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  line-height: 2.2222222222;
+  text-align: left;
+}
+.p-reserve__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 800px;
+  width: 50rem;
+  height: 150px;
+  height: 9.375rem;
+  gap: 20px;
+  gap: 1.25rem;
+  background: #E8C2C2;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.p-reserve__button:hover:not(:disabled) {
+  background-color: #006666;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+.p-reserve__button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.p-reserve__button-icon {
+  width: 35px;
+  width: 2.1875rem;
+  display: inline-block;
+}
+.p-reserve__button-icon img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+.p-reserve__button-text {
+  font-size: 30px;
+  font-size: 1.875rem;
+  color: #07182b;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+}
+
+.p-reserve__title-wrapper {
+  text-align: center;
+}
+
+.p-reserve__title {
+  font-size: 32px;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #fafafa;
+  letter-spacing: 0.2em;
+  font-family: "Noto Serif JP", serif;
+}
+
+.p-reserve__text-wrapper {
+  margin-top: 100px;
+  margin-top: 6.25rem;
+  text-align: center;
+}
+
+.p-reserve__text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 2.2222222222;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #fafafa;
+}
+
+.p-reserve__link {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .p-rooms {
   padding-top: 180px;
   padding-top: 11.25rem;
@@ -2449,8 +2741,8 @@ input::placeholder {
   grid-template-columns: 6.25rem 1fr;
   gap: 40px;
   gap: 2.5rem;
-  padding: 15px 0;
-  padding: 0.9375rem 0;
+  padding: 10px 0;
+  padding: 0.625rem 0;
   border-bottom: 1px solid #c7c1b0;
 }
 .p-rooms__info-row:first-child {

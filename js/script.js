@@ -305,3 +305,32 @@ jQuery(document).ready(function ($) {
     }
   });
 });
+
+// レイアウト画像モーダル
+jQuery(document).ready(function ($) {
+  // レイアウトを見るボタンをクリック
+  $(".js-layout-btn").on("click", function (e) {
+    e.preventDefault();
+    const imageSrc = $(this).data("layout-image");
+    $(".p-layout-modal__image").attr("src", imageSrc);
+    $(".p-layout-modal").addClass("is-active");
+    $("body").addClass("modal-open");
+    return false;
+  });
+
+  // 閉じるボタンをクリック
+  $(".p-layout-modal__close").on("click", function (e) {
+    e.preventDefault();
+    $(".p-layout-modal").removeClass("is-active");
+    $("body").removeClass("modal-open");
+    return false;
+  });
+
+  // オーバーレイをクリック
+  $(".p-layout-modal__overlay").on("click", function (e) {
+    e.preventDefault();
+    $(".p-layout-modal").removeClass("is-active");
+    $("body").removeClass("modal-open");
+    return false;
+  });
+});

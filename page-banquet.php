@@ -236,8 +236,8 @@
                   </div>
                 </dl>
                 <div class="p-rooms__buttons">
-                  <a href="#" class="p-rooms__button">
-                    <p class="p-rooms__button-text">詳細を見る</p>
+                  <a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/layout_satsuki.jpg">
+                    <p class="p-rooms__button-text">レイアウトを見る</p>
                     <span class="p-rooms__button-icon">
                       <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
                     </span>
@@ -664,5 +664,17 @@
 
     <?php get_template_part('includes/submit'); ?>
   </main>
+
+  <!-- レイアウト画像モーダル -->
+  <div class="p-layout-modal">
+    <div class="p-layout-modal__overlay"></div>
+    <div class="p-layout-modal__content">
+      <button class="p-layout-modal__close">&times;</button>
+      <figure class="p-layout-modal__figure">
+        <img src="" alt="レイアウト" class="p-layout-modal__image">
+      </figure>
+    </div>
+  </div>
+
   <?php get_footer() ?>
 </div>

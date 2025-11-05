@@ -4,10 +4,18 @@
   padding-top: rem(113);
   padding-bottom: rem(200);
 }
+.p-facilities--taste {
+  padding-top: rem(180);
+  padding-bottom: rem(173);
+}
 
 .p-facilities__content {
 }
-
+.p-facilities--taste .p-facilities__content {
+  max-width: rem(1300);
+  width: 100%;
+  margin-left: auto;
+}
 .p-facilities__content--scene {
   max-width: rem(1300);
   width: 100%;
@@ -22,7 +30,8 @@
   gap: rem(60);
   margin-top: rem(80);
 }
-.p-facilities__list--benefit {
+.p-facilities__list--benefit,
+.p-facilities__list--taste {
   gap: rem(50);
 }
 
@@ -50,6 +59,12 @@
 }
 .p-facilities__img--benefit img {
   aspect-ratio: 360 / 220;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+.p-facilities__img--taste img {
+  aspect-ratio: 400 / 260;
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -122,4 +137,15 @@
   height: auto;
   object-fit: cover;
   object-position: center center;
+}
+.p-facilities__top-textWrapper {
+  margin-top: rem(66);
+}
+
+.p-facilities__top-text {
+  font-size: rem(18);
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  line-height: calc(40 / 18);
+  font-weight: 400;
 }

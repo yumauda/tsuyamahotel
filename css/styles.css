@@ -937,6 +937,20 @@ select::-ms-expand {
   padding-bottom: 12.5rem;
 }
 
+.p-facilities--taste {
+  padding-top: 180px;
+  padding-top: 11.25rem;
+  padding-bottom: 173px;
+  padding-bottom: 10.8125rem;
+}
+
+.p-facilities--taste .p-facilities__content {
+  max-width: 1300px;
+  max-width: 81.25rem;
+  width: 100%;
+  margin-left: auto;
+}
+
 .p-facilities__content--scene {
   max-width: 1300px;
   max-width: 81.25rem;
@@ -953,7 +967,8 @@ select::-ms-expand {
   margin-top: 5rem;
 }
 
-.p-facilities__list--benefit {
+.p-facilities__list--benefit,
+.p-facilities__list--taste {
   gap: 50px;
   gap: 3.125rem;
 }
@@ -989,6 +1004,14 @@ select::-ms-expand {
 
 .p-facilities__img--benefit img {
   aspect-ratio: 360/220;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.p-facilities__img--taste img {
+  aspect-ratio: 400/260;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -1095,6 +1118,20 @@ select::-ms-expand {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+
+.p-facilities__top-textWrapper {
+  margin-top: 66px;
+  margin-top: 4.125rem;
+}
+
+.p-facilities__top-text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  line-height: 2.2222222222;
+  font-weight: 400;
 }
 
 .p-fee {

@@ -61,54 +61,26 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/E5jtCFz6SAk?si=w-exXm0r2q-ZqRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
           <div class="p-about__reserve">
-            <div class="p-reserve">
-              <div class="p-reserve__title-wrapper">
-                <p class="p-reserve__title">ご予約</p>
-              </div>
-              <div class="p-reserve__text-wrapper">
-                <p class="p-reserve__text">安心・安全にご利用いただくため、事前に<a href="#" class="p-reserve__link">【利用規約】</a>および<a href="#" class="p-reserve__link">【利用約款】</a>をご確認ください。<br>
-                  ご同意いただけましたら、ご利用前に企業登録していただきますようお願いいたします。</p>
-              </div>
-              <div class="p-reserve__agreement">
-                <label class="p-reserve__checkbox-label">
-                  <input type="checkbox" id="agreementCheckbox" class="p-reserve__checkbox">
-                  <span class="p-reserve__checkbox-text">【利用規約】および【約款】について確認し、同意しました。</span>
-                </label>
-              </div>
-              <div class="p-reserve__button-wrapper">
-                <div class="p-reserve__tel-wrapper">
-                  <a href="tel:0868252121" class="p-reserve__tel">Tel. 0868-25-2121</a>
-                  <p class="p-reserve__small">お電話での受付時間 (平日 9:00〜19:00)</p>
-                </div>
-                <button type="button" id="registrationButton" class="p-reserve__button" disabled>
-                  <span class="p-reserve__button-icon">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/reserve_icon.svg" alt="" width="35" height="30">
-                  </span>
-                  <p class="p-reserve__button-text">企業登録お申し込み用紙こちら</p>
-                </button>
-              </div>
-            </div>
+            <?php get_template_part('includes/reserve'); ?>
           </div>
         </div>
       </div>
     </section>
 
     <section class="p-rooms">
-      <div class="l-inner p-rooms__inner">
-        <div class="p-rooms__title">
-          <h3 class="c-main-title">
-            <span class="c-main-title__ja c-main-title__ja--black">設備・サービス</span>
-            <span class="c-main-title__en c-main-title__en--black">Service</span>
-          </h3>
-        </div>
-        <div class="p-rooms__top-textWrapper">
-          <p class="p-rooms__top-text">完全個室のプライベート空間で、豊かな自然を望みながら快適にお過ごしいただけます。<br>
-            ビジネスに必要な設備を整えたお部屋には、パソコンや書類をお持ち込みいただくだけで、すぐに業務を始めていただけます。<br>
-            静けさと機能性を兼ね備えた環境で、集中とリフレッシュの両方を叶えるひとときをお過ごしください。</p>
-        </div>
-
-
+      <div class="l-inner">
         <div class="p-rooms__content">
+          <div class="p-rooms__title">
+            <h3 class="c-main-title">
+              <span class="c-main-title__ja c-main-title__ja--black">設備・サービス</span>
+              <span class="c-main-title__en c-main-title__en--black">Service</span>
+            </h3>
+          </div>
+          <div class="p-rooms__top-textWrapper">
+            <p class="p-rooms__top-text">完全個室のプライベート空間で、豊かな自然を望みながら快適にお過ごしいただけます。<br>
+              ビジネスに必要な設備を整えたお部屋には、パソコンや書類をお持ち込みいただくだけで、すぐに業務を始めていただけます。<br>
+              静けさと機能性を兼ね備えた環境で、集中とリフレッシュの両方を叶えるひとときをお過ごしください。</p>
+          </div>
           <div class="p-rooms__panel p-rooms__panel--active">
             <div class="p-rooms__item">
               <figure class="p-rooms__img">
@@ -405,163 +377,170 @@
         </div>
       </div>
     </section>
-    <section class="p-meal">
+    <section class="p-facilities pt221">
       <div class="l-inner">
-        <div class="p-meal__content">
-          <div class="p-meal__title">
+        <div class="p-facilities__content p-facilities__content--scene">
+          <?php get_template_part('includes/reserve'); ?>
+          <div class="p-facilities__title mt200">
             <h3 class="c-main-title">
-              <span class="c-main-title__ja">お食事</span>
-              <span class="c-main-title__en">Meal</span>
+              <span class="c-main-title__ja">ご利用特典</span>
+              <span class="c-main-title__en">Visitor's Benefit</span>
             </h3>
           </div>
-          <div class="p-meal__text">
-            <p class="p-meal__text-item">津山鶴山ホテルでは、会議やご宴席に合わせたお食事をご用意しております。<br>
-              季節の食材を取り入れたお弁当から、懇親会や会食にふさわしいコース料理まで、目的に応じてお選びいただけます。<br>
-              大切なお集まりにふさわしい味わいと心づくしのおもてなしで、円滑で充実したひとときをサポートいたします。</p>
-          </div>
-          <div class="p-meal__swiper">
-            <div class="swiper slider4">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <figure class="p-meal__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/common/meal_img1.jpg" alt="お食事" width="810" height="540">
-                  </figure>
-                </div>
-                <div class="swiper-slide">
-                  <figure class="p-meal__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/common/meal_img2.jpg" alt="お食事" width="810" height="540">
-                  </figure>
-                </div>
-                <div class="swiper-slide">
-                  <figure class="p-meal__img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/common/meal_img3.jpg" alt="お食事" width="810" height="540">
-                  </figure>
+
+          <div class="p-facilities__list p-facilities__list--benefit">
+            <div class="p-facilities__item p-facilities__item--scene">
+              <figure class="p-facilities__img p-facilities__img--benefit">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_1.jpg" alt="宿泊特別割引" width="360" height="220">
+              </figure>
+              <div class="p-facilities__detail p-facilities__detail--scene">
+                <h4 class="p-facilities__item-title p-facilities__item-title--scene">宿泊特別割引</h4>
+                <p class="p-facilities__item-text p-facilities__item-text--scene">サテライトオフィスをご利用のお客様に対し、宿泊特別料金を設定しております。10日以上の連泊の場合は更に特別価格でご提供させていただきます。</p>
+                <div class="p-facilities__btn-wrapper">
+                  <p class="p-facilities__btn-text">お部屋の詳細はこちら</p>
+                  <div class="p-facilities__btn-icon">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_icon.svg" alt="icon" width="20" height="20">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="p-facilities__item p-facilities__item--scene">
+              <figure class="p-facilities__img p-facilities__img--benefit">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_2.jpg" alt="宴会場利用割引" width="360" height="220">
+              </figure>
+              <div class="p-facilities__detail p-facilities__detail--scene">
+                <h4 class="p-facilities__item-title p-facilities__item-title--scene">宴会場利用割引</h4>
+                <p class="p-facilities__item-text p-facilities__item-text--scene">会議室としても使用可能な大中小宴会場の特別割引をご用意しております。ご利用の際にはご相談ください。</p>
+                <div class="p-facilities__btn-wrapper">
+                  <p class="p-facilities__btn-text">宴会・会議の詳細はこちら</p>
+                  <div class="p-facilities__btn-icon">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_icon.svg" alt="icon" width="20" height="20">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-facilities__item p-facilities__item--scene">
+              <figure class="p-facilities__img p-facilities__img--benefit">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_3.jpg" alt="大型駐車場完備" width="360" height="220">
+              </figure>
+              <div class="p-facilities__detail p-facilities__detail--scene">
+                <h4 class="p-facilities__item-title p-facilities__item-title--scene">大型駐車場完備</h4>
+                <p class="p-facilities__item-text p-facilities__item-text--scene">当ホテルの駐車場を無料でご利用可能です。（当日の予約の入り具合により、ご用意できない場合がございます）</p>
+                <div class="p-facilities__btn-wrapper">
+                  <p class="p-facilities__btn-text">駐車場の詳細はこちら</p>
+                  <div class="p-facilities__btn-icon">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_icon.svg" alt="icon" width="20" height="20">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-facilities__item p-facilities__item--scene">
+              <figure class="p-facilities__img p-facilities__img--benefit">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_4.jpg" alt="光熱費無料" width="360" height="220">
+              </figure>
+              <div class="p-facilities__detail p-facilities__detail--scene">
+                <h4 class="p-facilities__item-title p-facilities__item-title--scene">光熱費無料</h4>
+                <p class="p-facilities__item-text p-facilities__item-text--scene">光熱費はルーム料金に含まれております。</p>
+
+              </div>
+            </div>
+            <div class="p-facilities__item p-facilities__item--scene">
+              <figure class="p-facilities__img p-facilities__img--benefit">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_5.jpg" alt="Wi-Fi無料" width="360" height="220">
+              </figure>
+              <div class="p-facilities__detail p-facilities__detail--scene">
+                <h4 class="p-facilities__item-title p-facilities__item-title--scene">Wi-Fi無料</h4>
+                <p class="p-facilities__item-text p-facilities__item-text--scene">オフィス内Wi-Fiを無料でご利用可能です。</p>
+
+              </div>
+            </div>
+            <div class="p-facilities__item p-facilities__item--scene">
+              <figure class="p-facilities__img p-facilities__img--benefit">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_6.jpg" alt="定期清掃" width="360" height="220">
+              </figure>
+              <div class="p-facilities__detail p-facilities__detail--scene">
+                <h4 class="p-facilities__item-title p-facilities__item-title--scene">定期清掃</h4>
+                <p class="p-facilities__item-text p-facilities__item-text--scene">部屋の清掃はルーム料金に含まれております。 長期ご利用の場合、室内清潔維持のため週に2回程度清掃に入らせていただきます。</p>
+
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
     </section>
-
-    <section class="p-equipments">
+    <section class="p-fee">
       <div class="l-inner">
-        <div class="p-equipments__title">
-          <h3 class="c-main-title">
-            <span class="c-main-title__ja">設備・備品</span>
-            <span class="c-main-title__en">Equipments</span>
-          </h3>
-        </div>
-        <div class="p-equipments__content">
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">設備</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">マイク</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">ホワイトボード</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">スクリーン</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">モニター</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">液晶プロジェクター</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">DVDデッキ</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-            </dl>
-            <p class="p-equipments__text">※インターネットサービス（Wi-Fi/有線）を無料でご利用頂けます。<br>会議室内でのLANケーブルが必要な場合は事前にお申し出ください。</p>
-
+        <div class="p-fee__content">
+          <div class="p-fee__title">
+            <h3 class="c-main-title">
+              <span class="c-main-title__ja">ご利用金額</span>
+              <span class="c-main-title__en">Usage Fee</span>
+            </h3>
           </div>
+          <div class="p-fee__table">
+            <div class="p-all">
+              <table class="p-all__table">
+                <thead>
+                  <tr>
+                    <th class="p-all__header p-all__header--empty"></th>
+                    <th class="p-all__header">601号室<br><span>（2名まで/約16.86㎡）</span></th>
+                    <th class="p-all__header">608号室<br><span>（6名まで/約24.55㎡）</span></th>
+                    <th class="p-all__header">609号室<br><span>（6名まで/約27.22㎡）</span></th>
+                    <th class="p-all__header">610号室<br><span>（6名まで/約27.22㎡）</span></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-all__label p-all__label--first">1時間</td>
+                    <td class="p-all__cell">1,100円</td>
+                    <td class="p-all__cell">2,200円</td>
+                    <td class="p-all__cell">2,750円</td>
+                    <td class="p-all__cell">2,750円</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">4時間</td>
+                    <td class="p-all__cell">3,300円</td>
+                    <td class="p-all__cell">5,500円</td>
+                    <td class="p-all__cell">6,600円</td>
+                    <td class="p-all__cell">6,600円</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">1日</td>
+                    <td class="p-all__cell">4,950円</td>
+                    <td class="p-all__cell">7,150円</td>
+                    <td class="p-all__cell">8,250円</td>
+                    <td class="p-all__cell">8,250円</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">1週間</td>
+                    <td class="p-all__cell">29,700円</td>
+                    <td class="p-all__cell">42,900円</td>
+                    <td class="p-all__cell">49,500円</td>
+                    <td class="p-all__cell">49,500円</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">1ヶ月</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">169,400円</td>
+                    <td class="p-all__cell">169,400円</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label p-all__label--last">30日～</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">ご相談ください</td>
+                    <td class="p-all__cell">ご相談ください</td>
+                  </tr>
 
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">備品</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">テーブル（0000×00）</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">テーブル（0000×00）</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">円卓00径</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">ステージ</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">演台</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">司会者台</dt>
-                <dd class="p-equipments__value">00台</dd>
-              </div>
-            </dl>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">演出・装飾</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">卓上装花</dt>
-                <dd class="p-equipments__value">¥000～</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">壷花</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">盆栽</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">看板</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">クロス</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-
-            </dl>
-          </div>
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">駐車場</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">普通車</dt>
-                <dd class="p-equipments__value">¥000/日</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">ハイルーフ車</dt>
-                <dd class="p-equipments__value">¥0,000/日</dd>
-              </div>
-
-
-            </dl>
-            <p class="p-equipments__text">
-              ※料金は全て税込みです。<br>
-              ※必ず<a href="#" class="p-equipments__link">会議室利用規約</a>をご確認ください。<br>
-              ※詳しくはお問い合わせください。
-            </p>
-
+          <div class="p-fee__submit">
+            <?php get_template_part('includes/reserve'); ?>
           </div>
 
         </div>

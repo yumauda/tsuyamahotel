@@ -195,24 +195,24 @@
     </section>
 
     <section class="p-rooms">
-      <div class="l-inner p-rooms__inner">
-        <div class="p-rooms__title">
-          <h3 class="c-main-title">
-            <span class="c-main-title__ja c-main-title__ja--black">会場一覧</span>
-            <span class="c-main-title__en c-main-title__en--black">Banquet Rooms</span>
-          </h3>
-        </div>
-        <div class="p-rooms__top-textWrapper">
-          <p class="p-rooms__top-text">津山鶴山ホテルでは、目的や規模に応じてお選びいただける多彩な会場をご用意しております。<br>
-            華やかなご宴会からフォーマルな会議、記念日やセレモニーまで、上質な空間ときめ細やかなサービスで大切なひとときをサポートいたします。</p>
-        </div>
-        <div class="p-rooms__tabs">
-          <button class="p-rooms__tab p-rooms__tab--active" data-tab="small">4名～59名</button>
-          <button class="p-rooms__tab" data-tab="medium">60～99名</button>
-          <button class="p-rooms__tab" data-tab="large">400～1,100名</button>
-        </div>
+      <div class="l-inner">
 
         <div class="p-rooms__content">
+          <div class="p-rooms__title">
+            <h3 class="c-main-title">
+              <span class="c-main-title__ja c-main-title__ja--black">会場一覧</span>
+              <span class="c-main-title__en c-main-title__en--black">Banquet Rooms</span>
+            </h3>
+          </div>
+          <div class="p-rooms__top-textWrapper">
+            <p class="p-rooms__top-text">津山鶴山ホテルでは、目的や規模に応じてお選びいただける多彩な会場をご用意しております。<br>
+              華やかなご宴会からフォーマルな会議、記念日やセレモニーまで、上質な空間ときめ細やかなサービスで大切なひとときをサポートいたします。</p>
+          </div>
+          <div class="p-rooms__tabs">
+            <button class="p-rooms__tab p-rooms__tab--active" data-tab="small">4名～59名</button>
+            <button class="p-rooms__tab" data-tab="medium">60～99名</button>
+            <button class="p-rooms__tab" data-tab="large">400～1,100名</button>
+          </div>
           <div class="p-rooms__panel p-rooms__panel--active" data-panel="small">
             <div class="p-rooms__item">
               <figure class="p-rooms__img">
@@ -543,122 +543,121 @@
 
     <section class="p-equipments">
       <div class="l-inner">
-        <div class="p-equipments__title">
-          <h3 class="c-main-title">
-            <span class="c-main-title__ja">設備・備品</span>
-            <span class="c-main-title__en">Equipments</span>
-          </h3>
-        </div>
+
         <div class="p-equipments__content">
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">設備</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">マイク</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">ホワイトボード</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">スクリーン</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">モニター</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">液晶プロジェクター</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">DVDデッキ</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-            </dl>
-            <p class="p-equipments__text">※インターネットサービス（Wi-Fi/有線）を無料でご利用頂けます。<br>会議室内でのLANケーブルが必要な場合は事前にお申し出ください。</p>
-
+          <div class="p-equipments__title">
+            <h3 class="c-main-title">
+              <span class="c-main-title__ja">設備・備品</span>
+              <span class="c-main-title__en">Equipments</span>
+            </h3>
           </div>
+          <div class="p-equipments__blocks">
+            <div class="p-equipments__block">
+              <h4 class="p-equipments__subtitle">設備</h4>
+              <dl class="p-equipments__list">
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">マイク</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">ホワイトボード</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">スクリーン</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">モニター</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">液晶プロジェクター</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">DVDデッキ</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+              </dl>
+              <p class="p-equipments__text">※インターネットサービス（Wi-Fi/有線）を無料でご利用頂けます。<br>会議室内でのLANケーブルが必要な場合は事前にお申し出ください。</p>
 
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">備品</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">テーブル（0000×00）</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">テーブル（0000×00）</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">円卓00径</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">ステージ</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">演台</dt>
-                <dd class="p-equipments__value">000台</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">司会者台</dt>
-                <dd class="p-equipments__value">00台</dd>
-              </div>
-            </dl>
+            </div>
+
+            <div class="p-equipments__block">
+              <h4 class="p-equipments__subtitle">備品</h4>
+              <dl class="p-equipments__list">
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">テーブル（0000×00）</dt>
+                  <dd class="p-equipments__value">000台</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">テーブル（0000×00）</dt>
+                  <dd class="p-equipments__value">000台</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">円卓00径</dt>
+                  <dd class="p-equipments__value">000台</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">ステージ</dt>
+                  <dd class="p-equipments__value">000台</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">演台</dt>
+                  <dd class="p-equipments__value">000台</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">司会者台</dt>
+                  <dd class="p-equipments__value">00台</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="p-equipments__block">
+              <h4 class="p-equipments__subtitle">演出・装飾</h4>
+              <dl class="p-equipments__list">
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">卓上装花</dt>
+                  <dd class="p-equipments__value">¥000～</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">壷花</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">盆栽</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">看板</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">クロス</dt>
+                  <dd class="p-equipments__value">¥2,000</dd>
+                </div>
+
+              </dl>
+            </div>
+            <div class="p-equipments__block">
+              <h4 class="p-equipments__subtitle">駐車場</h4>
+              <dl class="p-equipments__list">
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">普通車</dt>
+                  <dd class="p-equipments__value">¥000/日</dd>
+                </div>
+                <div class="p-equipments__item">
+                  <dt class="p-equipments__label">ハイルーフ車</dt>
+                  <dd class="p-equipments__value">¥0,000/日</dd>
+                </div>
+              </dl>
+              <p class="p-equipments__text">
+                ※料金は全て税込みです。<br>
+                ※必ず<a href="#" class="p-equipments__link">会議室利用規約</a>をご確認ください。<br>
+                ※詳しくはお問い合わせください。
+              </p>
+            </div>
           </div>
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">演出・装飾</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">卓上装花</dt>
-                <dd class="p-equipments__value">¥000～</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">壷花</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">盆栽</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">看板</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">クロス</dt>
-                <dd class="p-equipments__value">¥2,000</dd>
-              </div>
-
-            </dl>
-          </div>
-          <div class="p-equipments__block">
-            <h4 class="p-equipments__subtitle">駐車場</h4>
-            <dl class="p-equipments__list">
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">普通車</dt>
-                <dd class="p-equipments__value">¥000/日</dd>
-              </div>
-              <div class="p-equipments__item">
-                <dt class="p-equipments__label">ハイルーフ車</dt>
-                <dd class="p-equipments__value">¥0,000/日</dd>
-              </div>
-
-
-            </dl>
-            <p class="p-equipments__text">
-              ※料金は全て税込みです。<br>
-              ※必ず<a href="#" class="p-equipments__link">会議室利用規約</a>をご確認ください。<br>
-              ※詳しくはお問い合わせください。
-            </p>
-
-          </div>
-
         </div>
       </div>
     </section>

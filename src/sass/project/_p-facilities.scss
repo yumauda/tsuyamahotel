@@ -11,7 +11,7 @@
 .p-facilities__content--scene {
   max-width: rem(1300);
   width: 100%;
-  margin-inline: auto;
+  margin-left: auto;
 }
 .p-facilities__title {
 }
@@ -22,8 +22,15 @@
   gap: rem(60);
   margin-top: rem(80);
 }
+.p-facilities__list--benefit {
+  gap: rem(50);
+}
 
 .p-facilities__item {
+}
+.p-facilities__list--benefit .p-facilities__item {
+  display: flex;
+  flex-direction: column;
 }
 .p-facilities__item--scene {
   background: #f5f2e8;
@@ -41,11 +48,21 @@
   width: 100%;
   height: auto;
 }
+.p-facilities__img--benefit img {
+  aspect-ratio: 360 / 220;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
 
 .p-facilities__detail {
   padding-top: rem(20);
 }
-
+.p-facilities__list--benefit .p-facilities__detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .p-facilities__detail--scene {
   padding-left: rem(10);
   padding-right: rem(10);
@@ -73,4 +90,36 @@
 }
 .p-facilities__item-text--scene {
   color: #3d4043;
+}
+.mt200 {
+  margin-top: rem(200);
+}
+.pt221 {
+  padding-top: rem(221);
+}
+.p-facilities__btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: rem(20);
+  border-top: 1px dotted #c7c1b0;
+}
+
+.p-facilities__btn-text {
+  font-size: rem(16);
+  letter-spacing: 0.1em;
+  line-height: calc(40 / 16);
+  color: #333;
+  font-weight: 400;
+}
+
+.p-facilities__btn-icon {
+  width: rem(15);
+}
+.p-facilities__btn-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
 }

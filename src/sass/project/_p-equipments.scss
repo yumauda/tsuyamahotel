@@ -9,12 +9,17 @@
 }
 
 .p-equipments__content {
-  margin-top: rem(60);
+  max-width: rem(1300);
+  width: 100%;
+  margin-left: auto;
+}
+
+.p-equipments__blocks {
+  margin-top: rem(60);  
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: rem(40);
 }
-
 .p-equipments__block {
 }
 

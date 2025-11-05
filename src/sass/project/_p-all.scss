@@ -103,3 +103,13 @@
   border-bottom-right-radius: rem(10);
   border-bottom-left-radius: rem(10);
 }
+.p-all__header span {
+  font-size: rem(14);
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  line-height: calc(30 / 14);
+}
+.p-fee .p-all__label {
+  width: rem(240);
+}

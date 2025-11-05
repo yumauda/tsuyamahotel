@@ -241,6 +241,167 @@
 
 
           </div>
+          <div class="p-rooms__all">
+            <div class="p-rooms__all-title-wrapper">
+              <div class="p-rooms__title-row">
+                <p class="p-rooms__all-title">設備一覧</p>
+                <div class="p-rooms__all-line"></div>
+              </div>
+              <p class="p-rooms__all-text"><span>当ホテルは全室禁煙となっております。</span><br>
+                4階には喫煙ブースを設けており、愛煙家のお客様にも安心してご利用いただけます。<br>
+                また、同フロアにはソフトドリンクの自動販売機や、自由にお使いいただける電子レンジ・製氷機もご用意し、快適なご滞在をサポートいたします。</p>
+            </div>
+            <div class="p-all">
+              <table class="p-all__table">
+                <thead>
+                  <tr>
+                    <th class="p-all__header p-all__header--empty"></th>
+                    <th class="p-all__header">601号室</th>
+                    <th class="p-all__header">608号室</th>
+                    <th class="p-all__header">609号室</th>
+                    <th class="p-all__header">610号室</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-all__label p-all__label--first">トイレ</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">ユニットバス</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">-</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">ケトル</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">電子レンジ</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">冷蔵庫（ミニ）</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">冷蔵庫（冷凍庫付き）</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">-</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">空気清浄機（加湿器付き）</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label">27インチモニター（カメラ有）</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                    <td class="p-all__cell">○</td>
+                  </tr>
+                  <tr>
+                    <td class="p-all__label p-all__label--last">複合機（FAX）</td>
+                    <td class="p-all__cell p-all__cell--last">-</td>
+                    <td class="p-all__cell p-all__cell--last">-</td>
+                    <td class="p-all__cell p-all__cell--last">○</td>
+                    <td class="p-all__cell p-all__cell--last">-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="p-rooms__qa">
+              <figure class="p-rooms__qa-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/room_qa.jpg" alt="設備一覧" width="400" height="600">
+              </figure>
+              <div class="p-qa__block">
+                <details class="p-qa__content js-details">
+                  <summary class="p-qa__summary js-summary">
+                    <h4 class="p-qa__ttl">
+                      高速・快適なインターネット回線
+                    </h4>
+                  </summary>
+                  <div class="p-qa__inner js-content">
+                    <div class="p-qa__wrap">
+                      <div class="p-qa__content p-qa__content--open01">
+                        <p class="p-qa__txt">次世代型インターネット接続環境と呼ばれるクラウドサービス利用を想定したIPoE通信を採用。</p>
+                        <p class="p-qa__txt">法人向け設計のインターネットサービスプロバイダーを採用、一般利用でありがちな通信混雑を解消しています。</p>
+                        <p class="p-qa__txt">宿泊通信設備と完全分離し、オフィス専用のインターネット回線をご用意しております。</p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+                <details class="p-qa__content js-details">
+                  <summary class="p-qa__summary js-summary">
+                    <h4 class="p-qa__ttl">
+                      安全・安心な無線LAN通信
+                    </h4>
+                  </summary>
+                  <div class="p-qa__inner js-content">
+                    <div class="p-qa__wrap">
+                      <div class="p-qa__content p-qa__content--open01">
+                        <p class="p-qa__txt">次世代型インターネット接続環境と呼ばれるクラウドサービス利用を想定したIPoE通信を採用。</p>
+                        <p class="p-qa__txt">法人向け設計のインターネットサービスプロバイダーを採用、一般利用でありがちな通信混雑を解消しています。</p>
+                        <p class="p-qa__txt">宿泊通信設備と完全分離し、オフィス専用のインターネット回線をご用意しております。</p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+                <details class="p-qa__content js-details">
+                  <summary class="p-qa__summary js-summary">
+                    <h4 class="p-qa__ttl">
+                      オフィスセキュリティ環境
+                    </h4>
+                  </summary>
+                  <div class="p-qa__inner js-content">
+                    <div class="p-qa__wrap">
+                      <div class="p-qa__content p-qa__content--open01">
+                        <p class="p-qa__txt">次世代型インターネット接続環境と呼ばれるクラウドサービス利用を想定したIPoE通信を採用。</p>
+                        <p class="p-qa__txt">法人向け設計のインターネットサービスプロバイダーを採用、一般利用でありがちな通信混雑を解消しています。</p>
+                        <p class="p-qa__txt">宿泊通信設備と完全分離し、オフィス専用のインターネット回線をご用意しております。</p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+                <details class="p-qa__content js-details">
+                  <summary class="p-qa__summary js-summary">
+                    <h4 class="p-qa__ttl">
+                      完全個室
+                    </h4>
+                  </summary>
+                  <div class="p-qa__inner js-content">
+                    <div class="p-qa__wrap">
+                      <div class="p-qa__content p-qa__content--open01">
+                        <p class="p-qa__txt">次世代型インターネット接続環境と呼ばれるクラウドサービス利用を想定したIPoE通信を採用。</p>
+                        <p class="p-qa__txt">法人向け設計のインターネットサービスプロバイダーを採用、一般利用でありがちな通信混雑を解消しています。</p>
+                        <p class="p-qa__txt">宿泊通信設備と完全分離し、オフィス専用のインターネット回線をご用意しております。</p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

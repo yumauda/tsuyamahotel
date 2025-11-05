@@ -17,7 +17,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #2E4F77;
+      background: #2e4f77;
       mix-blend-mode: multiply;
     }
   }
@@ -32,11 +32,54 @@
   }
 
   &__checkbox {
-    width: rem(20);
-    height: rem(20);
-    margin-right: rem(10);
-    cursor: pointer;
-    flex-shrink: 0;
+    // デフォルトのチェックボックスを隠す
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    // カスタムチェックボックス（未チェック時）
+    & + .p-reserve__checkbox-text::before {
+      content: "";
+      display: inline-block;
+      width: rem(30);
+      height: rem(30);
+      margin-right: rem(15);
+      border: 2px solid #fff;
+      background-color: #fff;
+      border-radius: rem(5);
+      vertical-align: middle;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    // チェック時のスタイル
+    &:checked + .p-reserve__checkbox-text::before {
+      background-color: #333;
+    }
+
+    // チェックマーク
+    &:checked + .p-reserve__checkbox-text::after {
+      content: "";
+      position: absolute;
+      left: rem(10);
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      width: rem(10);
+      height: rem(18);
+      border: solid #07182b;
+      border-width: 0 3px 3px 0;
+    }
+
+    // ホバー時
+    &:hover + .p-reserve__checkbox-text::before {
+      border-color: #e8c2c2;
+    }
+
+    // フォーカス時
+    &:focus + .p-reserve__checkbox-text::before {
+      box-shadow: 0 0 0 3px rgba(232, 194, 194, 0.3);
+    }
   }
 
   &__checkbox-text {
@@ -45,6 +88,10 @@
     letter-spacing: 0.1em;
     font-weight: 400;
     color: #fafafa;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: rem(45);
   }
 
   &__button-wrapper {
@@ -83,7 +130,7 @@
     width: rem(800);
     height: rem(150);
     gap: rem(20);
-    background: #E8C2C2;
+    background: #e8c2c2;
     border-radius: rem(10);
     cursor: pointer;
     transition: all 0.3s ease;

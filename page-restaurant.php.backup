@@ -420,40 +420,7 @@
 
           </div>
 
-          <div class="p-menu__table">
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">特製ロースカツ重 100g</p>
-                <p class="p-menu__table-desc">国産ブランド八女豚使用 / 小鉢 / 漬物 / 吸物 付</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,650<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">熟成厚切りロースカツ膳 250g</p>
-                <p class="p-menu__table-desc">国産ブランド八女豚使用 / ご飯 / 漬物 / 吸物 付</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">2,300<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">大海老の天丼</p>
-                <p class="p-menu__table-desc">小鉢 / 漬物 / 吸物 付</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,700<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-meal__menu mt120">
+          <div class="p-meal__menu">
             <div class="p-meal__menu-text">洋食メニュー</div>
             <div class="p-meal__menu-line"></div>
           </div>
@@ -477,7 +444,7 @@
               </div>
             </div>
           </div>
-          <div class="p-menu__triple mt80">
+          <div class="p-menu__triple">
             <div class="p-menu__double-item">
               <figure class="p-menu__double-img">
                 <img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_4.jpg" alt="奈義和牛ステーキ重" width="360" height="240">
@@ -485,7 +452,7 @@
               <div class="p-menu__double-detail">
                 <h4 class="p-menu__double-title">奈義和牛ステーキ重 100g</h4>
               </div>
-              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right">
                 <p class="p-menu__price">2,700<span>円</span></p>
                 <p class="p-menu__tax">（税込み）</p>
               </div>
@@ -500,7 +467,7 @@
               <div class="p-menu__double-detail">
                 <h4 class="p-menu__double-title">エビフライとハンバーグ</h4>
               </div>
-              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right">
                 <p class="p-menu__price">2,100<span>円</span></p>
                 <p class="p-menu__tax">（税込み）</p>
               </div>
@@ -515,7 +482,7 @@
               <div class="p-menu__double-detail">
                 <h4 class="p-menu__double-title">お子様プレート</h4>
               </div>
-              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right">
                 <p class="p-menu__price">1,200<span>円</span></p>
                 <p class="p-menu__tax">（税込み）</p>
               </div>
@@ -524,129 +491,6 @@
                   ※小学6年生以下のお子様に限ります。</p>
               </div>
             </div>
-          </div>
-          <div class="p-menu__table">
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">ホテル特製ビーフカレー</p>
-                <p class="p-menu__table-desc">サラダ 付</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,600<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">ホテル特製八女豚のカツカレー</p>
-                <p class="p-menu__table-desc">サラダ 付</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,800<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">ミックスサンド</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,200<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-          </div>
-          <div class="p-meal__menu mt120">
-            <div class="p-meal__menu-text">中華メニュー</div>
-            <div class="p-meal__menu-line"></div>
-          </div>
-          <div class="p-menu__triple mt80">
-            <div class="p-menu__double-item">
-              <figure class="p-menu__double-img">
-                <img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_7.jpg" alt="海老のチリソース定食" width="360" height="240">
-              </figure>
-              <div class="p-menu__double-detail">
-                <h4 class="p-menu__double-title">海老のチリソース定食</h4>
-              </div>
-              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
-                <p class="p-menu__price">1,700<span>円</span></p>
-                <p class="p-menu__tax">（税込み）</p>
-              </div>
-              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
-                <p class="p-menu__text-right">御飯 / スープ / 自家製漬物 / デザート 付</p>
-              </div>
-            </div>
-            <div class="p-menu__double-item">
-              <figure class="p-menu__double-img">
-                <img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_8.jpg" alt="酢豚定食" width="360" height="240">
-              </figure>
-              <div class="p-menu__double-detail">
-                <h4 class="p-menu__double-title">酢豚定食</h4>
-              </div>
-              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
-                <p class="p-menu__price">1,700<span>円</span></p>
-                <p class="p-menu__tax">（税込み）</p>
-              </div>
-              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
-                <p class="p-menu__text-right">御飯 / スープ / 自家製漬物 / デザート 付</p>
-              </div>
-            </div>
-            <div class="p-menu__double-item">
-              <figure class="p-menu__double-img">
-                <img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_9.jpg" alt="八宝菜定食" width="360" height="240">
-              </figure>
-              <div class="p-menu__double-detail">
-                <h4 class="p-menu__double-title">八宝菜定食</h4>
-              </div>
-              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
-                <p class="p-menu__price">1,700<span>円</span></p>
-                <p class="p-menu__tax">（税込み）</p>
-              </div>
-              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
-                <p class="p-menu__text-right">御飯 / スープ / 自家製漬物 / デザート 付</p>
-              </div>
-            </div>
-          </div>
-          <div class="p-menu__table">
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">チャーハンセット</p>
-                <p class="p-menu__table-desc">スープ / 自家製漬物 / 唐揚げ 付</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,900<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">熟成厚切りロースカツ膳 250g</p>
-                <p class="p-menu__table-desc">スープ / 自家製漬物 付</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,500<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">五目焼きそば（揚げ麺）</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,600<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            <div class="p-menu__table-row">
-              <div class="p-menu__table-left">
-                <p class="p-menu__table-title">五目ラーメン</p>
-              </div>
-              <div class="p-menu__table-right">
-                <p class="p-menu__table-price">1,600<span>円</span></p>
-                <p class="p-menu__table-tax">（税込み）</p>
-              </div>
-            </div>
-            
           </div>
 
 

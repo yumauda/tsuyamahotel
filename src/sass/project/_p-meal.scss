@@ -3,7 +3,6 @@
 .p-meal {
   padding-top: rem(200);
   padding-bottom: rem(200);
-
 }
 
 .p-meal__content {
@@ -50,4 +49,43 @@
   object-fit: cover;
   width: 100%;
   height: auto;
+}
+.p-meal__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.p-meal--lunch .p-menu__price,
+.p-meal--lunch .p-menu__price span,
+.p-meal--lunch .p-menu__tax,
+.p-meal--lunch .p-menu__text-right,
+.p-meal--lunch .p-menu__double-title {
+  color: #fff;
+}
+.p-meal__date {
+  text-align: center;
+  margin-top: rem(60);
+  padding-top: rem(25);
+  padding-bottom: rem(25);
+  position: relative;
+}
+.p-meal__date::before {
+  position: absolute;
+  content: "";
+  background: #2e4f77;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  mix-blend-mode: multiply;
+}
+
+.p-meal__date-text {
+  font-family: $second-font-family;
+  font-size: rem(24);
+  font-weight: 400;
+  line-height: calc(35 / 24);
+  color: #f5f2e8;
+  position: relative;
+  z-index: 2;
 }

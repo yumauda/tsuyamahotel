@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.p-drink__content {
+  max-width: rem(1300);
+  width: 100%;
+  margin-left: auto;
+}
+
+.p-drink__menu {
+  margin-top: rem(80);
+}
+
+.p-drink__columns {
+}
+
+.p-drink__column {
+}
+
+.p-drink__category {
+  margin-top: rem(60);
+}
+
+.p-drink__category:first-child {
+  margin-top: 0;
+}
+
+.p-drink__category-title {
+  font-family: $second-font-family;
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: calc(34 / 24);
+  color: #fafafa;
+  letter-spacing: 0.1em;
+}
+.p-drink__lists {
+  margin-top: rem(30);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(120);
+}
+.p-drink__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.p-drink__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.p-drink__item + .p-drink__item {
+  margin-top: rem(15);
+}
+
+.p-drink__name {
+  font-family: $second-font-family;
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(28 / 16);
+  color: #fafafa;
+  letter-spacing: 0.05em;
+  flex: 1;
+  padding-right: rem(20);
+}
+
+.p-drink__price {
+  font-family: $font-en;
+  font-size: rem(18);
+  font-weight: 400;
+  line-height: 1;
+  color: #fafafa;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+}

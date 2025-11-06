@@ -646,137 +646,393 @@
                 <p class="p-menu__table-tax">（税込み）</p>
               </div>
             </div>
-            
           </div>
-
-
-
-
-
         </div>
       </div>
     </section>
-
-    <section class="p-equipments">
+    <section class="p-desert">
       <div class="l-inner">
-
-        <div class="p-equipments__content">
-          <div class="p-equipments__title">
+        <div class="p-desert__content">
+          <div class="p-desert__title">
             <h3 class="c-main-title">
-              <span class="c-main-title__ja">設備・備品</span>
-              <span class="c-main-title__en">Equipments</span>
+              <span class="c-main-title__ja">軽食 & デザート</span>
+              <span class="c-main-title__en">Light meals and Desserts</span>
             </h3>
           </div>
-          <div class="p-equipments__blocks">
-            <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">設備</h4>
-              <dl class="p-equipments__list">
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">マイク</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
+          <div class="p-desert__menu">
+            <div class="p-desert__images">
+              <figure class="p-desert__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/desert_1.jpg" alt="軽食" width="360" height="240">
+              </figure>
+              <figure class="p-desert__img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/desert_2.jpg" alt="デザート" width="360" height="240">
+              </figure>
+            </div>
+            <div class="p-desert__lists">
+              <div class="p-desert__section">
+                <h4 class="p-desert__category-title">軽食・おつまみ・サラダ</h4>
+                <div class="p-desert__list">
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">鮭の薫製げ（サーモン）</p>
+                    <p class="p-desert__price">1,200円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">餃子（5ヶ）</p>
+                    <p class="p-desert__price">660円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">枝豆</p>
+                    <p class="p-desert__price">440円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">フライドポテト</p>
+                    <p class="p-desert__price">660円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">チーズ盛合せ</p>
+                    <p class="p-desert__price">900円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">若鶏唐サラダ</p>
+                    <p class="p-desert__price">960円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">本日のカップスープ</p>
+                    <p class="p-desert__price">350円</p>
+                  </div>
                 </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">ホワイトボード</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">スクリーン</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">モニター</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">液晶プロジェクター</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">DVDデッキ</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-              </dl>
-              <p class="p-equipments__text">※インターネットサービス（Wi-Fi/有線）を無料でご利用頂けます。<br>会議室内でのLANケーブルが必要な場合は事前にお申し出ください。</p>
+              </div>
 
+              <div class="p-desert__section">
+                <h4 class="p-desert__category-title">デザートメニュー</h4>
+                <div class="p-desert__list">
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">バニラアイス＋あん白玉</p>
+                    <p class="p-desert__price">760円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">バニラアイス＋黒みつかけ</p>
+                    <p class="p-desert__price">840円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">プレミアムアイスクリームセット（コーヒー紅茶付）</p>
+                    <p class="p-desert__price">1,200円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">プレミアムアイスクリーム単品</p>
+                    <p class="p-desert__price">670円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">クラシックチーズケーキセット（コーヒー紅茶付）</p>
+                    <p class="p-desert__price">1,100円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">クラシックチーズ単品</p>
+                    <p class="p-desert__price">660円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">季節のミニパフェ</p>
+                    <p class="p-desert__price">料金</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">2色アイス（バニラ・チョコ・ストロベリーのお好み2種）</p>
+                    <p class="p-desert__price">700円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">シンースロール</p>
+                    <p class="p-desert__price">750円</p>
+                  </div>
+                  <div class="p-desert__item">
+                    <p class="p-desert__name">コーヒーフロート</p>
+                    <p class="p-desert__price">900円</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="p-drink">
+      <div class="l-inner">
+        <div class="p-drink__content">
+          <div class="p-drink__title">
+            <h3 class="c-main-title">
+              <span class="c-main-title__ja">ドリンク</span>
+              <span class="c-main-title__en">Drink and Alcohol</span>
+            </h3>
+          </div>
+          <div class="p-drink__menu">
+            <div class="p-drink__columns">
+              <div class="p-drink__column">
+                <div class="p-drink__category">
+                  <h4 class="p-drink__category-title">アルコール</h4>
+                </div>
+                <div class="p-drink__lists">
+
+                  <div class="p-drink__list">
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ビール（中瓶・プレミアム）</p>
+                      <p class="p-drink__price">¥700</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ビール（中瓶）</p>
+                      <p class="p-drink__price">¥630</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ビール（小ジョッキ）</p>
+                      <p class="p-drink__price">¥630</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">生ビール</p>
+                      <p class="p-drink__price">¥630</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">生ビール（ジョッキ）</p>
+                      <p class="p-drink__price">(1,100円) ¥980</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～出羽桜 佳撰仙蔵～</p>
+                      <p class="p-drink__price">(1260ml) ¥3,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～あらばしり～</p>
+                      <p class="p-drink__price">(720ml) ¥3,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～龍馬1865 純米酒～</p>
+                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～久保田 千寿 KINRIN (きんりん)～</p>
+                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">芋焼酎 霧島 (黒霧島・白霧島)</p>
+                      <p class="p-drink__price">(720ml) ¥3,800</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">芋焼酎～気分爽快 若鶴姫～</p>
+                      <p class="p-drink__price">(1,800ml) ¥1,415</p>
+                    </div>
+                  </div>
+                  <div class="p-drink__list">
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ビール（中瓶・プレミアム）</p>
+                      <p class="p-drink__price">¥700</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ビール（中瓶）</p>
+                      <p class="p-drink__price">¥630</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ビール（小ジョッキ）</p>
+                      <p class="p-drink__price">¥630</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">生ビール</p>
+                      <p class="p-drink__price">¥630</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">生ビール（ジョッキ）</p>
+                      <p class="p-drink__price">(1,100円) ¥980</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～出羽桜 佳撰仙蔵～</p>
+                      <p class="p-drink__price">(1260ml) ¥3,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～あらばしり～</p>
+                      <p class="p-drink__price">(720ml) ¥3,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～龍馬1865 純米酒～</p>
+                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">日本酒～久保田 千寿 KINRIN (きんりん)～</p>
+                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">芋焼酎 霧島 (黒霧島・白霧島)</p>
+                      <p class="p-drink__price">(720ml) ¥3,800</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">芋焼酎～気分爽快 若鶴姫～</p>
+                      <p class="p-drink__price">(1,800ml) ¥1,415</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="p-drink__category">
+                  <h4 class="p-drink__category-title">ソフトドリンク</h4>
+                </div>
+                <div class="p-drink__lists">
+
+                  <div class="p-drink__list">
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">オレンジジュース</p>
+                      <p class="p-drink__price">¥600</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">牛乳</p>
+                      <p class="p-drink__price">¥600</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">カフェオレ（アイス）</p>
+                      <p class="p-drink__price">¥800</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">コーラ</p>
+                      <p class="p-drink__price">¥550</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ジンジャー</p>
+                      <p class="p-drink__price">¥550</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ジンジャーエール</p>
+                      <p class="p-drink__price">¥550</p>
+                    </div>
+                  </div>
+                  <div class="p-drink__list">
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">オレンジジュース</p>
+                      <p class="p-drink__price">¥600</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">牛乳</p>
+                      <p class="p-drink__price">¥600</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">カフェオレ（アイス）</p>
+                      <p class="p-drink__price">¥800</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">コーラ</p>
+                      <p class="p-drink__price">¥550</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ジンジャー</p>
+                      <p class="p-drink__price">¥550</p>
+                    </div>
+                    <div class="p-drink__item">
+                      <p class="p-drink__name">ジンジャーエール</p>
+                      <p class="p-drink__price">¥550</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="p-meal p-meal--lunch">
+      <div class="l-inner">
+        <div class="p-meal__content">
+          <div class="p-meal__flex">
+            <div class="p-meal__title">
+              <h3 class="c-main-title">
+                <span class="c-main-title__ja">団体様向けお食事メニュー</span>
+                <span class="c-main-title__en">Group Menu</span>
+              </h3>
             </div>
 
-            <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">備品</h4>
-              <dl class="p-equipments__list">
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">テーブル（0000×00）</dt>
-                  <dd class="p-equipments__value">000台</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">テーブル（0000×00）</dt>
-                  <dd class="p-equipments__value">000台</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">円卓00径</dt>
-                  <dd class="p-equipments__value">000台</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">ステージ</dt>
-                  <dd class="p-equipments__value">000台</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">演台</dt>
-                  <dd class="p-equipments__value">000台</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">司会者台</dt>
-                  <dd class="p-equipments__value">00台</dd>
-                </div>
-              </dl>
+          </div>
+          <div class="p-menu__double mt120">
+            <div class="p-menu__double-item">
+              <figure class="p-menu__double-img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/lunch_3.jpg" alt="津山づくし膳" width="360" height="240">
+              </figure>
+              <div class="p-menu__double-detail">
+                <h4 class="p-menu__double-title p-menu__double-title--small">津山づくし膳</h4>
+                <p class="p-menu__double-tag">おすすめ</p>
+              </div>
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+                <p class="p-menu__price">3,850<span>円</span></p>
+                <p class="p-menu__tax">（税込み）</p>
+              </div>
+              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
+                <p class="p-menu__text-right">奈義和牛のそずり鍋 / 黒毛和牛の干し肉 / 奈義和牛の煮凝り / 巻柿 / 茶碗蒸し / 岡山県産野菜の天ぷら / 本日のお造り2種 / 〆のうどん / 岡山県産米きぬむすめ / 阿波のポリカリ漬け / 津山銘菓「桐襲」とフルーツ</p>
+              </div>
             </div>
-            <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">演出・装飾</h4>
-              <dl class="p-equipments__list">
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">卓上装花</dt>
-                  <dd class="p-equipments__value">¥000～</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">壷花</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">盆栽</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">看板</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">クロス</dt>
-                  <dd class="p-equipments__value">¥2,000</dd>
-                </div>
+            <div class="p-menu__double-item">
+              <figure class="p-menu__double-img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/lunch_4.jpg" alt="奈義和牛すき焼き膳 90g" width="360" height="240">
+              </figure>
+              <div class="p-menu__double-detail">
+                <h4 class="p-menu__double-title p-menu__double-title--small">奈義和牛すき焼き膳 90g</h4>
+              </div>
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+                <p class="p-menu__price">3,850<span>円</span></p>
+                <p class="p-menu__tax">（税込み）</p>
+              </div>
+              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
+                <p class="p-menu__text-right">奈義和牛A4～A5ランク使用 / 岡山県産野菜の盛合せ / 名物ママカリの酢漬けと季節の和え物 / 岡山県産米きぬむすめ / 阿波のポリカリ漬けと豚味噌 / 吸い物 / 津山銘菓「桐襲」とフルーツ</p>
+              </div>
+            </div>
+          </div>
 
-              </dl>
+
+          <div class="p-menu__triple mt100">
+            <div class="p-menu__double-item">
+              <figure class="p-menu__double-img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_10.jpg" alt="鶴山弁当" width="360" height="240">
+              </figure>
+              <div class="p-menu__double-detail">
+                <h4 class="p-menu__double-title">鶴山弁当</h4>
+              </div>
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+                <p class="p-menu__price">3,300<span>円</span></p>
+                <p class="p-menu__tax">（税込み）</p>
+              </div>
+              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
+                <p class="p-menu__text-right">鰻の蒲焼 だし巻き 季節の和え物 / 本日のお造り2種盛り合わせ / 牛ステーキ重（オーストラリア産加工牛・岡山県産米きぬむすめ使用） / 海老と季節野菜の天ぷら / 阿波のポリカリ漬けと豚味噌 / 茶碗蒸し / 吸物 / 津山銘菓「桐襲」とフルーツ</p>
+              </div>
             </div>
-            <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">駐車場</h4>
-              <dl class="p-equipments__list">
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">普通車</dt>
-                  <dd class="p-equipments__value">¥000/日</dd>
-                </div>
-                <div class="p-equipments__item">
-                  <dt class="p-equipments__label">ハイルーフ車</dt>
-                  <dd class="p-equipments__value">¥0,000/日</dd>
-                </div>
-              </dl>
-              <p class="p-equipments__text">
-                ※料金は全て税込みです。<br>
-                ※必ず<a href="#" class="p-equipments__link">会議室利用規約</a>をご確認ください。<br>
-                ※詳しくはお問い合わせください。
-              </p>
+            <div class="p-menu__double-item">
+              <figure class="p-menu__double-img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_11.jpg" alt="岡山寿司と天婦羅膳" width="360" height="240">
+              </figure>
+              <div class="p-menu__double-detail">
+                <h4 class="p-menu__double-title">岡山寿司と天婦羅膳</h4>
+              </div>
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+                <p class="p-menu__price">3,300<span>円</span></p>
+                <p class="p-menu__tax">（税込み）</p>
+              </div>
+              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
+                <p class="p-menu__text-right">岡山名物ちらし寿司（ままかり・蛸・海老・蝦蛄・モ貝・穴子） / 岡山県産野菜の天ぷら / 茶碗蒸し / 季節の小鉢 / 岡山県産米きぬむすめ / 吸い物 / 津山銘菓「桐襲」とフルーツ</p>
+              </div>
             </div>
+            <div class="p-menu__double-item">
+              <figure class="p-menu__double-img">
+                <img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_12.jpg" alt="奈義和牛ハンバーグと岡山名物海老飯セット" width="360" height="240">
+              </figure>
+              <div class="p-menu__double-detail">
+                <h4 class="p-menu__double-title">奈義和牛ハンバーグと<br>岡山名物海老飯セット</h4>
+              </div>
+              <div class="p-menu__price-wrapper p-menu__price-wrapper--right mt0">
+                <p class="p-menu__price">3,300<span>円</span></p>
+                <p class="p-menu__tax">（税込み）</p>
+              </div>
+              <div class="p-menu__text-wrapper p-menu__text-wrapper--right">
+                <p class="p-menu__text-right">奈義和牛ハンバーグステーキ180g 温野菜添え<br>ホテルオリジナルデミソース / 岡山名物海老飯 / 特製デザート盛合せ / 本日のスープ</p>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
     </section>
+
+    
 
     <?php get_template_part('includes/submit'); ?>
   </main>

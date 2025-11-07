@@ -78,3 +78,28 @@ const slider4 = new Swiper(".slider4", {
     el: ".swiper-scrollbar",
   },
 });
+const slider5 = new Swiper(".slider5", {
+  slidesPerView: 1.6,
+  centeredSlides: true,
+  loop: true,
+  initialSlide: 0,
+  breakpoints: {
+    768: {
+      effect: "slide",
+      slidesPerView: 1.8,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});

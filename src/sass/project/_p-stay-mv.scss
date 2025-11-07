@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-stay-mv {
+  padding-top: rem(291);
+  padding-bottom: rem(150);
+}
+.p-stay-mv__inner {
+  max-width: rem(1720);
+  width: 100%;
+  margin-inline: auto;
+}
+.p-stay-mv__content {
+  position: relative;
+}
+.p-stay-mv__detail {
+  position: absolute;
+  top: 50%;
+  left: rem(40);
+  transform: translateY(-50%);
+}

@@ -191,3 +191,26 @@
   font-weight: 700;
   text-decoration: underline;
 }
+.p-reserve__button-wrapper--service {
+  display: block;
+  margin-top: rem(101);
+}
+.p-reserve__button--service {
+  max-width: rem(1000);
+  width: 100%;
+  margin-inline: auto;
+}
+.p-reserve__tel-wrapper--service {
+  text-align: center;
+  margin-top: rem(50);
+}
+.p-reserve__small--service {
+  text-align: center;
+}
+.p-reserve__button-text--service {
+  font-family: $font-en;
+  font-size: rem(12);
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  color: #333;
+}

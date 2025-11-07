@@ -768,164 +768,161 @@
               <div class="p-drink__column">
                 <div class="p-drink__category">
                   <h4 class="p-drink__category-title">アルコール</h4>
+                  <div class="p-drink__category-line"></div>
                 </div>
                 <div class="p-drink__lists">
 
                   <div class="p-drink__list">
                     <div class="p-drink__item">
-                      <p class="p-drink__name">ビール（中瓶・プレミアム）</p>
-                      <p class="p-drink__price">¥700</p>
+                      <p class="p-drink__name">ビール（中瓶）アサヒ・キリン</p>
+                      <p class="p-drink__price">870円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">ビール（中瓶）</p>
-                      <p class="p-drink__price">¥630</p>
+                      <p class="p-drink__name">生ビール（中ジョッキ）</p>
+                      <p class="p-drink__price">870円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">ビール（小ジョッキ）</p>
-                      <p class="p-drink__price">¥630</p>
+                      <p class="p-drink__name">生ビール（小グラス）</p>
+                      <p class="p-drink__price">580円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">生ビール</p>
-                      <p class="p-drink__price">¥630</p>
+                      <p class="p-drink__name">ノンアルコールビール</p>
+                      <p class="p-drink__price">650円</p>
                     </div>
                     <div class="p-drink__item">
                       <p class="p-drink__name">生ビール（ジョッキ）</p>
                       <p class="p-drink__price">(1,100円) ¥980</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～出羽桜 佳撰仙蔵～</p>
-                      <p class="p-drink__price">(1260ml) ¥3,300</p>
+                      <p class="p-drink__name">日本酒 〜加茂五葉 清酒〜</p>
+                      <p class="p-drink__price">（180ml）700円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～あらばしり～</p>
-                      <p class="p-drink__price">(720ml) ¥3,300</p>
+                      <p class="p-drink__name">日本酒 〜加茂五葉 純米酒〜</p>
+                      <p class="p-drink__price">（720ml）3,300円<br>（180ml）900円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～龍馬1865 純米酒～</p>
-                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                      <p class="p-drink__name">日本酒 〜あばの颯〜</p>
+                      <p class="p-drink__price">（720ml）3,900円<br>（180ml）1,000円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～久保田 千寿 KINRIN (きんりん)～</p>
-                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                      <p class="p-drink__name">日本酒 〜御前酒 純米 美作〜</p>
+                      <p class="p-drink__price">（720ml）4,950円<br>（180ml）1,300円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">芋焼酎 霧島 (黒霧島・白霧島)</p>
-                      <p class="p-drink__price">(720ml) ¥3,800</p>
+                      <p class="p-drink__name">日本酒 〜大正の鶴 RISING 60〜</p>
+                      <p class="p-drink__price">（720ml）5,500円<br>（180ml）1,400円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">芋焼酎～気分爽快 若鶴姫～</p>
-                      <p class="p-drink__price">(1,800ml) ¥1,415</p>
+                      <p class="p-drink__name">冷酒〜加茂五葉 生貯蔵酒〜</p>
+                      <p class="p-drink__price">（300ml）1,150円</p>
                     </div>
                   </div>
                   <div class="p-drink__list">
                     <div class="p-drink__item">
-                      <p class="p-drink__name">ビール（中瓶・プレミアム）</p>
-                      <p class="p-drink__price">¥700</p>
+                      <p class="p-drink__name">チューハイ各種<br>（レモン・ピーチ・巨峰・グレープフルーツ）</p>
+                      <p class="p-drink__price">730円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">ビール（中瓶）</p>
-                      <p class="p-drink__price">¥630</p>
+                      <p class="p-drink__name">焼酎 麦・芋 グラス</p>
+                      <p class="p-drink__price">700円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">ビール（小ジョッキ）</p>
-                      <p class="p-drink__price">¥630</p>
+                      <p class="p-drink__name">焼酎 麦・芋 ボトル（各種ございます）</p>
+                      <p class="p-drink__price">5,000円～</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">生ビール</p>
-                      <p class="p-drink__price">¥630</p>
+                      <p class="p-drink__name">ウイスキー グラス（シングル）</p>
+                      <p class="p-drink__price">750円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">生ビール（ジョッキ）</p>
-                      <p class="p-drink__price">(1,100円) ¥980</p>
+                      <p class="p-drink__name">ウイスキー グラス（ダブル）</p>
+                      <p class="p-drink__price">1,250円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～出羽桜 佳撰仙蔵～</p>
-                      <p class="p-drink__price">(1260ml) ¥3,300</p>
+                      <p class="p-drink__name">ウイスキー グラス（ハイボール）</p>
+                      <p class="p-drink__price">800円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～あらばしり～</p>
-                      <p class="p-drink__price">(720ml) ¥3,300</p>
+                      <p class="p-drink__name">ウイスキー ボトル</p>
+                      <p class="p-drink__price">8,500円～</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～龍馬1865 純米酒～</p>
-                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                      <p class="p-drink__name">ワイン各種</p>
+                      <p class="p-drink__price">4,000円～</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">日本酒～久保田 千寿 KINRIN (きんりん)～</p>
-                      <p class="p-drink__price">(720ml) ¥4,300</p>
+                      <p class="p-drink__name">グラスワイン</p>
+                      <p class="p-drink__price">710円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">芋焼酎 霧島 (黒霧島・白霧島)</p>
-                      <p class="p-drink__price">(720ml) ¥3,800</p>
+                      <p class="p-drink__name">冷酒〜加茂五葉 生貯蔵酒〜</p>
+                      <p class="p-drink__price">（300ml）1,150円</p>
                     </div>
-                    <div class="p-drink__item">
-                      <p class="p-drink__name">芋焼酎～気分爽快 若鶴姫～</p>
-                      <p class="p-drink__price">(1,800ml) ¥1,415</p>
-                    </div>
+
                   </div>
                 </div>
 
-                <div class="p-drink__category">
+                <div class="p-drink__category mt120">
                   <h4 class="p-drink__category-title">ソフトドリンク</h4>
+                  <div class="p-drink__category-line"></div>
                 </div>
                 <div class="p-drink__lists">
 
                   <div class="p-drink__list">
                     <div class="p-drink__item">
-                      <p class="p-drink__name">オレンジジュース</p>
-                      <p class="p-drink__price">¥600</p>
+                      <p class="p-drink__name">コーヒー</p>
+                      <p class="p-drink__price">600円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">牛乳</p>
-                      <p class="p-drink__price">¥600</p>
+                      <p class="p-drink__name">紅茶</p>
+                      <p class="p-drink__price">600円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">カフェオレ（アイス）</p>
-                      <p class="p-drink__price">¥800</p>
+                      <p class="p-drink__name">ミックスジュース</p>
+                      <p class="p-drink__price">800円</p>
                     </div>
                     <div class="p-drink__item">
                       <p class="p-drink__name">コーラ</p>
-                      <p class="p-drink__price">¥550</p>
+                      <p class="p-drink__price">550円</p>
                     </div>
+
                     <div class="p-drink__item">
-                      <p class="p-drink__name">ジンジャー</p>
-                      <p class="p-drink__price">¥550</p>
+                      <p class="p-drink__name">ミルク</p>
+                      <p class="p-drink__price">550円</p>
                     </div>
                     <div class="p-drink__item">
                       <p class="p-drink__name">ジンジャーエール</p>
-                      <p class="p-drink__price">¥550</p>
+                      <p class="p-drink__price">550円</p>
                     </div>
                   </div>
                   <div class="p-drink__list">
                     <div class="p-drink__item">
+                      <p class="p-drink__name">生搾りレモンスカッシュ</p>
+                      <p class="p-drink__price">750円</p>
+                    </div>
+                    <div class="p-drink__item">
                       <p class="p-drink__name">オレンジジュース</p>
-                      <p class="p-drink__price">¥600</p>
+                      <p class="p-drink__price">550円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">牛乳</p>
-                      <p class="p-drink__price">¥600</p>
+                      <p class="p-drink__name">アップルジュース</p>
+                      <p class="p-drink__price">550円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">カフェオレ（アイス）</p>
-                      <p class="p-drink__price">¥800</p>
+                      <p class="p-drink__name">トマトジュース</p>
+                      <p class="p-drink__price">550円</p>
                     </div>
                     <div class="p-drink__item">
-                      <p class="p-drink__name">コーラ</p>
-                      <p class="p-drink__price">¥550</p>
+                      <p class="p-drink__name">ウーロン茶</p>
+                      <p class="p-drink__price">450円</p>
                     </div>
-                    <div class="p-drink__item">
-                      <p class="p-drink__name">ジンジャー</p>
-                      <p class="p-drink__price">¥550</p>
-                    </div>
-                    <div class="p-drink__item">
-                      <p class="p-drink__name">ジンジャーエール</p>
-                      <p class="p-drink__price">¥550</p>
-                    </div>
+
                   </div>
                 </div>
               </div>
 
-              
+
             </div>
           </div>
 
@@ -1028,11 +1025,31 @@
 
 
           </div>
+          <div class="p-menu__bottom-wrapper">
+            <p class="p-menu__bottom-text">※10名様以下のご予約は別途ご相談くださいませ。<br>
+              ※会席・コースメニューご希望のお客様はご相談くださいませ。<br>
+              ※季節で内容は変わります。</p>
+          </div>
+          <div class="p-menu__invite">
+            <div class="p-menu__invite-top">
+              <div class="p-menu__invite-line"></div>
+              <p class="p-menu__invite-title">営業時間のご案内</p>
+              <div class="p-menu__invite-line"></div>
+            </div>
+            <div class="p-menu__invite__row mt50">
+              <p class="p-menu__invite__row-text">月～金曜日</p>
+              <p class="p-menu__invite-text">7:00〜10:00（LO.9:30）/ 11:00～15:00（LO.14:30）/ 17:00～20:30（LO.20:00）</p>
+            </div>
+            <div class="p-menu__invite__row">
+              <p class="p-menu__invite__row-text">土・日・祝日</p>
+              <p class="p-menu__invite-text">7:00～16:00（LO15:30）/17:00～20:30（LO20:00）</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    
+
 
     <?php get_template_part('includes/submit'); ?>
   </main>

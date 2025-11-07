@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.p-suite-swiper {
+  overflow-x: clip;
+  margin-top: rem(100);
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.p-suite-swiper__img {
+}
+.p-suite-swiper__img img {
+  aspect-ratio: 1300 / 970;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.slider5 .swiper-slide-prev,
+.slider5 .swiper-slide-next {
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.slider5 .swiper-slide-prev::before,
+.slider5 .swiper-slide-next::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #3d4043;
+  mix-blend-mode: multiply;
+}

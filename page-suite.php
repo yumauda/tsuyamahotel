@@ -291,10 +291,9 @@
                 </div>
               </a>
             </div>
-            <div class="p-other__flex">
-
-            </div>
+           
           </div>
+          
 
         </div>
       </div>

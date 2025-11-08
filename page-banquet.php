@@ -553,7 +553,7 @@
           </div>
           <div class="p-equipments__blocks">
             <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">設備</h4>
+              <h4 class="p-equipments__subtitle"><span>設備</span></h4>
               <dl class="p-equipments__list">
                 <div class="p-equipments__item">
                   <dt class="p-equipments__label">マイク</dt>
@@ -585,7 +585,7 @@
             </div>
 
             <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">備品</h4>
+              <h4 class="p-equipments__subtitle"><span>備品</span></h4>
               <dl class="p-equipments__list">
                 <div class="p-equipments__item">
                   <dt class="p-equipments__label">テーブル（0000×00）</dt>
@@ -614,7 +614,7 @@
               </dl>
             </div>
             <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">演出・装飾</h4>
+              <h4 class="p-equipments__subtitle"><span>演出・装飾</span></h4>
               <dl class="p-equipments__list">
                 <div class="p-equipments__item">
                   <dt class="p-equipments__label">卓上装花</dt>
@@ -640,7 +640,7 @@
               </dl>
             </div>
             <div class="p-equipments__block">
-              <h4 class="p-equipments__subtitle">駐車場</h4>
+              <h4 class="p-equipments__subtitle"><span>駐車場</span></h4>
               <dl class="p-equipments__list">
                 <div class="p-equipments__item">
                   <dt class="p-equipments__label">普通車</dt>

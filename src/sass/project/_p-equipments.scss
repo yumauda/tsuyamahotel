@@ -15,7 +15,7 @@
 }
 
 .p-equipments__blocks {
-  margin-top: rem(60);  
+  margin-top: rem(60);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: rem(40);
@@ -24,10 +24,6 @@
 }
 
 .p-equipments__subtitle {
-  font-size: rem(18);
-  font-weight: 700;
-  color: #fafafa;
-  letter-spacing: 0.1em;
   padding-top: rem(10);
   padding-bottom: rem(10);
   text-align: center;
@@ -42,6 +38,14 @@
   left: 0;
   background-color: #2e4f77;
   mix-blend-mode: multiply;
+}
+.p-equipments__subtitle span {
+  position: relative;
+  z-index: 2;
+  font-size: rem(18);
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: 0.1em;
 }
 
 .p-equipments__list {

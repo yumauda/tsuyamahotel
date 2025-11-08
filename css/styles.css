@@ -1699,11 +1699,6 @@ select::-ms-expand {
 }
 
 .p-equipments__subtitle {
-  font-size: 18px;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #fafafa;
-  letter-spacing: 0.1em;
   padding-top: 10px;
   padding-top: 0.625rem;
   padding-bottom: 10px;
@@ -1721,6 +1716,16 @@ select::-ms-expand {
   left: 0;
   background-color: #2e4f77;
   mix-blend-mode: multiply;
+}
+
+.p-equipments__subtitle span {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fafafa;
+  letter-spacing: 0.1em;
 }
 
 .p-equipments__list {

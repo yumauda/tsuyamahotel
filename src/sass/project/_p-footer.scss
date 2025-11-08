@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-footer {
-  padding-top: rem(80);
+  padding-top: rem(64);
+  @include mq(md) {
+    padding-top: rem(80);
+  }
 }
 
 .p-footer__inner {
@@ -13,9 +16,12 @@
 }
 
 .p-footer__logo {
-  max-width: rem(540);
   width: 100%;
   margin-inline: auto;
+  max-width: rem(300);
+  @include mq(md) {
+    max-width: rem(540);
+  }
 }
 
 .p-footer__home {
@@ -29,26 +35,39 @@
 }
 
 .p-footer__address-wrapper {
-  margin-top: rem(30);
-  text-align: center;
+  margin-top: rem(20);
+  @include mq(md) {
+    text-align: center;
+    margin-top: rem(30);
+  }
 }
 
 .p-footer__address {
-  font-size: rem(18);
   color: #fafafa;
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 2;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-footer__lists {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(60);
-  margin-top: rem(80);
-  padding-top: rem(80);
+  flex-wrap: wrap;
+  gap: rem(12);
+  padding-top: rem(40);
+  margin-top: rem(40);
   position: relative;
+  @include mq(md) {
+    padding-top: rem(80);
+    margin-top: rem(80);
+
+    gap: rem(60);
+  }
 }
 .p-footer__lists::before {
   position: absolute;
@@ -66,29 +85,43 @@
 
 .p-footer__link {
   color: #fafafa;
-  font-size: rem(18);
   font-weight: 400;
   letter-spacing: 0.1em;
   font-family: $second-font-family;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-footer__copy {
   text-align: center;
-  margin-top: rem(51);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(51);
+  }
 }
 .p-footer__copy small {
-  font-size: rem(12);
+  font-size: rem(10);
   color: #fafafa;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-family: $font-en;
+  @include mq(md) {
+    font-size: rem(12);
+  }
 }
 
 .p-footer__bottom {
-  margin-top: rem(50);
-  padding-top: rem(40);
-  padding-bottom: rem(40);
   position: relative;
+  padding-top: rem(24);
+  padding-bottom: rem(24);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(50);
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+  }
 }
 .p-footer__bottom::before {
   content: "";
@@ -106,6 +139,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   position: relative;
   z-index: 1;
   gap: rem(5);
@@ -117,19 +151,27 @@
 .p-footer__bottom-link {
   display: flex;
   align-items: center;
-  gap: rem(10);
   border: 1px solid #2f4f77;
-  padding: rem(15) rem(20);
+  padding: rem(10) rem(12);
   border-radius: rem(3);
+  gap: rem(6);
+  @include mq(md) {
+    gap: rem(10);
+    padding: rem(15) rem(20);
+  }
 }
 
 .p-footer__bottom-linkText {
-  font-size: rem(14);
   color: #fafafa;
   font-weight: 400;
   letter-spacing: 0.1em;
   font-family: $second-font-family;
   white-space: nowrap;
+  font-size: rem(12);
+  @include mq(md){
+    font-size: rem(14);
+    
+  }
 }
 
 .p-footer__linkIcon {

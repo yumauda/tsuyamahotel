@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .p-beautiful {
-  padding-top: rem(269);
-  padding-bottom: rem(304);
+  padding-top: rem(240);
+  padding-bottom: rem(100);
+  @include mq(md) {
+    padding-top: rem(269);
+    padding-bottom: rem(304);
+  }
 }
 
 .p-beautiful__content {
@@ -16,12 +20,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(270);
   height: auto;
   aspect-ratio: 270 / 400;
   object-fit: cover;
-  top: rem(-64);
   right: 0;
+  width: rem(100);
+  top: rem(-180);
+  @include mq(md) {
+    top: rem(-64);
+    width: rem(270);
+  }
 }
 .p-beautiful__content::after {
   position: absolute;
@@ -42,20 +50,27 @@
 }
 
 .p-beautiful__title-text {
-  font-size: rem(32);
   font-family: $second-font-family;
   font-weight: 400;
   letter-spacing: 0.2em;
   line-height: calc(60 / 32);
   color: #fafafa;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(32);
+  }
 }
 
 .p-beautiful__text {
-  margin-top: rem(50);
   color: #fafafa;
-  font-size: rem(22);
   font-family: $second-font-family;
   line-height: calc(48 / 22);
   font-weight: 400;
   letter-spacing: 0.2em;
+  font-size: rem(14);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(50);
+    font-size: rem(22);
+  }
 }

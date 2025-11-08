@@ -55,9 +55,9 @@ const slider3 = new Swiper(".slider3", {
 
 // ピックアップタブスライダー
 const sliderPickup = new Swiper(".slider-pickup", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.1,
   centeredSlides: true,
-  loop: false,
+  loop: true,
   initialSlide: 0,
   breakpoints: {
     768: {
@@ -73,9 +73,9 @@ const sliderPickup = new Swiper(".slider-pickup", {
 });
 
 const sliderStay = new Swiper(".slider-stay", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.1,
   centeredSlides: true,
-  loop: false,
+  loop: true,
   initialSlide: 0,
   breakpoints: {
     768: {
@@ -91,9 +91,9 @@ const sliderStay = new Swiper(".slider-stay", {
 });
 
 const sliderFood = new Swiper(".slider-food", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.1,
   centeredSlides: true,
-  loop: false,
+  loop: true,
   initialSlide: 0,
   breakpoints: {
     768: {
@@ -109,9 +109,9 @@ const sliderFood = new Swiper(".slider-food", {
 });
 
 const sliderRestaurant = new Swiper(".slider-restaurant", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.1,
   centeredSlides: true,
-  loop: false,
+  loop: true,
   initialSlide: 0,
   breakpoints: {
     768: {
@@ -127,9 +127,9 @@ const sliderRestaurant = new Swiper(".slider-restaurant", {
 });
 
 const sliderNews = new Swiper(".slider-news", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.1,
   centeredSlides: true,
-  loop: false,
+  loop: true,
   initialSlide: 0,
   breakpoints: {
     768: {
@@ -145,7 +145,7 @@ const sliderNews = new Swiper(".slider-news", {
 });
 
 const slider4 = new Swiper(".slider4", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.1,
   centeredSlides: true,
   loop: true,
   initialSlide: 0,
@@ -170,7 +170,7 @@ const slider4 = new Swiper(".slider4", {
   },
 });
 const slider5 = new Swiper(".slider5", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.1,
   centeredSlides: true,
   loop: true,
   initialSlide: 0,

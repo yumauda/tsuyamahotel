@@ -7,10 +7,16 @@
   margin-top: rem(100);
 }
 .pb170 {
-  padding-bottom: rem(170);
+  padding-bottom: rem(100);
+  @include mq(md) {
+    padding-bottom: rem(170);
+  }
 }
 .pt170 {
-  padding-top: rem(170);
+  padding-top: rem(100);
+  @include mq(md) {
+    padding-top: rem(170);
+  }
 }
 .p-swiper::before {
   position: absolute;
@@ -42,15 +48,17 @@
 }
 
 .p-swiper__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: relative;
   z-index: 1;
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .p-swiper__title {
-  font-size: rem(32);
+  font-size: rem(24);
   font-weight: 400;
   color: #fafafa;
   letter-spacing: 0.1em;
@@ -76,8 +84,10 @@
   display: flex;
   gap: rem(12);
   flex-wrap: wrap;
+  margin-top: rem(16);
   @include mq(md) {
     gap: rem(20);
+    margin-top: initial;
   }
 }
 
@@ -85,13 +95,17 @@
   background: transparent;
   color: #fafafa;
   opacity: 0.5;
-  padding: rem(8) rem(20);
-  font-size: rem(18);
   font-weight: 500;
   font-family: $second-font-family;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: rem(14);
+  padding: rem(4) rem(10);
+  @include mq(md) {
+    padding: rem(8) rem(20);
+    font-size: rem(18);
+  }
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);
@@ -106,17 +120,26 @@
 
 .p-swiper__content {
   position: relative;
-  margin-top: rem(82);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(82);
+  }
 }
 .p-swiper__block {
-  padding-right: rem(60);
-  padding-left: rem(60);
   border-right: 1px solid #2f4f77;
+  padding-right: rem(20);
+  padding-left: rem(20);
+  @include mq(md) {
+    padding-right: rem(60);
+    padding-left: rem(60);
+  }
 }
 
 .p-swiper__row {
-  display: flex;
-  gap: rem(69);
+  @include mq(md) {
+    display: flex;
+    gap: rem(69);
+  }
 }
 
 .p-swiper__detail {
@@ -134,13 +157,23 @@
   padding-inline: rem(30);
   color: #333333;
   letter-spacing: 0.1em;
-  font-size: rem(18);
   font-weight: 400;
   line-height: calc(40 / 18);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-swiper__time-wrapper {
-  margin-top: rem(20);
+  margin-top: rem(10);
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+  @include mq(md) {
+    display: block;
+    margin-top: rem(20);
+  }
 }
 
 .p-swiper__year {
@@ -153,37 +186,47 @@
 }
 
 .p-swiper__date {
-  font-size: rem(40);
   font-weight: 400;
   color: #fafafa;
   line-height: calc(50 / 40);
   letter-spacing: 0.05em;
   font-family: $font-en;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(40);
+  }
 }
 
 .p-swiper__img {
-  max-width: rem(160);
   width: 100%;
-  flex: 1;
+  @include mq(md) {
+    max-width: rem(160);
+    flex: 1;
+  }
 }
 .p-swiper__img img {
   aspect-ratio: 160 / 160;
   object-fit: cover;
   width: 100%;
   height: auto;
+  border-radius: rem(3);
 }
 
 .p-swiper__text {
-  margin-top: rem(30);
   letter-spacing: 0.05em;
   line-height: calc(44 / 20);
   font-weight: 400;
   color: #fafafa;
-  font-size: rem(20);
+  font-size: rem(14);
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(30);
+    font-size: rem(20);
+  }
 }
 
 .p-swiper__link-wrapper {
-  margin-top: rem(60);
+  margin-top: rem(40);
   text-align: center;
   position: relative;
   z-index: 3;

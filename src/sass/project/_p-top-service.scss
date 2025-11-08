@@ -1,15 +1,21 @@
 @use "global" as *;
 
 .p-top-service {
-  padding-top: rem(200);
-  padding-bottom: rem(250);
   background: url(../images/common/top_service_bg.jpg) no-repeat center center /
     cover;
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(200);
+    padding-bottom: rem(250);
+  }
 }
 
 .p-top-service__content {
-  display: flex;
-  gap: rem(90);
+  @include mq(md) {
+    display: flex;
+    gap: rem(90);
+  }
 }
 
 .p-top-service__detail {
@@ -26,35 +32,52 @@
 }
 
 .p-top-service__data {
-  margin-top: rem(72);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(72);
+  }
 }
 
 .p-top-service__subTitle {
   font-family: $second-font-family;
-  font-size: rem(32);
   letter-spacing: 0.1em;
   font-weight: 500;
   line-height: calc(60 / 32);
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(32);
+  }
 }
 
 .p-top-service__text {
   color: #3d4043;
-  font-size: rem(16);
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   font-weight: 400;
-  margin-top: rem(40);
+  font-size: rem(14);
+  margin-top: rem(20);
+  @include mq(md) {
+    font-size: rem(16);
+    margin-top: rem(40);
+  }
 }
 
 .p-top-service__images {
-  flex: 1;
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: initial;
+    flex: 1;
+  }
 }
 
 .p-top-service__link {
   display: block;
 }
 .p-top-service__link + .p-top-service__link {
-  margin-top: rem(20);
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }
 
 .p-top-service__img {

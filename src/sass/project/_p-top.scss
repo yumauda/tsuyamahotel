@@ -2,6 +2,8 @@
 
 .p-top {
   background: url(../images/common/top_bg.svg) no-repeat center center / cover;
-  padding-left: rem(30);
-  padding-right: rem(30);
+  @include mq(md) {
+    padding-left: rem(30);
+    padding-right: rem(30);
+  }
 }

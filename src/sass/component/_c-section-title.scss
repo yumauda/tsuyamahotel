@@ -5,26 +5,33 @@
 
 .c-section-title__ja {
   color: #333;
-  font-size: rem(70);
   font-family: $second-font-family;
   font-weight: 500;
   letter-spacing: 0.075em;
   line-height: calc(80 / 70);
   display: block;
+  font-size: rem(28);
+  @include mq(md) {
+    font-size: rem(70);
+  }
 }
 .c-section-title__ja--white {
   color: #fafafa;
 }
 
 .c-section-title__en {
-  margin-top: rem(10);
   color: #333;
-  font-size: rem(16);
   letter-spacing: 0.05em;
   line-height: calc(30 / 16);
   font-weight: 400;
   font-family: $second-font-family;
   display: block;
+  font-size: rem(14);
+  margin-top: rem(6);
+  @include mq(md) {
+    font-size: rem(16);
+    margin-top: rem(10);
+  }
 }
 
 .c-section-title__en--white {

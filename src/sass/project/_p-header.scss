@@ -2,11 +2,14 @@
 
 .p-header {
   position: fixed;
-  top: rem(55);
   left: 0;
   width: 100%;
   z-index: 1000;
   background: transparent;
+  top: rem(32);
+  @include mq(md) {
+    top: rem(55);
+  }
 }
 
 .p-header__inner {
@@ -25,7 +28,10 @@
 
 .p-header__logo-link {
   display: block;
-  width: rem(540);
+  width: rem(220);
+  @include mq(md) {
+    width: rem(540);
+  }
 }
 .p-header__logo-link img {
   width: 100%;

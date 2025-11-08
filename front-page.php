@@ -308,7 +308,7 @@
         <div class="p-top-line__bg">
           <div class="p-top-life__center">
             <p class="p-top-life__center-text">
-              塔ホテルは、企業研修、展示会、パーティーなど、<br>
+              塔ホテルは、企業研修、展示会、パーティーなど、<br class="u-desktop">
               多様なMICEイベントに対応可能です。<br>
               専任チームが企画から当日運営までをサポートいたします。
             </p>
@@ -399,7 +399,7 @@
         <div class="p-btns__detail">
           <h3 class="p-btns__btn-text">Satelite office</h3>
           <p class="p-btns__btn-sub">サテライトオフィス</p>
-          <p class="p-btns__text">快適なホテル空間で、リフレッシュしながらお仕事をしませんか？</p>
+          <p class="p-btns__text">快適なホテル空間で、<br class="u-mobile">リフレッシュしながらお仕事をしませんか？</p>
           <div class="p-btns__icon">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btns_icon.svg" alt="icon" width="40" height="20">
           </div>

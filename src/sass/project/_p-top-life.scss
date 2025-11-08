@@ -1,32 +1,46 @@
 @use "global" as *;
 
 .p-top-life {
-  padding-top: rem(250);
-  padding-bottom: rem(130);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
   overflow-x: clip;
+  @include mq(md) {
+    padding-top: rem(250);
+    padding-bottom: rem(130);
+  }
 }
 .p-top-life__content {
 }
 
 .p-top-life__top {
-  display: flex;
-  gap: rem(48);
+  @include mq(md) {
+    display: flex;
+    gap: rem(48);
+  }
 }
 
 .p-top-life__title {
 }
 
 .p-top-life__top-text {
-  font-size: rem(16);
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #fafafa;
+  font-size: rem(14);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: initial;
+    font-size: rem(16);
+  }
 }
 
 .p-top-life__middle {
-  margin-top: rem(80);
+  margin-top: rem(40);
   position: relative;
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .p-top-life__topImg {
@@ -34,10 +48,17 @@
   width: 100vw;
 }
 .p-top-life__topImg img {
+  aspect-ratio: 50 / 50;
+  object-fit: cover;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  object-position: center center;
+  @include mq(md) {
+    aspect-ratio: initial;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+  }
 }
 
 .p-top-life__middle-detail {
@@ -54,28 +75,38 @@
 }
 
 .p-top-life__middle-title {
-  font-size: rem(50);
-  color: #fafafa;
-  font-family: $second-font-family;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.p-top-life__middle-ja {
   font-size: rem(20);
   color: #fafafa;
   font-family: $second-font-family;
   font-weight: 400;
+  text-transform: uppercase;
+  @include mq(md) {
+    font-size: rem(50);
+  }
+}
+
+.p-top-life__middle-ja {
+  font-size: rem(14);
+  color: #fafafa;
+  font-family: $second-font-family;
+  font-weight: 400;
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
 
 .p-top-life__middle-text {
-  margin-top: rem(60);
+  margin-top: rem(32);
   color: #fafafa;
-  font-size: rem(16);
+  font-size: rem(14);
   letter-spacing: 0.1em;
   font-weight: 400;
   line-height: calc(36 / 16);
   position: relative;
+  @include mq(md) {
+    margin-top: rem(60);
+    font-size: rem(16);
+  }
 }
 .p-top-life__middle-text::before {
   content: "";
@@ -98,24 +129,34 @@
   object-position: center center;
 }
 .p-top-life__center {
-  padding-top: rem(80);
-  text-align: center;
+  padding-top: rem(40);
   position: relative;
   z-index: 2;
+  @include mq(md) {
+    text-align: center;
+    padding-top: rem(80);
+  }
 }
 
 .p-top-life__center-text {
   color: #fafafa;
   font-family: $second-font-family;
-  font-size: rem(32);
+  font-size: rem(14);
   letter-spacing: 0.2em;
   line-height: calc(60 / 32);
   letter-spacing: 0.2em;
+  @include mq(md) {
+    font-size: rem(32);
+  }
 }
 .p-top-life__about {
-  margin-top: rem(70);
-  padding-top: rem(70);
   position: relative;
+  margin-top: rem(40);
+  padding-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(70);
+    padding-top: rem(70);
+  }
 }
 .p-top-life__about::before {
   content: "";
@@ -130,24 +171,37 @@
     center/cover;
 }
 .p-top-life__about-top {
-  display: flex;
-  justify-content: space-between;
-  gap: rem(144);
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(144);
+  }
 }
 
 .p-top-life__about-text {
   color: #fafafa;
-  font-size: rem(18);
   line-height: calc(40 / 18);
   letter-spacing: 0.1em;
   font-weight: 400;
+  margin-top: rem(24);
+  font-size: rem(14);
+  @include mq(md) {
+    margin-top: initial;
+    font-size: rem(18);
+  }
 }
 
 .p-top-life__about-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: rem(40);
-  margin-top: rem(50);
+  margin-top: rem(24);
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: rem(24);
+  gap: rem(16);
+  @include mq(md) {
+    gap: rem(40);
+    margin-top: rem(50);
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .p-top-life__about-item {
@@ -170,12 +224,18 @@
 .p-top-life__about-detailTitle {
   color: #fafafa;
   font-family: $font-en;
-  font-size: rem(26);
   letter-spacing: 0.05em;
   font-weight: 400;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(26);
+  }
 }
 .p-top-life__about-detailTitle span {
-  font-size: rem(40);
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(40);
+  }
 }
 
 .p-top-life__about-detailText {
@@ -183,36 +243,53 @@
   font-size: rem(14);
   letter-spacing: 0.05em;
   font-weight: 400;
-  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(10);
+  }
 }
 
 .p-top-life__bottom {
+  margin-top: rem(48);
   display: flex;
-  justify-content: center;
-  gap: rem(30);
-  margin-top: rem(90);
+  flex-direction: column;
+  gap: rem(16);
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: center;
+    gap: rem(30);
+    margin-top: rem(90);
+  }
 }
 
 .p-top-life__bottom-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: rem(470);
-  height: rem(80);
   background: #2e4f77;
-  padding-left: rem(30);
-  padding-right: rem(50);
   border-radius: rem(3);
+  height: rem(60);
+  width: 100%;
+  padding-left: rem(20);
+  padding-right: rem(20);
+  @include mq(md) {
+    padding-left: rem(30);
+    padding-right: rem(50);
+    height: rem(80);
+    width: rem(470);
+  }
 }
 .p-top-life__bottom-link--black {
   background: #e8c2c2;
 }
 
 .p-top-life__bottom-text {
-  font-size: rem(20);
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #fafafa;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
 .p-top-life__bottom-text--black {
   color: #333;
@@ -228,7 +305,10 @@
 }
 .p-top-line__bg {
   position: relative;
-  padding-bottom: rem(130);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-bottom: rem(130);
+  }
 }
 .p-top-line__bg::before {
   content: "";

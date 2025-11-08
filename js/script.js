@@ -203,7 +203,6 @@ window.addEventListener("scroll", function () {
   var element = document.querySelector(".p-footer__floating");
 
   if (window.innerWidth <= 768) {
-    // 768px以下のデバイスでのみ動作
     if (scrollPosition > 700) {
       element.style.opacity = "1";
     } else {
@@ -367,7 +366,7 @@ jQuery(document).ready(function ($) {
 // ヘッダーナビゲーションのスクロール制御
 jQuery(document).ready(function ($) {
   const $headerNav = $(".p-header__nav");
-  const $mvSection = $(".p-mv");
+  const $mvSection = $(".p-mv,.p-page-mv");
 
   // MVセクションが存在しない場合は処理を終了
   if (!$mvSection.length || !$headerNav.length) {

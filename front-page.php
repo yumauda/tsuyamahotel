@@ -258,17 +258,17 @@
           </div>
         </div>
         <div class="p-top-service__images">
-          <a href="#" class="p-top-service__link">
+          <a href="<?php echo home_url('/stay'); ?>" class="p-top-service__link">
             <figure class="p-top-service__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img1.jpg" alt="ご宿泊" width="850" height="580">
             </figure>
           </a>
-          <a href="#" class="p-top-service__link">
+          <a href="<?php echo home_url('/restaurant'); ?>" class="p-top-service__link">
             <figure class="p-top-service__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img2.jpg" alt="レストラン" width="850" height="580">
             </figure>
           </a>
-          <a href="#" class="p-top-service__link">
+          <a href="<?php echo home_url('/banquet'); ?>" class="p-top-service__link">
             <figure class="p-top-service__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img3.jpg" alt="宴会・会議" width="850" height="580">
             </figure>

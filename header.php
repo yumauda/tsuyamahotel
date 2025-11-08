@@ -27,13 +27,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
-   
+
+    <!-- Google Translate -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'ja',
+                includedLanguages: 'en,ja',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <?php wp_head() ?>
 </head>
 
 <body <?php body_class(); ?>>
+    <!-- Google Translate Element (非表示) -->
+    <div id="google_translate_element" style="display: none;"></div>
+
     <header class="l-header p-header">
-        <div class="l-inner">
-           
+        <div class="p-header__inner">
+            <div class="p-header__logo">
+                <a href="<?php echo home_url('/'); ?>" class="p-header__logo-link">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/header_logo.svg" alt="津山鶴山ホテル TSUYAMA KAKUZAN HOTEL" width="265" height="60">
+                </a>
+            </div>
+            <?php if (is_front_page()): ?>
+                <div class="p-header__mice">
+                    <a href="#" class="p-header__mice-link">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mice_img.png" alt="mice" width="360" height="120">
+                    </a>
+                    <div class="p-header__mice-cross">
+                        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/cross.png" alt="cross" width="120" height="120">
+                    </div>
+                </div>
+            <?php endif; ?>
+            <div class="p-header__btns">
+                <a href="#" class="p-header__btn-link p-header__btn-link--language">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/button_1.png" alt="language" width="70" height="180">
+                </a>
+                <a href="#" class="p-header__btn-link">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/button_2.png" alt="language" width="70" height="180">
+                </a>
+                <a href="#" class="p-header__btn-link">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/button_3.png" alt="language" width="70" height="180">
+                </a>
+            </div>
+
+            <nav class="p-header__nav">
+                <ul class="p-header__menu">
+                    <li class="p-header__menu-item">
+                        <a href="#" class="p-header__menu-link">ご宿泊</a>
+                    </li>
+                    <li class="p-header__menu-item">
+                        <a href="#" class="p-header__menu-link">レストラン</a>
+                    </li>
+                    <li class="p-header__menu-item">
+                        <a href="#" class="p-header__menu-link">宴会・会議</a>
+                    </li>
+                    <li class="p-header__menu-item">
+                        <a href="#" class="p-header__menu-link">ウェディング</a>
+                    </li>
+                    <li class="p-header__menu-item">
+                        <a href="#" class="p-header__menu-link">サテライトオフィス</a>
+                    </li>
+                    <li class="p-header__menu-item">
+                        <a href="#" class="p-header__menu-link">館内のご案内</a>
+                    </li>
+                    <li class="p-header__menu-item">
+                        <a href="#" class="p-header__menu-link">交通のご案内</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="p-header__drawer p-drawer-icon">
+                <span class="p-drawer-icon__bars">
+                    <span class="p-drawer-icon__bar1"></span>
+                    <span class="p-drawer-icon__bar2"></span>
+                    <span class="p-drawer-icon__bar3"></span>
+                </span>
+            </button>
+            <div class="p-header__drawer-content p-drawer-content">
+                <div class="p-drawer-content__items">
+                    <ul class="p-drawer-content__lists">
+                        <li class="p-drawer-content__list">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                        </li>
+                        <li class="p-drawer-content__list">
+                            <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                        </li>
+                        <li class="p-drawer-content__list">
+                            <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                        </li>
+                        <li class="p-drawer-content__list">
+                            <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                        </li>
+                        <li class="p-drawer-content__list">
+                            <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                        </li>
+                    </ul>
+                    <div class="p-drawer-content__sns">
+                        <p class="p-drawer-content__sns-text">FOLLOW US</p>
+                        <a href="https://www.instagram.com/truxia.management/" class="p-drawer-content__sns-link" target="_blank">
+                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム" width="30" height="30">
+                        </a>
+                        <a href="https://x.com/truxia_mg" class="p-drawer-content__sns-link" target="_blank">
+                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/x.svg" alt="x" width="30" height="30">
+                        </a>
+                    </div>
+                    <div class="p-drawer-content__contact-wrapper">
+                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
+                            <p class="p-drawer-content__contact-text">お問い合わせ</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15.5" height="4.81">
+                                <path d="M.75 4.06h14l-2.831-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>

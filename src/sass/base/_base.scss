@@ -41,8 +41,23 @@ a {
 body {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  top: 0 !important; // Google翻訳のツールバーによるズレを防ぐ
 }
 
 body.fade-in {
   opacity: 1;
+}
+
+// Google翻訳のUIを非表示
+.goog-te-banner-frame,
+.goog-te-balloon-frame {
+  display: none !important;
+}
+
+#google_translate_element {
+  display: none !important;
+}
+
+.skiptranslate {
+  display: none !important;
 }

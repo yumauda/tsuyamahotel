@@ -53,6 +53,97 @@ const slider3 = new Swiper(".slider3", {
   },
 });
 
+// ピックアップタブスライダー
+const sliderPickup = new Swiper(".slider-pickup", {
+  slidesPerView: 1.6,
+  centeredSlides: true,
+  loop: false,
+  initialSlide: 0,
+  breakpoints: {
+    768: {
+      effect: "slide",
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  },
+  navigation: {
+    nextEl: ".slider-pickup ~ .swiper-button-next, .slider-pickup .swiper-button-next",
+    prevEl: ".slider-pickup ~ .swiper-button-prev, .slider-pickup .swiper-button-prev",
+  },
+});
+
+const sliderStay = new Swiper(".slider-stay", {
+  slidesPerView: 1.6,
+  centeredSlides: true,
+  loop: false,
+  initialSlide: 0,
+  breakpoints: {
+    768: {
+      effect: "slide",
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  },
+  navigation: {
+    nextEl: ".slider-stay ~ .swiper-button-next, .slider-stay .swiper-button-next",
+    prevEl: ".slider-stay ~ .swiper-button-prev, .slider-stay .swiper-button-prev",
+  },
+});
+
+const sliderFood = new Swiper(".slider-food", {
+  slidesPerView: 1.6,
+  centeredSlides: true,
+  loop: false,
+  initialSlide: 0,
+  breakpoints: {
+    768: {
+      effect: "slide",
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  },
+  navigation: {
+    nextEl: ".slider-food ~ .swiper-button-next, .slider-food .swiper-button-next",
+    prevEl: ".slider-food ~ .swiper-button-prev, .slider-food .swiper-button-prev",
+  },
+});
+
+const sliderRestaurant = new Swiper(".slider-restaurant", {
+  slidesPerView: 1.6,
+  centeredSlides: true,
+  loop: false,
+  initialSlide: 0,
+  breakpoints: {
+    768: {
+      effect: "slide",
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  },
+  navigation: {
+    nextEl: ".slider-restaurant ~ .swiper-button-next, .slider-restaurant .swiper-button-next",
+    prevEl: ".slider-restaurant ~ .swiper-button-prev, .slider-restaurant .swiper-button-prev",
+  },
+});
+
+const sliderNews = new Swiper(".slider-news", {
+  slidesPerView: 1.6,
+  centeredSlides: true,
+  loop: false,
+  initialSlide: 0,
+  breakpoints: {
+    768: {
+      effect: "slide",
+      slidesPerView: 3,
+      centeredSlides: false,
+    },
+  },
+  navigation: {
+    nextEl: ".slider-news ~ .swiper-button-next, .slider-news .swiper-button-next",
+    prevEl: ".slider-news ~ .swiper-button-prev, .slider-news .swiper-button-prev",
+  },
+});
+
 const slider4 = new Swiper(".slider4", {
   slidesPerView: 1.6,
   centeredSlides: true,

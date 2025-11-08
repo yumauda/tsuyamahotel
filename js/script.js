@@ -334,3 +334,114 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
+
+// ピックアップタブ切り替え
+jQuery(document).ready(function ($) {
+  $(".p-swiper__tab").on("click", function () {
+    const targetTab = $(this).data("tab");
+    const $currentContent = $(".p-swiper__content:visible");
+    const $targetContent = $(`.p-swiper__content[data-content="${targetTab}"]`);
+
+    // すでにアクティブなタブをクリックした場合は何もしない
+    if ($targetContent.is(":visible")) {
+      return;
+    }
+
+    // タブのアクティブ状態を切り替え
+    $(".p-swiper__tab").removeClass("p-swiper__tab--active");
+    $(this).addClass("p-swiper__tab--active");
+
+    // 現在のコンテンツをフェードアウト
+    if ($currentContent.length) {
+      $currentContent.fadeOut(300, function () {
+        // 新しいコンテンツを表示
+        $targetContent.fadeIn(300);
+      });
+    } else {
+      // 初回の場合は即座に表示
+      $targetContent.fadeIn(300);
+    }
+  });
+});
+
+// ヘッダーナビゲーションのスクロール制御
+jQuery(document).ready(function ($) {
+  const $headerNav = $(".p-header__nav");
+  const $mvSection = $(".p-mv");
+
+  // MVセクションが存在しない場合は処理を終了
+  if (!$mvSection.length || !$headerNav.length) {
+    return;
+  }
+
+  function checkScroll() {
+    const mvHeight = $mvSection.outerHeight();
+    const scrollTop = $(window).scrollTop();
+
+    if (scrollTop > mvHeight) {
+      $headerNav.addClass("is-active");
+    } else {
+      $headerNav.removeClass("is-active");
+    }
+  }
+
+  // 初回チェック
+  checkScroll();
+
+  // スクロールイベント
+  $(window).on("scroll", function () {
+    checkScroll();
+  });
+
+  // リサイズイベント（MVの高さが変わる可能性があるため）
+  $(window).on("resize", function () {
+    checkScroll();
+  });
+});
+
+// MICEバナーを閉じる
+jQuery(document).ready(function ($) {
+  $(".p-header__mice-cross").on("click", function (e) {
+    e.preventDefault();
+    $(".p-header__mice").hide();
+    return false;
+  });
+});
+
+// Google翻訳 言語切り替え
+jQuery(document).ready(function ($) {
+  let isEnglish = false;
+
+  $(".p-header__btn-link--language").on("click", function (e) {
+    e.preventDefault();
+
+    // Google翻訳の初期化を待つ
+    const checkTranslateReady = setInterval(function () {
+      const selectElement = $(".goog-te-combo");
+
+      if (selectElement.length > 0) {
+        clearInterval(checkTranslateReady);
+
+        // 現在の状態に応じて言語を切り替え
+        if (!isEnglish) {
+          // 日本語 → 英語
+          selectElement.val("en");
+          selectElement.trigger("change");
+          isEnglish = true;
+        } else {
+          // 英語 → 日本語
+          selectElement.val("ja");
+          selectElement.trigger("change");
+          isEnglish = false;
+        }
+      }
+    }, 100);
+
+    // 10秒後にタイムアウト
+    setTimeout(function () {
+      clearInterval(checkTranslateReady);
+    }, 10000);
+
+    return false;
+  });
+});

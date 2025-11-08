@@ -1,29 +1,244 @@
 <?php get_header(); ?>
 <main class="p-top">
-  <!-- Slider main container -->
-  <div class="swiper slider2">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">
-        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img1.jpg" alt="ご宿泊" width="850" height="580">
-      </div>
-      <div class="swiper-slide">
-        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img2.jpg" alt="レストラン" width="850" height="580">
-      </div>
-      <div class="swiper-slide">
-        <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img3.jpg" alt="宴会・会議" width="850" height="580">
+  <section class="p-mv">
+    <div class="p-mv__inner">
+      <div class="p-mv__content">
+        <div class="p-mv__title">
+          <h2 class="p-mv__title-text">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_title.svg" alt="時代を超えて、愛される、おもてなし。" width="800" height="282">
+          </h2>
+        </div>
+        <figure class="p-mv__img">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_img.jpg" alt="" width="1860" height="1080">
+        </figure>
       </div>
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
+  </section>
+  <section class="p-beautiful">
+    <div class="l-inner">
+      <div class="p-beautiful__content">
+        <div class="p-beautiful__title">
+          <h3 class="p-beautiful__title-text">
+            津山という美しい街の記憶に、<br>
+            そっと寄り添う。
+          </h3>
+        </div>
+        <p class="p-beautiful__text">ひと息つけるような、静かなもてなし。<br>
+          津山という町が大切にしてきた、“しつらえ”と“節度”。<br>
+          鶴山ホテルは、これからも丁寧に迎えます。</p>
+      </div>
+    </div>
+  </section>
+  <figure class="p-top-img">
+    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_bg_image.jpg" alt="" width="1860" height="700">
+  </figure>
+  <div class="p-swiper p-swiper--transparent pb170 pt170">
+    <div class="l-inner">
+      <div class="p-swiper__header">
+        <h3 class="c-main-title">
+          <span class="c-main-title__ja">ピックアップ</span>
+          <span class="c-main-title__en">Pickup News</span>
+        </h3>
+        <div class="p-swiper__tabs">
+          <button class="p-swiper__tab p-swiper__tab--active" data-tab="all">すべて</button>
+          <button class="p-swiper__tab" data-tab="stay">お知らせ</button>
+          <button class="p-swiper__tab" data-tab="food">イベント</button>
+          <button class="p-swiper__tab" data-tab="restaurant">レストラン</button>
+          <button class="p-swiper__tab" data-tab="news">宴会・会議</button>
+        </div>
+      </div>
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
 
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+      <div class="p-swiper__content" data-content="all">
+        <div class="swiper slider-pickup">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">宿泊プラン</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-07-31" class="p-swiper__date">7.31</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宿泊プラン" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">グランドオルゴールギャラリー オルゴールナイトミュージアム＆オルゴール作り体験付きプラン</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">料理プラン</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-06-01" class="p-swiper__date">6.1</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="料理プラン" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">【2025年ディナーバイキング】緑豊かな季節のバイキング特別コース</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">お知らせ</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-05-29" class="p-swiper__date">5.29</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="お知らせ" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">【夏のパーティープラン】のご案内</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">レストラン</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-05-15" class="p-swiper__date">5.15</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="レストラン" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">津山の美食を楽しむ特別コース</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="p-swiper__content" data-content="stay" style="display: none;">
+        <div class="swiper slider-stay">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">お知らせ</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-07-31" class="p-swiper__date">7.31</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宿泊プラン" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">グランドオルゴールギャラリー オルゴールナイトミュージアム＆オルゴール作り体験付きプラン</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="p-swiper__content" data-content="food" style="display: none;">
+        <div class="swiper slider-food">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">イベント</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-06-01" class="p-swiper__date">6.1</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="料理プラン" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">【2025年ディナーバイキング】緑豊かな季節のバイキング特別コース</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="p-swiper__content" data-content="restaurant" style="display: none;">
+        <div class="swiper slider-restaurant">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">レストラン</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-05-15" class="p-swiper__date">5.15</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="レストラン" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">津山の美食を楽しむ特別コース</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="p-swiper__content" data-content="news" style="display: none;">
+        <div class="swiper slider-news">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="p-swiper__block">
+                <div class="p-swiper__row">
+                  <div class="p-swiper__detail">
+                    <span class="p-swiper__detail-category">宴会・会議</span>
+                    <div class="p-swiper__time-wrapper">
+                      <p class="p-swiper__year">2025</p>
+                      <time datetime="2025-05-29" class="p-swiper__date">5.29</time>
+                    </div>
+                  </div>
+                  <figure class="p-swiper__img">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="お知らせ" width="160" height="160">
+                  </figure>
+                </div>
+                <p class="p-swiper__text">【夏のパーティープラン】のご案内</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="p-swiper__link-wrapper">
+        <a href="#" class="p-swiper__link">
+          <span class="p-swiper__link-text">お知らせ一覧を見る</span>
+          <div class="p-swiper__link-icon">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/news_arrow.svg" alt="arrow" width="40" height="40">
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
   <section class="p-top-service">
     <div class="l-inner">

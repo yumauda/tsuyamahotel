@@ -82,9 +82,13 @@
   margin-left: rem(33);
 }
 .p-header__btns {
-  position: fixed;
-  right: 0;
-  bottom: rem(100);
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: rem(100);
+  }
 }
 
 .p-header__btn-link {

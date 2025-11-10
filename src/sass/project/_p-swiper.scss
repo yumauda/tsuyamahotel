@@ -2,9 +2,13 @@
 
 .p-swiper {
   position: relative;
-  padding-top: rem(80);
-  padding-bottom: rem(80);
-  margin-top: rem(100);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    margin-top: rem(100);
+  }
 }
 .pb170 {
   padding-bottom: rem(100);

@@ -42,7 +42,9 @@
   top: 50%;
   left: rem(40);
   transform: translateY(-50%);
-  width: 100%;
+  @include mq(md) {
+    width: 100%;
+  }
 }
 
 .p-page-mv__title {

@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .p-equipments {
-  padding-top: rem(100);
-  padding-bottom: rem(100);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
 }
 
 .p-equipments__title {
@@ -15,19 +19,28 @@
 }
 
 .p-equipments__blocks {
-  margin-top: rem(60);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: rem(40);
+  gap: rem(16);
+  margin-top: rem(24);
+  grid-template-columns: 1fr;
+  @include mq(md) {
+    gap: rem(40);
+    grid-template-columns: 1fr 1fr;
+    margin-top: rem(60);
+  }
 }
 .p-equipments__block {
 }
 
 .p-equipments__subtitle {
-  padding-top: rem(10);
-  padding-bottom: rem(10);
+  padding-top: rem(6);
+  padding-bottom: rem(6);
   text-align: center;
   position: relative;
+  @include mq(md) {
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+  }
 }
 .p-equipments__subtitle::before {
   content: "";
@@ -41,11 +54,14 @@
 }
 .p-equipments__subtitle span {
   position: relative;
-  z-index: 2;
-  font-size: rem(18);
   font-weight: 700;
+  z-index: 2;
   color: #fafafa;
   letter-spacing: 0.1em;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-equipments__list {
@@ -57,32 +73,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: rem(15) 0;
   border-bottom: 1px solid #2f4f77;
+  padding: rem(8) 0;
+  @include mq(md) {
+    padding: rem(15) 0;
+  }
 }
 
 .p-equipments__label {
-  font-size: rem(16);
   letter-spacing: 0.1em;
   line-height: calc(36 / 16);
   color: #fafafa;
   font-weight: 700;
   padding-left: rem(10);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-equipments__value {
-  font-size: rem(16);
   color: #fafafa;
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: calc(36 / 16);
-  padding-right: rem(67);
+  font-size: rem(14);
+  padding-right: rem(10);
+  @include mq(md) {
+    padding-right: rem(67);
+    font-size: rem(16);
+  }
 }
 
 .p-equipments__info-block {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: rem(30);
+  padding: rem(16);
+  @include mq(md) {
+    padding: rem(30);
+  }
 }
 
 .p-equipments__info-title {

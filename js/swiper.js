@@ -28,9 +28,9 @@ const slider2 = new Swiper(".slider2", {
   },
 });
 const slider3 = new Swiper(".slider3", {
-  slidesPerView: 1.6,
+  slidesPerView: 1.2,
   centeredSlides: true,
-  loop: false,
+  loop: true,
   initialSlide: 0,
   breakpoints: {
     768: {
@@ -149,6 +149,7 @@ const slider4 = new Swiper(".slider4", {
   centeredSlides: true,
   loop: true,
   initialSlide: 0,
+  spaceBetween: 10,
   breakpoints: {
     768: {
       effect: "slide",

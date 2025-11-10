@@ -1,12 +1,20 @@
 @use "global" as *;
 
 .p-facilities {
-  padding-top: rem(113);
-  padding-bottom: rem(200);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(113);
+    padding-bottom: rem(200);
+  }
 }
 .p-facilities--taste {
-  padding-top: rem(180);
-  padding-bottom: rem(173);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(180);
+    padding-bottom: rem(173);
+  }
 }
 
 .p-facilities__content {
@@ -26,9 +34,14 @@
 
 .p-facilities__list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: rem(60);
-  margin-top: rem(80);
+  grid-template-columns: 1fr;
+  gap: rem(16);
+  margin-top: rem(40);
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(60);
+    margin-top: rem(80);
+  }
 }
 .p-facilities__list--benefit,
 .p-facilities__list--taste {
@@ -44,8 +57,11 @@
 .p-facilities__item--scene {
   background: #f5f2e8;
   border-radius: rem(5);
-  padding: rem(20);
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.05));
+  padding: rem(16);
+  @include mq(md) {
+    padding: rem(20);
+  }
 }
 
 .p-facilities__img {
@@ -71,7 +87,10 @@
 }
 
 .p-facilities__detail {
-  padding-top: rem(20);
+  padding-top: rem(16);
+  @include mq(md) {
+    padding-top: rem(20);
+  }
 }
 .p-facilities__list--benefit .p-facilities__detail {
   display: flex;
@@ -84,33 +103,46 @@
 }
 .p-facilities__item-title {
   font-family: $second-font-family;
-  font-size: rem(24);
+  font-size: rem(16);
   letter-spacing: 0.1em;
   font-weight: 700;
   line-height: calc(35 / 24);
   color: #fafafa;
   text-align: center;
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }
 .p-facilities__item-title--scene {
   color: #333;
 }
 
 .p-facilities__item-text {
-  margin-top: rem(15);
   color: #fafafa;
-  font-size: rem(16);
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   font-weight: 400;
+  font-size: rem(14);
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(15);
+    font-size: rem(16);
+  }
 }
 .p-facilities__item-text--scene {
   color: #3d4043;
 }
 .mt200 {
-  margin-top: rem(200);
+  margin-top: rem(64);
+  @include mq(md) {
+    margin-top: rem(200);
+  }
 }
 .pt221 {
-  padding-top: rem(221);
+  padding-top: rem(64); 
+  @include mq(md) {
+    padding-top: rem(221);
+  }
 }
 .p-facilities__btn-wrapper {
   display: flex;

@@ -22,7 +22,9 @@
   margin-left: auto;
 }
 .p-location__title-wrapper {
-  text-align: center;
+  @include mq(md) {
+    text-align: center;
+  }
 }
 
 .p-location__title {
@@ -218,7 +220,7 @@
 }
 .p-location__swiper {
   margin-top: rem(48);
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(100);
   }
 }

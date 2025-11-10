@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .p-guide {
-  padding-top: rem(87);
   position: relative;
+  padding-top: rem(64);
+  @include mq(md) {
+    padding-top: rem(87);
+  }
 }
 
 .p-guide__content {
@@ -18,9 +21,15 @@
 
 .p-guide__main {
   display: flex;
-  gap: rem(70);
+  gap: rem(24);
   position: relative;
-  margin-top: rem(80);
+  margin-top: rem(40);
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(70);
+    margin-top: rem(80);
+  }
 }
 
 .p-guide__left {
@@ -33,21 +42,32 @@
 .p-guide__floor-item {
   display: flex;
   gap: rem(10);
-  align-items: stretch;
+  flex-direction: column;
+  @include mq(md) {
+    align-items: stretch;
+    flex-direction: row;
+  }
 }
 
 .p-guide__floor-number {
-  font-size: rem(16);
   font-weight: 400;
   color: #c4ba98;
   white-space: nowrap;
-  min-width: rem(80);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   align-self: stretch;
   border-top: 1px solid #878274;
+  font-size: rem(14);
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  @include mq(md) {
+    min-width: rem(80);
+    padding-top: initial;
+    padding-bottom: initial;
+    font-size: rem(16);
+  }
 }
 
 .p-guide__floor-item:last-child .p-guide__floor-number {
@@ -57,20 +77,26 @@
 .p-guide__floor-facilities {
   flex: 1;
   background: #f5f2e8;
-  padding-top: rem(25);
-  padding-bottom: rem(25);
-  padding-left: rem(18);
-  padding-right: rem(18);
+  padding: rem(16);
+  @include mq(md) {
+    padding-top: rem(25);
+    padding-bottom: rem(25);
+    padding-left: rem(18);
+    padding-right: rem(18);
+  }
 }
 
 .p-guide__facility-name {
-  font-size: rem(18);
   line-height: calc(30 / 18);
   letter-spacing: 0.1em;
   font-weight: 700;
   text-align: center;
   font-family: $second-font-family;
   color: #333;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-guide__divider {
@@ -94,21 +120,34 @@
 .p-guide__list-item {
   display: flex;
   align-items: center;
-  gap: rem(56);
+  gap: rem(16);
+  flex-direction: column;
   padding-left: rem(15);
   padding-right: rem(15);
   border-radius: rem(3);
   transition: background-color 0.3s;
   border-bottom: 1px solid #878274;
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(56);
+  }
 }
-
+.p-guide__list-item + .p-guide__list-item {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
 .p-guide__list-floor {
   font-family: $second-font-family;
-  font-size: rem(20);
   font-weight: 700;
   color: #fafafa;
-  min-width: rem(60);
   letter-spacing: 0.1em;
+  font-size: rem(14);
+  @include mq(md) {
+    min-width: rem(60);
+    font-size: rem(20);
+  }
 }
 
 .p-guide__list-link {
@@ -119,11 +158,14 @@
   width: 100%;
   text-decoration: none;
   color: #fafafa;
-  padding-top: rem(27);
-  padding-bottom: rem(27);
-  padding-left: rem(16);
   border-bottom: 1px dotted #2f4f77;
   transition: 0.3s ease-in-out;
+  padding: rem(16);
+  @include mq(md) {
+    padding-top: rem(27);
+    padding-bottom: rem(27);
+    padding-left: rem(16);
+  }
 }
 .p-guide__list-link:last-child {
   border-bottom: initial;
@@ -132,18 +174,24 @@
   background: rgba(250, 250, 250, 0.1);
 }
 .p-guide__list-name {
-  font-size: rem(18);
+  font-size: rem(14);
   letter-spacing: 0.1em;
   font-weight: 400;
   text-decoration: underline;
   display: block;
   color: #fafafa;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-guide__list-icon {
-  width: rem(40);
+  width: rem(20);
   flex-shrink: 0;
   margin-left: auto;
+  @include mq(md) {
+    width: rem(40);
+  }
 }
 .p-guide__list-icon img {
   width: 100%;

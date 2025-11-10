@@ -341,12 +341,20 @@
 }
 .p-rooms__qa {
   display: flex;
-  gap: rem(100);
-  margin-top: rem(120);
+  flex-direction: column;
+  margin-top: rem(60);
+  gap: rem(40);
+  @include mq(md) {
+    gap: rem(100);
+    flex-direction: row;
+    margin-top: rem(120);
+  }
 }
 .p-rooms__qa-img {
-  max-width: rem(400);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(400);
+  }
 }
 .p-rooms__qa-img img {
   width: 100%;
@@ -355,10 +363,16 @@
   object-position: center center;
 }
 .p-rooms__menu {
-  margin-top: rem(60);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
 }
 .mt50 {
-  margin-top: rem(50);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
 }
 .p-rooms__kind {
   display: flex;

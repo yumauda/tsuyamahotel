@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-fee {
-  padding-bottom: rem(200);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-bottom: rem(200);
+  }
 }
 
 .p-fee__content {
@@ -14,9 +17,15 @@
 }
 
 .p-fee__table {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .p-fee__submit {
-  margin-top: rem(300);
+  margin-top: rem(64);
+  @include mq(md) {
+    margin-top: rem(300);
+  }
 }

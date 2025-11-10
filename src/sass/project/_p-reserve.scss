@@ -1,191 +1,239 @@
 @use "../global/" as *;
 
-.p-reserve {
-  &__agreement {
+.p-reserve__agreement {
+  margin-top: rem(24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(12);
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  position: relative;
+  @include mq(md) {
     margin-top: rem(50);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: rem(20);
     padding-top: rem(30);
     padding-bottom: rem(30);
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #2e4f77;
-      mix-blend-mode: multiply;
-    }
   }
+}
 
-  &__checkbox-label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-    z-index: 2;
+.p-reserve__agreement::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2e4f77;
+  mix-blend-mode: multiply;
+}
+
+.p-reserve__checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  z-index: 2;
+}
+
+.p-reserve__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.p-reserve__checkbox + .p-reserve__checkbox-text::before {
+  content: "";
+  display: inline-block;
+  width: rem(20);
+  height: rem(20);
+  margin-right: rem(15);
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: rem(5);
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  @include mq(md) {
+    width: rem(30);
+    height: rem(30);
+    margin-right: rem(15);
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: rem(5);
   }
+}
 
-  &__checkbox {
-    // デフォルトのチェックボックスを隠す
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+.p-reserve__checkbox:checked + .p-reserve__checkbox-text::before {
+  background-color: #333;
+}
 
-    // カスタムチェックボックス（未チェック時）
-    & + .p-reserve__checkbox-text::before {
-      content: "";
-      display: inline-block;
-      width: rem(30);
-      height: rem(30);
-      margin-right: rem(15);
-      border: 2px solid #fff;
-      background-color: #fff;
-      border-radius: rem(5);
-      vertical-align: middle;
-      transition: all 0.3s ease;
-      flex-shrink: 0;
-    }
+.p-reserve__checkbox:checked + .p-reserve__checkbox-text::after {
+  content: "";
+  position: absolute;
+  left: rem(10);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: rem(10);
+  height: rem(18);
+  border: solid #07182b;
+  border-width: 0 3px 3px 0;
+}
 
-    // チェック時のスタイル
-    &:checked + .p-reserve__checkbox-text::before {
-      background-color: #333;
-    }
+.p-reserve__checkbox:hover + .p-reserve__checkbox-text::before {
+  border-color: #e8c2c2;
+}
 
-    // チェックマーク
-    &:checked + .p-reserve__checkbox-text::after {
-      content: "";
-      position: absolute;
-      left: rem(10);
-      top: 50%;
-      transform: translateY(-50%) rotate(45deg);
-      width: rem(10);
-      height: rem(18);
-      border: solid #07182b;
-      border-width: 0 3px 3px 0;
-    }
+.p-reserve__checkbox:focus + .p-reserve__checkbox-text::before {
+  box-shadow: 0 0 0 3px rgba(232, 194, 194, 0.3);
+}
 
-    // ホバー時
-    &:hover + .p-reserve__checkbox-text::before {
-      border-color: #e8c2c2;
-    }
-
-    // フォーカス時
-    &:focus + .p-reserve__checkbox-text::before {
-      box-shadow: 0 0 0 3px rgba(232, 194, 194, 0.3);
-    }
-  }
-
-  &__checkbox-text {
+.p-reserve__checkbox-text {
+  line-height: calc(40 / 20);
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: rem(24);
+  font-size: rem(14);
+  @include mq(md) {
     font-size: rem(20);
-    line-height: calc(40 / 20);
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    color: #fafafa;
-    display: flex;
-    align-items: center;
-    position: relative;
     padding-left: rem(45);
   }
+}
 
-  &__button-wrapper {
+.p-reserve__button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: rem(24);
+  margin-top: rem(24);
+  @include mq(md) {
     margin-top: rem(40);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
     gap: rem(48);
   }
+}
 
-  &__tel-wrapper {
+.p-reserve__tel-wrapper {
+  margin-top: rem(20);
+  @include mq(md) {
     margin-top: rem(30);
   }
+}
 
-  &__tel {
+.p-reserve__tel {
+  font-size: rem(20);
+  font-family: $font-en;
+  font-weight: 400;
+  color: #fafafa;
+  letter-spacing: 0.05em;
+  @include mq(md) {
     font-size: rem(46);
-    font-family: $font-en;
-    font-weight: 400;
-    color: #fafafa;
-    letter-spacing: 0.05em;
   }
+}
 
-  &__small {
+.p-reserve__small {
+  font-size: rem(14);
+  font-weight: 400;
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  line-height: calc(40 / 18);
+  text-align: left;
+  @include mq(md) {
     font-size: rem(18);
-    font-weight: 400;
-    color: #fafafa;
-    letter-spacing: 0.1em;
-    line-height: calc(40 / 18);
-    text-align: left;
   }
+}
 
-  &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.p-reserve__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8c2c2;
+  border-radius: rem(10);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: rem(80);
+  gap: rem(12);
+  width: 100%;
+  @include mq(md) {
     width: rem(800);
     height: rem(150);
     gap: rem(20);
-    background: #e8c2c2;
-    border-radius: rem(10);
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    &:hover:not(:disabled) {
-      background-color: #006666;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    &:disabled {
-      background-color: #ccc;
-      cursor: not-allowed;
-      opacity: 0.6;
-    }
   }
+}
 
-  &__button-icon {
+.p-reserve__button:hover:not(:disabled) {
+  background-color: #006666;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.p-reserve__button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.p-reserve__button-icon {
+  width: rem(20);
+  display: inline-block;
+  @include mq(md) {
     width: rem(35);
-    display: inline-block;
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      object-position: center center;
-    }
   }
-  &__button-text {
+}
+
+.p-reserve__button-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-reserve__button-text {
+  font-size: rem(16);
+  color: #07182b;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: $second-font-family;
+  @include mq(md) {
     font-size: rem(30);
-    color: #07182b;
-    letter-spacing: 0.1em;
-    font-weight: 500;
-    font-family: $second-font-family;
   }
 }
 .p-reserve__title-wrapper {
   text-align: center;
 }
 .p-reserve__title {
-  font-size: rem(32);
   font-weight: 400;
   color: #fafafa;
   letter-spacing: 0.2em;
   font-family: $second-font-family;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(32);
+  }
 }
 .p-reserve__text-wrapper {
-  margin-top: rem(100);
+  margin-top: rem(24);
   text-align: center;
+  @include mq(md) {
+    margin-top: rem(100);
+  }
 }
 .p-reserve__text {
-  font-size: rem(18);
+  font-size: rem(14);
   line-height: calc(40 / 18);
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #fafafa;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 .p-reserve__link {
   font-weight: 700;
@@ -193,7 +241,10 @@
 }
 .p-reserve__button-wrapper--service {
   display: block;
-  margin-top: rem(101);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(101);
+  }
 }
 .p-reserve__button--service {
   max-width: rem(1000);
@@ -202,7 +253,10 @@
 }
 .p-reserve__tel-wrapper--service {
   text-align: center;
-  margin-top: rem(50);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
 }
 .p-reserve__small--service {
   text-align: center;

@@ -21,7 +21,7 @@
       <div class="l-inner">
         <div class="p-location__content">
           <div class="p-location__title-wrapper">
-            <h3 class="p-location__title">ビジネスを支える、もうひとつの拠点</h3>
+            <h3 class="p-location__title">ビジネスを支える、<br class="u-mobile">もうひとつの拠点</h3>
           </div>
           <div class="p-location__text-wrapper">
             <p class="p-location__text">津山鶴山ホテルでは、落ち着いた空間と充実した設備を備えたサテライトオフィスをご用意しています。<br>

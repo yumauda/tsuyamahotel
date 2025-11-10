@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .p-parking {
-  padding-top: rem(100);
-  padding-bottom: rem(200);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(200);
+  }
 }
 
 .p-parking__content {
@@ -12,11 +16,16 @@
 }
 
 .p-parking__row {
-  margin-top: rem(60);
   display: grid;
-  grid-template-columns: rem(650) rem(490);
-  gap: rem(60);
+  grid-template-columns: 1fr;
   direction: rtl;
+  margin-top: rem(24);
+  gap: rem(16);
+  @include mq(md) {
+    margin-top: rem(60);
+    grid-template-columns: rem(650) rem(490);
+    gap: rem(60);
+  }
 }
 
 .p-parking__img {
@@ -29,20 +38,27 @@
 }
 
 .p-parking__text {
-  font-size: rem(18);
+  font-size: rem(14);
   line-height: calc(40 / 18);
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #fafafa;
   direction: initial;
-
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-parking__grid {
-  margin-top: rem(120);
+  margin-top: rem(24);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(80);
+  grid-template-columns: 1fr;
+  gap: rem(16);
+  @include mq(md) {
+    margin-top: rem(120);
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(80);
+  }
 }
 
 .p-parking__item {
@@ -54,18 +70,24 @@
 }
 
 .p-parking__subTitle {
-  font-size: rem(22);
+  font-size: rem(16);
   font-weight: 400;
   color: #fafafa;
   line-height: calc(31 / 22);
   letter-spacing: 0.1em;
   font-family: $second-font-family;
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .p-parking__subText {
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 400;
   color: #fafafa;
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   margin-top: rem(10);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }

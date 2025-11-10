@@ -80,25 +80,25 @@
             <nav class="p-header__nav">
                 <ul class="p-header__menu">
                     <li class="p-header__menu-item">
-                        <a href="#" class="p-header__menu-link">ご宿泊</a>
+                        <a href="<?php echo home_url('/stay'); ?>" class="p-header__menu-link">ご宿泊</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="#" class="p-header__menu-link">レストラン</a>
+                        <a href="<?php echo home_url('/restaurant'); ?>" class="p-header__menu-link">レストラン</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="#" class="p-header__menu-link">宴会・会議</a>
+                        <a href="<?php echo home_url('/banquet'); ?>" class="p-header__menu-link">宴会・会議</a>
                     </li>
                     <li class="p-header__menu-item">
                         <a href="#" class="p-header__menu-link">ウェディング</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="#" class="p-header__menu-link">サテライトオフィス</a>
+                        <a href="<?php echo home_url('/office'); ?>" class="p-header__menu-link">サテライトオフィス</a>
                     </li>
                     <li class="p-header__menu-item">
                         <a href="#" class="p-header__menu-link">館内のご案内</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="#" class="p-header__menu-link">交通のご案内</a>
+                        <a href="<?php echo home_url('/access'); ?>" class="p-header__menu-link">交通のご案内</a>
                     </li>
                 </ul>
             </nav>
@@ -128,23 +128,8 @@
                             <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
                         </li>
                     </ul>
-                    <div class="p-drawer-content__sns">
-                        <p class="p-drawer-content__sns-text">FOLLOW US</p>
-                        <a href="https://www.instagram.com/truxia.management/" class="p-drawer-content__sns-link" target="_blank">
-                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.svg" alt="インスタグラム" width="30" height="30">
-                        </a>
-                        <a href="https://x.com/truxia_mg" class="p-drawer-content__sns-link" target="_blank">
-                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/x.svg" alt="x" width="30" height="30">
-                        </a>
-                    </div>
-                    <div class="p-drawer-content__contact-wrapper">
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" class="p-drawer-content__contact">
-                            <p class="p-drawer-content__contact-text">お問い合わせ</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15.5" height="4.81">
-                                <path d="M.75 4.06h14l-2.831-3" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" />
-                            </svg>
-                        </a>
-                    </div>
+                    
+                    
                 </div>
             </div>
         </div>

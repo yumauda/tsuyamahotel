@@ -1,11 +1,19 @@
 @use "global" as *;
 
 .p-location {
-  padding-top: rem(90);
-  padding-bottom: rem(100);
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(90);
+    padding-bottom: rem(100);
+  }
 }
+
 .p-location--suite {
-  padding-top: rem(100);
+  padding-top: rem(48);
+  @include mq(md) {
+    padding-top: rem(100);
+  }
 }
 
 .p-location__content {
@@ -21,11 +29,15 @@
   letter-spacing: 0.2em;
   font-weight: 400;
   color: #fafafa;
-  font-size: rem(32);
+  font-size: rem(20);
   font-family: $second-font-family;
+  @include mq(md) {
+    font-size: rem(32);
+  }
 }
 
 .p-location__text-wrapper {
+  margin-top: rem(16);
   @include mq(md) {
     margin-top: rem(40);
     text-align: center;
@@ -33,32 +45,46 @@
 }
 
 .p-location__text {
-  font-size: rem(18);
+  font-size: rem(14);
   line-height: calc(36 / 18);
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #fafafa;
   font-family: $second-font-family;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-location__map {
-  margin-top: rem(100);
+  margin-top: rem(48);
+  @include mq(md) {
+    margin-top: rem(100);
+  }
 }
 .p-location__map iframe {
-  aspect-ratio: 1400 / 600;
   object-fit: cover;
   width: 100%;
   height: auto;
+  aspect-ratio: 355 / 355;
+  @include mq(md) {
+    aspect-ratio: 1400 / 600;
+  }
 }
 .p-location__hotel {
-  margin-top: rem(100);
   display: grid;
-  grid-template-columns: rem(600) 1fr;
-  gap: rem(60);
   align-items: center;
   max-width: rem(1200);
   width: 100%;
   margin-inline: auto;
+  margin-top: rem(48);
+  grid-template-columns: 1fr;
+  gap: rem(32);
+  @include mq(md) {
+    gap: rem(60);
+    margin-top: rem(100);
+    grid-template-columns: rem(600) 1fr;
+  }
 }
 
 .p-location__img {
@@ -77,58 +103,87 @@
 
 .p-location__hotel-title {
   color: #fafafa;
-  font-size: rem(22);
   letter-spacing: 0.1em;
   font-weight: 400;
   font-family: $second-font-family;
   line-height: calc(31 / 22);
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 
 .p-location__dl {
-  margin-top: rem(30);
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(30);
+  }
 }
 
 .p-location__row {
-  display: flex;
-  padding-top: rem(20);
-  padding-bottom: rem(20);
   border-top: 1px solid #2f4f77;
-  gap: rem(64);
+  display: flex;
+  gap: rem(12);
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(64);
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+  }
 }
 
 .p-location__row:last-child {
   border-bottom: 1px solid #2f4f77;
 }
 .p-location__dt {
-  width: rem(80);
-  font-size: rem(16);
   font-weight: 700;
   color: #fafafa;
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+    width: rem(80);
+  }
 }
 
 .p-location__dd {
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 400;
   color: #fafafa;
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-location__trafic {
-  margin-top: rem(100);
-  max-width: rem(1200);
   width: 100%;
   margin-inline: auto;
+  margin-top: rem(48);
+  @include mq(md) {
+    max-width: rem(1200);
+    margin-top: rem(100);
+  }
 }
 
 .p-location__trafic-row {
   display: flex;
-  gap: rem(100);
-  padding-top: rem(30);
+  flex-direction: column;
+  gap: rem(16);
   border-top: 1px solid #2f4f77;
-  padding-bottom: rem(30);
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(100);
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+  }
 }
 .p-location__trafic-row:last-child {
   border-bottom: none;
@@ -136,25 +191,34 @@
 }
 
 .p-location__trafic-dt {
-  width: rem(220);
-  font-size: rem(22);
   font-weight: 400;
   color: #fafafa;
   line-height: calc(31 / 22);
   letter-spacing: 0.1em;
   font-family: $second-font-family;
+  font-size: rem(16);
+  @include mq(md) {
+    width: rem(220);
+    font-size: rem(22);
+  }
 }
 
 .p-location__trafic-dd {
 }
 
 .p-location__trafic-text {
-  font-size: rem(16);
   font-weight: 700;
   color: #fafafa;
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-location__swiper {
-  margin-top: rem(100);
+  margin-top: rem(48);
+  @include mq(md){
+    margin-top: rem(100);
+  }
 }

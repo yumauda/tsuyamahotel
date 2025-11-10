@@ -139,7 +139,7 @@
   }
 }
 .pt221 {
-  padding-top: rem(64); 
+  padding-top: rem(64);
   @include mq(md) {
     padding-top: rem(221);
   }
@@ -171,13 +171,19 @@
   object-position: center center;
 }
 .p-facilities__top-textWrapper {
-  margin-top: rem(66);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(66);
+  }
 }
 
 .p-facilities__top-text {
-  font-size: rem(18);
+  font-size: rem(14);
   color: #fafafa;
   letter-spacing: 0.1em;
   line-height: calc(40 / 18);
   font-weight: 400;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }

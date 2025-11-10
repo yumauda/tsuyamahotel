@@ -1133,16 +1133,29 @@ select::-ms-expand {
 }
 
 .p-desert__menu {
-  margin-top: 80px;
-  margin-top: 5rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 80px;
-  gap: 5rem;
+  gap: 40px;
+  gap: 2.5rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .p-desert__menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5rem;
+  }
 }
 
 .p-desert__images {
@@ -1155,15 +1168,21 @@ select::-ms-expand {
           flex-direction: column;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  max-width: 370px;
-  max-width: 23.125rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-desert__images {
+    max-width: 23.125rem;
+  }
 }
 
 .p-desert__img {
-  max-width: 370px;
-  max-width: 23.125rem;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .p-desert__img {
+    max-width: 23.125rem;
+  }
 }
 
 .p-desert__img img {
@@ -1197,20 +1216,28 @@ select::-ms-expand {
 
 .p-desert__category-title {
   font-family: "Noto Serif JP", serif;
-  font-size: 24px;
-  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.4166666667;
   color: #fafafa;
   letter-spacing: 0.1em;
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
-  padding-bottom: 30px;
-  padding-bottom: 1.875rem;
   border-bottom: 1px dotted #2f4f77;
   border-top: 1px solid #2f4f77;
-  padding-top: 30px;
-  padding-top: 1.875rem;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-desert__category-title {
+    margin-bottom: 1.875rem;
+    padding-bottom: 1.875rem;
+    font-size: 1.5rem;
+    padding-top: 1.875rem;
+  }
 }
 
 .p-desert__list {
@@ -1236,8 +1263,8 @@ select::-ms-expand {
 }
 
 .p-desert__name {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 2.2222222222;
   color: #fafafa;
@@ -1245,11 +1272,18 @@ select::-ms-expand {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-right: 20px;
-  padding-right: 1.25rem;
-  padding-left: 20px;
-  padding-left: 1.25rem;
   position: relative;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-desert__name {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    font-size: 1.125rem;
+  }
 }
 
 .p-desert__name::before {
@@ -1266,13 +1300,18 @@ select::-ms-expand {
 }
 
 .p-desert__price {
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1;
   color: #fafafa;
   white-space: nowrap;
   letter-spacing: 0.1em;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-desert__price {
+    font-size: 1.125rem;
+  }
 }
 
 .p-drawer-icon {
@@ -1596,8 +1635,13 @@ select::-ms-expand {
 }
 
 .p-drink {
-  padding-top: 200px;
-  padding-top: 12.5rem;
+  padding-top: 64px;
+  padding-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .p-drink {
+    padding-top: 12.5rem;
+  }
 }
 
 .p-drink__content {
@@ -1608,13 +1652,18 @@ select::-ms-expand {
 }
 
 .p-drink__menu {
-  margin-top: 80px;
-  margin-top: 5rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-drink__menu {
+    margin-top: 5rem;
+  }
 }
 
 .p-drink__category {
-  margin-top: 60px;
-  margin-top: 3.75rem;
+  margin-top: 32px;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1624,6 +1673,11 @@ select::-ms-expand {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .p-drink__category {
+    margin-top: 3.75rem;
+  }
+}
 
 .p-drink__category:first-child {
   margin-top: 0;
@@ -1631,8 +1685,6 @@ select::-ms-expand {
 
 .p-drink__category-title {
   font-family: "Noto Serif JP", serif;
-  font-size: 22px;
-  font-size: 1.375rem;
   font-weight: 400;
   line-height: 2.7272727273;
   color: #fafafa;
@@ -1641,6 +1693,13 @@ select::-ms-expand {
       -ms-flex: 1;
           flex: 1;
   white-space: nowrap;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-drink__category-title {
+    font-size: 1.375rem;
+  }
 }
 
 .p-drink__category-line {
@@ -1650,12 +1709,19 @@ select::-ms-expand {
 }
 
 .p-drink__lists {
-  margin-top: 30px;
-  margin-top: 1.875rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 120px;
-  gap: 7.5rem;
+  gap: 24px;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-drink__lists {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1.875rem;
+    gap: 7.5rem;
+  }
 }
 
 .p-drink__list {
@@ -1686,8 +1752,6 @@ select::-ms-expand {
 }
 
 .p-drink__name {
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 400;
   line-height: 2.2222222222;
   color: #fafafa;
@@ -1695,11 +1759,20 @@ select::-ms-expand {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-right: 20px;
-  padding-right: 1.25rem;
-  padding-left: 20px;
-  padding-left: 1.25rem;
   position: relative;
+  padding-right: 12px;
+  padding-right: 0.75rem;
+  padding-left: 12px;
+  padding-left: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-drink__name {
+    padding-right: 1.25rem;
+    font-size: 1.125rem;
+    padding-left: 1.25rem;
+  }
 }
 
 .p-drink__name::before {
@@ -1715,8 +1788,6 @@ select::-ms-expand {
 }
 
 .p-drink__price {
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1;
   color: #fafafa;
@@ -1724,6 +1795,13 @@ select::-ms-expand {
   letter-spacing: 0.1em;
   line-height: 2.2222222222;
   text-align: right;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-drink__price {
+    font-size: 1.125rem;
+  }
 }
 
 .p-equipments {
@@ -2203,17 +2281,27 @@ select::-ms-expand {
 }
 
 .p-facilities__top-textWrapper {
-  margin-top: 66px;
-  margin-top: 4.125rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-facilities__top-textWrapper {
+    margin-top: 4.125rem;
+  }
 }
 
 .p-facilities__top-text {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   color: #fafafa;
   letter-spacing: 0.1em;
   line-height: 2.2222222222;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .p-facilities__top-text {
+    font-size: 1.125rem;
+  }
 }
 
 .p-fee {
@@ -4375,6 +4463,18 @@ body.modal-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .p-meal__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .p-meal--lunch .p-menu__price,
@@ -4387,13 +4487,20 @@ body.modal-open {
 
 .p-meal__date {
   text-align: center;
-  margin-top: 60px;
-  margin-top: 3.75rem;
-  padding-top: 25px;
-  padding-top: 1.5625rem;
-  padding-bottom: 25px;
-  padding-bottom: 1.5625rem;
   position: relative;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-meal__date {
+    padding-top: 1.5625rem;
+    padding-bottom: 1.5625rem;
+    margin-top: 3.75rem;
+  }
 }
 
 .p-meal__date::before {
@@ -4409,18 +4516,21 @@ body.modal-open {
 
 .p-meal__date-text {
   font-family: "Noto Serif JP", serif;
-  font-size: 24px;
-  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.4583333333;
   color: #f5f2e8;
   position: relative;
   z-index: 2;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-meal__date-text {
+    font-size: 1.5rem;
+  }
 }
 
 .p-meal__menu {
-  margin-top: 80px;
-  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4429,17 +4539,37 @@ body.modal-open {
           align-items: center;
   gap: 20px;
   gap: 1.25rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .p-meal__menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 5rem;
+  }
 }
 
 .p-meal__menu-text {
   font-family: "Noto Serif JP", serif;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 2.7272727273;
   color: #cdd2d8;
   letter-spacing: 0.1em;
   white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .p-meal__menu-text {
+    font-size: 1.375rem;
+  }
 }
 
 .p-meal__menu-line {
@@ -4452,10 +4582,24 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 80px;
-  gap: 5rem;
-  margin-top: 40px;
-  margin-top: 2.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  gap: 16px;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-meal__big {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 5rem;
+    margin-top: 2.5rem;
+  }
 }
 
 .p-meal__big-img {
@@ -4482,8 +4626,8 @@ body.modal-open {
 }
 
 .p-menu__detail {
-  margin-top: 43px;
-  margin-top: 2.6875rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4493,6 +4637,19 @@ body.modal-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__detail {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 2.6875rem;
+  }
 }
 
 .p-menu__detail-top {
@@ -4520,12 +4677,17 @@ body.modal-open {
 
 .p-menu__title {
   font-family: "Noto Serif JP", serif;
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 0.1em;
   font-weight: 700;
   line-height: 1.425;
   color: #333;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__title {
+    font-size: 2.5rem;
+  }
 }
 
 .p-menu__tag {
@@ -4540,13 +4702,19 @@ body.modal-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 16px;
-  font-size: 1rem;
   letter-spacing: 0.1em;
   font-weight: 700;
-  padding: 5px 20px;
-  padding: 0.3125rem 1.25rem;
   background: #9b0030;
+  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__tag {
+    font-size: 1rem;
+    padding: 0.3125rem 1.25rem;
+  }
 }
 
 .p-menu__price-wrapper {
@@ -4562,21 +4730,31 @@ body.modal-open {
 
 .p-menu__price {
   font-family: "Libre Baskerville", serif;
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 2;
   color: #9b0030;
 }
+@media screen and (min-width: 768px) {
+  .p-menu__price {
+    font-size: 1.875rem;
+  }
+}
 
 .p-menu__price span {
   font-family: "Noto Serif JP", serif;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.45;
   color: #9b0030;
   letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__price span {
+    font-size: 1.25rem;
+  }
 }
 
 .p-menu__tax {
@@ -4590,37 +4768,59 @@ body.modal-open {
 }
 
 .p-menu__text-wrapper {
-  margin-top: 30px;
-  margin-top: 1.875rem;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__text-wrapper {
+    margin-top: 1.875rem;
+  }
 }
 
 .p-menu__text {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   color: #333;
   letter-spacing: 0.1em;
   line-height: 2.2222222222;
   font-weight: 400;
 }
+@media screen and (min-width: 768px) {
+  .p-menu__text {
+    font-size: 1.125rem;
+  }
+}
 
 .p-menu__text-small {
   margin-top: 10px;
   margin-top: 0.625rem;
-  font-size: 16px;
-  font-size: 1rem;
   line-height: 2.25;
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #333;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__text-small {
+    font-size: 1rem;
+  }
 }
 
 .p-menu__double {
   display: grid;
-  margin-top: 100px;
-  margin-top: 6.25rem;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
-  gap: 6.25rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  gap: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__double {
+    margin-top: 6.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6.25rem;
+  }
 }
 
 .p-menu__double-img img {
@@ -4638,20 +4838,37 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
-  margin-top: 1.875rem;
-  gap: 20px;
-  gap: 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  gap: 12px;
+  gap: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__double-detail {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    margin-top: 1.875rem;
+    gap: 1.25rem;
+  }
 }
 
 .p-menu__double-title {
   font-family: "Noto Serif JP", serif;
-  font-size: 40px;
-  font-size: 2.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   letter-spacing: 0.1em;
   font-weight: 700;
   line-height: 1.425;
   color: #333;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__double-title {
+    font-size: 2.5rem;
+  }
 }
 
 .p-menu__double-tag {
@@ -4666,13 +4883,19 @@ body.modal-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 0.1em;
   font-weight: 700;
-  padding: 5px 20px;
-  padding: 0.3125rem 1.25rem;
+  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
   background: #9b0030;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__double-tag {
+    font-size: 1rem;
+    padding: 0.3125rem 1.25rem;
+  }
 }
 
 .p-menu__price-wrapper--right {
@@ -4682,11 +4905,18 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   margin-top: 10px;
   margin-top: 0.625rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__price-wrapper--right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .p-menu__text-right {
@@ -4702,28 +4932,48 @@ body.modal-open {
 
 .p-menu__triple {
   display: grid;
-  margin-top: 100px;
-  margin-top: 6.25rem;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 65px;
-  gap: 4.0625rem;
   margin-top: 40px;
   margin-top: 2.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__triple {
+    margin-top: 6.25rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4.0625rem;
+  }
 }
 
 .p-menu__triple .p-menu__double-title {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__triple .p-menu__double-title {
+    font-size: 1.75rem;
+  }
 }
 
 .p-menu__triple .p-menu__double-detail {
-  margin-top: 20px;
-  margin-top: 1.25rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__triple .p-menu__double-detail {
+    margin-top: 1.25rem;
+  }
 }
 
 .p-menu__triple .p-menu__text-wrapper {
-  margin-top: 10px;
-  margin-top: 0.625rem;
+  margin-top: 6px;
+  margin-top: 0.375rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__triple .p-menu__text-wrapper {
+    margin-top: 0.625rem;
+  }
 }
 
 .p-menu__triple .p-menu__text-right {
@@ -4740,8 +4990,13 @@ body.modal-open {
 }
 
 .mt80 {
-  margin-top: 80px;
-  margin-top: 5rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .mt80 {
+    margin-top: 5rem;
+  }
 }
 
 .mt0 {
@@ -4750,18 +5005,33 @@ body.modal-open {
 }
 
 .mt120 {
-  margin-top: 120px;
-  margin-top: 7.5rem;
+  margin-top: 64px;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .mt120 {
+    margin-top: 7.5rem;
+  }
 }
 
 .mt100 {
-  margin-top: 100px;
-  margin-top: 6.25rem;
+  margin-top: 64px;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .mt100 {
+    margin-top: 6.25rem;
+  }
 }
 
 .p-menu__table {
-  margin-top: 80px;
-  margin-top: 5rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__table {
+    margin-top: 5rem;
+  }
 }
 
 .p-menu__table-row {
@@ -4774,9 +5044,16 @@ body.modal-open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 20px;
-  padding: 1.875rem 1.25rem;
   border-bottom: 1px solid #2f4f77;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__table-row {
+    padding: 1.875rem 1.25rem;
+  }
 }
 
 .p-menu__table-row:first-child {
@@ -4791,12 +5068,17 @@ body.modal-open {
 
 .p-menu__table-title {
   font-family: "Noto Serif JP", serif;
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.4166666667;
   color: #fafafa;
   letter-spacing: 0.1em;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__table-title {
+    font-size: 1.75rem;
+  }
 }
 
 .p-menu__table-desc {
@@ -4817,20 +5099,38 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 8px;
   gap: 0.5rem;
-  margin-left: 30px;
-  margin-left: 1.875rem;
+  margin-left: 20px;
+  margin-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__table-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 1.875rem;
+  }
 }
 
 .p-menu__table-price {
   font-family: "Libre Baskerville", serif;
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 1;
   color: #fafafa;
   white-space: nowrap;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__table-price {
+    font-size: 1.75rem;
+  }
 }
 
 .p-menu__table-price span {
@@ -4854,13 +5154,23 @@ body.modal-open {
 }
 
 .p-menu__double-title--small {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__double-title--small {
+    font-size: 1.875rem;
+  }
 }
 
 .p-menu__bottom-wrapper {
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__bottom-wrapper {
+    margin-top: 3.125rem;
+  }
 }
 
 .p-menu__bottom-text {
@@ -4873,18 +5183,22 @@ body.modal-open {
 }
 
 .p-menu__invite {
-  margin-top: 150px;
-  margin-top: 9.375rem;
   border-left: 1px solid #f5f2e8;
   border-right: 1px solid #f5f2e8;
   border-bottom: 1px solid #f5f2e8;
-  padding-bottom: 60px;
-  padding-bottom: 3.75rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
+  padding-bottom: 32px;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__invite {
+    margin-top: 9.375rem;
+    padding-bottom: 3.75rem;
+  }
 }
 
 .p-menu__invite-title {
-  font-size: 24px;
-  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.4583333333;
   font-family: "Noto Serif JP", serif;
@@ -4892,6 +5206,13 @@ body.modal-open {
   letter-spacing: 0.1em;
   text-align: center;
   white-space: nowrap;
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__invite-title {
+    font-size: 1.5rem;
+  }
 }
 
 .p-menu__invite-top {
@@ -4904,8 +5225,21 @@ body.modal-open {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px;
-  gap: 1.25rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  gap: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__invite-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1.25rem;
+  }
 }
 
 .p-menu__invite-line {
@@ -4915,8 +5249,13 @@ body.modal-open {
 }
 
 .mt50 {
-  margin-top: 50px;
-  margin-top: 3.125rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .mt50 {
+    margin-top: 3.125rem;
+  }
 }
 
 .p-menu__invite__row {
@@ -4926,45 +5265,75 @@ body.modal-open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 120px;
-  gap: 7.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1100px;
   max-width: 68.75rem;
   width: 100%;
   margin-inline: auto;
-  padding-left: 30px;
-  padding-left: 1.875rem;
-  padding-right: 30px;
-  padding-right: 1.875rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+  gap: 12px;
+  gap: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__invite__row {
+    gap: 7.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
 }
 
 .p-menu__invite__row:last-child {
-  padding-top: 20px;
-  padding-top: 1.25rem;
-  margin-top: 20px;
-  margin-top: 1.25rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  margin-top: 12px;
+  margin-top: 0.75rem;
   border-top: 1px solid #2f4f77;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__invite__row:last-child {
+    padding-top: 1.25rem;
+    margin-top: 1.25rem;
+  }
 }
 
 .p-menu__invite__row-text {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 2.2222222222;
   color: #fafafa;
   letter-spacing: 0.1em;
-  width: 130px;
-  width: 8.125rem;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__invite__row-text {
+    width: 8.125rem;
+    font-size: 1.125rem;
+  }
 }
 
 .p-menu__invite-text {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 2.2222222222;
   color: #fafafa;
   letter-spacing: 0.1em;
   text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .p-menu__invite-text {
+    font-size: 1.125rem;
+  }
 }
 
 .p-mv {
@@ -6244,10 +6613,13 @@ body.modal-open {
   letter-spacing: 0.1em;
   line-height: 1.4666666667;
   color: #333;
+  text-align: center;
   font-family: "Noto Serif JP", serif;
 }
 @media screen and (min-width: 768px) {
   .p-rooms__name {
+    text-align: left;
+    text-align: initial;
     font-size: 1.875rem;
   }
 }

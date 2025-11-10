@@ -16,10 +16,15 @@
 }
 
 .p-menu__detail {
-  margin-top: rem(43);
+  margin-top: rem(24);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+    margin-top: rem(43);
+  }
 }
 
 .p-menu__detail-top {
@@ -36,11 +41,14 @@
 
 .p-menu__title {
   font-family: $second-font-family;
-  font-size: rem(40);
+  font-size: rem(20);
   letter-spacing: 0.1em;
   font-weight: 700;
   line-height: calc(57 / 40);
   color: #333;
+  @include mq(md) {
+    font-size: rem(40);
+  }
 }
 
 .p-menu__tag {
@@ -49,11 +57,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: rem(16);
   letter-spacing: 0.1em;
   font-weight: 700;
-  padding: rem(5) rem(20);
   background: #9b0030;
+  padding: rem(5) rem(10);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+    padding: rem(5) rem(20);
+  }
 }
 
 .p-menu__price-wrapper {
@@ -64,18 +76,24 @@
 
 .p-menu__price {
   font-family: $font-en;
-  font-size: rem(30);
+  font-size: rem(20);
   font-weight: 400;
   line-height: 2;
   color: #9b0030;
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }
 .p-menu__price span {
   font-family: $second-font-family;
-  font-size: rem(20);
+  font-size: rem(14);
   font-weight: 700;
   line-height: calc(29 / 20);
   color: #9b0030;
   letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
 .p-menu__tax {
   font-family: $second-font-family;
@@ -87,31 +105,45 @@
 }
 
 .p-menu__text-wrapper {
-  margin-top: rem(30);
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(30);
+  }
 }
 
 .p-menu__text {
-  font-size: rem(18);
+  font-size: rem(14);
   color: #333;
   letter-spacing: 0.1em;
   line-height: calc(40 / 18);
   font-weight: 400;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-menu__text-small {
   margin-top: rem(10);
-  font-size: rem(16);
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #333;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-menu__double {
   display: grid;
-  margin-top: rem(100);
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(100);
+  margin-top: rem(40);
+  grid-template-columns: 1fr;
+  gap: rem(40);
+  @include mq(md) {
+    margin-top: rem(100);
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(100);
+  }
 }
 
 .p-menu__double-item {
@@ -129,17 +161,26 @@
 .p-menu__double-detail {
   display: flex;
   align-items: center;
-  margin-top: rem(30);
-  gap: rem(20);
+  justify-content: center;
+  margin-top: rem(20);
+  gap: rem(12);
+  @include mq(md) {
+    justify-content: initial;
+    margin-top: rem(30);
+    gap: rem(20);
+  }
 }
 
 .p-menu__double-title {
   font-family: $second-font-family;
-  font-size: rem(40);
+  font-size: rem(20);
   letter-spacing: 0.1em;
   font-weight: 700;
   line-height: calc(57 / 40);
   color: #333;
+  @include mq(md) {
+    font-size: rem(40);
+  }
 }
 
 .p-menu__double-tag {
@@ -148,18 +189,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: rem(16);
+  font-size: rem(14);
   letter-spacing: 0.1em;
   font-weight: 700;
-  padding: rem(5) rem(20);
+  padding: rem(5) rem(10);
   background: #9b0030;
+  @include mq(md) {
+    font-size: rem(16);
+    padding: rem(5) rem(20);
+  }
 }
 
 .p-menu__price-wrapper--right {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   margin-top: rem(10);
+  justify-content: center;
+  @include mq(md) {
+    justify-content: flex-end;
+  }
 }
 
 .p-menu__text-wrapper--right {
@@ -175,20 +223,33 @@
 }
 .p-menu__triple {
   display: grid;
-  margin-top: rem(100);
-  grid-template-columns: repeat(3, 1fr);
-  gap: rem(65);
   margin-top: rem(40);
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(16);
+  @include mq(md) {
+    margin-top: rem(100);
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(65);
+  }
 }
 
 .p-menu__triple .p-menu__double-title {
-  font-size: rem(28);
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(28);
+  }
 }
 .p-menu__triple .p-menu__double-detail {
-  margin-top: rem(20);
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }
 .p-menu__triple .p-menu__text-wrapper {
-  margin-top: rem(10);
+  margin-top: rem(6);
+  @include mq(md) {
+    margin-top: rem(10);
+  }
 }
 .p-menu__triple .p-menu__text-right {
   margin-top: initial;
@@ -201,27 +262,43 @@
 }
 
 .mt80 {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 .mt0 {
   margin-top: initial;
 }
 .mt120 {
-  margin-top: rem(120);
+  margin-top: rem(64);
+  @include mq(md) {
+    margin-top: rem(120);
+  }
 }
 .mt100 {
-  margin-top: rem(100);
+  margin-top: rem(64);
+  @include mq(md) {
+    margin-top: rem(100);
+  }
 }
 .p-menu__table {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .p-menu__table-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: rem(30) rem(20);
   border-bottom: 1px solid #2f4f77;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  @include mq(md) {
+    padding: rem(30) rem(20);
+  }
 }
 
 .p-menu__table-row:first-child {
@@ -234,11 +311,14 @@
 
 .p-menu__table-title {
   font-family: $second-font-family;
-  font-size: rem(28);
+  font-size: rem(20);
   font-weight: 700;
   line-height: calc(34 / 24);
   color: #fafafa;
   letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: rem(28);
+  }
 }
 
 .p-menu__table-desc {
@@ -253,17 +333,25 @@
 .p-menu__table-right {
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: rem(8);
-  margin-left: rem(30);
+  margin-left: rem(20);
+  @include mq(md) {
+    flex-direction: row;
+    margin-left: rem(30);
+  }
 }
 
 .p-menu__table-price {
   font-family: $font-en;
-  font-size: rem(28);
+  font-size: rem(20);
   font-weight: 700;
   line-height: 1;
   color: #fafafa;
   white-space: nowrap;
+  @include mq(md) {
+    font-size: rem(28);
+  }
 }
 
 .p-menu__table-price span {
@@ -284,11 +372,17 @@
   white-space: nowrap;
 }
 .p-menu__double-title--small {
-  font-size: rem(30);
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }
 
 .p-menu__bottom-wrapper {
-  margin-top: rem(50);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
 }
 
 .p-menu__bottom-text {
@@ -299,15 +393,18 @@
   color: #fafafa;
 }
 .p-menu__invite {
-  margin-top: rem(150);
   border-left: 1px solid #f5f2e8;
   border-right: 1px solid #f5f2e8;
   border-bottom: 1px solid #f5f2e8;
-  padding-bottom: rem(60);
+  margin-top: rem(40);
+  padding-bottom: rem(32);
+  @include mq(md) {
+    margin-top: rem(150);
+    padding-bottom: rem(60);
+  }
 }
 
 .p-menu__invite-title {
-  font-size: rem(24);
   font-weight: 700;
   line-height: calc(35 / 24);
   font-family: $second-font-family;
@@ -315,12 +412,21 @@
   letter-spacing: 0.1em;
   text-align: center;
   white-space: nowrap;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }
 .p-menu__invite-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(20);
+  flex-direction: column;
+  gap: rem(12);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(20);
+  }
 }
 
 .p-menu__invite-line {
@@ -330,37 +436,57 @@
 }
 
 .mt50 {
-  margin-top: rem(50);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
 }
 .p-menu__invite__row {
   display: flex;
   align-items: center;
-  gap: rem(120);
+  flex-direction: column;
   max-width: rem(1100);
   width: 100%;
   margin-inline: auto;
-  padding-left: rem(30);
-  padding-right: rem(30);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  gap: rem(12);
+  @include mq(md) {
+    gap: rem(120);
+    flex-direction: row;
+    padding-left: rem(30);
+    padding-right: rem(30);
+  }
 }
 .p-menu__invite__row:last-child {
-  padding-top: rem(20);
-  margin-top: rem(20);
+  padding-top: rem(12);
+  margin-top: rem(12);
   border-top: 1px solid #2f4f77;
+  @include mq(md) {
+    padding-top: rem(20);
+    margin-top: rem(20);
+  }
 }
 .p-menu__invite__row-text {
-  font-size: rem(18);
+  font-size: rem(14);
   font-weight: 400;
   line-height: calc(40 / 18);
   color: #fafafa;
   letter-spacing: 0.1em;
-  width: rem(130);
+  @include mq(md) {
+    width: rem(130);
+    font-size: rem(18);
+  }
 }
 
 .p-menu__invite-text {
-  font-size: rem(18);
+  font-size: rem(14);
   font-weight: 400;
   line-height: calc(40 / 18);
   color: #fafafa;
   letter-spacing: 0.1em;
   text-align: left;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }

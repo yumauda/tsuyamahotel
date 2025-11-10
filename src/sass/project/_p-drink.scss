@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-drink {
-  padding-top: rem(200);
+  padding-top: rem(64);
+  @include mq(md) {
+    padding-top: rem(200);
+  }
 }
 
 .p-drink__content {
@@ -11,7 +14,10 @@
 }
 
 .p-drink__menu {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .p-drink__columns {
@@ -21,10 +27,13 @@
 }
 
 .p-drink__category {
-  margin-top: rem(60);
+  margin-top: rem(32);
   display: flex;
   gap: rem(10);
   align-items: center;
+  @include mq(md) {
+    margin-top: rem(60);
+  }
 }
 
 .p-drink__category:first-child {
@@ -33,13 +42,16 @@
 
 .p-drink__category-title {
   font-family: $second-font-family;
-  font-size: rem(22);
   font-weight: 400;
   line-height: calc(60 / 22);
   color: #fafafa;
   letter-spacing: 0.1em;
   flex: 1;
   white-space: nowrap;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 .p-drink__category-line {
   height: 1px;
@@ -47,10 +59,15 @@
   background: #2f4f77;
 }
 .p-drink__lists {
-  margin-top: rem(30);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(120);
+  gap: rem(24);
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: rem(24);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: rem(30);
+    gap: rem(120);
+  }
 }
 .p-drink__list {
   display: flex;
@@ -67,15 +84,21 @@
 }
 
 .p-drink__name {
-  font-size: rem(18);
   font-weight: 400;
   line-height: calc(40 / 18);
   color: #fafafa;
   letter-spacing: 0.1em;
   flex: 1;
-  padding-right: rem(20);
-  padding-left: rem(20);
   position: relative;
+  padding-right: rem(12);
+  padding-left: rem(12);
+  font-size: rem(14);
+
+  @include mq(md) {
+    padding-right: rem(20);
+    font-size: rem(18);
+    padding-left: rem(20);
+  }
 }
 
 .p-drink__name::before {
@@ -88,7 +111,6 @@
   background: #fafafa;
 }
 .p-drink__price {
-  font-size: rem(18);
   font-weight: 400;
   line-height: 1;
   color: #fafafa;
@@ -96,4 +118,8 @@
   letter-spacing: 0.1em;
   line-height: calc(40 / 18);
   text-align: right;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }

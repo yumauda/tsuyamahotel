@@ -160,8 +160,10 @@
   letter-spacing: 0.1em;
   line-height: calc(44 / 30);
   color: #333;
+  text-align: center;
   font-family: $second-font-family;
   @include mq(md) {
+    text-align: initial;
     font-size: rem(30);
   }
 }

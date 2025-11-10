@@ -21,7 +21,7 @@
       <div class="l-inner">
         <div class="p-location__content">
           <div class="p-location__title-wrapper">
-            <h3 class="p-location__title">四季を味わう、至福のひととき</h3>
+            <h3 class="p-location__title">四季を味わう、<br class="u-mobile">至福のひととき</h3>
           </div>
           <div class="p-location__text-wrapper">
             <p class="p-location__text">津山鶴山ホテルのレストランでは、旬の食材と地元の恵みを活かした料理を、心を込めてご提供しております。<br>

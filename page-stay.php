@@ -21,7 +21,7 @@
       <div class="l-inner">
         <div class="p-location__content">
           <div class="p-location__title-wrapper">
-            <h3 class="p-location__title">心を満たす滞在を、ここ津山にて</h3>
+            <h3 class="p-location__title">心を満たす滞在を、<br class="u-mobile">ここ津山にて</h3>
           </div>
           <div class="p-location__text-wrapper">
             <p class="p-location__text">静かに流れる吉井川と、歴史ある津山の街並み。<br>
@@ -381,7 +381,7 @@
               <p class="p-amenity__text">「エコスタイル」へのご協力として、「清掃不要の取り組み」を連泊のお客様にご案内し、社会の一員としての役割として実施しております。<br>
                 自然に優しい取り組みの一つとして、清掃不要の取り組みを行い、リネン類（シーツやデュペカバー、枕カバーなど）のクリーニングを抑える事で、水資源の削減、CO2排出の削減に繋がる「地球環境のために、私たちにできること」を考えた、津山鶴山ホテルの具体的な取り組みの一環です。</p>
               <div class="p-amenity__eco">
-                <p class="p-amenity__eco-text">エコスタイルの場合、入室はいたしません。</p>
+                <p class="p-amenity__eco-text">エコスタイルの場合、<br class='u-mobile'>入室はいたしません。</p>
                 <ul class="p-amenity__eco-lists">
                   <li class="p-amenity__eco-item">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/eco_icon_1.jpg" alt="金属の未来をリファイン" width="431" height="38">
@@ -408,7 +408,7 @@
         <div class="p-heart__content">
           <div class="p-heart__detail">
             <h3 class="p-heart__title">
-              <span class="p-heart__title-ja">和の品格と、心を込めたおもてなし</span>
+              <span class="p-heart__title-ja">和の品格と、<br class='u-mobile'>心を込めたおもてなし</span>
             </h3>
             <p class="p-heart__text">街中にありながらも自然を身近に感じられる立地は、まさに隠れ家のような安らぎの空間。落ち着いた内装は、まるで自宅にいるかのような安心感と心地よさを演出し、ここで過ごす時間を、より豊かで特別なひとときへと導きます。<br>
               また、私たちスタッフ一人ひとりが、「心地よい癒しと温かなひとときをお届けしたい」という想いを胸に、真心を込めてお迎えいたします。心に寄り添うおもてなしこそが、ここでの滞在をより特別なものにいたします。</p>

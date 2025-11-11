@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-amenity {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .p-amenity__content {
@@ -9,16 +12,26 @@
   width: 100%;
   margin-left: auto;
   display: flex;
-  gap: rem(100);
+  flex-direction: column;
+  gap: rem(40);
+  @include mq(md) {
+    gap: rem(100);
+    flex-direction: row;
+  }
 }
 .p-amenity__content + .p-amenity__content {
-  margin-top: rem(200);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(200);
+  }
 }
 
 .p-amenity__img {
   flex-shrink: 0;
-  max-width: rem(400);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(400);
+  }
 }
 .p-amenity__img img {
   aspect-ratio: 400 / 600;
@@ -31,39 +44,56 @@
 }
 
 .p-amenity__title {
-  font-size: rem(34);
+  font-size: rem(20);
   font-weight: 700;
   color: #333;
   letter-spacing: 0.1em;
   line-height: calc(60 / 34);
   font-family: $second-font-family;
+  @include mq(md) {
+    font-size: rem(34);
+  }
 }
 
 .p-amenity__text {
-  margin-top: rem(40);
-  font-size: rem(16);
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   color: #333;
   font-weight: 400;
+  font-size: rem(14);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+    font-size: rem(16);
+  }
 }
 
 .p-amenity__lists {
-  margin-top: rem(40);
   display: flex;
-  gap: rem(40);
-  padding: rem(60) rem(50);
   background: rgba($color: #fafafa, $alpha: 0.5);
   border-radius: rem(5);
+  padding: rem(16);
+  margin-top: rem(24);
+  gap: rem(16);
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(40);
+    padding: rem(60) rem(50);
+    margin-top: rem(40);
+  }
 }
 
 .p-amenity__list {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding-left: rem(25);
   border-left: 1px solid #2e4f77;
   height: fit-content;
+  padding-left: rem(16);
+  @include mq(md) {
+    padding-left: rem(25);
+  }
 }
 
 .p-amenity__item {
@@ -83,28 +113,42 @@
   margin-bottom: rem(10);
 }
 .p-amenity__eco {
-  margin-top: rem(40);
   background: rgba($color: #fafafa, $alpha: 0.5);
   border-radius: rem(5);
-  padding: rem(60) rem(50);
+  margin-top: rem(24);
+  padding: rem(16);
+  @include mq(md) {
+    margin-top: rem(40);
+    padding: rem(60) rem(50);
+  }
 }
 
 .p-amenity__eco-text {
   color: #333;
-  font-size: rem(24);
+  font-size: rem(18);
   line-height: calc(35 / 24);
   letter-spacing: 0.1em;
   font-weight: 700;
   font-family: $second-font-family;
   text-align: center;
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }
 
 .p-amenity__eco-lists {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: rem(10);
-  margin-top: rem(30);
-  margin-bottom: rem(30);
+  margin-top: rem(24);
+  margin-bottom: rem(24);
+  @include mq(md){
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(10);
+    margin-top: rem(30);
+    margin-bottom: rem(30);
+    
+  }
 }
 
 .p-amenity__eco-item {

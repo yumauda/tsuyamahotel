@@ -1,12 +1,16 @@
 @use "global" as *;
 
 .p-information {
-  padding-top: rem(166);
-  padding-bottom: rem(200);
   background: url(../images/common/information_bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(166);
+    padding-bottom: rem(200);
+  }
 }
 
 .p-information__title-wrapper {
@@ -21,19 +25,29 @@
 
 .p-information__cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: rem(40);
-  row-gap: rem(55);
-  margin-top: rem(45);
+  grid-template-columns: 1fr;
+  margin-top: rem(40);
+  gap: rem(24);
+  @include mq(md) {
+    margin-top: rem(45);
+    column-gap: rem(40);
+    row-gap: rem(55);
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .p-information__card {
   border-radius: rem(8);
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.05));
   background: #fafafa;
-  padding-left: rem(35);
-  padding-right: rem(35);
-  padding-bottom: rem(40);
+  padding-bottom: rem(16);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  @include mq(md) {
+    padding-left: rem(35);
+    padding-right: rem(35);
+    padding-bottom: rem(40);
+  }
 }
 
 .p-information__card-header {
@@ -46,23 +60,34 @@
 }
 
 .p-information__card-title {
-  font-size: rem(24);
   font-weight: 700;
   color: #fafafa;
   letter-spacing: 0.1em;
   font-family: $second-font-family;
   line-height: calc(35 / 24);
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(24);
+  }
 }
 
 .p-information__card-body {
   display: flex;
-  gap: rem(20);
-  margin-top: rem(25);
+  flex-direction: column;
+  gap: rem(16);
+  margin-top: rem(16);
+  @include mq(md) {
+    gap: rem(20);
+    flex-direction: row;
+    margin-top: rem(25);
+  }
 }
 
 .p-information__card-img {
-  max-width: rem(260);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(260);
+  }
 }
 .p-information__card-img img {
   aspect-ratio: 260 / 180;
@@ -72,16 +97,24 @@
 }
 
 .p-information__card-text {
-  max-width: rem(230);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(230);
+  }
 }
 .p-information__card-text p {
-  font-size: rem(16);
+  font-size: rem(14);
   line-height: calc(30 / 16);
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #333;
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-information__amenity {
-  margin-top: rem(200);
+  margin-top: rem(48);
+  @include mq(md) {
+    margin-top: rem(200);
+  }
 }

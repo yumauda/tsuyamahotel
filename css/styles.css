@@ -3455,6 +3455,11 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-header__logo-link {
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-header__logo-link {
     width: 33.75rem;
   }
 }
@@ -6061,6 +6066,11 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .p-qa__ttl {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-qa__ttl {
     font-size: 1.625rem;
   }
 }
@@ -6074,6 +6084,11 @@ body.modal-open {
   line-height: 1.6666666667;
 }
 @media screen and (min-width: 768px) {
+  .p-qa__ttl--service {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1540px) {
   .p-qa__ttl--service {
     font-size: 1.5rem;
   }
@@ -6092,25 +6107,43 @@ body.modal-open {
 
 .p-qa__inner {
   overflow: hidden;
-  padding-right: 24px;
-  padding-right: 1.5rem;
-  padding-left: 24px;
-  padding-left: 1.5rem;
+  padding-left: 16px;
+  padding-left: 1rem;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__inner {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 .p-qa__wrap {
+  border-top: 1px dotted #c7c1b0;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__wrap {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+.p-qa__wrap--service {
   padding-top: 20px;
   padding-top: 1.25rem;
   padding-bottom: 20px;
   padding-bottom: 1.25rem;
-  border-top: 1px dotted #c7c1b0;
 }
-
-.p-qa__wrap--service {
-  padding-top: 30px;
-  padding-top: 1.875rem;
-  padding-bottom: 30px;
-  padding-bottom: 1.875rem;
+@media screen and (min-width: 768px) {
+  .p-qa__wrap--service {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
 }
 
 .p-qa__txt {
@@ -9196,6 +9229,11 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .c-main-title__main {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .c-main-title__main {
     font-size: 3.75rem;
   }
 }
@@ -9227,6 +9265,11 @@ body.modal-open {
   font-size: 1.5rem;
 }
 @media screen and (min-width: 768px) {
+  .c-main-title__ja {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1540px) {
   .c-main-title__ja {
     font-size: 3.75rem;
   }
@@ -9267,6 +9310,11 @@ body.modal-open {
   font-size: 1.75rem;
 }
 @media screen and (min-width: 768px) {
+  .c-section-title__ja {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1540px) {
   .c-section-title__ja {
     font-size: 4.375rem;
   }

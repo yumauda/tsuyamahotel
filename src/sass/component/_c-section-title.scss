@@ -12,6 +12,9 @@
   display: block;
   font-size: rem(28);
   @include mq(md) {
+    font-size: rem(48);
+  }
+  @include mq(lg) {
     font-size: rem(70);
   }
 }

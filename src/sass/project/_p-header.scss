@@ -30,6 +30,9 @@
   display: block;
   width: rem(220);
   @include mq(md) {
+    width: rem(320);
+  }
+  @include mq(lg) {
     width: rem(540);
   }
 }

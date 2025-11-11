@@ -5,7 +5,6 @@
     <section class="p-stay-mv">
       <div class="p-stay-mv__inner">
         <div class="p-stay-mv__content">
-
           <div class="p-stay-mv__detail">
             <h2 class="c-main-title">
               <span class="c-main-title__ja">スイートルーム A-type</span>

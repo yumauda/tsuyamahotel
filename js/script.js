@@ -366,7 +366,7 @@ jQuery(document).ready(function ($) {
 // ヘッダーナビゲーションのスクロール制御
 jQuery(document).ready(function ($) {
   const $headerNav = $(".p-header__nav");
-  const $mvSection = $(".p-mv,.p-page-mv");
+  const $mvSection = $(".p-mv,.p-page-mv,.p-stay-mv");
 
   // MVセクションが存在しない場合は処理を終了
   if (!$mvSection.length || !$headerNav.length) {

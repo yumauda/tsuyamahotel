@@ -395,7 +395,7 @@
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/btns_img1.jpg" alt="ウェディング" width="930" height="600">
         </figure>
       </a>
-      <a href="#" class="p-btns__btn">
+      <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-btns__btn">
         <div class="p-btns__detail">
           <h3 class="p-btns__btn-text">Satelite office</h3>
           <p class="p-btns__btn-sub">サテライトオフィス</p>
@@ -421,25 +421,42 @@
           </div>
         </div>
         <div class="p-top-news__list">
-          <a href="#" class="p-top-news__item">
-            <time class="p-top-news__date" datetime="2023-00-00">2023.00.00</time>
-            <span class="p-top-news__category">お知らせ</span>
-            <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
-          </a>
-          <a href="#" class="p-top-news__item">
-            <time class="p-top-news__date" datetime="2023-00-00">2023.00.00</time>
-            <span class="p-top-news__category">レストラン</span>
-            <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
-          </a>
-          <a href="#" class="p-top-news__item">
-            <time class="p-top-news__date" datetime="2023-00-00">2023.00.00</time>
-            <span class="p-top-news__category">宿泊プラン</span>
-            <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
-          </a>
+          <?php
+          // パラメータの設定
+          $args = array(
+            'posts_per_page' => 3,
+            'post_status' => 'publish',
+            'post_type' => 'post',
+            'orderby' => 'date',
+          );
+
+          // WP_Queryインスタンスの生成
+          $my_query = new WP_Query($args);
+          if ($my_query->have_posts()) :
+            while ($my_query->have_posts()) : $my_query->the_post();
+          ?>
+
+              <a href="<?php the_permalink(); ?>" class="p-top-news__item">
+                <time class="p-top-news__date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <?php
+                $categories = get_the_category();
+                if (!empty($categories)) {
+                  echo '<span class="p-top-news__category">' . esc_html($categories[0]->name) . '</span>';
+                }
+                ?>
+                <p class="p-top-news__text"><?php the_title(); ?></p>
+              </a>
+
+          <?php
+            endwhile;
+          endif;
+          wp_reset_postdata();
+          ?>
+
         </div>
       </div>
       <div class="p-top-news__link-wrapper">
-        <a href="#" class="p-top-news__link">
+        <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-top-news__link">
           <span class="p-top-news__link-text">お知らせ一覧を見る</span>
           <div class="p-top-news__link-icon">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/news_arrow.svg" alt="arrow" width="40" height="40">

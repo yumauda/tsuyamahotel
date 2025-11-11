@@ -46,7 +46,7 @@
       <div class="l-inner">
         <div class="p-location__content">
           <div class="p-location__title-wrapper">
-            <h3 class="p-location__title">アジアンテイストのスイートルームで過ごす、<br>
+            <h3 class="p-location__title">アジアンテイストの<br class='u-mobile'>スイートルームで過ごす、<br>
               いつもと違う最高のひと時。</h3>
           </div>
           <div class="p-location__text-wrapper">
@@ -54,42 +54,45 @@
               ダミーテキストダミーテキストダミーテキストダミーテキスト<br>
               ダミーテキストダミーテキストダミーテキストダミー</p>
           </div>
-          <table class="p-suite__spec-table">
-            <tbody>
-              <tr>
-                <td class="p-suite__spec-header">
-                  <p>広さ</p>
-                </td>
-                <td class="p-suite__spec-header border-left">
-                  <p>ベッドサイズ</p>
-                </td>
-                <td class="p-suite__spec-header border-left">
-                  <p>ご利用人数</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-suite__spec-data">49.5㎡</td>
-                <td class="p-suite__spec-data border-left">W140×H200</td>
-                <td class="p-suite__spec-data border-left">1名〜2名</td>
-              </tr>
-              <tr>
-                <td class="p-suite__spec-header">
-                  <p>禁煙ルームの有無</p>
-                </td>
-                <td class="p-suite__spec-header border-left">
-                  <p>コネクトルーム</p>
-                </td>
-                <td class="p-suite__spec-header border-left">
-                  <p>インターネット対応</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="p-suite__spec-data">〇</td>
-                <td class="p-suite__spec-data border-left">×</td>
-                <td class="p-suite__spec-data border-left">無線LAN（無料）</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="p-suite__spec">
+
+            <table class="p-suite__spec-table">
+              <tbody>
+                <tr>
+                  <td class="p-suite__spec-header">
+                    <p>広さ</p>
+                  </td>
+                  <td class="p-suite__spec-header border-left">
+                    <p>ベッドサイズ</p>
+                  </td>
+                  <td class="p-suite__spec-header border-left">
+                    <p>ご利用人数</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-suite__spec-data">49.5㎡</td>
+                  <td class="p-suite__spec-data border-left">W140×H200</td>
+                  <td class="p-suite__spec-data border-left">1名〜2名</td>
+                </tr>
+                <tr>
+                  <td class="p-suite__spec-header">
+                    <p>禁煙ルームの有無</p>
+                  </td>
+                  <td class="p-suite__spec-header border-left">
+                    <p>コネクトルーム</p>
+                  </td>
+                  <td class="p-suite__spec-header border-left">
+                    <p>インターネット対応</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-suite__spec-data">〇</td>
+                  <td class="p-suite__spec-data border-left">×</td>
+                  <td class="p-suite__spec-data border-left">無線LAN（無料）</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
 
 

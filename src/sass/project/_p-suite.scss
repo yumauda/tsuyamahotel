@@ -1,12 +1,17 @@
 @use "global" as *;
 
+.p-suite__spec {
+  margin-top: rem(40);
+  overflow-x: auto;
+  @include mq(md) {
+    margin-top: rem(87);
+  }
+}
+
 .p-suite__spec-table {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #2f4f77;
-  @include mq(md) {
-    margin-top: rem(87);
-  }
 }
 
 .p-suite__spec-header {
@@ -18,12 +23,15 @@
 }
 .p-suite__spec-header p {
   position: relative;
-  font-size: rem(18);
+  font-size: rem(14);
   letter-spacing: 0.1em;
   line-height: calc(40 / 18);
   font-weight: 400;
   color: #fafafa;
   z-index: 3;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 .p-suite__spec-header::before {
   content: "";
@@ -40,12 +48,15 @@
 .p-suite__spec-data {
   padding-top: rem(8);
   padding-bottom: rem(8);
-  font-size: rem(18);
+  font-size: rem(14);
   line-height: calc(40 / 18);
   font-weight: 400;
   color: #fafafa;
   text-align: center;
   letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 .border-left {
   border-left: 1px solid #2f4f77;

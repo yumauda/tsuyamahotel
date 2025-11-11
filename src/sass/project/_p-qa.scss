@@ -32,11 +32,16 @@
   color: #fff;
   cursor: pointer;
   position: relative;
-  padding-top: rem(24);
-  padding-bottom: rem(24);
-  padding-left: rem(24);
   list-style: none;
   border-top: 1px solid #c7c1b0;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  padding-left: rem(16);
+  @include mq(md) {
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+    padding-left: rem(24);
+  }
 }
 .p-qa__content:last-child .p-qa__summary {
   border-bottom: 1px solid #c7c1b0;
@@ -131,7 +136,7 @@
   padding-left: rem(17);
   font-size: rem(14);
   padding-right: rem(16);
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(16);
   }
 }
@@ -147,7 +152,10 @@
   position: absolute;
 }
 .p-qa__txt + .p-qa__txt {
-  margin-top: rem(20);
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: rem(20);
+  }
 }
 .p-qa__service-lists {
   display: grid;
@@ -158,13 +166,16 @@
 }
 
 .p-qa__service-list-text {
-  font-size: rem(16);
   font-weight: 400;
   color: #fafafa;
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   position: relative;
   padding-left: rem(20);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-qa__service-list-text::before {
   position: absolute;

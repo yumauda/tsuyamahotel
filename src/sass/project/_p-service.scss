@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-service {
-  padding-bottom: rem(250);
+  padding-bottom: rem(48);
+  @include mq(md) {
+    padding-bottom: rem(250);
+  }
 }
 .p-service__content {
   max-width: rem(1300);
@@ -10,8 +13,10 @@
 }
 
 .p-service__img {
-  max-width: rem(320);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(320);
+  }
 }
 .p-service__img img {
   aspect-ratio: 320 / 500;
@@ -20,7 +25,10 @@
   height: auto;
 }
 .p-service__bottom {
-  margin-top: rem(40);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 .p-service__bottom-text {
   font-size: rem(14);
@@ -30,5 +38,8 @@
   color: #fff;
 }
 .p-service__reserve {
-  margin-top: rem(250);
+  margin-top: rem(48);
+  @include mq(md) {
+    margin-top: rem(250);
+  }
 }

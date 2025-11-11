@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-other {
-  padding-bottom: rem(200);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-bottom: rem(200);
+  }
 }
 
 .p-other__content {
@@ -17,13 +20,16 @@
 }
 
 .p-other__title-text {
-  font-size: rem(22);
   font-family: $second-font-family;
   letter-spacing: 0.1em;
   line-height: calc(60 / 22);
   font-weight: 400;
   color: #cdd2d8;
   white-space: nowrap;
+  font-size: rem(18);
+  @include mq(md) {
+    font-size: rem(22);
+  }
 }
 
 .p-other__line {
@@ -34,19 +40,29 @@
 }
 
 .p-other__cards {
-  margin-top: rem(50);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(50);
+  }
 }
 
 .p-other__grid {
   display: flex;
-  gap: rem(50);
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  gap: rem(24);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(50);
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .p-other__card {
-  max-width: rem(400);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(400);
+  }
 }
 
 .p-other__card-img {

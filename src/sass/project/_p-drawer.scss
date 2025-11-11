@@ -5,11 +5,14 @@
   transition: 0.3s;
   border-radius: rem(3);
   width: rem(80);
-  height: rem(56);
   border: 1px solid rgba($color: #3d4043, $alpha: 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
+  height: rem(32);
+  @include mq(md) {
+    height: rem(56);
+  }
 }
 .p-drawer-icon.is-active {
   position: relative;
@@ -26,6 +29,9 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
   }
+  .p-drawer-icon__bar2 {
+    background: transparent;
+  }
   .p-drawer-icon__bar3 {
     background: white;
     position: absolute;
@@ -37,7 +43,7 @@
 .p-drawer-icon__bars {
   position: relative;
   width: rem(28);
-  height: rem(8);
+  height: rem(24);
   display: flex;
   align-items: center;
   justify-content: center;

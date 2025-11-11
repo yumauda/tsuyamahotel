@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .p-stay-mv {
-  padding-top: rem(291);
-  padding-bottom: rem(150);
+  padding-top: rem(160);
+  padding-bottom: rem(80);
+  @include mq(md) {
+    padding-top: rem(291);
+    padding-bottom: rem(150);
+  }
 }
 .p-stay-mv__inner {
   max-width: rem(1720);

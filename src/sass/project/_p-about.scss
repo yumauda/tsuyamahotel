@@ -59,6 +59,8 @@
   height: auto;
   object-fit: cover;
   object-position: center center;
+  position: relative;
+  z-index: 2;
 }
 .p-about__img--cross {
   width: rem(24);
@@ -81,6 +83,9 @@
   letter-spacing: 0.1em;
   font-weight: 400;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }

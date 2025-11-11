@@ -20,6 +20,7 @@
 }
 
 .p-top-life__title {
+  white-space: nowrap;
 }
 
 .p-top-life__top-text {
@@ -31,6 +32,9 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: initial;
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(16);
   }
 }
@@ -105,6 +109,9 @@
   position: relative;
   @include mq(md) {
     margin-top: rem(60);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(16);
   }
 }
@@ -187,6 +194,9 @@
   font-size: rem(14);
   @include mq(md) {
     margin-top: initial;
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -245,6 +255,10 @@
   font-weight: 400;
   @include mq(md) {
     margin-top: rem(10);
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
   }
 }
 
@@ -288,6 +302,9 @@
   color: #fafafa;
   font-size: rem(16);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(20);
   }
 }

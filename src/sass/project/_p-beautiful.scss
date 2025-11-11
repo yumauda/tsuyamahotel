@@ -71,6 +71,9 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(50);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(22);
   }
 }

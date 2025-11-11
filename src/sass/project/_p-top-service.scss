@@ -57,8 +57,11 @@
   font-size: rem(14);
   margin-top: rem(20);
   @include mq(md) {
-    font-size: rem(16);
+    font-size: clamp(14px, 2vw, 14px);
     margin-top: rem(40);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
   }
 }
 

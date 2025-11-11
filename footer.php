@@ -12,25 +12,25 @@
             </div>
             <ul class="p-footer__lists">
                 <li class="p-footer__list">
-                    <a href="#" class="p-footer__link">ご宿泊</a>
+                    <a href="<?php echo esc_url(home_url('/stay')); ?>" class="p-footer__link">ご宿泊</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="#" class="p-footer__link">レストラン</a>
+                    <a href="<?php echo esc_url(home_url('/restaurant')); ?>" class="p-footer__link">レストラン</a>
                 </li>
                 <li class="p-footer__list">
                     <a href="#" class="p-footer__link">ウェディング</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="#" class="p-footer__link">宴会・会議</a>
+                    <a href="<?php echo esc_url(home_url('/banquet')); ?>" class="p-footer__link">宴会・会議</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="#" class="p-footer__link">サテライトオフィス</a>
+                    <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-footer__link">サテライトオフィス</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="#" class="p-footer__link">館内のご案内</a>
+                    <a href="<?php echo esc_url(home_url('/facility')); ?>" class="p-footer__link">館内のご案内</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="#" class="p-footer__link">交通のご案内</a>
+                    <a href="<?php echo esc_url(home_url('/access')); ?>" class="p-footer__link">交通のご案内</a>
                 </li>
                 <li class="p-footer__list">
                     <a href="#" class="p-footer__link">お問い合わせ</a>

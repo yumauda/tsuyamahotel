@@ -1,0 +1,543 @@
+@use "global" as *;
+
+.p-single-news {
+  padding-top: rem(64);
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-top: rem(80);
+    padding-bottom: rem(200);
+  }
+}
+
+.p-single-news__header {
+  max-width: rem(1000);
+  margin-inline: auto;
+  padding-bottom: rem(32);
+  margin-bottom: rem(40);
+  border-bottom: 1px solid #2f4f77;
+  @include mq(md) {
+    padding-bottom: rem(48);
+    margin-bottom: rem(60);
+  }
+}
+
+.p-single-news__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: #fafafa;
+  letter-spacing: 0.1em;
+  line-height: calc(40 / 24);
+  @include mq(md) {
+    font-size: clamp(20px, 3vw, 20px);
+  }
+  @include mq(lg) {
+    font-size: rem(28);
+  }
+}
+
+.p-single-news__meta {
+  display: flex;
+  align-items: center;
+  gap: rem(12);
+  margin-top: rem(20);
+  flex-wrap: wrap;
+  @include mq(md) {
+    gap: rem(20);
+    margin-top: rem(24);
+  }
+}
+
+.p-single-news__date {
+  color: #fafafa;
+  font-size: rem(14);
+  font-weight: $normal;
+  letter-spacing: 0.05em;
+  font-family: $font-en;
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.p-single-news__category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: rem(28);
+  padding: 0 rem(16);
+  font-size: rem(12);
+  font-weight: $normal;
+  letter-spacing: 0.1em;
+  background: rgba(232, 194, 194, 0.9);
+  border-radius: rem(3);
+  color: $black;
+  @include mq(md) {
+    height: rem(32);
+    padding: 0 rem(20);
+    font-size: rem(14);
+  }
+}
+
+.p-single-news__content {
+  max-width: rem(1000);
+  margin-inline: auto;
+
+  /* 段落 */
+  p {
+    font-size: rem(14);
+    letter-spacing: 0.1em;
+    line-height: calc(40 / 18);
+    color: #fafafa;
+    margin-top: rem(20);
+    font-weight: $normal;
+    @include mq(md) {
+      font-size: clamp(14px, 2vw, 14px);
+      margin-top: rem(24);
+    }
+    @include mq(lg) {
+      font-size: rem(18);
+    }
+  }
+
+  /* 最初の段落 */
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  /* 見出し */
+  h1 {
+    font-size: rem(24);
+    font-weight: $bold;
+    color: #fafafa;
+    position: relative;
+    margin-top: rem(60);
+    padding-bottom: rem(16);
+    letter-spacing: 0.1em;
+    @include mq(md) {
+      margin-top: rem(100);
+      font-size: rem(36);
+      padding-bottom: rem(20);
+    }
+  }
+
+  h1::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(90deg, $blue 0%, transparent 100%);
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+  }
+
+  h2 {
+    font-size: rem(20);
+    font-weight: $bold;
+    color: #fafafa;
+    position: relative;
+    margin-top: rem(48);
+    padding-bottom: rem(12);
+    letter-spacing: 0.1em;
+    @include mq(md) {
+      margin-top: rem(80);
+      font-size: rem(28);
+      padding-bottom: rem(16);
+    }
+  }
+
+  h2::after {
+    position: absolute;
+    content: "";
+    background: #2f4f77;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+  }
+
+  h3 {
+    font-size: rem(18);
+    font-weight: $bold;
+    color: #fafafa;
+    margin-top: rem(40);
+    position: relative;
+    padding-left: rem(20);
+    letter-spacing: 0.1em;
+    @include mq(md) {
+      margin-top: rem(60);
+      font-size: rem(24);
+      padding-left: rem(24);
+    }
+  }
+
+  h3::before {
+    position: absolute;
+    content: "";
+    background: $blue;
+    width: rem(5);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    @include mq(md) {
+      width: rem(6);
+    }
+  }
+
+  h4 {
+    font-size: rem(16);
+    font-weight: $bold;
+    color: #fafafa;
+    margin-top: rem(32);
+    letter-spacing: 0.1em;
+    @include mq(md) {
+      margin-top: rem(48);
+      font-size: rem(20);
+    }
+  }
+
+  h5 {
+    font-size: rem(15);
+    font-weight: $bold;
+    color: #fafafa;
+    margin-top: rem(28);
+    letter-spacing: 0.1em;
+    @include mq(md) {
+      margin-top: rem(40);
+      font-size: rem(18);
+    }
+  }
+
+  h6 {
+    font-size: rem(14);
+    font-weight: $bold;
+    color: #fafafa;
+    margin-top: rem(24);
+    letter-spacing: 0.1em;
+    @include mq(md) {
+      margin-top: rem(32);
+      font-size: rem(16);
+    }
+  }
+
+  /* リスト */
+  ul {
+    margin-top: rem(20);
+    padding-left: rem(4);
+    @include mq(md) {
+      margin-top: rem(24);
+    }
+  }
+
+  ul li {
+    position: relative;
+    padding-left: rem(24);
+    font-size: rem(14);
+    letter-spacing: 0.1em;
+    line-height: calc(40 / 18);
+    color: #fafafa;
+    font-weight: $normal;
+    @include mq(md) {
+      font-size: clamp(14px, 2vw, 14px);
+      padding-left: rem(28);
+    }
+    @include mq(lg) {
+      font-size: rem(18);
+    }
+  }
+
+  ul li::before {
+    content: "";
+    position: absolute;
+    width: rem(6);
+    height: rem(6);
+    background: $blue;
+    border-radius: 50%;
+    left: rem(8);
+    top: rem(16);
+    @include mq(md) {
+      width: rem(8);
+      height: rem(8);
+      top: rem(18);
+    }
+  }
+
+  ul li + li {
+    margin-top: rem(12);
+  }
+
+  ol {
+    margin-top: rem(20);
+    counter-reset: list-counter;
+    @include mq(md) {
+      margin-top: rem(24);
+    }
+  }
+
+  ol li {
+    position: relative;
+    padding-left: rem(32);
+    font-size: rem(14);
+    letter-spacing: 0.1em;
+    line-height: calc(40 / 18);
+    color: #fafafa;
+    font-weight: $normal;
+    counter-increment: list-counter;
+    @include mq(md) {
+      font-size: clamp(14px, 2vw, 14px);
+      padding-left: rem(36);
+    }
+    @include mq(lg) {
+      font-size: rem(18);
+    }
+  }
+
+  ol li::before {
+    content: counter(list-counter);
+    position: absolute;
+    left: 0;
+    color: $blue;
+    font-weight: $bold;
+    font-family: $font-en;
+  }
+
+  ol li + li {
+    margin-top: rem(12);
+  }
+
+  /* リンク */
+  a {
+    color: $blue;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  /* 画像 */
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+    margin-top: rem(24);
+    border-radius: rem(3);
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  /* 囲み系（Gutenbergブロックでよく出る） */
+  figure {
+    margin-top: rem(24);
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  figcaption {
+    font-size: rem(12);
+    letter-spacing: 0.05em;
+    color: rgba(250, 250, 250, 0.7);
+    margin-top: rem(12);
+    text-align: center;
+    @include mq(md) {
+      font-size: rem(14);
+      margin-top: rem(16);
+    }
+  }
+
+  /* 引用 */
+  blockquote {
+    margin-top: rem(24);
+    padding: rem(24);
+    background: rgba(47, 79, 119, 0.2);
+    border-left: rem(4) solid $blue;
+    font-size: rem(14);
+    letter-spacing: 0.1em;
+    line-height: calc(40 / 18);
+    color: #fafafa;
+    border-radius: rem(3);
+    @include mq(md) {
+      margin-top: rem(32);
+      padding: rem(32);
+      font-size: clamp(14px, 2vw, 14px);
+    }
+    @include mq(lg) {
+      font-size: rem(18);
+    }
+  }
+
+  /* テーブル */
+  table {
+    width: 100%;
+    margin-top: rem(24);
+    border-collapse: collapse;
+    border-radius: rem(3);
+    overflow: hidden;
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  table th,
+  table td {
+    padding: rem(16);
+    border: 1px solid #2f4f77;
+    font-size: rem(14);
+    letter-spacing: 0.05em;
+    @include mq(md) {
+      padding: rem(20);
+      font-size: clamp(14px, 2vw, 14px);
+    }
+    @include mq(lg) {
+      font-size: rem(16);
+    }
+  }
+
+  table th {
+    background: rgba(47, 79, 119, 0.3);
+    font-weight: $bold;
+    text-align: left;
+    color: #fafafa;
+  }
+
+  table td {
+    background: rgba(47, 79, 119, 0.1);
+    color: #fafafa;
+  }
+
+  /* コード */
+  pre {
+    margin-top: rem(24);
+    padding: rem(20);
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: rem(3);
+    overflow-x: auto;
+    border: 1px solid #2f4f77;
+    @include mq(md) {
+      margin-top: rem(32);
+      padding: rem(24);
+    }
+  }
+
+  code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: rem(13);
+    color: #fafafa;
+    @include mq(md) {
+      font-size: rem(14);
+    }
+  }
+
+  /* インラインコード */
+  p code,
+  li code {
+    background: rgba(79, 195, 224, 0.2);
+    padding: rem(3) rem(8);
+    border-radius: rem(3);
+    color: $blue;
+    font-size: rem(13);
+  }
+
+  /* WordPress ブロックエディタ関連 */
+  .wp-block-button {
+    margin-top: rem(24);
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  .wp-block-button__link {
+    display: inline-block;
+    padding: rem(16) rem(40);
+    background: $blue;
+    color: $white;
+    text-decoration: none;
+    border-radius: rem(3);
+    font-weight: $bold;
+    letter-spacing: 0.1em;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: #2f4f77;
+      opacity: 1;
+    }
+  }
+
+  .wp-caption {
+    margin-top: rem(24);
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  .wp-caption-text {
+    font-size: rem(12);
+    color: rgba(250, 250, 250, 0.7);
+    margin-top: rem(12);
+    text-align: center;
+    @include mq(md) {
+      font-size: rem(14);
+    }
+  }
+
+  .wp-block-spacer {
+    margin: 0;
+  }
+
+  .wp-block-group {
+    margin-top: rem(24);
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  .wp-block-columns {
+    margin-top: rem(24);
+    gap: rem(20);
+    @include mq(md) {
+      margin-top: rem(32);
+      gap: rem(30);
+    }
+  }
+
+  .wp-block-column {
+    margin-top: rem(20);
+    @include mq(md) {
+      margin-top: 0;
+    }
+  }
+
+  .wp-block-gallery {
+    margin-top: rem(24);
+    gap: rem(16);
+    @include mq(md) {
+      margin-top: rem(32);
+      gap: rem(20);
+    }
+  }
+
+  .wp-block-image {
+    margin-top: rem(24);
+    @include mq(md) {
+      margin-top: rem(32);
+    }
+  }
+
+  /* 強調 */
+  strong,
+  b {
+    font-weight: $bold;
+    color: $blue;
+  }
+
+  /* 斜体 */
+  em,
+  i {
+    font-style: italic;
+    color: rgba(250, 250, 250, 0.9);
+  }
+}

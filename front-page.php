@@ -121,8 +121,14 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        </div>
+        <div class="p-swiper__arrows">
+          <div class="swiper-button-prev">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_prev.png" alt="arrow" width="40" height="40">
+          </div>
+          <div class="swiper-button-next">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_next.png" alt="arrow" width="40" height="40">
+          </div>
         </div>
       </div>
 
@@ -231,7 +237,7 @@
       </div>
 
       <div class="p-swiper__link-wrapper">
-        <a href="#" class="p-swiper__link">
+        <a href="<?php echo home_url('/news'); ?>" class="p-swiper__link">
           <span class="p-swiper__link-text">お知らせ一覧を見る</span>
           <div class="p-swiper__link-icon">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/news_arrow.svg" alt="arrow" width="40" height="40">

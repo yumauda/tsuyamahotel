@@ -2,8 +2,29 @@
 
 .p-top {
   background: url(../images/common/top_bg.svg) no-repeat center center / cover;
+  position: relative;
+  isolation: auto;
+  z-index: 0;
   @include mq(md) {
     padding-left: rem(30);
     padding-right: rem(30);
   }
+}
+.p-top::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/wave.svg) no-repeat center center / cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 2010 / 1600;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  mix-blend-mode: screen;
+}
+.p-top--news::before {
+  display: none;
 }

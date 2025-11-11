@@ -59,6 +59,9 @@
   font-family: $second-font-family;
   font-size: rem(32);
   @include mq(md) {
+    font-size: rem(56);
+  }
+  @include mq(lg) {
     font-size: rem(80);
   }
 }

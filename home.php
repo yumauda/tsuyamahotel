@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main>
+<main class="p-top p-top--news">
   <section class="p-stay-mv">
     <div class="p-stay-mv__inner">
       <div class="p-stay-mv__content">
@@ -12,46 +12,44 @@
       </div>
     </div>
   </section>
-  <section class="p-top-news">
+  <div class="p-top-news">
     <div class="l-inner">
       <div class="p-top-news__content">
-        <div class="p-top-news__header">
-          <div class="c-main-title">
-            <h3 class="c-main-title__main">お知らせ</h3>
-            <p class="c-main-title__sub">News</p>
-          </div>
-        </div>
+        
         <div class="p-top-news__list">
-          <a href="#" class="p-top-news__item">
-            <time class="p-top-news__date" datetime="2023-00-00">2023.00.00</time>
-            <span class="p-top-news__category">お知らせ</span>
-            <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
-          </a>
-          <a href="#" class="p-top-news__item">
-            <time class="p-top-news__date" datetime="2023-00-00">2023.00.00</time>
-            <span class="p-top-news__category">レストラン</span>
-            <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
-          </a>
-          <a href="#" class="p-top-news__item">
-            <time class="p-top-news__date" datetime="2023-00-00">2023.00.00</time>
-            <span class="p-top-news__category">宿泊プラン</span>
-            <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキスト</p>
-          </a>
+          <?php if (have_posts()) : ?>
+            <?php while (have_posts()) : ?>
+              <?php the_post(); ?>
+              <a href="<?php the_permalink(); ?>" class="p-top-news__item">
+                <time class="p-top-news__date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
+                <?php
+                $categories = get_the_category();
+                if (!empty($categories)) {
+                  echo '<span class="p-top-news__category">' . esc_html($categories[0]->name) . '</span>';
+                }
+                ?>
+                <p class="p-top-news__text"><?php the_title(); ?></p>
+              </a>
+            <?php endwhile; ?>
+          <?php endif; ?>
         </div>
       </div>
-      <div class="p-top-news__link-wrapper">
-        <a href="#" class="p-top-news__link">
-          <span class="p-top-news__link-text">お知らせ一覧を見る</span>
-          <div class="p-top-news__link-icon">
-            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/news_arrow.svg" alt="arrow" width="40" height="40">
-          </div>
-        </a>
-      </div>
+
+      <?php if (paginate_links()) : ?>
+        <div class="p-pagination">
+          <?php
+          echo paginate_links(array(
+            'mid_size' => 2,
+            'prev_text' => '‹',
+            'next_text' => '›',
+            'type' => 'list',
+          ));
+          ?>
+        </div>
+      <?php endif; ?>
+
     </div>
-  </section>
-
-
-
-
+  </div>
+  <?php get_template_part('includes/submit'); ?>
+  <?php get_footer() ?>
 </main>
-<?php get_footer() ?>

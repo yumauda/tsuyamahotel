@@ -70,15 +70,20 @@
 .p-header__menu-link {
   display: block;
   color: #fafafa;
-  font-size: rem(16);
-  font-weight: 400;
   letter-spacing: 0.15em;
   font-family: $second-font-family;
+  font-weight: 400;
   text-decoration: none;
   transition: opacity 0.3s ease;
   line-height: 1.5;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
 }
 
 .p-header__drawer {

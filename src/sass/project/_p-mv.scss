@@ -2,6 +2,8 @@
 
 .p-mv {
   padding-top: rem(235);
+  position: relative;
+  z-index: 2;
 }
 
 .p-mv__inner {

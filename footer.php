@@ -1,3 +1,23 @@
+<div class="p-footer__floating">
+    <a href="#" class="p-footer__floating-link p-footer__floating-link--language">
+        <div class="p-footer__floating-icon">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/floating_logo1.png" alt="" width="22" height="22">
+        </div>
+        <p class="p-footer__floating-text p-footer__floating-text--language">Language</p>
+    </a>
+    <a href="#" class="p-footer__floating-link p-footer__floating-link--food">
+        <div class="p-footer__floating-icon">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/floating_logo2.png" alt="" width="22" height="22">
+        </div>
+        <p class="p-footer__floating-text">お食事予約</p>
+    </a>
+    <a href="#" class="p-footer__floating-link p-footer__floating-link--stay">
+        <div class="p-footer__floating-icon">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/floating_logo3.png" alt="" width="22" height="22">
+        </div>
+        <p class="p-footer__floating-text">宿泊予約</p>
+    </a>
+</div>
 <footer class="p-footer">
     <div class="p-footer__inner">
         <div class="p-footer__content">

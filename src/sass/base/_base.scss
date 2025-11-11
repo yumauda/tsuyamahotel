@@ -39,13 +39,7 @@ a {
   }
 }
 body {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
   top: 0 !important; // Google翻訳のツールバーによるズレを防ぐ
-}
-
-body.fade-in {
-  opacity: 1;
 }
 
 // Google翻訳のUIを非表示

@@ -303,17 +303,23 @@
   width: rem(40);
   height: rem(40);
   position: absolute;
-  left: rem(-90);
+  left: rem(16);
   top: 50%;
   transform: translateY(-50%);
+  @include mq(md) {
+    left: rem(-90);
+  }
 }
 .swiper-button-next {
   width: rem(40);
   height: rem(40);
   position: absolute;
-  right: rem(-90);
   top: 50%;
   transform: translateY(-50%);
+  right: rem(16);
+  @include mq(md) {
+    right: rem(-90);
+  }
 }
 .swiper-button-prev img,
 .swiper-button-next img {

@@ -110,9 +110,13 @@
   object-position: center center;
 }
 .p-header__mice {
-  position: fixed;
-  right: rem(105);
-  bottom: rem(120);
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: fixed;
+    right: rem(105);
+    bottom: rem(120);
+  }
 }
 
 .p-header__mice-link {

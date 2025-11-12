@@ -5450,7 +5450,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .p-menu__price {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(14px, 2vw, 20px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -5470,7 +5470,7 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .p-menu__price span {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(14px, 2vw, 20px);
   }
 }
 @media screen and (min-width: 1540px) {
@@ -7704,6 +7704,11 @@ body.modal-open {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
+  .p-rooms__img {
+    max-width: 37.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
   .p-rooms__img {
     max-width: 46.875rem;
   }

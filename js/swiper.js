@@ -48,9 +48,7 @@ const slider3 = new Swiper(".slider3", {
     prevEl: ".swiper-button-prev",
   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+ 
 });
 
 // ピックアップタブスライダー
@@ -166,9 +164,7 @@ const slider4 = new Swiper(".slider4", {
     prevEl: ".swiper-button-prev",
   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  
 });
 const slider5 = new Swiper(".slider5", {
   slidesPerView: 1.1,

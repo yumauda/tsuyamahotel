@@ -420,26 +420,34 @@ jQuery(document).ready(function ($) {
 
       // 各リンクに対応するセクションをチェック
       if ($pListsLinks.length) {
-        const windowHeight = $(window).height();
         const scrollTop = $(window).scrollTop();
-        const triggerPoint = scrollTop + windowHeight / 2;
+        const offset = 600; // セクション上部からのオフセット（調整可能）
 
+        let currentSection = null;
+        let currentSectionTop = -999999;
+
+        // 全てのセクションをチェックして、現在位置に最も近いものを見つける
         $pListsLinks.each(function () {
           const href = $(this).attr("href");
-          const targetId = href.substring(1); // #を除去
+          const targetId = href.substring(1);
           const $targetSection = $("#" + targetId);
 
           if ($targetSection.length) {
-            const sectionTop = $targetSection.offset().top;
-            const sectionBottom = sectionTop + $targetSection.outerHeight();
+            const sectionTop = $targetSection.offset().top - offset;
 
-            // セクションが画面の中央付近にある場合、is-activeクラスを付与
-            $(this).toggleClass(
-              "is-active",
-              triggerPoint >= sectionTop && triggerPoint <= sectionBottom
-            );
+            // スクロール位置がセクションの上部を超えていて、かつ最も下にあるセクションを記録
+            if (scrollTop >= sectionTop && sectionTop > currentSectionTop) {
+              currentSection = href;
+              currentSectionTop = sectionTop;
+            }
           }
         });
+
+        // 全てのリンクからis-activeを削除してから、該当するリンクだけ追加
+        $pListsLinks.removeClass("is-active");
+        if (currentSection) {
+          $pListsLinks.filter('[href="' + currentSection + '"]').addClass("is-active");
+        }
       }
     }
 

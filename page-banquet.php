@@ -529,7 +529,7 @@
               大切なお集まりにふさわしい味わいと心づくしのおもてなしで、円滑で充実したひとときをサポートいたします。</p>
           </div>
           <div class="p-meal__swiper">
-            <div class="swiper slider4">
+            <div class="swiper slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <figure class="p-meal__img">
@@ -546,10 +546,21 @@
                     <img src="<?php echo get_template_directory_uri() ?>/images/common/meal_img3.jpg" alt="お食事" width="810" height="540">
                   </figure>
                 </div>
+                <div class="swiper-slide">
+                  <figure class="p-meal__img">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/meal_img3.jpg" alt="お食事" width="810" height="540">
+                  </figure>
+                </div>
               </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="p-swiper__arrows">
+              <div class="swiper-button-prev">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_prev.png" alt="arrow" width="40" height="40">
+              </div>
+              <div class="swiper-button-next">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_next.png" alt="arrow" width="40" height="40">
+              </div>
+            </div>
           </div>
         </div>
       </div>

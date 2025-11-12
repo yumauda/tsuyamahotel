@@ -215,7 +215,7 @@ select::-ms-expand {
     padding-left: 25px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .l-inner {
     max-width: 1450px;
   }
@@ -561,7 +561,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-about__text {
     font-size: 1.125rem;
   }
@@ -655,7 +655,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-all__header p {
     font-size: 1.25rem;
   }
@@ -680,7 +680,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-all__label {
     font-size: 1.125rem;
   }
@@ -735,7 +735,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-all__cell p {
     font-size: 1.125rem;
   }
@@ -769,7 +769,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (max-width: 768px) and (min-width: 992px) {
+@media screen and (max-width: 768px) and (min-width: 1540px) {
   .p-all__label {
     font-size: 0.875rem;
   }
@@ -786,7 +786,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (max-width: 768px) and (min-width: 992px) {
+@media screen and (max-width: 768px) and (min-width: 1540px) {
   .p-all__cell {
     font-size: 1rem;
   }
@@ -813,7 +813,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-all__header span {
     font-size: 0.875rem;
   }
@@ -925,7 +925,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-amenity__text {
     font-size: 1rem;
   }
@@ -997,7 +997,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-amenity__item {
     font-size: 0.875rem;
   }
@@ -1019,7 +1019,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-amenity__item--bold {
     font-size: 1rem;
   }
@@ -1055,7 +1055,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-amenity__eco-text {
     font-size: 1.5rem;
   }
@@ -1132,7 +1132,7 @@ select::-ms-expand {
     right: -2.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-beautiful__content::before {
     right: 0;
   }
@@ -1196,7 +1196,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-beautiful__text {
     font-size: 1.375rem;
   }
@@ -1283,7 +1283,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-btns__text {
     font-size: 1rem;
   }
@@ -1434,7 +1434,7 @@ select::-ms-expand {
     padding-top: 1.875rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-desert__category-title {
     font-size: 1.5rem;
   }
@@ -1485,7 +1485,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-desert__name {
     font-size: 1.125rem;
   }
@@ -1518,7 +1518,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-desert__price {
     font-size: 1.125rem;
   }
@@ -1919,7 +1919,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-drink__category-title {
     font-size: 1.375rem;
   }
@@ -1997,7 +1997,7 @@ select::-ms-expand {
     padding-left: 1.25rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-drink__name {
     font-size: 1.125rem;
   }
@@ -2031,7 +2031,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-drink__price {
     font-size: 1.125rem;
   }
@@ -2113,7 +2113,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__subtitle span {
     font-size: 1.125rem;
   }
@@ -2164,7 +2164,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__label {
     font-size: 1rem;
   }
@@ -2186,7 +2186,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__value {
     font-size: 1rem;
   }
@@ -2221,7 +2221,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__info-title {
     font-size: 1.25rem;
   }
@@ -2267,7 +2267,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__info-label {
     font-size: 1rem;
   }
@@ -2284,7 +2284,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__info-value {
     font-size: 1rem;
   }
@@ -2302,7 +2302,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__info-text {
     font-size: 0.875rem;
   }
@@ -2317,7 +2317,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__info-text--address {
     font-size: 0.9375rem;
   }
@@ -2338,7 +2338,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-equipments__text {
     font-size: 0.875rem;
   }
@@ -2403,7 +2403,7 @@ select::-ms-expand {
     margin-top: 3.75rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-facilities__list {
     grid-template-columns: repeat(3, 1fr);
     gap: 3.75rem;
@@ -2510,7 +2510,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-facilities__item-title {
     font-size: 1.5rem;
   }
@@ -2536,7 +2536,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-facilities__item-text {
     font-size: 1rem;
   }
@@ -2628,7 +2628,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-facilities__top-text {
     font-size: 1.125rem;
   }
@@ -2741,7 +2741,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-footer__address {
     font-size: 1.125rem;
   }
@@ -2799,7 +2799,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-footer__link {
     font-size: 1.125rem;
   }
@@ -2912,7 +2912,7 @@ select::-ms-expand {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-footer__bottom-linkText {
     font-size: 0.875rem;
   }
@@ -3580,7 +3580,7 @@ input::placeholder {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-guide__floor-number {
     font-size: 1rem;
   }
@@ -3622,7 +3622,7 @@ input::placeholder {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-guide__facility-name {
     font-size: 1.125rem;
   }
@@ -3708,7 +3708,7 @@ input::placeholder {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-guide__list-floor {
     font-size: 1.25rem;
   }
@@ -3767,7 +3767,7 @@ input::placeholder {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-guide__list-name {
     font-size: 1.125rem;
   }
@@ -3838,7 +3838,7 @@ input::placeholder {
     width: 20rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-header__logo-link {
     width: 33.75rem;
   }
@@ -3907,7 +3907,7 @@ input::placeholder {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-header__menu-link {
     font-size: 1rem;
   }
@@ -4071,7 +4071,7 @@ input::placeholder {
     margin-top: 1.875rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-heart__text {
     font-size: 1rem;
   }
@@ -4456,7 +4456,7 @@ input::placeholder {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-information__card-title {
     font-size: 1.5rem;
   }
@@ -4525,7 +4525,7 @@ input::placeholder {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-information__card-text p {
     font-size: 1rem;
   }
@@ -4785,7 +4785,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-location__text {
     font-size: 1.125rem;
   }
@@ -4866,7 +4866,7 @@ body.modal-open {
     font-size: clamp(16px, 2vw, 16px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-location__hotel-title {
     font-size: 1.375rem;
   }
@@ -4909,7 +4909,7 @@ body.modal-open {
     gap: 3rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-location__row {
     gap: 4rem;
   }
@@ -4933,7 +4933,7 @@ body.modal-open {
     width: 7.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-location__dt {
     width: 5rem;
     font-size: 1rem;
@@ -4953,7 +4953,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-location__dd {
     font-size: 1rem;
   }
@@ -5021,7 +5021,7 @@ body.modal-open {
     white-space: nowrap;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-location__trafic-dt {
     width: 13.75rem;
     font-size: 1.375rem;
@@ -5049,7 +5049,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-location__trafic-text {
     font-size: 1rem;
   }
@@ -5108,7 +5108,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-meal__text-item {
     font-size: 1.125rem;
   }
@@ -5253,7 +5253,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-meal__menu-text {
     font-size: 1.375rem;
   }
@@ -5403,7 +5403,7 @@ body.modal-open {
     padding: 0.3125rem 1.25rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__tag {
     font-size: 1rem;
   }
@@ -5433,7 +5433,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__price {
     font-size: 1.875rem;
   }
@@ -5453,7 +5453,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__price span {
     font-size: 1.25rem;
   }
@@ -5473,7 +5473,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__tax {
     font-size: 0.875rem;
   }
@@ -5502,7 +5502,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__text {
     font-size: 1.125rem;
   }
@@ -5523,7 +5523,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__text-small {
     font-size: 1rem;
   }
@@ -5619,7 +5619,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__double-tag {
     font-size: 1rem;
   }
@@ -5661,7 +5661,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__text-right {
     font-size: 0.875rem;
   }
@@ -5833,7 +5833,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__table-desc {
     font-size: 0.875rem;
   }
@@ -5879,7 +5879,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__table-price {
     font-size: 1.75rem;
   }
@@ -5898,7 +5898,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__table-price span {
     font-size: 0.875rem;
   }
@@ -5919,7 +5919,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__table-tax {
     font-size: 0.875rem;
   }
@@ -5958,7 +5958,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__bottom-text {
     font-size: 0.875rem;
   }
@@ -5996,7 +5996,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__invite-title {
     font-size: 1.5rem;
   }
@@ -6107,7 +6107,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__invite__row-text {
     width: 8.125rem;
     font-size: 1.125rem;
@@ -6128,7 +6128,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-menu__invite-text {
     font-size: 1.125rem;
   }
@@ -6239,7 +6239,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-other__title-text {
     font-size: 1.375rem;
   }
@@ -6355,7 +6355,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-other__card-name {
     font-size: 1.125rem;
   }
@@ -6448,7 +6448,7 @@ body.modal-open {
     font-size: 3.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-page-mv__title-ja {
     font-size: 5rem;
   }
@@ -6658,7 +6658,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-parking__text {
     font-size: 1.125rem;
   }
@@ -6700,7 +6700,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-parking__subTitle {
     font-size: 1.375rem;
   }
@@ -6721,7 +6721,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-parking__subText {
     font-size: 1rem;
   }
@@ -6852,7 +6852,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-qa__ttl {
     font-size: 1.625rem;
   }
@@ -6871,7 +6871,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-qa__ttl--service {
     font-size: 1.5rem;
   }
@@ -6887,7 +6887,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-qa__ttl span {
     font-size: 1.25rem;
   }
@@ -6953,7 +6953,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-qa__txt {
     font-size: 1rem;
   }
@@ -7005,7 +7005,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-qa__service-list-text {
     font-size: 1rem;
   }
@@ -7185,7 +7185,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-reserve__checkbox-text {
     font-size: 1.25rem;
     padding-left: 2.8125rem;
@@ -7216,7 +7216,7 @@ body.modal-open {
     margin-top: 2.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-reserve__button-wrapper {
     gap: 3rem;
     -webkit-box-orient: horizontal;
@@ -7265,7 +7265,7 @@ body.modal-open {
     font-size: clamp(12px, 2vw, 12px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-reserve__small {
     font-size: 1.125rem;
   }
@@ -7441,7 +7441,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-reserve__text {
     font-size: 1.125rem;
   }
@@ -7768,7 +7768,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__description {
     font-size: 1rem;
   }
@@ -7826,7 +7826,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__info-label {
     font-size: 0.875rem;
   }
@@ -7849,7 +7849,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__info-value {
     font-size: 0.875rem;
   }
@@ -7930,7 +7930,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__top-text {
     font-size: 1.125rem;
   }
@@ -7951,7 +7951,7 @@ body.modal-open {
     font-size: clamp(16px, 2vw, 18px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__button-text {
     font-size: 1.125rem;
   }
@@ -8008,7 +8008,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__all-title {
     font-size: 1.375rem;
   }
@@ -8035,7 +8035,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__all-text {
     font-size: 1rem;
   }
@@ -8136,7 +8136,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__kind-text {
     font-size: 1.375rem;
   }
@@ -8162,7 +8162,7 @@ body.modal-open {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -8181,7 +8181,7 @@ body.modal-open {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__flex-title {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -8213,7 +8213,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__flex-title-ja {
     -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
@@ -8236,7 +8236,7 @@ body.modal-open {
     font-size: clamp(20px, 2vw, 20px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-rooms__flex-title-en {
     -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
@@ -8336,7 +8336,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-service__bottom-text {
     font-size: 0.875rem;
   }
@@ -8395,7 +8395,7 @@ body.modal-open {
     font-size: clamp(20px, 3vw, 20px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-single-news__title {
     font-size: 1.75rem;
   }
@@ -8501,7 +8501,7 @@ body.modal-open {
     margin-top: 1.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-single-news__content p {
     font-size: 1.125rem;
   }
@@ -8675,7 +8675,7 @@ body.modal-open {
     padding-left: 1.75rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-single-news__content ul li {
     font-size: 1.125rem;
   }
@@ -8733,7 +8733,7 @@ body.modal-open {
     padding-left: 2.25rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-single-news__content ol li {
     font-size: 1.125rem;
   }
@@ -8822,7 +8822,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-single-news__content blockquote {
     font-size: 1.125rem;
   }
@@ -8856,7 +8856,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-single-news__content table th,
   .p-single-news__content table td {
     font-size: 1rem;
@@ -9104,7 +9104,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-submit__text {
     font-size: 1rem;
   }
@@ -9253,7 +9253,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-suite__spec-header p {
     font-size: 1.125rem;
   }
@@ -9289,7 +9289,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-suite__spec-data {
     font-size: 1.125rem;
   }
@@ -9458,7 +9458,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-swiper__tab {
     padding: 0.5rem 1.25rem;
     font-size: 1.125rem;
@@ -9506,7 +9506,7 @@ body.modal-open {
     gap: 1.75rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-swiper__row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9549,7 +9549,7 @@ body.modal-open {
     font-size: clamp(12px, 2vw, 12px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-swiper__detail-category {
     font-size: 1.125rem;
   }
@@ -9588,7 +9588,7 @@ body.modal-open {
     font-size: clamp(12px, 2vw, 12px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-swiper__year {
     font-size: 0.875rem;
   }
@@ -9646,7 +9646,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-swiper__text {
     font-size: 1.25rem;
   }
@@ -9695,7 +9695,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-swiper__link-text {
     font-size: 1.125rem;
   }
@@ -9861,7 +9861,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-life__top-text {
     font-size: 1rem;
   }
@@ -9963,7 +9963,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-life__middle-text {
     font-size: 1rem;
   }
@@ -10081,7 +10081,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-life__about-text {
     font-size: 1.125rem;
   }
@@ -10157,7 +10157,7 @@ body.modal-open {
     font-size: clamp(12px, 2vw, 12px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-life__about-detailText {
     font-size: 0.875rem;
   }
@@ -10235,7 +10235,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-life__bottom-text {
     font-size: 1.25rem;
   }
@@ -10298,7 +10298,7 @@ body.modal-open {
   position: relative;
   z-index: 1;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-news__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10376,7 +10376,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-news__date {
     font-size: 0.875rem;
   }
@@ -10409,7 +10409,7 @@ body.modal-open {
     width: 11.25rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-news__category {
     width: 8.125rem;
     font-size: 0.875rem;
@@ -10429,7 +10429,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-news__text {
     font-size: 1.125rem;
   }
@@ -10480,7 +10480,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 14px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-news__link-text {
     font-size: 1.125rem;
   }
@@ -10577,7 +10577,7 @@ body.modal-open {
     margin-top: 2.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .p-top-service__text {
     font-size: 1rem;
   }
@@ -10691,7 +10691,7 @@ body.modal-open {
     font-size: 2.5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .c-main-title__main {
     font-size: 3.75rem;
   }
@@ -10728,7 +10728,7 @@ body.modal-open {
     font-size: 3rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .c-main-title__ja {
     font-size: 3.75rem;
   }
@@ -10773,7 +10773,7 @@ body.modal-open {
     font-size: 3rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .c-section-title__ja {
     font-size: 4.375rem;
   }
@@ -10815,7 +10815,7 @@ body.modal-open {
     font-size: clamp(14px, 2vw, 16px);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1540px) {
   .fontSize {
     font-size: 1.125rem;
   }

@@ -449,7 +449,7 @@
         <div class="p-top-line__bg">
           <div class="p-top-life__center">
             <p class="p-top-life__center-text">
-              塔ホテルは、企業研修、展示会、パーティーなど、<br class="u-desktop">
+              当ホテルは、企業研修、展示会、パーティーなど、<br class="u-desktop">
               多様なMICEイベントに対応可能です。<br>
               専任チームが企画から当日運営までをサポートいたします。
             </p>
@@ -503,7 +503,7 @@
               </li>
             </ul>
             <div class="p-top-life__bottom">
-              <a href="#" class="p-top-life__bottom-link">
+              <a href="<?php echo esc_url(home_url('/banquet')); ?>" class="p-top-life__bottom-link">
                 <p class="p-top-life__bottom-text">宴会・会議会場を見る</p>
                 <div class="p-top-life__icon">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="15" height="8">

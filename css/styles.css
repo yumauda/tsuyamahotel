@@ -4647,6 +4647,50 @@ body.modal-open {
     font-size: 3.125rem;
   }
 }
+.p-lists {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1000;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 30px;
+  left: 1.875rem;
+  padding-left: 25px;
+  padding-left: 1.5625rem;
+  border-left: 1px solid #2e4f77;
+  mix-blend-mode: difference;
+  color: #f5f2e8;
+}
+
+.p-lists.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.p-lists__list + .p-lists__list {
+  margin-top: 8px;
+  margin-top: 0.5rem;
+}
+
+.p-lists__link {
+  display: inline-block;
+  color: #f5f2e8;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  line-height: 2.5714285714;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.p-lists__link.is-active {
+  opacity: 1;
+}
+
 .p-location {
   padding-top: 64px;
   padding-top: 4rem;
@@ -6963,6 +7007,10 @@ body.modal-open {
   margin-top: 0.625rem;
 }
 
+.p-reserve {
+  position: relative;
+}
+
 .p-reserve__agreement {
   margin-top: 24px;
   margin-top: 1.5rem;
@@ -7164,6 +7212,7 @@ body.modal-open {
   font-weight: 400;
   color: #fafafa;
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .p-reserve__tel {
@@ -7272,6 +7321,57 @@ body.modal-open {
   text-align: center;
 }
 
+.p-reserve::after {
+  content: "Reservation Reservation Reservation Reservation Reservation Reservation";
+  position: absolute;
+  top: 24px;
+  top: 1.5rem;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: 80px;
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(46, 79, 119, .2);
+  letter-spacing: 0.05em;
+  font-family: "Libre Baskerville", serif;
+  -webkit-animation: scroll-text 30s linear infinite;
+          animation: scroll-text 30s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  mix-blend-mode: multiply;
+}
+@media screen and (min-width: 768px) {
+  .p-reserve::after {
+    font-size: 12.5rem;
+  }
+}
+
+@-webkit-keyframes scroll-text {
+  0% {
+    -webkit-transform: translateY(-50%) translateX(0);
+            transform: translateY(-50%) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes scroll-text {
+  0% {
+    -webkit-transform: translateY(-50%) translateX(0);
+            transform: translateY(-50%) translateX(0);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+  }
+}
 .p-reserve__title {
   font-weight: 400;
   color: #fafafa;

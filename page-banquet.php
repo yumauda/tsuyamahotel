@@ -17,6 +17,20 @@
         </div>
       </div>
     </section>
+    <ul class="p-lists">
+      <li class="p-lists__list">
+        <a href="#anc01" class="p-lists__link">ご利用シーン</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc02" class="p-lists__link">会場一覧</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc03" class="p-lists__link">お食事</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc04" class="p-lists__link">設備・備品</a>
+      </li>
+    </ul>
     <section class="p-location">
       <div class="l-inner">
         <div class="p-location__content">
@@ -122,7 +136,7 @@
         </div>
       </div>
     </div>
-    <section class="p-facilities">
+    <section class="p-facilities" id="anc01">
       <div class="l-inner">
         <div class="p-facilities__content p-facilities__content--scene">
           <div class="p-facilities__title">
@@ -194,7 +208,7 @@
       </div>
     </section>
 
-    <section class="p-rooms">
+    <section class="p-rooms" id="anc02">
       <div class="l-inner">
 
         <div class="p-rooms__content">
@@ -500,7 +514,7 @@
         </div>
       </div>
     </section>
-    <section class="p-meal">
+    <section class="p-meal" id="anc03">
       <div class="l-inner">
         <div class="p-meal__content">
           <div class="p-meal__title">
@@ -541,7 +555,7 @@
       </div>
     </section>
 
-    <section class="p-equipments">
+    <section class="p-equipments" id="anc04">
       <div class="l-inner">
 
         <div class="p-equipments__content">

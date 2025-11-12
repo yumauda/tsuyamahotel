@@ -444,3 +444,46 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
+
+// p-listsにスクロール量に応じてis-activeクラスを付与
+jQuery(document).ready(function ($) {
+  const $pLists = $(".p-lists");
+  const $pListsLinks = $(".p-lists__link");
+
+  if ($pLists.length) {
+    function checkScrollForLists() {
+      const scrollPosition = $(window).scrollTop();
+      $pLists.toggleClass("is-active", scrollPosition >= 700);
+
+      // 各リンクに対応するセクションをチェック
+      if ($pListsLinks.length) {
+        const windowHeight = $(window).height();
+        const scrollTop = $(window).scrollTop();
+        const triggerPoint = scrollTop + windowHeight / 2;
+
+        $pListsLinks.each(function () {
+          const href = $(this).attr("href");
+          const targetId = href.substring(1); // #を除去
+          const $targetSection = $("#" + targetId);
+
+          if ($targetSection.length) {
+            const sectionTop = $targetSection.offset().top;
+            const sectionBottom = sectionTop + $targetSection.outerHeight();
+
+            // セクションが画面の中央付近にある場合、is-activeクラスを付与
+            $(this).toggleClass(
+              "is-active",
+              triggerPoint >= sectionTop && triggerPoint <= sectionBottom
+            );
+          }
+        });
+      }
+    }
+
+    // 初回チェック
+    checkScrollForLists();
+
+    // スクロールイベント監視
+    $(window).on("scroll", checkScrollForLists);
+  }
+});

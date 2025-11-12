@@ -17,6 +17,32 @@
         </div>
       </div>
     </section>
+    <ul class="p-lists">
+      <li class="p-lists__list">
+        <a href="#anc01" class="p-lists__link">鶴山の美味</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc02" class="p-lists__link">特別メニュー</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc03" class="p-lists__link">今月のランチ</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc04" class="p-lists__link">お食事メニュー</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc05" class="p-lists__link">軽食 & デザート</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc06" class="p-lists__link">ドリンク</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc07" class="p-lists__link">団体様向けお食事メニュー</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc08" class="p-lists__link">営業時間</a>
+      </li>
+    </ul>
     <section class="p-location">
       <div class="l-inner">
         <div class="p-location__content">
@@ -124,7 +150,7 @@
     </div>
     <section class="p-facilities p-facilities--taste">
       <div class="l-inner">
-        <div class="p-facilities__content">
+        <div class="p-facilities__content" id="anc01">
           <div class="p-facilities__title">
             <h3 class="c-main-title">
               <span class="c-main-title__ja">鶴山の美味</span>
@@ -177,7 +203,7 @@
     <section class="p-rooms">
       <div class="l-inner">
 
-        <div class="p-rooms__content">
+        <div class="p-rooms__content" id="anc02">
           <div class="p-rooms__title">
             <h3 class="c-main-title">
               <span class="c-main-title__ja c-main-title__ja--black">特別メニュー</span>
@@ -299,7 +325,7 @@
     </section>
     <section class="p-meal p-meal--lunch">
       <div class="l-inner">
-        <div class="p-meal__content">
+        <div class="p-meal__content" id="anc03">
           <div class="p-meal__flex">
             <div class="p-meal__title">
               <h3 class="c-main-title">
@@ -355,7 +381,7 @@
     </section>
     <section class="p-meal p-meal--lunch">
       <div class="l-inner">
-        <div class="p-meal__content">
+        <div class="p-meal__content" id="anc04">
           <div class="p-meal__flex">
             <div class="p-meal__title">
               <h3 class="c-main-title">
@@ -652,7 +678,7 @@
     </section>
     <section class="p-desert">
       <div class="l-inner">
-        <div class="p-desert__content">
+        <div class="p-desert__content" id="anc05">
           <div class="p-desert__title">
             <h3 class="c-main-title">
               <span class="c-main-title__ja">軽食 & デザート</span>
@@ -756,7 +782,7 @@
     </section>
     <section class="p-drink">
       <div class="l-inner">
-        <div class="p-drink__content">
+        <div class="p-drink__content" id="anc06">
           <div class="p-drink__title">
             <h3 class="c-main-title">
               <span class="c-main-title__ja">ドリンク</span>
@@ -931,7 +957,7 @@
     </section>
     <section class="p-meal p-meal--lunch">
       <div class="l-inner">
-        <div class="p-meal__content">
+        <div class="p-meal__content" id="anc07">
           <div class="p-meal__flex">
             <div class="p-meal__title">
               <h3 class="c-main-title">
@@ -1030,7 +1056,7 @@
               ※会席・コースメニューご希望のお客様はご相談くださいませ。<br>
               ※季節で内容は変わります。</p>
           </div>
-          <div class="p-menu__invite">
+          <div class="p-menu__invite" id="anc08">
             <div class="p-menu__invite-top">
               <div class="p-menu__invite-line"></div>
               <p class="p-menu__invite-title">営業時間のご案内</p>

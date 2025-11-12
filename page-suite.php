@@ -14,6 +14,26 @@
         </div>
       </div>
     </section>
+    <ul class="p-lists">
+      <li class="p-lists__list">
+        <a href="#anc01" class="p-lists__link">スイートルームA-type</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc02" class="p-lists__link">スイートルームB-type</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc03" class="p-lists__link">ツインルーム</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc04" class="p-lists__link">ダブルルーム</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc05" class="p-lists__link">シングルルーム</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc06" class="p-lists__link">和室</a>
+      </li>
+    </ul>
     <!-- Slider main container -->
     <div class="p-suite-swiper">
       <div class="swiper slider5">

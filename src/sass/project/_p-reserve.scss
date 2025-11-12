@@ -1,5 +1,9 @@
 @use "../global/" as *;
 
+.p-reserve {
+  position: relative;
+}
+
 .p-reserve__agreement {
   margin-top: rem(24);
   display: flex;
@@ -138,6 +142,7 @@
   font-weight: 400;
   color: #fafafa;
   letter-spacing: 0.05em;
+  white-space: nowrap;
   @include mq(md) {
     font-size: rem(46);
   }
@@ -215,6 +220,39 @@
 }
 .p-reserve__title-wrapper {
   text-align: center;
+}
+
+.p-reserve::after {
+  content: "Reservation Reservation Reservation Reservation Reservation Reservation";
+  position: absolute;
+  top: rem(24);
+  left: 0;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  font-size: rem(80);
+  font-weight: 700;
+  color: rgba($color: #2e4f77, $alpha: 0.2);
+  letter-spacing: 0.05em;
+  font-family: $font-en;
+  animation: scroll-text 30s linear infinite;
+  z-index: -1;
+  pointer-events: none;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  mix-blend-mode: multiply;
+  @include mq(md) {
+    font-size: rem(200);
+  }
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translateY(-50%) translateX(0);
+  }
+  100% {
+    transform: translateY(-50%) translateX(-50%);
+  }
 }
 .p-reserve__title {
   font-weight: 400;

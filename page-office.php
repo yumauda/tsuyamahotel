@@ -17,6 +17,24 @@
         </div>
       </div>
     </section>
+    <ul class="p-lists">
+      <li class="p-lists__list">
+        <a href="#anc01" class="p-lists__link">サテライトオフィスとは</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc02" class="p-lists__link">設備・サービス</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc03" class="p-lists__link">ご利用特典</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc04" class="p-lists__link">ご利用金額</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc05" class="p-lists__link">ご利用方法・お問い合わせ</a>
+      </li>
+ 
+    </ul>
     <section class="p-location">
       <div class="l-inner">
         <div class="p-location__content">
@@ -31,7 +49,7 @@
       </div>
     </section>
 
-    <section class="p-about">
+    <section class="p-about" id="anc01">
       <div class="l-inner">
         <div class="p-about__content">
           <div class="p-about__title">
@@ -67,7 +85,7 @@
       </div>
     </section>
 
-    <section class="p-rooms">
+    <section class="p-rooms" id="anc02">
       <div class="l-inner">
         <div class="p-rooms__content">
           <div class="p-rooms__title">
@@ -377,7 +395,7 @@
         </div>
       </div>
     </section>
-    <section class="p-facilities pt221">
+    <section class="p-facilities pt221" id="anc03">
       <div class="l-inner">
         <div class="p-facilities__content p-facilities__content--scene">
           <?php get_template_part('includes/reserve'); ?>
@@ -389,7 +407,7 @@
           </div>
 
           <div class="p-facilities__list p-facilities__list--benefit">
-            <div class="p-facilities__item p-facilities__item--scene">
+            <a href="#" class="p-facilities__item p-facilities__item--scene">
               <figure class="p-facilities__img p-facilities__img--benefit">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_1.jpg" alt="宿泊特別割引" width="360" height="220">
               </figure>
@@ -403,8 +421,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="p-facilities__item p-facilities__item--scene">
+            </a>
+            <a href="#" class="p-facilities__item p-facilities__item--scene">
               <figure class="p-facilities__img p-facilities__img--benefit">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_2.jpg" alt="宴会場利用割引" width="360" height="220">
               </figure>
@@ -418,8 +436,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="p-facilities__item p-facilities__item--scene">
+            </a>
+            <a href="#" class="p-facilities__item p-facilities__item--scene">
               <figure class="p-facilities__img p-facilities__img--benefit">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_3.jpg" alt="大型駐車場完備" width="360" height="220">
               </figure>
@@ -433,8 +451,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="p-facilities__item p-facilities__item--scene">
+            </a>
+            <div href="#" class="p-facilities__item p-facilities__item--scene">
               <figure class="p-facilities__img p-facilities__img--benefit">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_4.jpg" alt="光熱費無料" width="360" height="220">
               </figure>
@@ -472,7 +490,7 @@
     </section>
     <section class="p-fee">
       <div class="l-inner">
-        <div class="p-fee__content">
+        <div class="p-fee__content" id="anc04">
           <div class="p-fee__title">
             <h3 class="c-main-title">
               <span class="c-main-title__ja">ご利用金額</span>
@@ -539,7 +557,7 @@
               </table>
             </div>
           </div>
-          <div class="p-fee__submit">
+          <div class="p-fee__submit" id="anc05">
             <?php get_template_part('includes/reserve'); ?>
           </div>
 

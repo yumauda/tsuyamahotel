@@ -31,10 +31,24 @@
         </div>
       </div>
     </section>
+    <ul class="p-lists">
+      <li class="p-lists__list">
+        <a href="#anc01" class="p-lists__link">お部屋のご案内</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc02" class="p-lists__link">快適なご滞在のために</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc03" class="p-lists__link">サービス</a>
+      </li>
+      <li class="p-lists__list">
+        <a href="#anc04" class="p-lists__link">連泊のお客様へ</a>
+      </li>
+    </ul>
 
 
 
-    <section class="p-rooms p-rooms--stay">
+    <section class="p-rooms p-rooms--stay" id="anc01">
       <div class="l-inner">
 
         <div class="p-rooms__content">
@@ -274,7 +288,7 @@
     <section class="p-information">
       <div class="l-inner">
 
-        <div class="p-information__content">
+        <div class="p-information__content" id="anc02">
           <div class="p-information__title-wrapper">
             <div class="p-information__title">
               <h3 class="c-main-title">
@@ -340,7 +354,7 @@
 
 
         </div>
-        <div class="p-information__amenity p-amenity">
+        <div class="p-information__amenity p-amenity" id="anc03">
           <div class="p-amenity__content">
             <figure class="p-amenity__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/amenity_img.jpg" alt="アメニティバー" width="400" height="600">
@@ -372,7 +386,7 @@
               </div>
             </div>
           </div>
-          <div class="p-amenity__content">
+          <div class="p-amenity__content" id="anc04">
             <figure class="p-amenity__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/eco_img.jpg" alt="エコスタイル" width="400" height="600">
             </figure>

@@ -88,7 +88,21 @@
     padding-right: rem(18);
   }
 }
-
+.facilities-top {
+  border-top: 2px solid #c4ba98;
+}
+.facilities-top--thin {
+  border-top: 1px solid #c4ba98;
+}
+.facilities-left {
+  border-right: 2px solid #c4ba98;
+}
+.facilities-right {
+  border-left: 2px solid #c4ba98;
+}
+.facilities-bottom {
+  border-bottom: 2px solid #c4ba98;
+}
 .p-guide__facility-name {
   line-height: calc(30 / 18);
   letter-spacing: 0.1em;

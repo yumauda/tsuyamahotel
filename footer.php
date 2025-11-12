@@ -47,7 +47,7 @@
                     <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-footer__link">サテライトオフィス</a>
                 </li>
                 <li class="p-footer__list">
-                    <a href="<?php echo esc_url(home_url('/facility')); ?>" class="p-footer__link">館内のご案内</a>
+                    <a href="<?php echo esc_url(home_url('/facilities')); ?>" class="p-footer__link">館内のご案内</a>
                 </li>
                 <li class="p-footer__list">
                     <a href="<?php echo esc_url(home_url('/access')); ?>" class="p-footer__link">交通のご案内</a>

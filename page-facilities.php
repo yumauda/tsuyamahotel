@@ -32,14 +32,14 @@
               <div class="p-guide__box">
                 <div class="p-guide__floor-item">
                   <span class="p-guide__floor-number">4-6F</span>
-                  <div class="p-guide__floor-facilities">
+                  <div class="p-guide__floor-facilities facilities-top facilities-left facilities-right">
                     <p class="p-guide__facility-name">客室</p>
                   </div>
                 </div>
 
                 <div class="p-guide__floor-item">
                   <span class="p-guide__floor-number">3F</span>
-                  <div class="p-guide__floor-facilities">
+                  <div class="p-guide__floor-facilities facilities-top--thin facilities-left facilities-right">
                     <p class="p-guide__facility-name">結婚式場・写真室・美容室・衣裳室</p>
                     <p class="p-guide__facility-name">更衣室・さつきの間・あやめの間</p>
                   </div>
@@ -47,7 +47,7 @@
 
                 <div class="p-guide__floor-item">
                   <span class="p-guide__floor-number">2F</span>
-                  <div class="p-guide__floor-facilities">
+                  <div class="p-guide__floor-facilities facilities-top--thin facilities-left facilities-right">
                     <p class="p-guide__facility-name">大宴会場「鶴の間」・中宴会場「桜の間」</p>
                     <p class="p-guide__facility-name">「高瀬の間」・「那岐の間」「弥生の間」</p>
                     <p class="p-guide__facility-name">和式宴会場「衆楽の間」</p>
@@ -56,7 +56,7 @@
 
                 <div class="p-guide__floor-item">
                   <span class="p-guide__floor-number">1F</span>
-                  <div class="p-guide__floor-facilities">
+                  <div class="p-guide__floor-facilities facilities-top--thin facilities-left facilities-right">
                     <p class="p-guide__facility-name">フロント・クローク・レストラン「和」</p>
                     <p class="p-guide__facility-name">売店・ロビー・CHAPEL「ベネディクタス」</p>
                   </div>
@@ -64,7 +64,7 @@
 
                 <div class="p-guide__floor-item">
                   <span class="p-guide__floor-number">B1F</span>
-                  <div class="p-guide__floor-facilities">
+                  <div class="p-guide__floor-facilities facilities-top--thin facilities-left facilities-right facilities-bottom">
                     <p class="p-guide__facility-name">駐車場</p>
                   </div>
                 </div>

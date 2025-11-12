@@ -499,7 +499,7 @@
               大切なお集まりにふさわしい味わいと心づくしのおもてなしで、円滑で充実したひとときをサポートいたします。</p>
           </div>
           <div class="p-meal__swiper">
-            <div class="swiper slider">
+            <div class="swiper slider4">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <figure class="p-meal__img">

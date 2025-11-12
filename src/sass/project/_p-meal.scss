@@ -29,6 +29,9 @@
   font-weight: 400;
   color: #fafafa;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -135,6 +138,9 @@
   letter-spacing: 0.1em;
   white-space: nowrap;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(22);
   }
 }

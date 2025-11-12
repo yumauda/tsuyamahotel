@@ -36,6 +36,12 @@
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #fff;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 .p-service__reserve {
   margin-top: rem(48);

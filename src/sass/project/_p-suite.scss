@@ -30,6 +30,9 @@
   color: #fafafa;
   z-index: 3;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -55,6 +58,9 @@
   text-align: center;
   letter-spacing: 0.1em;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }

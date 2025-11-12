@@ -28,6 +28,9 @@
   white-space: nowrap;
   font-size: rem(18);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(22);
   }
 }
@@ -104,6 +107,12 @@
   letter-spacing: 0.1em;
   line-height: calc(26 / 18);
   font-family: $second-font-family;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(18);
+  }
 }
 
 .p-other__flex {

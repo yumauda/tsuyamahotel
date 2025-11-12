@@ -101,6 +101,9 @@
   padding-left: rem(24);
   font-size: rem(14);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(20);
     padding-left: rem(45);
   }
@@ -115,8 +118,10 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
-    flex-direction: row;
+  }
+  @include mq(lg) {
     gap: rem(48);
+    flex-direction: row;
   }
 }
 
@@ -146,6 +151,9 @@
   line-height: calc(40 / 18);
   text-align: left;
   @include mq(md) {
+    font-size: clamp(12px, 2vw, 12px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -232,6 +240,9 @@
   font-weight: 400;
   color: #fafafa;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }

@@ -70,8 +70,11 @@
   @include mq(md) {
     margin-bottom: rem(30);
     padding-bottom: rem(30);
-    font-size: rem(24);
+    font-size: clamp(14px, 2vw, 14px);
     padding-top: rem(30);
+  }
+  @include mq(lg){
+    font-size: rem(24);
   }
 }
 
@@ -99,6 +102,9 @@
   @include mq(md) {
     padding-right: rem(20);
     padding-left: rem(20);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg){
     font-size: rem(18);
   }
 }
@@ -121,6 +127,9 @@
   letter-spacing: 0.1em;
   font-size: rem(14);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg){
     font-size: rem(18);
   }
 }

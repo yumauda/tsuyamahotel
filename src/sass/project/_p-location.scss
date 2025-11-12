@@ -54,6 +54,9 @@
   color: #fafafa;
   font-family: $second-font-family;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -111,6 +114,9 @@
   line-height: calc(31 / 22);
   font-size: rem(16);
   @include mq(md) {
+    font-size: clamp(16px, 2vw, 16px);
+  }
+  @include mq(lg) {
     font-size: rem(22);
   }
 }
@@ -131,9 +137,12 @@
   flex-direction: column;
   @include mq(md) {
     flex-direction: row;
-    gap: rem(64);
     padding-top: rem(20);
     padding-bottom: rem(20);
+    gap: rem(48);
+  }
+  @include mq(lg) {
+    gap: rem(64);
   }
 }
 
@@ -147,8 +156,12 @@
   letter-spacing: 0.1em;
   font-size: rem(14);
   @include mq(md) {
-    font-size: rem(16);
+    font-size: clamp(14px, 2vw, 14px);
+    width: rem(120);
+  }
+  @include mq(lg) {
     width: rem(80);
+    font-size: rem(16);
   }
 }
 
@@ -159,6 +172,9 @@
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(16);
   }
 }
@@ -200,12 +216,20 @@
   font-family: $second-font-family;
   font-size: rem(16);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+    width: rem(300);
+    white-space: nowrap;
+  }
+  @include mq(lg) {
     width: rem(220);
     font-size: rem(22);
   }
 }
 
 .p-location__trafic-dd {
+  @include mq(md){
+   flex: 1; 
+  }
 }
 
 .p-location__trafic-text {
@@ -215,6 +239,9 @@
   letter-spacing: 0.1em;
   font-size: rem(14);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(16);
   }
 }

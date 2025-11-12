@@ -29,6 +29,10 @@
   @include mq(md) {
     top: rem(-64);
     width: rem(270);
+    right: rem(-40);
+  }
+  @include mq(lg) {
+    right: 0;
   }
 }
 .p-beautiful__content::after {

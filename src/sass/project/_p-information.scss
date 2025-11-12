@@ -67,6 +67,9 @@
   line-height: calc(35 / 24);
   font-size: rem(18);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(24);
   }
 }
@@ -109,6 +112,9 @@
   font-weight: 400;
   color: #333;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(16);
   }
 }

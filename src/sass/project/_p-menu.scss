@@ -63,8 +63,11 @@
   padding: rem(5) rem(10);
   font-size: rem(14);
   @include mq(md) {
-    font-size: rem(16);
+    font-size: clamp(14px, 2vw, 14px);
     padding: rem(5) rem(20);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
   }
 }
 
@@ -81,6 +84,9 @@
   line-height: 2;
   color: #9b0030;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(30);
   }
 }
@@ -92,6 +98,9 @@
   color: #9b0030;
   letter-spacing: 0.1em;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(20);
   }
 }
@@ -102,6 +111,12 @@
   line-height: calc(20 / 14);
   color: #9b0030;
   letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 
 .p-menu__text-wrapper {
@@ -117,7 +132,11 @@
   letter-spacing: 0.1em;
   line-height: calc(40 / 18);
   font-weight: 400;
+
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -130,6 +149,9 @@
   color: #333;
   font-size: rem(14);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(16);
   }
 }
@@ -194,9 +216,13 @@
   font-weight: 700;
   padding: rem(5) rem(10);
   background: #9b0030;
+
   @include mq(md) {
-    font-size: rem(16);
     padding: rem(5) rem(20);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
   }
 }
 
@@ -220,6 +246,12 @@
   line-height: calc(30 / 14);
   font-weight: 400;
   color: #333;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 .p-menu__triple {
   display: grid;
@@ -328,6 +360,12 @@
   color: #fafafa;
   letter-spacing: 0.05em;
   margin-top: rem(10);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 
 .p-menu__table-right {
@@ -350,6 +388,9 @@
   color: #fafafa;
   white-space: nowrap;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(28);
   }
 }
@@ -360,6 +401,12 @@
   font-weight: 700;
   color: #fafafa;
   letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 
 .p-menu__table-tax {
@@ -370,6 +417,12 @@
   color: #fafafa;
   letter-spacing: 0.1em;
   white-space: nowrap;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 .p-menu__double-title--small {
   font-size: rem(20);
@@ -391,6 +444,12 @@
   line-height: calc(30 / 14);
   font-weight: 400;
   color: #fafafa;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 .p-menu__invite {
   border-left: 1px solid #f5f2e8;
@@ -414,6 +473,9 @@
   white-space: nowrap;
   font-size: rem(16);
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(24);
   }
 }
@@ -474,6 +536,10 @@
   color: #fafafa;
   letter-spacing: 0.1em;
   @include mq(md) {
+    width: rem(200);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     width: rem(130);
     font-size: rem(18);
   }
@@ -487,6 +553,9 @@
   letter-spacing: 0.1em;
   text-align: left;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }

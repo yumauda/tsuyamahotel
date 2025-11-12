@@ -45,6 +45,12 @@
     line-height: 2;
     color: #fafafa;
     white-space: nowrap;
+    @include mq(md){
+      font-size: clamp(14px, 2vw, 14px);
+    }
+    @include mq(lg) {
+      font-size: rem(20);
+    }
   }
 
   &__label {
@@ -58,6 +64,12 @@
     white-space: nowrap;
     z-index: 2;
     width: rem(320);
+    @include mq(md){
+      font-size: clamp(14px, 2vw, 14px);
+    }
+    @include mq(lg) {
+      font-size: rem(18);
+    }
     &::before {
       content: "";
       z-index: 0;
@@ -101,6 +113,12 @@
     font-size: rem(18);
     letter-spacing: 0.1em;
     line-height: 2;
+    @include mq(md){
+      font-size: clamp(14px, 2vw, 14px);
+    }
+    @include mq(lg) {
+      font-size: rem(18);
+    }
   }
 
   // レスポンシブ対応
@@ -127,12 +145,24 @@
       font-size: rem(14);
       text-align: center;
       padding: rem(15) rem(18);
+      @include mq(md){
+        font-size: clamp(14px, 2vw, 14px);
+      }
+      @include mq(lg) {
+        font-size: rem(14);
+      }
     }
 
     &__cell {
       font-size: rem(16);
       text-align: center;
       padding: rem(15);
+      @include mq(md){
+        font-size: clamp(14px, 2vw, 14px);
+      }
+      @include mq(lg) {
+        font-size: rem(16);
+      }
     }
   }
 }
@@ -147,6 +177,12 @@
   letter-spacing: 0.1em;
   white-space: nowrap;
   line-height: calc(30 / 14);
+  @include mq(md){
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 .p-fee .p-all__label {
   width: rem(240);

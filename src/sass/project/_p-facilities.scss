@@ -38,6 +38,11 @@
   gap: rem(16);
   margin-top: rem(40);
   @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(40);
+    margin-top: rem(60);
+  }
+  @include mq(lg) {
     grid-template-columns: repeat(3, 1fr);
     gap: rem(60);
     margin-top: rem(80);
@@ -110,6 +115,9 @@
   color: #fafafa;
   text-align: center;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(24);
   }
 }
@@ -126,7 +134,11 @@
   margin-top: rem(10);
   @include mq(md) {
     margin-top: rem(15);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg){
     font-size: rem(16);
+    
   }
 }
 .p-facilities__item-text--scene {
@@ -184,6 +196,9 @@
   line-height: calc(40 / 18);
   font-weight: 400;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(18);
   }
 }

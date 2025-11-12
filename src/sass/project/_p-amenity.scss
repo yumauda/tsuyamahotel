@@ -64,6 +64,9 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(16);
   }
 }
@@ -102,6 +105,12 @@
   letter-spacing: 0.1em;
   color: #333;
   font-weight: 400;
+  @include mq(md){
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 .p-amenity__item--bold {
   font-weight: 700;
@@ -111,6 +120,12 @@
   letter-spacing: 0.1em;
   line-height: calc(40 / 16);
   margin-bottom: rem(10);
+  @include mq(md){
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(16);
+  }
 }
 .p-amenity__eco {
   background: rgba($color: #fafafa, $alpha: 0.5);
@@ -132,6 +147,9 @@
   font-family: $second-font-family;
   text-align: center;
   @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
     font-size: rem(24);
   }
 }

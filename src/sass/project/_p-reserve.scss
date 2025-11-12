@@ -2,6 +2,10 @@
 
 .p-reserve {
   position: relative;
+  overflow-x: clip;
+  @include mq(md){
+    overflow-x: initial;
+  }
 }
 
 .p-reserve__agreement {

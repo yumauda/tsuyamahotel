@@ -407,43 +407,6 @@ jQuery(document).ready(function ($) {
   });
 });
 
-// Google翻訳 言語切り替え
-jQuery(document).ready(function ($) {
-  let isEnglish = false;
-
-  $(".p-header__btn-link--language").on("click", function (e) {
-    e.preventDefault();
-
-    // Google翻訳の初期化を待つ
-    const checkTranslateReady = setInterval(function () {
-      const selectElement = $(".goog-te-combo");
-
-      if (selectElement.length > 0) {
-        clearInterval(checkTranslateReady);
-
-        // 現在の状態に応じて言語を切り替え
-        if (!isEnglish) {
-          // 日本語 → 英語
-          selectElement.val("en");
-          selectElement.trigger("change");
-          isEnglish = true;
-        } else {
-          // 英語 → 日本語
-          selectElement.val("ja");
-          selectElement.trigger("change");
-          isEnglish = false;
-        }
-      }
-    }, 100);
-
-    // 10秒後にタイムアウト
-    setTimeout(function () {
-      clearInterval(checkTranslateReady);
-    }, 10000);
-
-    return false;
-  });
-});
 
 // p-listsにスクロール量に応じてis-activeクラスを付与
 jQuery(document).ready(function ($) {

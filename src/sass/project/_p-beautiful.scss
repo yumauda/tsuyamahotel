@@ -2,7 +2,7 @@
 
 .p-beautiful {
   padding-top: rem(240);
-  padding-bottom: rem(100);
+  padding-bottom: rem(200);
   @include mq(md) {
     padding-top: rem(269);
     padding-bottom: rem(304);
@@ -42,12 +42,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(460);
   height: auto;
   aspect-ratio: 460 / 220;
   object-fit: cover;
-  bottom: rem(-320);
-  left: rem(-180);
+  width: rem(200);
+  bottom: rem(-140);
+  left: rem(-32);
+  @include mq(md) {
+    width: rem(460);
+    bottom: rem(-320);
+    left: rem(-180);
+  }
 }
 
 .p-beautiful__title {

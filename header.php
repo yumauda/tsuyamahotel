@@ -95,7 +95,7 @@
                         <a href="<?php echo home_url('/office'); ?>" class="p-header__menu-link">サテライトオフィス</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="#" class="p-header__menu-link">館内のご案内</a>
+                        <a href="<?php echo home_url('/facilities'); ?>" class="p-header__menu-link">館内のご案内</a>
                     </li>
                     <li class="p-header__menu-item">
                         <a href="<?php echo home_url('/access'); ?>" class="p-header__menu-link">交通のご案内</a>

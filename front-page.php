@@ -257,7 +257,7 @@
               'post_status' => 'publish',
               'post_type' => 'post',
               'orderby' => 'date',
-              'category_name' => 'restaurant',
+              'category_name' => 'restaurant-category',
             );
 
             // WP_Queryインスタンスの生成

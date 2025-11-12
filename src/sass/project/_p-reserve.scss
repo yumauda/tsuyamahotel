@@ -79,7 +79,7 @@
 }
 
 .p-reserve__checkbox:checked + .p-reserve__checkbox-text::after {
-  content: "";
+  /* content: "";
   position: absolute;
   left: rem(10);
   top: 50%;
@@ -87,7 +87,7 @@
   width: rem(10);
   height: rem(18);
   border: solid #07182b;
-  border-width: 0 3px 3px 0;
+  border-width: 0 3px 3px 0; */
 }
 
 .p-reserve__checkbox:hover + .p-reserve__checkbox-text::before {

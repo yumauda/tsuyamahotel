@@ -7139,19 +7139,15 @@ body.modal-open {
 }
 
 .p-reserve__checkbox:checked + .p-reserve__checkbox-text::after {
-  content: "";
+  /* content: "";
   position: absolute;
-  left: 10px;
-  left: 0.625rem;
+  left: rem(10);
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(45deg);
-          transform: translateY(-50%) rotate(45deg);
-  width: 10px;
-  width: 0.625rem;
-  height: 18px;
-  height: 1.125rem;
+  transform: translateY(-50%) rotate(45deg);
+  width: rem(10);
+  height: rem(18);
   border: solid #07182b;
-  border-width: 0 3px 3px 0;
+  border-width: 0 3px 3px 0; */
 }
 
 .p-reserve__checkbox:hover + .p-reserve__checkbox-text::before {
@@ -7698,6 +7694,11 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .p-rooms__img--stay {
+    max-width: 27.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-rooms__img--stay {
     max-width: 41.25rem;
   }
 }
@@ -8162,7 +8163,7 @@ body.modal-open {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media screen and (min-width: 1540px) {
+@media screen and (min-width: 768px) {
   .p-rooms__flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -8181,7 +8182,7 @@ body.modal-open {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
 }
-@media screen and (min-width: 1540px) {
+@media screen and (min-width: 768px) {
   .p-rooms__flex-title {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -8210,14 +8211,14 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .p-rooms__flex-title-ja {
-    font-size: clamp(14px, 2vw, 14px);
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    font-size: clamp(18px, 2vw, 20px);
   }
 }
 @media screen and (min-width: 1540px) {
   .p-rooms__flex-title-ja {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
     font-size: 1.375rem;
   }
 }
@@ -8233,14 +8234,14 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .p-rooms__flex-title-en {
-    font-size: clamp(20px, 2vw, 20px);
+    font-size: clamp(40px, 2vw, 48px);
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
   }
 }
 @media screen and (min-width: 1540px) {
   .p-rooms__flex-title-en {
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
     font-size: 3.75rem;
   }
 }
@@ -8262,6 +8263,13 @@ body.modal-open {
   gap: 0.75rem;
 }
 @media screen and (min-width: 768px) {
+  .p-rooms__vertical-detail {
+    gap: 4rem;
+    grid-template-columns: 50% 40%;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 1540px) {
   .p-rooms__vertical-detail {
     gap: 7.5rem;
     margin-top: 2.8125rem;

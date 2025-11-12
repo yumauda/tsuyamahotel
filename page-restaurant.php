@@ -62,86 +62,58 @@
         <div class="swiper slider3">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-            <!-- Slides -->
+            <?php
+            // パラメータの設定
+            $args = array(
+              'posts_per_page' => -1,
+              'post_status' => 'publish',
+              'post_type' => 'post',
+              'orderby' => 'date',
+            );
+
+            // WP_Queryインスタンスの生成
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
+
             <div class="swiper-slide">
-              <div class="p-swiper__block">
+              <a href="<?php the_permalink(); ?>" class="p-swiper__block">
                 <div class="p-swiper__row">
                   <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">宴会・会議</span>
+                    <span class="p-swiper__detail-category">
+                      <?php
+                      $categories = get_the_category();
+                      if (!empty($categories)) {
+                        echo esc_html($categories[0]->name);
+                      }
+                      ?>
+                    </span>
                     <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-12-01" class="p-swiper__date">9.3</time>
+                      <p class="p-swiper__year"><?php the_time('Y'); ?></p>
+                      <time datetime="<?php the_time('Y-m-d'); ?>" class="p-swiper__date"><?php the_time('m.d'); ?></time>
                     </div>
                   </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宴会・会議" width="160" height="160">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <figure class="p-swiper__img">
+                      <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+                    </figure>
+                  <?php else : ?>
+                    <figure class="p-swiper__img">
+                      <img src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>">
+                    </figure>
+                  <?php endif; ?>
                   </figure>
                 </div>
-                <p class="p-swiper__text">【秋のパーティープラン】のご案内</p>
-
-              </div>
+                <p class="p-swiper__text"><?php the_title(); ?></p>
+              </a>
             </div>
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">宴会・会議</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-12-01" class="p-swiper__date">9.3</time>
-                    </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宴会・会議" width="160" height="160">
-                  </figure>
-                </div>
-                <p class="p-swiper__text">【秋のパーティープラン】のご案内</p>
-
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">宴会・会議</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-12-01" class="p-swiper__date">9.3</time>
-                    </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宴会・会議" width="160" height="160">
-                  </figure>
-                </div>
-                <p class="p-swiper__text">【秋のパーティープラン】のご案内</p>
-
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">宴会・会議</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-12-01" class="p-swiper__date">9.3</time>
-                    </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宴会・会議" width="160" height="160">
-                  </figure>
-                </div>
-                <p class="p-swiper__text">【秋のパーティープラン】のご案内</p>
-
-              </div>
-            </div>
-
-
-
-
-
+            <?php
+              endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
           </div>
-
         </div>
         <div class="p-swiper__arrows">
           <div class="swiper-button-prev">

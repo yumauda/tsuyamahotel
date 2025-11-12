@@ -9490,8 +9490,15 @@ body.modal-open {
   padding-right: 1.25rem;
   padding-left: 20px;
   padding-left: 1.25rem;
+  display: block;
 }
 @media screen and (min-width: 768px) {
+  .p-swiper__block {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
   .p-swiper__block {
     padding-right: 3.75rem;
     padding-left: 3.75rem;
@@ -9614,7 +9621,14 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .p-swiper__img {
+    max-width: 7.5rem;
+    min-width: 7.5rem;
+  }
+}
+@media screen and (min-width: 1540px) {
+  .p-swiper__img {
     max-width: 10rem;
+    min-width: 10rem;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;

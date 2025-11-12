@@ -138,7 +138,12 @@
   border-right: 1px solid #2f4f77;
   padding-right: rem(20);
   padding-left: rem(20);
+  display: block;
   @include mq(md) {
+    padding-right: rem(40);
+    padding-left: rem(40);
+  }
+  @include mq(lg) {
     padding-right: rem(60);
     padding-left: rem(60);
   }
@@ -222,7 +227,12 @@
 .p-swiper__img {
   width: 100%;
   @include mq(md) {
+    max-width: rem(120);
+    min-width: rem(120);
+  }
+  @include mq(lg) {
     max-width: rem(160);
+    min-width: rem(160);
     flex: 1;
   }
 }

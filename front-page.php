@@ -52,74 +52,58 @@
       <div class="p-swiper__content" data-content="all">
         <div class="swiper slider-pickup">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">宿泊プラン</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-07-31" class="p-swiper__date">7.31</time>
+            <?php
+            // パラメータの設定
+            $args = array(
+              'posts_per_page' => -1,
+              'post_status' => 'publish',
+              'post_type' => 'post',
+              'orderby' => 'date',
+            );
+
+            // WP_Queryインスタンスの生成
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
+
+                <div class="swiper-slide">
+                  <a href="<?php the_permalink(); ?>" class="p-swiper__block">
+                    <div class="p-swiper__row">
+                      <div class="p-swiper__detail">
+                        <span class="p-swiper__detail-category">
+                          <?php
+                          $categories = get_the_category();
+                          if (!empty($categories)) {
+                            echo esc_html($categories[0]->name);
+                          }
+                          ?>
+                        </span>
+                        <div class="p-swiper__time-wrapper">
+                          <p class="p-swiper__year"><?php the_time('Y'); ?></p>
+                          <time datetime="<?php the_time('Y-m-d'); ?>" class="p-swiper__date"><?php the_time('m.d'); ?></time>
+                        </div>
+                      </div>
+                      <?php if (has_post_thumbnail()) : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php else : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php endif; ?>
+
                     </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宿泊プラン" width="160" height="160">
-                  </figure>
+                    <p class="p-swiper__text"><?php the_title(); ?></p>
+                  </a>
                 </div>
-                <p class="p-swiper__text">グランドオルゴールギャラリー オルゴールナイトミュージアム＆オルゴール作り体験付きプラン</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">料理プラン</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-06-01" class="p-swiper__date">6.1</time>
-                    </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="料理プラン" width="160" height="160">
-                  </figure>
-                </div>
-                <p class="p-swiper__text">【2025年ディナーバイキング】緑豊かな季節のバイキング特別コース</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">お知らせ</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-05-29" class="p-swiper__date">5.29</time>
-                    </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="お知らせ" width="160" height="160">
-                  </figure>
-                </div>
-                <p class="p-swiper__text">【夏のパーティープラン】のご案内</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">レストラン</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-05-15" class="p-swiper__date">5.15</time>
-                    </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="レストラン" width="160" height="160">
-                  </figure>
-                </div>
-                <p class="p-swiper__text">津山の美食を楽しむ特別コース</p>
-              </div>
-            </div>
+
+            <?php
+              endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
           </div>
         </div>
         <div class="p-swiper__arrows">
@@ -135,49 +119,128 @@
       <div class="p-swiper__content" data-content="stay" style="display: none;">
         <div class="swiper slider-stay">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">お知らせ</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-07-31" class="p-swiper__date">7.31</time>
+            <?php
+            // パラメータの設定
+            $args = array(
+              'posts_per_page' => 9,
+              'post_status' => 'publish',
+              'post_type' => 'post',
+              'orderby' => 'date',
+              'category_name' => 'notice',
+            );
+
+            // WP_Queryインスタンスの生成
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
+
+                <div class="swiper-slide">
+                  <a href="<?php the_permalink(); ?>" class="p-swiper__block">
+                    <div class="p-swiper__row">
+                      <div class="p-swiper__detail">
+                        <span class="p-swiper__detail-category">
+                          <?php
+                          $categories = get_the_category();
+                          if (!empty($categories)) {
+                            echo esc_html($categories[0]->name);
+                          }
+                          ?>
+                        </span>
+                        <div class="p-swiper__time-wrapper">
+                          <p class="p-swiper__year"><?php the_time('Y'); ?></p>
+                          <time datetime="<?php the_time('Y-m-d'); ?>" class="p-swiper__date"><?php the_time('m.d'); ?></time>
+                        </div>
+                      </div>
+                      <?php if (has_post_thumbnail()) : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php else : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php endif; ?>
+
                     </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="宿泊プラン" width="160" height="160">
-                  </figure>
+                    <p class="p-swiper__text"><?php the_title(); ?></p>
+                  </a>
                 </div>
-                <p class="p-swiper__text">グランドオルゴールギャラリー オルゴールナイトミュージアム＆オルゴール作り体験付きプラン</p>
-              </div>
-            </div>
+
+            <?php
+              endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+
+        </div>
+        <div class="p-swiper__arrows">
+          <div class="swiper-button-prev">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_prev.png" alt="arrow" width="40" height="40">
+          </div>
+          <div class="swiper-button-next">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_next.png" alt="arrow" width="40" height="40">
+          </div>
         </div>
       </div>
 
       <div class="p-swiper__content" data-content="food" style="display: none;">
         <div class="swiper slider-food">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">イベント</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-06-01" class="p-swiper__date">6.1</time>
+            <?php
+            // パラメータの設定
+            $args = array(
+              'posts_per_page' => 9,
+              'post_status' => 'publish',
+              'post_type' => 'post',
+              'orderby' => 'date',
+              'category_name' => 'event',
+            );
+
+            // WP_Queryインスタンスの生成
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
+
+                <div class="swiper-slide">
+                  <a href="<?php the_permalink(); ?>" class="p-swiper__block">
+                    <div class="p-swiper__row">
+                      <div class="p-swiper__detail">
+                        <span class="p-swiper__detail-category">
+                          <?php
+                          $categories = get_the_category();
+                          if (!empty($categories)) {
+                            echo esc_html($categories[0]->name);
+                          }
+                          ?>
+                        </span>
+                        <div class="p-swiper__time-wrapper">
+                          <p class="p-swiper__year"><?php the_time('Y'); ?></p>
+                          <time datetime="<?php the_time('Y-m-d'); ?>" class="p-swiper__date"><?php the_time('m.d'); ?></time>
+                        </div>
+                      </div>
+                      <?php if (has_post_thumbnail()) : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php else : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php endif; ?>
+
                     </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="料理プラン" width="160" height="160">
-                  </figure>
+                    <p class="p-swiper__text"><?php the_title(); ?></p>
+                  </a>
                 </div>
-                <p class="p-swiper__text">【2025年ディナーバイキング】緑豊かな季節のバイキング特別コース</p>
-              </div>
-            </div>
+
+            <?php
+              endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -187,23 +250,59 @@
       <div class="p-swiper__content" data-content="restaurant" style="display: none;">
         <div class="swiper slider-restaurant">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">レストラン</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-05-15" class="p-swiper__date">5.15</time>
+            <?php
+            // パラメータの設定
+            $args = array(
+              'posts_per_page' => 9,
+              'post_status' => 'publish',
+              'post_type' => 'post',
+              'orderby' => 'date',
+              'category_name' => 'restaurant',
+            );
+
+            // WP_Queryインスタンスの生成
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
+
+                <div class="swiper-slide">
+                  <a href="<?php the_permalink(); ?>" class="p-swiper__block">
+                    <div class="p-swiper__row">
+                      <div class="p-swiper__detail">
+                        <span class="p-swiper__detail-category">
+                          <?php
+                          $categories = get_the_category();
+                          if (!empty($categories)) {
+                            echo esc_html($categories[0]->name);
+                          }
+                          ?>
+                        </span>
+                        <div class="p-swiper__time-wrapper">
+                          <p class="p-swiper__year"><?php the_time('Y'); ?></p>
+                          <time datetime="<?php the_time('Y-m-d'); ?>" class="p-swiper__date"><?php the_time('m.d'); ?></time>
+                        </div>
+                      </div>
+                      <?php if (has_post_thumbnail()) : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php else : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php endif; ?>
+
                     </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="レストラン" width="160" height="160">
-                  </figure>
+                    <p class="p-swiper__text"><?php the_title(); ?></p>
+                  </a>
                 </div>
-                <p class="p-swiper__text">津山の美食を楽しむ特別コース</p>
-              </div>
-            </div>
+
+            <?php
+              endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
@@ -213,23 +312,59 @@
       <div class="p-swiper__content" data-content="news" style="display: none;">
         <div class="swiper slider-news">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="p-swiper__block">
-                <div class="p-swiper__row">
-                  <div class="p-swiper__detail">
-                    <span class="p-swiper__detail-category">宴会・会議</span>
-                    <div class="p-swiper__time-wrapper">
-                      <p class="p-swiper__year">2025</p>
-                      <time datetime="2025-05-29" class="p-swiper__date">5.29</time>
+            <?php
+            // パラメータの設定
+            $args = array(
+              'posts_per_page' => 9,
+              'post_status' => 'publish',
+              'post_type' => 'post',
+              'orderby' => 'date',
+              'category_name' => 'party',
+            );
+
+            // WP_Queryインスタンスの生成
+            $my_query = new WP_Query($args);
+            if ($my_query->have_posts()) :
+              while ($my_query->have_posts()) : $my_query->the_post();
+            ?>
+
+                <div class="swiper-slide">
+                  <a href="<?php the_permalink(); ?>" class="p-swiper__block">
+                    <div class="p-swiper__row">
+                      <div class="p-swiper__detail">
+                        <span class="p-swiper__detail-category">
+                          <?php
+                          $categories = get_the_category();
+                          if (!empty($categories)) {
+                            echo esc_html($categories[0]->name);
+                          }
+                          ?>
+                        </span>
+                        <div class="p-swiper__time-wrapper">
+                          <p class="p-swiper__year"><?php the_time('Y'); ?></p>
+                          <time datetime="<?php the_time('Y-m-d'); ?>" class="p-swiper__date"><?php the_time('m.d'); ?></time>
+                        </div>
+                      </div>
+                      <?php if (has_post_thumbnail()) : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php else : ?>
+                        <figure class="p-swiper__img">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>">
+                        </figure>
+                      <?php endif; ?>
+
                     </div>
-                  </div>
-                  <figure class="p-swiper__img">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_img1.jpg" alt="お知らせ" width="160" height="160">
-                  </figure>
+                    <p class="p-swiper__text"><?php the_title(); ?></p>
+                  </a>
                 </div>
-                <p class="p-swiper__text">【夏のパーティープラン】のご案内</p>
-              </div>
-            </div>
+
+            <?php
+              endwhile;
+            endif;
+            wp_reset_postdata();
+            ?>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>

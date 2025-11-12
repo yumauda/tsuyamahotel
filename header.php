@@ -113,19 +113,25 @@
                 <div class="p-drawer-content__items">
                     <ul class="p-drawer-content__lists">
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">トップ</a>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">ホーム</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/about')); ?>" class="p-drawer-content__link">TRUXiAについて</a>
+                            <a href="<?php echo esc_url(home_url('/stay')); ?>" class="p-drawer-content__link">ご宿泊</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/business')); ?>" class="p-drawer-content__link">事業紹介</a>
+                            <a href="<?php echo esc_url(home_url('/restaurant')); ?>" class="p-drawer-content__link">レストラン</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/talent')); ?>" class="p-drawer-content__link">タレント紹介</a>
+                            <a href="<?php echo esc_url(home_url('/banquet')); ?>" class="p-drawer-content__link">宴会・会議</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-drawer-content__link">お知らせ</a>
+                            <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-drawer-content__link">サテライトオフィス</a>
+                        </li>
+                        <li class="p-drawer-content__list">
+                            <a href="<?php echo esc_url(home_url('/facility')); ?>" class="p-drawer-content__link">館内のご案内</a>
+                        </li>
+                        <li class="p-drawer-content__list">
+                            <a href="<?php echo esc_url(home_url('/access')); ?>" class="p-drawer-content__link">交通のご案内</a>
                         </li>
                     </ul>
                     

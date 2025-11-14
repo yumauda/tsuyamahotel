@@ -262,7 +262,7 @@ function Change_menulabel()
 {
 	global $menu;
 	global $submenu;
-	$name = 'お知らせ';
+	$name = 'ピックアップ';
 	$menu[5][0] = $name;
 	$submenu['edit.php'][5][0] = $name . '一覧';
 	$submenu['edit.php'][10][0] = '新しい' . $name;
@@ -270,7 +270,7 @@ function Change_menulabel()
 function Change_objectlabel()
 {
 	global $wp_post_types;
-	$name = 'お知らせ';
+	$name = 'ピックアップ';
 	$labels = &$wp_post_types['post']->labels;
 	$labels->name = $name;
 	$labels->singular_name = $name;
@@ -391,9 +391,39 @@ register_taxonomy('allcolumn_tag', 'allcolumn', array(
 	'show_in_rest' => true,
 )); */
 
+/**
+ * 季節を判定する関数
+ */
+function get_current_season() {
+	$current_date = current_time('n-j'); // 月-日の形式で取得 (例: 3-15, 12-1)
+	$month = (int) current_time('n');
+	$day = (int) current_time('j');
+
+	// 春: 3/1～5/31
+	if (($month == 3 && $day >= 1) || $month == 4 || ($month == 5 && $day <= 31)) {
+		return 'spring';
+	}
+	// 夏: 6/1～8/31
+	elseif (($month == 6 && $day >= 1) || $month == 7 || ($month == 8 && $day <= 31)) {
+		return 'summer';
+	}
+	// 秋: 9/1～11/30
+	elseif (($month == 9 && $day >= 1) || $month == 10 || ($month == 11 && $day <= 30)) {
+		return 'autumn';
+	}
+	// 冬: 12/1～2/28 or 2/29
+	else {
+		return 'winter';
+	}
+}
+
 add_filter('body_class', function ($classes) {
 	if (is_front_page()) {
 		$classes[] = 'home';
 	}
+	// 季節のクラスを追加
+	$season = get_current_season();
+	$classes[] = 'season-' . $season;
+
 	return $classes;
 });

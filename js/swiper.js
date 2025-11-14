@@ -67,8 +67,8 @@ const sliderPickup = new Swiper(".slider-pickup", {
     },
   },
   navigation: {
-    nextEl: ".slider-pickup ~ .swiper-button-next, .slider-pickup .swiper-button-next",
-    prevEl: ".slider-pickup ~ .swiper-button-prev, .slider-pickup .swiper-button-prev",
+    nextEl: '[data-content="all"] .swiper-button-next',
+    prevEl: '[data-content="all"] .swiper-button-prev',
   },
 });
 
@@ -85,8 +85,8 @@ const sliderStay = new Swiper(".slider-stay", {
     },
   },
   navigation: {
-    nextEl: ".slider-stay ~ .swiper-button-next, .slider-stay .swiper-button-next",
-    prevEl: ".slider-stay ~ .swiper-button-prev, .slider-stay .swiper-button-prev",
+    nextEl: '[data-content="stay"] .swiper-button-next',
+    prevEl: '[data-content="stay"] .swiper-button-prev',
   },
 });
 
@@ -103,8 +103,8 @@ const sliderFood = new Swiper(".slider-food", {
     },
   },
   navigation: {
-    nextEl: ".slider-food ~ .swiper-button-next, .slider-food .swiper-button-next",
-    prevEl: ".slider-food ~ .swiper-button-prev, .slider-food .swiper-button-prev",
+    nextEl: '[data-content="food"] .swiper-button-next',
+    prevEl: '[data-content="food"] .swiper-button-prev',
   },
 });
 
@@ -121,8 +121,8 @@ const sliderRestaurant = new Swiper(".slider-restaurant", {
     },
   },
   navigation: {
-    nextEl: ".slider-restaurant ~ .swiper-button-next, .slider-restaurant .swiper-button-next",
-    prevEl: ".slider-restaurant ~ .swiper-button-prev, .slider-restaurant .swiper-button-prev",
+    nextEl: '[data-content="restaurant"] .swiper-button-next',
+    prevEl: '[data-content="restaurant"] .swiper-button-prev',
   },
 });
 
@@ -139,8 +139,8 @@ const sliderNews = new Swiper(".slider-news", {
     },
   },
   navigation: {
-    nextEl: ".slider-news ~ .swiper-button-next, .slider-news .swiper-button-next",
-    prevEl: ".slider-news ~ .swiper-button-prev, .slider-news .swiper-button-prev",
+    nextEl: '[data-content="news"] .swiper-button-next',
+    prevEl: '[data-content="news"] .swiper-button-prev',
   },
 });
 
@@ -187,11 +187,11 @@ const slider5 = new Swiper(".slider5", {
     },
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".slider5 .swiper-button-next",
+    prevEl: ".slider5 .swiper-button-prev",
   },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });

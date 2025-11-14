@@ -97,12 +97,11 @@
 .p-meal__date::before {
   position: absolute;
   content: "";
-  background: #2e4f77;
+  background: #020818;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  mix-blend-mode: multiply;
 }
 
 .p-meal__date-text {
@@ -163,8 +162,13 @@
 }
 
 .p-meal__big-img {
-  max-width: rem(700);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(600);
+  }
+  @include mq(lg) {
+    max-width: rem(700);
+  }
 }
 .p-meal__big-img img {
   aspect-ratio: 750 / 500;

@@ -242,8 +242,14 @@
             wp_reset_postdata();
             ?>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        </div>
+        <div class="p-swiper__arrows">
+          <div class="swiper-button-prev">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_prev.png" alt="arrow" width="40" height="40">
+          </div>
+          <div class="swiper-button-next">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_next.png" alt="arrow" width="40" height="40">
+          </div>
         </div>
       </div>
 
@@ -304,8 +310,14 @@
             wp_reset_postdata();
             ?>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        </div>
+        <div class="p-swiper__arrows">
+          <div class="swiper-button-prev">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_prev.png" alt="arrow" width="40" height="40">
+          </div>
+          <div class="swiper-button-next">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_next.png" alt="arrow" width="40" height="40">
+          </div>
         </div>
       </div>
 
@@ -366,8 +378,14 @@
             wp_reset_postdata();
             ?>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        </div>
+        <div class="p-swiper__arrows">
+          <div class="swiper-button-prev">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_prev.png" alt="arrow" width="40" height="40">
+          </div>
+          <div class="swiper-button-next">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider_next.png" alt="arrow" width="40" height="40">
+          </div>
         </div>
       </div>
 

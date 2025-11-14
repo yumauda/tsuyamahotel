@@ -57,8 +57,21 @@
           </div>
 
         </div>
+
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="p-suite-swiper__pagination">
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="p-suite-swiper__button-wrapper">
+          <div class="swiper-button-prev">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/suite_swiper_prev.svg" alt="arrow" width="40" height="40">
+          </div>
+          <div class="swiper-button-next">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/suite_swiper_next.svg" alt="arrow" width="40" height="40">
+          </div>
+        </div>
       </div>
     </div>
     <section class="p-location p-location--suite">
@@ -313,9 +326,9 @@
                 </div>
               </a>
             </div>
-           
+
           </div>
-          
+
 
         </div>
       </div>

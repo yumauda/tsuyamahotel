@@ -1,14 +1,71 @@
 @use "global" as *;
 
 .p-top {
-  background: url(../images/common/top_bg.svg) no-repeat center center / cover;
   position: relative;
   isolation: auto;
+  overflow-x: clip;
   z-index: 0;
+  background: url(../images/common/bg.svg) no-repeat center center / cover;
   @include mq(md) {
     padding-left: rem(30);
     padding-right: rem(30);
   }
+}
+
+// 季節ごとの背景画像
+.season-spring .p-top::after {
+  position: fixed;
+  content: "";
+  background: url(../images/common/top_bg_spring.svg) no-repeat center center /
+    cover;
+  aspect-ratio: 1860 / 11144;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.season-summer .p-top::after {
+  position: fixed;
+  content: "";
+  background: url(../images/common/top_bg_summer.svg) no-repeat center center /
+    cover;
+  aspect-ratio: 1860 / 826;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.season-autumn .p-top::after {
+  position: fixed;
+  content: "";
+  background: url(../images/common/top_bg_autumn.svg) no-repeat center center /
+    cover;
+  aspect-ratio: 1860 / 1035;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.season-winter .p-top::after {
+  position: fixed;
+  background: url(../images/common/top_bg_winter.svg) no-repeat center center /
+    cover;
+  aspect-ratio: 1920 / 1080;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 .p-top::before {
   position: absolute;

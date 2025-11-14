@@ -458,3 +458,41 @@ jQuery(document).ready(function ($) {
     $(window).on("scroll", checkScrollForLists);
   }
 });
+
+// Google翻訳の言語切り替え
+jQuery(document).ready(function ($) {
+  let isTranslated = false; // 翻訳状態を記録
+
+  $(".p-header__btn-link--language").on("click", function (e) {
+    e.preventDefault();
+
+    // Google翻訳のselectボックスが読み込まれるまで待つ
+    const checkGoogleTranslate = setInterval(function () {
+      const googleTranslateSelect = $(".goog-te-combo");
+
+      if (googleTranslateSelect.length) {
+        clearInterval(checkGoogleTranslate);
+
+        // 現在の言語を確認して切り替え
+        if (!isTranslated) {
+          // 日本語から英語に切り替え
+          googleTranslateSelect.val("en");
+          googleTranslateSelect.trigger("change");
+          isTranslated = true;
+        } else {
+          // 英語から日本語に戻す
+          googleTranslateSelect.val("ja");
+          googleTranslateSelect.trigger("change");
+          isTranslated = false;
+        }
+      }
+    }, 100);
+
+    // 10秒経っても読み込まれなければタイムアウト
+    setTimeout(function () {
+      clearInterval(checkGoogleTranslate);
+    }, 10000);
+
+    return false;
+  });
+});

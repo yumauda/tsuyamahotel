@@ -4,6 +4,7 @@
   position: relative;
   padding-top: rem(40);
   padding-bottom: rem(40);
+
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(80);
@@ -22,24 +23,23 @@
     padding-top: rem(170);
   }
 }
-.p-swiper::before {
+.p-swiper::after {
   position: absolute;
   content: "";
-  background: #2e4f77;
+  background: #020818;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
+  inset: 0;
   top: 0;
   bottom: 0;
   left: 0;
-  mix-blend-mode: multiply;
 }
 .p-swiper--transparent {
   margin-top: initial;
 }
-.p-swiper--transparent::before {
+.p-swiper--transparent::after {
   background: transparent;
-  mix-blend-mode: normal;
 }
 .p-swiper__inner {
   max-width: rem(1620);

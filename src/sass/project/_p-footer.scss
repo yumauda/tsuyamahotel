@@ -2,6 +2,7 @@
 
 .p-footer {
   padding-top: rem(64);
+  position: relative;
   padding-bottom: rem(48);
   @include mq(md) {
     padding-top: rem(80);
@@ -9,6 +10,17 @@
   }
 }
 
+.p-footer::before {
+  position: absolute;
+  content: "";
+  background: #0B1933;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .p-footer__inner {
   padding-left: rem(20);
   padding-right: rem(20);
@@ -122,6 +134,7 @@
 
 .p-footer__bottom {
   position: relative;
+  z-index: 1;
   padding-top: rem(24);
   padding-bottom: rem(24);
   margin-top: rem(24);
@@ -137,10 +150,9 @@
   top: 0;
   left: 0;
   height: 100%;
-  background: #2e4f77;
+  background: #020818;
   margin-inline: calc(50% - 50vw);
   width: 100vw;
-  mix-blend-mode: multiply;
 }
 
 .p-footer__bottom-lists {

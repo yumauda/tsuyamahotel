@@ -66,6 +66,10 @@
   gap: rem(33);
   margin-left: auto;
 }
+.p-header__menu-item {
+  display: flex;
+  justify-content: center;
+}
 
 .p-header__menu-link {
   display: block;
@@ -101,7 +105,12 @@
 
 .p-header__btn-link {
   display: block;
-  width: rem(70);
+  @include mq(md) {
+    width: rem(56);
+  }
+  @include mq(lg) {
+    width: rem(70);
+  }
 }
 .p-header__btn-link img {
   width: 100%;
@@ -113,8 +122,11 @@
   display: none;
   @include mq(md) {
     display: block;
-    position: fixed;
     right: rem(105);
+    position: fixed;
+    bottom: rem(80);
+  }
+  @include mq(lg) {
     bottom: rem(120);
   }
 }
@@ -123,6 +135,12 @@
   display: block;
   width: rem(360);
   filter: drop-shadow(5px 5px 10px rgba($color: #000, $alpha: 0.16));
+  @include mq(md) {
+    width: rem(280);
+  }
+  @include mq(lg) {
+    width: rem(360);
+  }
 }
 
 .p-header__mice-link img {

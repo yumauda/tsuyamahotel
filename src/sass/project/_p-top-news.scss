@@ -11,8 +11,11 @@
 .p-top-news__content {
   position: relative;
   z-index: 1;
-  @include mq(lg) {
+  @include mq(md) {
     display: flex;
+    gap: rem(80);
+  }
+  @include mq(lg) {
     gap: rem(162);
   }
 }

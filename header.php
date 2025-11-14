@@ -29,7 +29,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 
     <!-- Google Translate -->
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'ja',
@@ -39,7 +39,7 @@
             }, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <?php wp_head() ?>
 </head>
@@ -128,7 +128,7 @@
                             <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-drawer-content__link">サテライトオフィス</a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/facility')); ?>" class="p-drawer-content__link">館内のご案内</a>
+                            <a href="<?php echo esc_url(home_url('/facilities')); ?>" class="p-drawer-content__link">館内のご案内</a>
                         </li>
                         <li class="p-drawer-content__list">
                             <a href="<?php echo esc_url(home_url('/access')); ?>" class="p-drawer-content__link">交通のご案内</a>

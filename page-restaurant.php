@@ -103,7 +103,6 @@
                       <img src="<?php echo get_template_directory_uri() ?>/images/common/noimage.jpg" alt="<?php the_title(); ?>">
                     </figure>
                   <?php endif; ?>
-                  </figure>
                 </div>
                 <p class="p-swiper__text"><?php the_title(); ?></p>
               </a>

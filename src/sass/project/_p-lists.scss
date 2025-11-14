@@ -25,11 +25,7 @@
   visibility: visible;
 }
 .p-lists__list + .p-lists__list {
-  @include mq(md) {
-    margin-top: rem(15);
-  }
-}
-.p-lists__list {
+  margin-top: rem(15);
 }
 .p-lists__link {
   display: inline-block;
@@ -39,6 +35,12 @@
   line-height: calc(14 / 14);
   font-weight: 400;
   opacity: 0.5;
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(14);
+  }
 }
 .p-lists__link.is-active {
   opacity: 1;

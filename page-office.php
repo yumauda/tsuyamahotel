@@ -33,7 +33,7 @@
       <li class="p-lists__list">
         <a href="#anc05" class="p-lists__link">ご利用方法・お問い合わせ</a>
       </li>
- 
+
     </ul>
     <section class="p-location">
       <div class="l-inner">
@@ -59,15 +59,46 @@
             </h3>
           </div>
           <div class="p-about__img-wrapper">
-            <figure class="p-about__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_img1.png" alt="宴会など" width="364" height="98">
-            </figure>
+            <div class="p-about__triple">
+              <div class="p-about__triple-block">
+                <figure class="p-about__img">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_icon1.png" alt="宴会など" width="364" height="98">
+                </figure>
+                <p class="p-about__triple-text">宴会・会議室</p>
+              </div>
+              <div class="p-about__triple-block">
+                <figure class="p-about__img">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_icon2.png" alt="宴会など" width="364" height="98">
+                </figure>
+                <p class="p-about__triple-text">宿泊施設</p>
+              </div>
+              <div class="p-about__triple-block">
+                <figure class="p-about__img">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_icon3.png" alt="宴会など" width="364" height="98">
+                </figure>
+                <p class="p-about__triple-text">お食事</p>
+              </div>
+
+            </div>
             <figure class="p-about__img--cross">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_cross.png" alt="" width="50" height="50">
             </figure>
-            <figure class="p-about__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_img2.png" alt="オフィスなど" width="286" height="113">
-            </figure>
+            <div class="p-about__double">
+              <div class="p-about__triple-block">
+                <figure class="p-about__img">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_icon4.png" alt="オフィス" width="364" height="98">
+                </figure>
+                <p class="p-about__triple-text">オフィス</p>
+              </div>
+              <div class="p-about__triple-block">
+                <figure class="p-about__img">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_icon5.png" alt="オンラインサービス" width="364" height="98">
+                </figure>
+                <p class="p-about__triple-text">オンラインサービス</p>
+              </div>
+              
+
+            </div>
           </div>
           <div class="p-about__text-wrapper">
             <p class="p-about__text">サテライトオフィスとは、本社や自宅に加え、必要に応じて利用できる「もうひとつの働く拠点」です。<br>
@@ -246,75 +277,155 @@
                 <thead>
                   <tr>
                     <th class="p-all__header p-all__header--empty"></th>
-                    <th class="p-all__header"><p>601号室</p></th>
-                    <th class="p-all__header"><p>608号室</p></th>
-                    <th class="p-all__header"><p>609号室</p></th>
-                    <th class="p-all__header"><p>610号室</p></th>
+                    <th class="p-all__header">
+                      <p>601号室</p>
+                    </th>
+                    <th class="p-all__header">
+                      <p>608号室</p>
+                    </th>
+                    <th class="p-all__header">
+                      <p>609号室</p>
+                    </th>
+                    <th class="p-all__header">
+                      <p>610号室</p>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="p-all__label p-all__label--first">トイレ</td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">ユニットバス</td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>-</p></td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">ケトル</td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">電子レンジ</td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">冷蔵庫（ミニ）</td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td> 
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">冷蔵庫（冷凍庫付き）</td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">空気清浄機（加湿器付き）</td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">27インチモニター（カメラ有）</td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
-                    <td class="p-all__cell"><p>○</p></td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>○</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label p-all__label--last">複合機（FAX）</td>
-                    <td class="p-all__cell p-all__cell--last"><p>-</p></td>
-                    <td class="p-all__cell p-all__cell--last"><p>-</p></td>
-                    <td class="p-all__cell p-all__cell--last"><p>○</p></td>
-                    <td class="p-all__cell p-all__cell--last"><p>-</p></td>
+                    <td class="p-all__cell p-all__cell--last">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell p-all__cell--last">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell p-all__cell--last">
+                      <p>○</p>
+                    </td>
+                    <td class="p-all__cell p-all__cell--last">
+                      <p>-</p>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -503,54 +614,110 @@
                 <thead>
                   <tr>
                     <th class="p-all__header p-all__header--empty"></th>
-                    <th class="p-all__header"><p>601号室<br><span>（2名まで/約16.86㎡）</span></p></th>
-                    <th class="p-all__header"><p>608号室<br><span>（6名まで/約24.55㎡）</span></p></th>
-                    <th class="p-all__header"><p>609号室<br><span>（6名まで/約27.22㎡）</span></p></th>
-                    <th class="p-all__header"><p>610号室<br><span>（6名まで/約27.22㎡）</span></p></th>
+                    <th class="p-all__header">
+                      <p>601号室<br><span>（2名まで/約16.86㎡）</span></p>
+                    </th>
+                    <th class="p-all__header">
+                      <p>608号室<br><span>（6名まで/約24.55㎡）</span></p>
+                    </th>
+                    <th class="p-all__header">
+                      <p>609号室<br><span>（6名まで/約27.22㎡）</span></p>
+                    </th>
+                    <th class="p-all__header">
+                      <p>610号室<br><span>（6名まで/約27.22㎡）</span></p>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="p-all__label p-all__label--first">1時間</td>
-                    <td class="p-all__cell"><p>1,100円</p></td>
-                    <td class="p-all__cell"><p>2,200円</p></td>
-                    <td class="p-all__cell"><p>2,750円</p></td>
-                    <td class="p-all__cell"><p>2,750円</p></td>
+                    <td class="p-all__cell">
+                      <p>1,100円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>2,200円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>2,750円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>2,750円</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">4時間</td>
-                    <td class="p-all__cell"><p>3,300円</p></td>
-                    <td class="p-all__cell"><p>5,500円</p></td>
-                    <td class="p-all__cell"><p>6,600円</p></td>
-                    <td class="p-all__cell"><p>6,600円</p></td>
+                    <td class="p-all__cell">
+                      <p>3,300円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>5,500円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>6,600円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>6,600円</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">1日</td>
-                    <td class="p-all__cell"><p>4,950円</p></td>
-                    <td class="p-all__cell"><p>7,150円</p></td>
-                    <td class="p-all__cell"><p>8,250円</p></td>
-                    <td class="p-all__cell"><p>8,250円</p></td>
+                    <td class="p-all__cell">
+                      <p>4,950円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>7,150円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>8,250円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>8,250円</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">1週間</td>
-                    <td class="p-all__cell"><p>29,700円</p></td>
-                    <td class="p-all__cell"><p>42,900円</p></td>
-                    <td class="p-all__cell"><p>49,500円</p></td>
-                    <td class="p-all__cell"><p>49,500円</p></td>
+                    <td class="p-all__cell">
+                      <p>29,700円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>42,900円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>49,500円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>49,500円</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label">1ヶ月</td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>169,400円</p></td>
-                    <td class="p-all__cell"><p>169,400円</p></td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>169,400円</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>169,400円</p>
+                    </td>
                   </tr>
                   <tr>
                     <td class="p-all__label p-all__label--last">30日～</td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>-</p></td>
-                    <td class="p-all__cell"><p>ご相談ください</p></td>
-                    <td class="p-all__cell"><p>ご相談ください</p></td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>-</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>ご相談ください</p>
+                    </td>
+                    <td class="p-all__cell">
+                      <p>ご相談ください</p>
+                    </td>
                   </tr>
 
                 </tbody>

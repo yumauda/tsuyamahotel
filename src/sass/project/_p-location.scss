@@ -198,9 +198,12 @@
   padding-bottom: rem(16);
   @include mq(md) {
     flex-direction: row;
-    gap: rem(100);
     padding-top: rem(30);
     padding-bottom: rem(30);
+    gap: rem(64);
+  }
+  @include mq(md) {
+    gap: rem(100);
   }
 }
 .p-location__trafic-row:last-child {
@@ -216,8 +219,7 @@
   font-family: $second-font-family;
   font-size: rem(16);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
-    width: rem(300);
+    font-size: clamp(16px, 2vw, 18px);
     white-space: nowrap;
   }
   @include mq(lg) {
@@ -227,8 +229,8 @@
 }
 
 .p-location__trafic-dd {
-  @include mq(md){
-   flex: 1; 
+  @include mq(md) {
+    flex: 1;
   }
 }
 

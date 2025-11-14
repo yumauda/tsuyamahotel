@@ -105,6 +105,7 @@
 
           </dl>
         </div>
+      </div>
     </section>
     <section class="p-parking">
       <div class="l-inner">
@@ -119,9 +120,9 @@
             <figure class="p-parking__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/parking_img.jpg" alt="駐車場" width="600" height="350">
             </figure>
-            <p class="p-parking__text">当ホテルでは、150台収容可能な駐車場（先着順）をご用意しております。
-              地下には屋内駐車場も備えており、雨天時でも快適にご利用いただけます。地下駐車場からはエレベーターで1階へ直結しており、スムーズに館内へお入りいただけます。
-              なお、夜間（22:00～翌6:00）はセキュリティ確保のため閉鎖しております。
+            <p class="p-parking__text">当ホテルでは、150台収容可能な駐車場（先着順）をご用意しております。<br>
+              地下には屋内駐車場も備えており、雨天時でも快適にご利用いただけます。地下駐車場からはエレベーターで1階へ直結しており、スムーズに館内へお入りいただけます。<br>
+              なお、夜間（22:00～翌6:00）はセキュリティ確保のため閉鎖しております。<br>
               トラックや大型車のご利用は承っておりませんが、団体宿泊でお越しのバスにつきましては事前にご相談ください。</p>
           </div>
           <div class="p-parking__grid">

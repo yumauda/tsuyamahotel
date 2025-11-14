@@ -22,6 +22,11 @@
   margin-top: rem(24);
   gap: rem(16);
   @include mq(md) {
+    margin-top: rem(40);
+    grid-template-columns: 1fr 1fr;
+    gap: rem(40);
+  }
+  @include mq(lg) {
     margin-top: rem(60);
     grid-template-columns: rem(650) rem(490);
     gap: rem(60);

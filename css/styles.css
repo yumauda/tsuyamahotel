@@ -2422,6 +2422,13 @@ select::-ms-expand {
   gap: 3.125rem;
 }
 
+@media screen and (min-width: 768px) {
+  .p-facilities__list--taste {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.125rem;
+  }
+}
+
 .p-facilities__list--benefit .p-facilities__item {
   display: -webkit-box;
   display: -ms-flexbox;

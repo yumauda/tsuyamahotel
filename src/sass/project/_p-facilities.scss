@@ -52,6 +52,12 @@
 .p-facilities__list--taste {
   gap: rem(50);
 }
+.p-facilities__list--taste {
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(50);
+  }
+}
 
 .p-facilities__item {
 }

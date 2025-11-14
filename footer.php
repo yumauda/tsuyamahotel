@@ -30,6 +30,20 @@
                 <p class="p-footer__address">【住所】〒708-0832 岡山県津山市東新町114-4</p>
                 <p class="p-footer__address">【ご予約】Tel：<a href="tel:0868252121">0868-25-2121（代）</a> / Fax：0868-22-1415</p>
             </div>
+            <div class="p-footer__sns">
+                <a href="#" class="p-footer__sns-link">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.png" alt="Instagram" width="24" height="24">
+
+                </a>
+                <a href="#" class="p-footer__sns-link p-footer__sns-link--facebook">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facebook.png" alt="Facebook" width="24" height="24">
+
+                </a>
+                <a href="#" class="p-footer__sns-link">
+                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/line.png" alt="Line" width="24" height="24">
+
+                </a>
+            </div>
             <ul class="p-footer__lists">
                 <li class="p-footer__list">
                     <a href="<?php echo esc_url(home_url('/stay')); ?>" class="p-footer__link">ご宿泊</a>

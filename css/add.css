@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* HEADER */
+header {
+  pointer-events: none;
+}
+.p-header__drawer,
+header a {
+  pointer-events: auto;
+}

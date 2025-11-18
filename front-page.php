@@ -32,7 +32,7 @@
   <figure class="p-top-img">
     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_bg_image.jpg" alt="" width="1860" height="700">
   </figure>
-  <div class="p-swiper p-swiper--transparent pb170 pt170">
+  <div class="p-swiper p-swiper--top p-swiper--transparent pb170 pt170">
     <div class="l-inner">
       <div class="p-swiper__header">
         <h3 class="c-main-title">

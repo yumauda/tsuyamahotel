@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* リキッドレイアウト対応 */
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "source-han-sans-japanese", sans-serif;
 }
 
 .u-desktop {
@@ -993,7 +993,7 @@ select::-ms-expand {
   color: #333;
   letter-spacing: 0.1em;
   line-height: 1.7647058824;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-amenity__title {
@@ -1105,7 +1105,7 @@ select::-ms-expand {
   color: #2e4f77;
   font-size: 16px;
   font-size: 1rem;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   letter-spacing: 0.1em;
   line-height: 2.5;
   margin-bottom: 10px;
@@ -1144,7 +1144,7 @@ select::-ms-expand {
   line-height: 1.4583333333;
   letter-spacing: 0.1em;
   font-weight: 700;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1261,8 +1261,32 @@ select::-ms-expand {
   }
 }
 
+.p-beautiful__title {
+  position: relative;
+}
+
+.p-beautiful__title::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/beautiful_title_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920/1080;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: auto;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  top: -270px;
+  top: -16.875rem;
+  opacity: 0.2;
+  z-index: -1;
+}
+
 .p-beautiful__title-text {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 400;
   letter-spacing: 0.2em;
   line-height: 1.875;
@@ -1278,7 +1302,7 @@ select::-ms-expand {
 
 .p-beautiful__text {
   color: #fafafa;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   line-height: 2.1818181818;
   font-weight: 400;
   letter-spacing: 0.2em;
@@ -1350,7 +1374,7 @@ select::-ms-expand {
   text-align: center;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 12px;
   font-size: 0.75rem;
 }
@@ -1507,7 +1531,7 @@ select::-ms-expand {
 }
 
 .p-desert__category-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 700;
   line-height: 1.4166666667;
   color: #fafafa;
@@ -1999,7 +2023,7 @@ select::-ms-expand {
 }
 
 .p-drink__category-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 400;
   line-height: 2.7272727273;
   color: #fafafa;
@@ -2507,6 +2531,12 @@ select::-ms-expand {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .p-facilities__list--taste {
+    margin-top: 3.125rem;
+  }
+}
+
 .p-facilities__list--benefit,
 .p-facilities__list--taste {
   gap: 50px;
@@ -2599,7 +2629,7 @@ select::-ms-expand {
 }
 
 .p-facilities__item-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   letter-spacing: 0.1em;
@@ -2906,7 +2936,7 @@ select::-ms-expand {
   color: #fafafa;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -3018,7 +3048,7 @@ select::-ms-expand {
   color: #fafafa;
   font-weight: 400;
   letter-spacing: 0.1em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   white-space: nowrap;
   font-size: 12px;
   font-size: 0.75rem;
@@ -3122,7 +3152,7 @@ select::-ms-expand {
   font-size: 0.8125rem;
   letter-spacing: 0.1em;
   font-weight: 400;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 
 .p-footer__floating-link--food {
@@ -3789,7 +3819,7 @@ input::placeholder {
   letter-spacing: 0.1em;
   font-weight: 700;
   text-align: center;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   color: #333;
   font-size: 14px;
   font-size: 0.875rem;
@@ -3872,7 +3902,7 @@ input::placeholder {
 }
 
 .p-guide__list-floor {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 700;
   color: #fafafa;
   letter-spacing: 0.1em;
@@ -4077,7 +4107,7 @@ input::placeholder {
   display: block;
   color: #fafafa;
   letter-spacing: 0.15em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 400;
   text-decoration: none;
   -webkit-transition: opacity 0.3s ease;
@@ -4250,7 +4280,7 @@ input::placeholder {
 }
 
 .p-heart__title-ja {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1.875;
@@ -4660,7 +4690,7 @@ input::placeholder {
   font-weight: 700;
   color: #fafafa;
   letter-spacing: 0.1em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   line-height: 1.4583333333;
   font-size: 18px;
   font-size: 1.125rem;
@@ -4975,7 +5005,7 @@ body.modal-open {
   color: #fafafa;
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-location__title {
@@ -5001,7 +5031,7 @@ body.modal-open {
   letter-spacing: 0.1em;
   font-weight: 400;
   color: #fafafa;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-location__text {
@@ -5079,7 +5109,7 @@ body.modal-open {
   color: #fafafa;
   letter-spacing: 0.1em;
   font-weight: 400;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   line-height: 1.4090909091;
   font-size: 16px;
   font-size: 1rem;
@@ -5238,7 +5268,7 @@ body.modal-open {
   color: #fafafa;
   line-height: 1.4090909091;
   letter-spacing: 0.1em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -5423,7 +5453,7 @@ body.modal-open {
 }
 
 .p-meal__date-text {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 400;
   line-height: 1.4583333333;
   color: #f5f2e8;
@@ -5465,7 +5495,7 @@ body.modal-open {
 }
 
 .p-meal__menu-text {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
@@ -5597,7 +5627,7 @@ body.modal-open {
 }
 
 .p-menu__title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   letter-spacing: 0.1em;
@@ -5613,7 +5643,7 @@ body.modal-open {
 
 .p-menu__tag {
   color: #fff;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5674,7 +5704,7 @@ body.modal-open {
 }
 
 .p-menu__price span {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
@@ -5694,7 +5724,7 @@ body.modal-open {
 }
 
 .p-menu__tax {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
@@ -5813,7 +5843,7 @@ body.modal-open {
 }
 
 .p-menu__double-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   letter-spacing: 0.1em;
@@ -5834,7 +5864,7 @@ body.modal-open {
 
 .p-menu__double-tag {
   color: #fff;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6048,7 +6078,7 @@ body.modal-open {
 }
 
 .p-menu__table-title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 700;
@@ -6130,7 +6160,7 @@ body.modal-open {
 }
 
 .p-menu__table-price span {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 700;
@@ -6149,7 +6179,7 @@ body.modal-open {
 }
 
 .p-menu__table-tax {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 400;
@@ -6227,7 +6257,7 @@ body.modal-open {
 .p-menu__invite-title {
   font-weight: 700;
   line-height: 1.4583333333;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   color: #fafafa;
   letter-spacing: 0.1em;
   text-align: center;
@@ -6477,7 +6507,7 @@ body.modal-open {
 }
 
 .p-other__title-text {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   letter-spacing: 0.1em;
   line-height: 2.7272727273;
   font-weight: 400;
@@ -6600,7 +6630,7 @@ body.modal-open {
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 1.4444444444;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-other__card-name {
@@ -6691,7 +6721,7 @@ body.modal-open {
 .p-page-mv__title-ja {
   font-weight: 500;
   color: #fafafa;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 32px;
   font-size: 2rem;
 }
@@ -6952,7 +6982,7 @@ body.modal-open {
   color: #fafafa;
   line-height: 1.4090909091;
   letter-spacing: 0.1em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-parking__subTitle {
@@ -7121,7 +7151,7 @@ body.modal-open {
   color: #fafafa;
   font-size: 16px;
   font-size: 1rem;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 400;
   line-height: 1.6666666667;
 }
@@ -7594,7 +7624,7 @@ body.modal-open {
   color: #07182b;
   letter-spacing: 0.1em;
   font-weight: 500;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-reserve__button-text {
@@ -7661,7 +7691,7 @@ body.modal-open {
   font-weight: 400;
   color: #fafafa;
   letter-spacing: 0.2em;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
 }
@@ -7758,7 +7788,7 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .p-rooms {
     padding-top: 11.25rem;
-    padding-bottom: 11.25rem;
+    padding-bottom: 12.5rem;
   }
 }
 
@@ -7834,7 +7864,7 @@ body.modal-open {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-align: center;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   letter-spacing: 0.075em;
   font-weight: 500;
   border-bottom: 2px solid #f5f2e8;
@@ -8002,7 +8032,7 @@ body.modal-open {
   line-height: 1.4666666667;
   color: #333;
   text-align: center;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-rooms__name {
@@ -8014,6 +8044,11 @@ body.modal-open {
 
 .p-rooms__name--stay {
   color: #fafafa;
+}
+@media screen and (min-width: 768px) {
+  .p-rooms__name--stay {
+    font-size: 2.125rem;
+  }
 }
 
 .p-rooms__description {
@@ -8034,12 +8069,19 @@ body.modal-open {
 }
 @media screen and (min-width: 1540px) {
   .p-rooms__description {
+    margin-top: 2.5rem;
     font-size: 1rem;
   }
 }
 
 .p-rooms__description--stay {
   color: #fafafa;
+}
+@media screen and (min-width: 1540px) {
+  .p-rooms__description--stay {
+    max-width: 37.5rem;
+    font-size: 1.125rem;
+  }
 }
 
 .p-rooms__info {
@@ -8158,17 +8200,7 @@ body.modal-open {
   transition: all 0.3s ease;
   border-radius: 0.1875rem;
   position: relative;
-}
-
-.p-rooms__button::before {
-  position: absolute;
-  content: "";
-  background: #2e4f77;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  mix-blend-mode: multiply;
+  background: #020818;
 }
 
 .p-rooms__top-textWrapper {
@@ -8265,7 +8297,7 @@ body.modal-open {
   letter-spacing: 0.1em;
   line-height: 2.7272727273;
   color: #2e4f77;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
 }
 @media screen and (min-width: 768px) {
   .p-rooms__all-title {
@@ -8392,7 +8424,7 @@ body.modal-open {
   color: #cdd2d8;
   letter-spacing: 0.1em;
   font-weight: 400;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   line-height: 2.7272727273;
   white-space: nowrap;
   font-size: 16px;
@@ -8466,7 +8498,7 @@ body.modal-open {
 }
 
 .p-rooms__flex-title-ja {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
@@ -8550,6 +8582,12 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .mt160 {
     margin-top: 10rem;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .fz16 {
+    font-size: 1rem;
   }
 }
 
@@ -9348,7 +9386,7 @@ body.modal-open {
 }
 
 .p-submit__title {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   color: #fafafa;
   letter-spacing: 0.1em;
   line-height: 2.1428571429;
@@ -9418,7 +9456,7 @@ body.modal-open {
   color: #3d4043;
   letter-spacing: 0.1em;
   font-weight: 500;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9680,6 +9718,30 @@ body.modal-open {
   left: 0;
 }
 
+.p-swiper--top {
+  position: relative;
+}
+
+.p-swiper--top::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/swiper_top_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1080px;
+  width: 67.5rem;
+  height: auto;
+  aspect-ratio: 1080/664;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: -100px;
+  top: -6.25rem;
+  z-index: 0;
+  left: -30px;
+  left: -1.875rem;
+}
+
 .p-swiper--transparent {
   margin-top: 0;
   margin-top: initial;
@@ -9774,7 +9836,7 @@ body.modal-open {
   color: #fafafa;
   opacity: 0.5;
   font-weight: 500;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   letter-spacing: 0.1em;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -10284,7 +10346,7 @@ body.modal-open {
   font-size: 20px;
   font-size: 1.25rem;
   color: #fafafa;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -10298,7 +10360,7 @@ body.modal-open {
   font-size: 14px;
   font-size: 0.875rem;
   color: #fafafa;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
@@ -10373,7 +10435,7 @@ body.modal-open {
 
 .p-top-life__center-text {
   color: #fafafa;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   letter-spacing: 0.2em;
@@ -10918,7 +10980,7 @@ body.modal-open {
 }
 
 .p-top-service__subTitle {
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   letter-spacing: 0.1em;
   font-weight: 500;
   line-height: 1.875;
@@ -11072,7 +11134,7 @@ body.modal-open {
   height: auto;
   top: 0;
   left: 0;
-  mix-blend-mode: screen;
+  opacity: 0.2;
 }
 
 .p-top--news::before {
@@ -11109,7 +11171,7 @@ body.modal-open {
   font-size: 1.25rem;
   letter-spacing: 0.1em;
   font-weight: 500;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
@@ -11132,6 +11194,9 @@ body.modal-open {
   letter-spacing: 0.05em;
   font-weight: 400;
   font-family: "Libre Baskerville", serif;
+  position: relative;
+  padding-left: 35px;
+  padding-left: 2.1875rem;
 }
 @media screen and (min-width: 768px) {
   .c-main-title__sub {
@@ -11139,12 +11204,28 @@ body.modal-open {
   }
 }
 
+.c-main-title__sub::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/main_title_line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 25px;
+  width: 1.5625rem;
+  height: 1px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
 .c-main-title__ja {
   white-space: nowrap;
   color: #fafafa;
   letter-spacing: 0.1em;
   font-weight: 500;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   font-size: 1.5rem;
@@ -11222,7 +11303,7 @@ body.modal-open {
 
 .c-section-title__ja {
   color: #333;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   font-weight: 500;
   letter-spacing: 0.075em;
   line-height: 1.1428571429;
@@ -11250,12 +11331,15 @@ body.modal-open {
   letter-spacing: 0.05em;
   line-height: 1.875;
   font-weight: 400;
-  font-family: "Noto Serif JP", serif;
+  font-family: "source-han-serif-jp-subset", sans-serif;
   display: block;
   font-size: 14px;
   font-size: 0.875rem;
   margin-top: 6px;
   margin-top: 0.375rem;
+  position: relative;
+  padding-left: 35px;
+  padding-left: 2.1875rem;
 }
 @media screen and (min-width: 768px) {
   .c-section-title__en {
@@ -11264,8 +11348,41 @@ body.modal-open {
   }
 }
 
+.c-section-title__en::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/section_title_line.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 25px;
+  width: 1.5625rem;
+  height: 1px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
 .c-section-title__en--white {
   color: #fafafa;
+  position: relative;
+}
+
+.c-section-title__en--white::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  width: 25px;
+  width: 1.5625rem;
+  height: 1px;
+  background: url(../images/common/section_title_line_white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .fontSize {

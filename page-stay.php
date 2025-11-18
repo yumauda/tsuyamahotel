@@ -167,7 +167,7 @@
                   </figure>
                   <div class="p-rooms__detail">
                     <h3 class="p-rooms__name p-rooms__name--stay">ツインルーム</h3>
-                    <p class="p-rooms__description p-rooms__description--stay">吉井川を一望する見晴らしの良いリバービューのお部屋、静けさに包まれる山側のお部屋、2つのタイプからお選びいただけます。</p>
+                    <p class="p-rooms__description p-rooms__description--stay fz16">吉井川を一望する見晴らしの良いリバービューのお部屋、静けさに包まれる山側のお部屋、2つのタイプからお選びいただけます。</p>
                     <dl class="p-rooms__info">
                       <div class="p-rooms__info-row p-rooms__info-row--stay">
                         <dt class="p-rooms__info-label p-rooms__info-label--stay">人数</dt>
@@ -307,7 +307,7 @@
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/info_1.jpg" alt="全室禁煙" width="160" height="160">
                 </figure>
                 <div class="p-information__card-text">
-                  <p>当ホテルは全ての客室を禁煙とさせていただいております。お煙草をお楽しみの方は、1階ロビーにて所定の喫煙所をご利用くださいませ。</p>
+                  <p>当ホテルはすべての客室を禁煙とし、清潔で快適な空間をご提供しています。小さなお子さま連れやご年配のお客さまにも安心してお過ごしいただけます。</p>
                 </div>
               </div>
             </div>
@@ -320,7 +320,7 @@
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/info_2.jpg" alt="フリーWi-Fi" width="160" height="160">
                 </figure>
                 <div class="p-information__card-text">
-                  <p>客室やロビーをはじめ、館内のすべてのエリアでWi-Fiをご利用いただけます。ビジネスでのご利用はもちろん、旅行中の情報収集機器接続もスムーズにおこなえます。</p>
+                  <p>客室やロビーをはじめ、館内すべてで無料Wi-Fiをご利用いただけます。ビジネスでのご利用はもちろん、旅行中の情報検索や動画視聴もスムーズに行えます。</p>
                 </div>
               </div>
             </div>
@@ -333,7 +333,7 @@
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/info_3.jpg" alt="バリアフリー対応" width="160" height="160">
                 </figure>
                 <div class="p-information__card-text">
-                  <p>館内は段差のない安心設計で、車いすでの移動もスムーズ。バリアフリールームのご用意もございますので、どなたでも安心してご利用いただけます。</p>
+                  <p>館内は段差の少ない設計で、車椅子での移動もスムーズ。バリアフリー対応の客室や多目的トイレもご用意し、どなたでも安心してご滞在いただけます。</p>
                 </div>
               </div>
             </div>
@@ -346,7 +346,7 @@
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/info_4.jpg" alt="売店" width="160" height="160">
                 </figure>
                 <div class="p-information__card-text">
-                  <p>館内の売店では、地域ならではの銘菓をご用意しております。ご旅行の思い出に、津山の味を持ち帰りをぜひお楽しみください。</p>
+                  <p>館内の売店では、地域ならではの銘菓など、旅の思い出にぴったりなお土産を取り揃えています。ご自宅用にも贈り物にも最適です。</p>
                 </div>
               </div>
             </div>

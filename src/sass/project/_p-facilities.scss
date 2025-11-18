@@ -48,6 +48,11 @@
     margin-top: rem(80);
   }
 }
+.p-facilities__list--taste {
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}
 .p-facilities__list--benefit,
 .p-facilities__list--taste {
   gap: rem(50);
@@ -142,9 +147,8 @@
     margin-top: rem(15);
     font-size: clamp(14px, 2vw, 14px);
   }
-  @include mq(lg){
+  @include mq(lg) {
     font-size: rem(16);
-    
   }
 }
 .p-facilities__item-text--scene {

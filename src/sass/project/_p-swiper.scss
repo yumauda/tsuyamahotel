@@ -35,6 +35,24 @@
   bottom: 0;
   left: 0;
 }
+.p-swiper--top {
+  position: relative;
+}
+.p-swiper--top::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/swiper_top_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: rem(1080);
+  height: auto;
+  aspect-ratio: 1080 / 664;
+  object-fit: cover;
+  top: rem(-100);
+  z-index: 0;
+  left: rem(-30);
+}
 .p-swiper--transparent {
   margin-top: initial;
 }

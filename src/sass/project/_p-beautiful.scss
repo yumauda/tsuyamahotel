@@ -56,6 +56,24 @@
 }
 
 .p-beautiful__title {
+  position: relative;
+}
+.p-beautiful__title::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/beautiful_title_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 1080;
+  object-fit: cover;
+  width: 100vw;
+  height: auto;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  top: rem(-270);
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .p-beautiful__title-text {

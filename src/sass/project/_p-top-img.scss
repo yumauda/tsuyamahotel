@@ -1,6 +1,8 @@
 @use "global" as *;
 
 .p-top-img {
+  position: relative;
+  z-index: 2;
 
 }
 .p-top-img img {

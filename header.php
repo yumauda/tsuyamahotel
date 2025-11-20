@@ -145,25 +145,46 @@
                 <div class="p-drawer-content__items">
                     <ul class="p-drawer-content__lists">
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">ホーム</a>
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="p-drawer-content__link">
+                                <span class="p-drawer-content__link-en">HOME</span>
+                                <span class="p-drawer-content__link-ja">ホーム</span>
+                            </a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/stay')); ?>" class="p-drawer-content__link">ご宿泊</a>
+                            <a href="<?php echo esc_url(home_url('/stay')); ?>" class="p-drawer-content__link">
+                                <span class="p-drawer-content__link-en">STAY</span>
+                                <span class="p-drawer-content__link-ja">ご宿泊</span>
+                            </a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/restaurant')); ?>" class="p-drawer-content__link">レストラン</a>
+                            <a href="<?php echo esc_url(home_url('/restaurant')); ?>" class="p-drawer-content__link">
+                                <span class="p-drawer-content__link-en">RESTAURANT</span>
+                                <span class="p-drawer-content__link-ja">レストラン</span>
+                            </a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/banquet')); ?>" class="p-drawer-content__link">宴会・会議</a>
+                            <a href="<?php echo esc_url(home_url('/banquet')); ?>" class="p-drawer-content__link">
+                                <span class="p-drawer-content__link-en">BANQUET</span>
+                                <span class="p-drawer-content__link-ja">宴会・会議</span>
+                            </a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-drawer-content__link">サテライトオフィス</a>
+                            <a href="<?php echo esc_url(home_url('/office')); ?>" class="p-drawer-content__link">
+                                <span class="p-drawer-content__link-en">OFFICE</span>
+                                <span class="p-drawer-content__link-ja">サテライトオフィス</span>
+                            </a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/facilities')); ?>" class="p-drawer-content__link">館内のご案内</a>
+                            <a href="<?php echo esc_url(home_url('/facilities')); ?>" class="p-drawer-content__link">
+                                <span class="p-drawer-content__link-en">FACILITIES</span>
+                                <span class="p-drawer-content__link-ja">館内のご案内</span>
+                            </a>
                         </li>
                         <li class="p-drawer-content__list">
-                            <a href="<?php echo esc_url(home_url('/access')); ?>" class="p-drawer-content__link">交通のご案内</a>
+                            <a href="<?php echo esc_url(home_url('/access')); ?>" class="p-drawer-content__link">
+                                <span class="p-drawer-content__link-en">ACCESS</span>
+                                <span class="p-drawer-content__link-ja">交通のご案内</span>
+                            </a>
                         </li>
                     </ul>
 

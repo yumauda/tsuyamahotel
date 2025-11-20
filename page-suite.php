@@ -7,6 +7,7 @@
         <div class="p-stay-mv__content">
           <div class="p-stay-mv__detail">
             <h2 class="c-main-title">
+              <span class="c-main-title__kind">ご宿泊</span>
               <span class="c-main-title__ja">スイートルーム A-type</span>
               <span class="c-main-title__en">Suite Room A-type</span>
             </h2>
@@ -16,22 +17,22 @@
     </section>
     <ul class="p-lists">
       <li class="p-lists__list">
-        <a href="#anc01" class="p-lists__link">スイートルームA-type</a>
+        <a href="<?php echo esc_url(home_url('/suite-a')); ?>" class="p-lists__link">スイートルームA-type</a>
       </li>
       <li class="p-lists__list">
-        <a href="#anc02" class="p-lists__link">スイートルームB-type</a>
+        <a href="<?php echo esc_url(home_url('/suite-b')); ?>" class="p-lists__link">スイートルームB-type</a>
       </li>
       <li class="p-lists__list">
-        <a href="#anc03" class="p-lists__link">ツインルーム</a>
+        <a href="<?php echo esc_url(home_url('/twin')); ?>" class="p-lists__link">ツインルーム</a>
       </li>
       <li class="p-lists__list">
-        <a href="#anc04" class="p-lists__link">ダブルルーム</a>
+        <a href="<?php echo esc_url(home_url('/double')); ?>" class="p-lists__link">ダブルルーム</a>
       </li>
       <li class="p-lists__list">
-        <a href="#anc05" class="p-lists__link">シングルルーム</a>
+        <a href="<?php echo esc_url(home_url('/single')); ?>" class="p-lists__link">シングルルーム</a>
       </li>
       <li class="p-lists__list">
-        <a href="#anc06" class="p-lists__link">和室</a>
+        <a href="<?php echo esc_url(home_url('/japanese')); ?>" class="p-lists__link">和室</a>
       </li>
     </ul>
     <!-- Slider main container -->
@@ -145,7 +146,7 @@
               </figure>
             </div>
             <div class="p-qa__block">
-              <details class="p-qa__content js-details">
+              <details class="p-qa__content js-details" open>
                 <summary class="p-qa__summary p-qa__summary--service js-summary">
                   <h4 class="p-qa__ttl p-qa__ttl--service">
                     客室アメニティ
@@ -185,9 +186,24 @@
                 <div class="p-qa__inner js-content">
                   <div class="p-qa__wrap p-qa__wrap--service">
                     <div class="p-qa__content p-qa__content--open01">
-                      <p class="p-qa__txt">次世代型インターネット接続環境と呼ばれるクラウドサービス利用を想定したIPoE通信を採用。</p>
-                      <p class="p-qa__txt">法人向け設計のインターネットサービスプロバイダーを採用、一般利用でありがちな通信混雑を解消しています。</p>
-                      <p class="p-qa__txt">宿泊通信設備と完全分離し、オフィス専用のインターネット回線をご用意しております。</p>
+                      <div class="p-qa__service-lists">
+                        <div class="p-qa__service-list">
+                          <p class="p-qa__service-list-text">シャンプー</p>
+                          <p class="p-qa__service-list-text">リンス</p>
+                          <p class="p-qa__service-list-text">石鹸</p>
+                          <p class="p-qa__service-list-text">ボディソープ</p>
+                          <p class="p-qa__service-list-text">バスタオル</p>
+                          <p class="p-qa__service-list-text">フェイスタオル</p>
+                        </div>
+                        <div class="p-qa__service-list">
+                          <p class="p-qa__service-list-text">パジャマ</p>
+                          <p class="p-qa__service-list-text">毛布</p>
+                          <p class="p-qa__service-list-text">ドライヤー</p>
+                          <p class="p-qa__service-list-text">ポット＆日本茶</p>
+                          <p class="p-qa__service-list-text">ミネラルウォーター</p>
+                          <p class="p-qa__service-list-text">スリッパ</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -201,9 +217,24 @@
                 <div class="p-qa__inner js-content">
                   <div class="p-qa__wrap p-qa__wrap--service">
                     <div class="p-qa__content p-qa__content--open01">
-                      <p class="p-qa__txt">次世代型インターネット接続環境と呼ばれるクラウドサービス利用を想定したIPoE通信を採用。</p>
-                      <p class="p-qa__txt">法人向け設計のインターネットサービスプロバイダーを採用、一般利用でありがちな通信混雑を解消しています。</p>
-                      <p class="p-qa__txt">宿泊通信設備と完全分離し、オフィス専用のインターネット回線をご用意しております。</p>
+                      <div class="p-qa__service-lists">
+                        <div class="p-qa__service-list">
+                          <p class="p-qa__service-list-text">シャンプー</p>
+                          <p class="p-qa__service-list-text">リンス</p>
+                          <p class="p-qa__service-list-text">石鹸</p>
+                          <p class="p-qa__service-list-text">ボディソープ</p>
+                          <p class="p-qa__service-list-text">バスタオル</p>
+                          <p class="p-qa__service-list-text">フェイスタオル</p>
+                        </div>
+                        <div class="p-qa__service-list">
+                          <p class="p-qa__service-list-text">パジャマ</p>
+                          <p class="p-qa__service-list-text">毛布</p>
+                          <p class="p-qa__service-list-text">ドライヤー</p>
+                          <p class="p-qa__service-list-text">ポット＆日本茶</p>
+                          <p class="p-qa__service-list-text">ミネラルウォーター</p>
+                          <p class="p-qa__service-list-text">スリッパ</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -217,15 +248,30 @@
                 <div class="p-qa__inner js-content">
                   <div class="p-qa__wrap p-qa__wrap--service">
                     <div class="p-qa__content p-qa__content--open01">
-                      <p class="p-qa__txt">次世代型インターネット接続環境と呼ばれるクラウドサービス利用を想定したIPoE通信を採用。</p>
-                      <p class="p-qa__txt">法人向け設計のインターネットサービスプロバイダーを採用、一般利用でありがちな通信混雑を解消しています。</p>
-                      <p class="p-qa__txt">宿泊通信設備と完全分離し、オフィス専用のインターネット回線をご用意しております。</p>
+                      <div class="p-qa__service-lists">
+                        <div class="p-qa__service-list">
+                          <p class="p-qa__service-list-text">シャンプー</p>
+                          <p class="p-qa__service-list-text">リンス</p>
+                          <p class="p-qa__service-list-text">石鹸</p>
+                          <p class="p-qa__service-list-text">ボディソープ</p>
+                          <p class="p-qa__service-list-text">バスタオル</p>
+                          <p class="p-qa__service-list-text">フェイスタオル</p>
+                        </div>
+                        <div class="p-qa__service-list">
+                          <p class="p-qa__service-list-text">パジャマ</p>
+                          <p class="p-qa__service-list-text">毛布</p>
+                          <p class="p-qa__service-list-text">ドライヤー</p>
+                          <p class="p-qa__service-list-text">ポット＆日本茶</p>
+                          <p class="p-qa__service-list-text">ミネラルウォーター</p>
+                          <p class="p-qa__service-list-text">スリッパ</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </details>
               <details class="p-qa__content js-details">
-                <summary class="p-qa__summary p-qa__summary--service js-summary">
+                <summary class="p-qa__summary p-qa__summary--last p-qa__summary--service js-summary">
                   <h4 class="p-qa__ttl p-qa__ttl--service">
                     動画配信サービス
                   </h4>

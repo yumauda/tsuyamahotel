@@ -111,6 +111,7 @@
   line-height: calc(20 / 14);
   color: #9b0030;
   letter-spacing: 0.1em;
+  margin-top: rem(8);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
@@ -203,9 +204,8 @@
   @include mq(md) {
     font-size: clamp(20px, 2vw, 28px);
   }
-  @include mq(lg){
+  @include mq(lg) {
     font-size: rem(40);
-    
   }
 }
 
@@ -395,7 +395,7 @@
   color: #fafafa;
   white-space: nowrap;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(14px, 2vw, 20px);
   }
   @include mq(lg) {
     font-size: rem(28);
@@ -564,5 +564,44 @@
   }
   @include mq(lg) {
     font-size: rem(18);
+  }
+}
+.font-white {
+  color: #fafafa;
+}
+.font-white span {
+  color: #fafafa;
+}
+.fz30 {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 20px);
+  }
+  @include mq(lg) {
+    font-size: rem(30);
+  }
+}
+.mt60 {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+  @include mq(lg) {
+    margin-top: rem(60);
+  }
+}
+.fz28 {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 20px);
+  }
+  @include mq(lg) {
+    font-size: rem(28);
+  }
+}
+.mt40 {
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: rem(40);
   }
 }

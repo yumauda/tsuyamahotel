@@ -137,7 +137,7 @@
   letter-spacing: 0.1em;
   white-space: nowrap;
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(18px, 2vw, 18px);
   }
   @include mq(lg) {
     font-size: rem(22);
@@ -175,4 +175,7 @@
   object-fit: cover;
   width: 100%;
   height: auto;
+}
+.pt0 {
+  padding-top: initial;
 }

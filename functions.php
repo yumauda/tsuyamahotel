@@ -427,3 +427,23 @@ add_filter('body_class', function ($classes) {
 
 	return $classes;
 });
+
+/**
+ * home.phpのカテゴリーフィルタリング
+ */
+function filter_home_posts_by_category($query) {
+	// 管理画面やメインクエリ以外は除外
+	if (is_admin() || !$query->is_main_query()) {
+		return;
+	}
+
+	// home.phpでのみ動作
+	if ($query->is_home()) {
+		// カテゴリーパラメータを取得
+		if (isset($_GET['category']) && !empty($_GET['category'])) {
+			$category_slug = sanitize_text_field($_GET['category']);
+			$query->set('category_name', $category_slug);
+		}
+	}
+}
+add_action('pre_get_posts', 'filter_home_posts_by_category');

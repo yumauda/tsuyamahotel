@@ -1,5 +1,6 @@
 <section class="p-submit">
     <div class="l-inner">
+       
         <div class="p-submit__content">
             <div class="p-submit__title-wrapper">
                 <h2 class="p-submit__title">ご宿泊・お食事のご予約</h2>

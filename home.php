@@ -14,8 +14,19 @@
   </section>
   <div class="p-top-news">
     <div class="l-inner">
-      <div class="p-top-news__content">
-        
+      <div class="p-top-news__content p-top-news__content--news">
+        <?php
+        // 現在のカテゴリーを取得
+        $current_category = isset($_GET['category']) ? sanitize_text_field($_GET['category']) : '';
+        ?>
+        <div class="p-top-news__tabs">
+          <a href="<?php echo home_url('/news/'); ?>" class="p-top-news__tab <?php echo empty($current_category) ? 'p-top-news__tab--active' : ''; ?>">すべて</a>
+          <a href="<?php echo add_query_arg('category', 'notice', home_url('/news/')); ?>" class="p-top-news__tab <?php echo $current_category === 'notice' ? 'p-top-news__tab--active' : ''; ?>">お知らせ</a>
+          <a href="<?php echo add_query_arg('category', 'event', home_url('/news/')); ?>" class="p-top-news__tab <?php echo $current_category === 'event' ? 'p-top-news__tab--active' : ''; ?>">イベント</a>
+          <a href="<?php echo add_query_arg('category', 'restaurant-category', home_url('/news/')); ?>" class="p-top-news__tab <?php echo $current_category === 'restaurant-category' ? 'p-top-news__tab--active' : ''; ?>">レストラン</a>
+          <a href="<?php echo add_query_arg('category', 'party', home_url('/news/')); ?>" class="p-top-news__tab <?php echo $current_category === 'party' ? 'p-top-news__tab--active' : ''; ?>">宴会・会議</a>
+        </div>
+
         <div class="p-top-news__list">
           <?php if (have_posts()) : ?>
             <?php while (have_posts()) : ?>

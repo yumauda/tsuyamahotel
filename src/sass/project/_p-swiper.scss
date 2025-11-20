@@ -8,7 +8,6 @@
   @include mq(md) {
     padding-top: rem(80);
     padding-bottom: rem(80);
-    margin-top: rem(100);
   }
 }
 .pb170 {
@@ -52,6 +51,7 @@
   top: rem(-100);
   z-index: 0;
   left: rem(-30);
+  opacity: 0.2;
 }
 .p-swiper--transparent {
   margin-top: initial;

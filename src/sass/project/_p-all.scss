@@ -2,6 +2,7 @@
 
 .p-all {
   margin-top: rem(40);
+  overflow-x: auto;
 
   &__table {
     width: 100%;
@@ -12,7 +13,10 @@
   &__header {
     padding: rem(12) rem(15);
     text-align: center;
-
+    border-top-left-radius: rem(10);
+    border-top-right-radius: rem(10);
+    background: #284563;
+    border-bottom: 1px solid rgba($color: #fafafa, $alpha: 0.3);
     position: relative;
     border-top-left-radius: rem(10);
     border-top-right-radius: rem(10);
@@ -20,18 +24,8 @@
       background-color: transparent;
     }
   }
-  &__header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #020818;
-    border-top-left-radius: rem(10);
-    border-top-right-radius: rem(10);
-  }
-  &__header--empty::before {
+
+  &__header--empty {
     background: transparent;
     mix-blend-mode: normal;
   }
@@ -44,7 +38,7 @@
     line-height: 2;
     color: #fafafa;
     white-space: nowrap;
-    @include mq(md){
+    @include mq(md) {
       font-size: clamp(14px, 2vw, 14px);
     }
     @include mq(lg) {
@@ -60,49 +54,36 @@
     text-align: center;
     position: relative;
     letter-spacing: 0.1em;
+    background: #f2f1ec;
     white-space: nowrap;
     z-index: 2;
-    width: rem(320);
-    @include mq(md){
+    width: rem(200);
+    border-bottom: 1px solid #c7c1b0;
+    @include mq(md) {
+      width: rem(320);
       font-size: clamp(14px, 2vw, 14px);
     }
     @include mq(lg) {
       font-size: rem(18);
     }
-    &::before {
-      content: "";
-      z-index: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #ffffff;
-      mix-blend-mode: soft-light;
-    }
-    &--first::before {
+
+    &--first {
       border-top-left-radius: rem(10);
     }
-    &--last::before {
+    &--last {
       border-bottom-left-radius: rem(10);
+      border-bottom: initial;
     }
   }
 
   &__cell {
     padding: rem(20);
     text-align: center;
-
+    background: #284563;
     position: relative;
+    border-bottom: 1px solid rgba($color: #fafafa, $alpha: 0.3);
   }
-  &__cell::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #020818;
-  }
+
   &__cell p {
     z-index: 2;
     position: relative;
@@ -111,7 +92,7 @@
     font-size: rem(18);
     letter-spacing: 0.1em;
     line-height: 2;
-    @include mq(md){
+    @include mq(md) {
       font-size: clamp(14px, 2vw, 14px);
     }
     @include mq(lg) {
@@ -143,7 +124,7 @@
       font-size: rem(14);
       text-align: center;
       padding: rem(15) rem(18);
-      @include mq(md){
+      @include mq(md) {
         font-size: clamp(14px, 2vw, 14px);
       }
       @include mq(lg) {
@@ -155,7 +136,7 @@
       font-size: rem(16);
       text-align: center;
       padding: rem(15);
-      @include mq(md){
+      @include mq(md) {
         font-size: clamp(14px, 2vw, 14px);
       }
       @include mq(lg) {
@@ -175,7 +156,7 @@
   letter-spacing: 0.1em;
   white-space: nowrap;
   line-height: calc(30 / 14);
-  @include mq(md){
+  @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
   @include mq(lg) {
@@ -184,4 +165,26 @@
 }
 .p-fee .p-all__label {
   width: rem(240);
+}
+.p-all__label--fee {
+  background: #fafafa;
+  padding-top: rem(18);
+  padding-bottom: rem(18);
+  color: #051026;
+  font-size: rem(14);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: calc(36 / 20);
+  @include mq(md) {
+    font-size: clamp(14px, 2vw, 14px);
+  }
+  @include mq(lg) {
+    font-size: rem(20);
+  }
+}
+.p-all__cell--fee--black {
+  background: #051024;
+}
+.bb0 {
+  border-bottom: initial;
 }

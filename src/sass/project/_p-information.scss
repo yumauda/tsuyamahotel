@@ -121,6 +121,6 @@
 .p-information__amenity {
   margin-top: rem(48);
   @include mq(md) {
-    margin-top: rem(200);
+    margin-top: rem(100);
   }
 }

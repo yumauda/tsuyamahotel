@@ -6,7 +6,11 @@
   padding-bottom: rem(24);
   padding-left: rem(25);
   border-left: 1px solid #2e4f77;
+  display: flex;
+  gap: rem(20);
+  flex-wrap: wrap;
   @include mq(md) {
+    display: block;
     padding-bottom: initial;
     padding-top: initial;
     left: rem(30);
@@ -25,7 +29,9 @@
   visibility: visible;
 }
 .p-lists__list + .p-lists__list {
-  margin-top: rem(15);
+  @include mq(md) {
+    margin-top: rem(15);
+  }
 }
 .p-lists__link {
   display: inline-block;

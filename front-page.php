@@ -485,7 +485,7 @@
             <ul class="p-top-life__about-grid">
               <li class="p-top-life__about-item">
                 <figure class="p-top-life__about-img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about1.jpg" alt="会議" width="320" height="220">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about1.png" alt="会議" width="320" height="220">
                 </figure>
                 <div class="p-top-life__about-detail">
                   <p class="p-top-life__about-detailTitle"><span>M</span>eeting</p>
@@ -494,7 +494,7 @@
               </li>
               <li class="p-top-life__about-item">
                 <figure class="p-top-life__about-img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about2.jpg" alt="報奨、研修旅行" width="320" height="220">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about2.png" alt="報奨、研修旅行" width="320" height="220">
                 </figure>
                 <div class="p-top-life__about-detail">
                   <p class="p-top-life__about-detailTitle"><span>I</span>ncentivetravel</p>
@@ -503,7 +503,7 @@
               </li>
               <li class="p-top-life__about-item">
                 <figure class="p-top-life__about-img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about3.jpg" alt="国際会議" width="320" height="220">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about3.png" alt="国際会議" width="320" height="220">
                 </figure>
                 <div class="p-top-life__about-detail">
                   <p class="p-top-life__about-detailTitle"><span>C</span>onvention</p>
@@ -512,7 +512,7 @@
               </li>
               <li class="p-top-life__about-item">
                 <figure class="p-top-life__about-img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about4.jpg" alt="イベント" width="320" height="220">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about4.png" alt="イベント" width="320" height="220">
                 </figure>
                 <div class="p-top-life__about-detail">
                   <p class="p-top-life__about-detailTitle"><span>E</span>vent</p>

@@ -14,15 +14,18 @@
   display: flex;
   flex-direction: column;
   gap: rem(40);
+  border-top: 1px solid #f5f2e8;
+  padding-top: rem(50);
   @include mq(md) {
     gap: rem(100);
     flex-direction: row;
+    padding-top: rem(100);
   }
 }
 .p-amenity__content + .p-amenity__content {
-  margin-top: rem(40);
+  margin-top: rem(50);
   @include mq(md) {
-    margin-top: rem(200);
+    margin-top: rem(100);
   }
 }
 
@@ -61,7 +64,7 @@
 .p-amenity__text {
   line-height: calc(36 / 16);
   letter-spacing: 0.1em;
-  color: #333;
+  color: #3d4043;
   font-weight: 400;
   font-size: rem(14);
   margin-top: rem(24);
@@ -104,9 +107,9 @@
 
 .p-amenity__item {
   font-size: rem(14);
-  line-height: calc(36 / 14);
   letter-spacing: 0.1em;
   color: #333;
+  line-height: 1.7;
   font-weight: 400;
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
@@ -121,8 +124,8 @@
   font-size: rem(16);
   font-family: $second-font-family;
   letter-spacing: 0.1em;
-  line-height: calc(40 / 16);
-  margin-bottom: rem(10);
+  line-height: 1.6;
+  margin-bottom: rem(8);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
@@ -137,7 +140,7 @@
   padding: rem(16);
   @include mq(md) {
     margin-top: rem(40);
-    padding: rem(60) rem(50);
+    padding: rem(50) rem(60);
   }
 }
 

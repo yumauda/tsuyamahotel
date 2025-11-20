@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.p-lunch {
+  padding-bottom: rem(64);
+  @include mq(md) {
+    padding-bottom: rem(210);
+  }
+}
+.p-lunch__content {
+  max-width: rem(1300);
+  width: 100%;
+  margin-left: auto;
+}

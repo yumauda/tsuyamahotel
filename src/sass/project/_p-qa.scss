@@ -33,7 +33,7 @@
   cursor: pointer;
   position: relative;
   list-style: none;
-  border-top: 1px solid #c7c1b0;
+  border-top: 1px solid #2f4f77;
   padding-top: rem(16);
   padding-bottom: rem(16);
   padding-left: rem(16);
@@ -43,8 +43,8 @@
     padding-left: rem(24);
   }
 }
-.p-qa__content:last-child .p-qa__summary {
-  border-bottom: 1px solid #c7c1b0;
+.p-qa__summary--last {
+  border-bottom: 1px solid #2f4f77;
 }
 .p-qa__summary::before {
   content: "";
@@ -76,7 +76,8 @@
 .p-qa__summary--service::after {
   background: #fafafa;
 }
-.p-qa__summary.is-opened::before {
+.p-qa__summary.is-opened::before,
+details[open] .p-qa__summary::before {
   transform: rotate(0deg) translateY(-50%);
   top: 50%;
 }

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .p-beautiful {
-  padding-top: rem(240);
+  padding-top: rem(64);
   padding-bottom: rem(200);
   @include mq(md) {
     padding-top: rem(269);
@@ -25,11 +25,12 @@
   object-fit: cover;
   right: 0;
   width: rem(100);
-  top: rem(-180);
+  bottom: rem(-160);
   @include mq(md) {
     top: rem(-64);
     width: rem(270);
     right: rem(-40);
+    bottom: initial;
   }
   @include mq(lg) {
     right: 0;

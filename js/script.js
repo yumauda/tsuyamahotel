@@ -100,6 +100,12 @@ const setUpAccordion = () => {
     const summary = element.querySelector(".js-summary");
     const content = element.querySelector(".js-content");
 
+    // 初期状態でopen属性がある場合、is-openedクラスを付与
+    if (element.open) {
+      element.classList.add(IS_OPENED_CLASS);
+      summary.classList.add(IS_OPENED_CLASS);
+    }
+
     summary.addEventListener("click", (event) => {
       // デフォルトの挙動を無効化
       event.preventDefault();
@@ -496,3 +502,4 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
+

@@ -29,6 +29,12 @@
       <div class="p-single-news__content">
         <?php the_content(); ?>
       </div>
+      <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-rooms__button p-news__button">
+        <p class="p-rooms__button-text">一覧へ戻る</p>
+        <span class="p-rooms__button-icon">
+          <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
+        </span>
+      </a>
     </div>
   </section>
   <?php get_template_part('includes/submit'); ?>

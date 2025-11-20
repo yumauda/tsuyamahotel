@@ -228,13 +228,13 @@
 									</div>
 								</dl>
 								<div class="p-rooms__buttons">
-									<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
+									<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
 										<p class="p-rooms__button-text">レイアウトを見る</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 										</span>
 									</a>
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">予約する</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -265,13 +265,13 @@
 									</div>
 								</dl>
 								<div class="p-rooms__buttons">
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">詳細を見る</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 										</span>
 									</a>
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">予約する</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -339,13 +339,13 @@
 									</div>
 								</dl>
 								<div class="p-rooms__buttons">
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">詳細を見る</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 										</span>
 									</a>
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">予約する</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -376,13 +376,13 @@
 									</div>
 								</dl>
 								<div class="p-rooms__buttons">
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">詳細を見る</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 										</span>
 									</a>
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">予約する</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -413,13 +413,13 @@
 									</div>
 								</dl>
 								<div class="p-rooms__buttons">
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">詳細を見る</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 										</span>
 									</a>
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">予約する</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -453,13 +453,13 @@
 									</div>
 								</dl>
 								<div class="p-rooms__buttons">
-									<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
+									<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
 										<p class="p-rooms__button-text">レイアウトを見る</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 										</span>
 									</a>
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">予約する</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -493,13 +493,13 @@
 									</div>
 								</dl>
 								<div class="p-rooms__buttons">
-									<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
+									<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
 										<p class="p-rooms__button-text">レイアウトを見る</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 										</span>
 									</a>
-									<a href="#" class="p-rooms__button">
+									<a href="#" class="p-rooms__button p-rooms__button-blue">
 										<p class="p-rooms__button-text">予約する</p>
 										<span class="p-rooms__button-icon">
 											<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">

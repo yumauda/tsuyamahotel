@@ -1,4 +1,4 @@
-<section class="p-submit">
+<section class="p-submit js-fadeIn">
     <div class="l-inner">
        
         <div class="p-submit__content">

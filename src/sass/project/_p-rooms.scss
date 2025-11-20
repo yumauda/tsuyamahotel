@@ -279,6 +279,9 @@
   position: relative;
   background: #051026;
 }
+.p-rooms__button-blue {
+  background: #2a4766;
+}
 .p-rooms__top-textWrapper {
   margin-top: rem(24);
   @include mq(md) {
@@ -541,7 +544,7 @@
   height: auto;
   aspect-ratio: 20 / 7;
   object-fit: cover;
- 
+
   bottom: rem(-8);
   left: 50%;
   transform: translateX(-50%);

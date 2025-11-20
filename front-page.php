@@ -3,12 +3,12 @@
   <section class="p-mv">
     <div class="p-mv__inner">
       <div class="p-mv__content">
-        <div class="p-mv__title">
+        <div class="p-mv__title js-fadeIn">
           <h2 class="p-mv__title-text">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_title.svg" alt="時代を超えて、愛される、おもてなし。" width="800" height="282">
           </h2>
         </div>
-        <figure class="p-mv__img">
+        <figure class="p-mv__img js-fadeIn">
           <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_img.jpg" alt="" width="1860" height="1080">
         </figure>
       </div>
@@ -17,22 +17,22 @@
   <section class="p-beautiful">
     <div class="l-inner">
       <div class="p-beautiful__content">
-        <div class="p-beautiful__title">
+        <div class="p-beautiful__title js-fadeIn">
           <h3 class="p-beautiful__title-text">
             津山という美しい街の記憶に、<br>
             そっと寄り添う。
           </h3>
         </div>
-        <p class="p-beautiful__text">ひと息つけるような、静かなもてなし。<br>
+        <p class="p-beautiful__text js-fadeIn">ひと息つけるような、静かなもてなし。<br>
           津山という町が大切にしてきた、<br class="u-mobile">“しつらえ”と“節度”。<br>
           鶴山ホテルは、これからも丁寧に迎えます。</p>
       </div>
     </div>
   </section>
-  <figure class="p-top-img">
+  <figure class="p-top-img js-fadeIn">
     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_bg_image.jpg" alt="" width="1860" height="700">
   </figure>
-  <div class="p-swiper p-swiper--top p-swiper--transparent pb170 pt170">
+  <div class="p-swiper p-swiper--top p-swiper--transparent pb170 pt170 js-fadeIn">
     <div class="l-inner">
       <div class="p-swiper__header">
         <h3 class="c-main-title">
@@ -399,7 +399,7 @@
       </div>
     </div>
   </div>
-  <section class="p-top-service">
+  <section class="p-top-service js-fadeIn">
     <div class="l-inner">
       <div class="p-top-service__content">
         <div class="p-top-service__detail">
@@ -440,16 +440,16 @@
     <div class="l-inner">
       <div class="p-top-life__content">
         <div class="p-top-life__top">
-          <div class="p-top-life__title">
+          <div class="p-top-life__title js-fadeIn">
             <h2 class="c-section-title">
               <span class="c-section-title__ja c-section-title__ja--white">しつらえのひととき</span>
               <span class="c-section-title__en c-section-title__en--white">Life Scenes</span>
             </h2>
           </div>
-          <p class="p-top-life__top-text">人生の節目を彩るウエディングから、日常を支えるサテライトオフィスまで。<br>
+          <p class="p-top-life__top-text js-fadeIn">人生の節目を彩るウエディングから、日常を支えるサテライトオフィスまで。<br>
             特別な時も日常のひとときも快適にお過ごしいただける空間をご用意しております。</p>
         </div>
-        <div class="p-top-life__middle">
+        <div class="p-top-life__middle js-fadeIn">
           <figure class="p-top-life__topImg">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_life_img1.jpg" alt="マイス" width="1860" height="400">
           </figure>
@@ -465,7 +465,7 @@
           </div>
         </div>
         <div class="p-top-line__bg">
-          <div class="p-top-life__center">
+          <div class="p-top-life__center js-fadeIn">
             <p class="p-top-life__center-text">
               当ホテルは、企業研修、展示会、パーティーなど、<br class="u-desktop">
               多様なMICEイベントに対応可能です。<br>
@@ -473,7 +473,7 @@
             </p>
           </div>
 
-          <div class="p-top-life__about">
+          <div class="p-top-life__about js-fadeIn">
             <div class="p-top-life__about-top">
               <div class="c-main-title">
                 <h3 class="c-main-title__main">miceとは</h3>
@@ -539,7 +539,7 @@
       </div>
     </div>
   </section>
-  <section class="p-btns">
+  <section class="p-btns js-fadeIn">
     <div class="p-btns__content">
       <a href="#" class="p-btns__btn">
         <div class="p-btns__detail">
@@ -570,7 +570,7 @@
     </div>
   </section>
 
-  <section class="p-top-news">
+  <section class="p-top-news js-fadeIn">
     <div class="l-inner">
       <div class="p-top-news__content">
         <div class="p-top-news__header">

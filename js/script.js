@@ -503,3 +503,37 @@ jQuery(document).ready(function ($) {
   });
 });
 
+// スクロールアニメーション (Intersection Observer)
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeInElements = document.querySelectorAll(
+    ".js-fadeIn, .js-fadeIn--delay, .js-fadeInLeft, .js-fadeInRight, .js-scaleIn"
+  );
+
+  // Intersection Observerのオプション
+  const observerOptions = {
+    root: null, // ビューポートをルートとする
+    rootMargin: "0px 0px -100px 0px", // 下から100px手前で発火
+    threshold: 0.1, // 10%見えたら発火
+  };
+
+  // Intersection Observerのコールバック
+  const observerCallback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 要素が画面に入ったらis-visibleクラスを追加
+        entry.target.classList.add("is-visible");
+        // 一度アニメーションしたら監視を解除（パフォーマンス向上）
+        observer.unobserve(entry.target);
+      }
+    });
+  };
+
+  // Observerを作成
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  // 各要素を監視
+  fadeInElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+

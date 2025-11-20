@@ -1,0 +1,61 @@
+@use "global" as *;
+
+// フェードインアニメーション用のクラス
+.js-fadeIn {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// より遅延のあるアニメーション
+.js-fadeIn--delay {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out 0.2s, transform 1s ease-out 0.2s;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// 左からフェードイン
+.js-fadeInLeft {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// 右からフェードイン
+.js-fadeInRight {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// スケールアニメーション
+.js-scaleIn {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+
+  &.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

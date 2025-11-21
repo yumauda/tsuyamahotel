@@ -459,13 +459,31 @@
   }
 }
 .p-menu__invite {
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(100);
+  }
+  @include mq(lg) {
+    margin-top: rem(150);
+  }
+}
+.p-menu__invite-box {
   border-left: 1px solid #f5f2e8;
   border-right: 1px solid #f5f2e8;
   border-bottom: 1px solid #f5f2e8;
-  margin-top: rem(40);
-  padding-bottom: rem(32);
+  padding-left: rem(16);
+  padding-right: rem(16);
+  padding-bottom: rem(16);
   @include mq(md) {
-    margin-top: rem(150);
+    padding-left: rem(30);
+    padding-right: rem(30);
+    padding-bottom: rem(30);
+    margin-top: rem(-9);
+  }
+  @include mq(lg) {
+    margin-top: rem(-16);
+    padding-left: rem(100);
+    padding-right: rem(100);
     padding-bottom: rem(60);
   }
 }
@@ -508,6 +526,15 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(50);
+  }
+}
+.pt68 {
+  padding-top: rem(32);
+  @include mq(md){
+    padding-top: rem(32);
+  }
+  @include mq(lg) {
+    padding-top: rem(68);
   }
 }
 .p-menu__invite__row {
@@ -603,5 +630,14 @@
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
+  }
+}
+.fz30 {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: clamp(16px, 2vw, 22px);
+  }
+  @include mq(lg) {
+    font-size: rem(30);
   }
 }

@@ -216,9 +216,6 @@ window.addEventListener("scroll", function () {
     }
   }
 });
-window.onload = function () {
-  document.body.classList.add("fade-in");
-};
 
 let scrollPosition = 0; // スクロール位置を記録する変数
 
@@ -413,7 +410,6 @@ jQuery(document).ready(function ($) {
   });
 });
 
-
 // p-listsにスクロール量に応じてis-activeクラスを付与
 jQuery(document).ready(function ($) {
   const $pLists = $(".p-lists");
@@ -452,7 +448,9 @@ jQuery(document).ready(function ($) {
         // 全てのリンクからis-activeを削除してから、該当するリンクだけ追加
         $pListsLinks.removeClass("is-active");
         if (currentSection) {
-          $pListsLinks.filter('[href="' + currentSection + '"]').addClass("is-active");
+          $pListsLinks
+            .filter('[href="' + currentSection + '"]')
+            .addClass("is-active");
         }
       }
     }
@@ -502,38 +500,6 @@ jQuery(document).ready(function ($) {
     return false;
   });
 });
-
-// スクロールアニメーション (Intersection Observer)
-document.addEventListener("DOMContentLoaded", function () {
-  const fadeInElements = document.querySelectorAll(
-    ".js-fadeIn, .js-fadeIn--delay, .js-fadeInLeft, .js-fadeInRight, .js-scaleIn"
-  );
-
-  // Intersection Observerのオプション
-  const observerOptions = {
-    root: null, // ビューポートをルートとする
-    rootMargin: "0px 0px -100px 0px", // 下から100px手前で発火
-    threshold: 0.1, // 10%見えたら発火
-  };
-
-  // Intersection Observerのコールバック
-  const observerCallback = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // 要素が画面に入ったらis-visibleクラスを追加
-        entry.target.classList.add("is-visible");
-        // 一度アニメーションしたら監視を解除（パフォーマンス向上）
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-
-  // Observerを作成
-  const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-  // 各要素を監視
-  fadeInElements.forEach((element) => {
-    observer.observe(element);
-  });
-});
-
+window.onload = function () {
+  document.body.classList.add("fade-in");
+};

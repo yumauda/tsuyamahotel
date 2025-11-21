@@ -164,9 +164,30 @@
   gap: rem(5);
 }
 
-.p-footer__bottom-list {
+.p-footer__bottom-list:last-child {
+  @include mq(md) {
+    margin-left: rem(40);
+    position: relative;
+  }
 }
-
+.p-footer__bottom-list:last-child::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    background: repeating-linear-gradient(
+      to bottom,
+      #2f4f77 0px,
+      #2f4f77 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    width: 1px;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: rem(-20);
+  }
+}
 .p-footer__bottom-link {
   display: flex;
   align-items: center;

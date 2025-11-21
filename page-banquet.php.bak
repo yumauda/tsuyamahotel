@@ -36,7 +36,7 @@
 					<h3 class="p-location__title">心を尽くす、おもてなしの場</h3>
 				</div>
 				<div class="p-location__text-wrapper">
-					<p class="p-location__text fz18">津山鶴山ホテルでは、接遇のスペシャリストとされるサービス技能士１級の有資格者をはじめ、<br>
+					<p class="p-location__text">津山鶴山ホテルでは、接遇のスペシャリストとされるサービス技能士１級の有資格者をはじめ、<br>
 						経験豊かなスタッフが揃い、きめ細やかなサービスをご提供いたします。<br>
 						大切なご宴会や会議の場を、心からのおもてなしと上質な演出で彩り、お客様にご満足いただけるひとときをお約束いたします。</p>
 				</div>
@@ -227,7 +227,7 @@
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp">
+								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
 									<p class="p-rooms__button-text">レイアウトを見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -264,8 +264,8 @@
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_ayame.webp">
-									<p class="p-rooms__button-text">レイアウトを見る</p>
+								<a href="#" class="p-rooms__button p-rooms__button-blue">
+									<p class="p-rooms__button-text">詳細を見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 									</span>
@@ -338,8 +338,8 @@
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_takase.webp">
-									<p class="p-rooms__button-text">レイアウトを見る</p>
+								<a href="#" class="p-rooms__button p-rooms__button-blue">
+									<p class="p-rooms__button-text">詳細を見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 									</span>
@@ -375,8 +375,8 @@
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_nagi.webp">
-									<p class="p-rooms__button-text">レイアウトを見る</p>
+								<a href="#" class="p-rooms__button p-rooms__button-blue">
+									<p class="p-rooms__button-text">詳細を見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 									</span>
@@ -412,8 +412,8 @@
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_yayoi.webp">
-									<p class="p-rooms__button-text">レイアウトを見る</p>
+								<a href="#" class="p-rooms__button p-rooms__button-blue">
+									<p class="p-rooms__button-text">詳細を見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
 									</span>
@@ -452,7 +452,7 @@
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp">
+								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
 									<p class="p-rooms__button-text">レイアウトを見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -492,7 +492,7 @@
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp">
+								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
 									<p class="p-rooms__button-text">レイアウトを見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">

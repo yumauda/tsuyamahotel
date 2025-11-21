@@ -50,9 +50,9 @@
   white-space: nowrap;
   font-size: rem(16);
   @include mq(md) {
-    font-size: clamp(14px, 2vw, 14px);
+    font-size: clamp(16px, 2vw, 18px);
   }
-  @include mq(lg){
+  @include mq(lg) {
     font-size: rem(22);
   }
 }
@@ -102,7 +102,7 @@
     font-size: clamp(14px, 2vw, 14px);
     padding-left: rem(20);
   }
-  @include mq(lg){
+  @include mq(lg) {
     font-size: rem(18);
   }
 }
@@ -111,10 +111,16 @@
   content: "";
   position: absolute;
   left: 0;
-  top: rem(20);
   width: rem(10);
   height: 3px;
   background: #fafafa;
+  top: rem(20);
+  @include mq(md) {
+    top: rem(15);
+  }
+  @include mq(lg) {
+    top: rem(20);
+  }
 }
 .p-drink__price {
   font-weight: 400;
@@ -128,7 +134,7 @@
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
-  @include mq(lg){
+  @include mq(lg) {
     font-size: rem(18);
   }
 }

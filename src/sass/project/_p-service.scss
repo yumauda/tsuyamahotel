@@ -3,7 +3,7 @@
 .p-service {
   padding-bottom: rem(48);
   @include mq(md) {
-    padding-bottom: rem(250);
+    padding-bottom: rem(200);
   }
 }
 .p-service__content {

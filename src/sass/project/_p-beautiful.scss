@@ -13,7 +13,7 @@
   text-align: center;
   position: relative;
 }
-.p-beautiful__content::before {
+/* .p-beautiful__content::before {
   position: absolute;
   content: "";
   background: url(../images/common/beutiful_1.jpg);
@@ -35,8 +35,8 @@
   @include mq(lg) {
     right: 0;
   }
-}
-.p-beautiful__content::after {
+} */
+/* .p-beautiful__content::after {
   position: absolute;
   content: "";
   background: url(../images/common/beutiful_2.jpg);
@@ -54,7 +54,7 @@
     bottom: rem(-320);
     left: rem(-180);
   }
-}
+} */
 
 .p-beautiful__title {
   position: relative;

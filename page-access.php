@@ -1,7 +1,5 @@
-<div class="p-top">
-
-  <?php get_header(); ?>
-  <main>
+<?php get_header(); ?>
+  <main class="p-top">
     <section class="p-page-mv">
       <div class="p-page-mv__inner">
         <div class="p-page-mv__content">
@@ -24,7 +22,7 @@
             <h3 class="p-location__title">津山の歴史と<br class="u-mobile">自然を感じるロケーション</h3>
           </div>
           <div class="p-location__text-wrapper">
-            <p class="p-location__text">古き良き歴史と豊かな自然に包まれた津山の街に位置しながら、<br class="u-desktop">
+            <p class="p-location__text fz18">古き良き歴史と豊かな自然に包まれた津山の街に位置しながら、<br class="u-desktop">
               鉄道やお車で快適にお越しいただける利便性を兼ね備えた最適な立地。<br>
               お客様の大切なひとときが、ここから始まるように。<br>
               私たちは上質な旅の玄関口として、皆さまを心よりお迎えいたします。</p>
@@ -158,5 +156,4 @@
 
     <?php get_template_part('includes/submit'); ?>
   </main>
-  <?php get_footer() ?>
-</div>
+<?php get_footer() ?>

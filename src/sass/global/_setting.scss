@@ -99,3 +99,13 @@ body {
   overflow-x: clip;
   -webkit-text-size-adjust: 100%;
 }
+
+// ページ全体のフェードイン
+body {
+  opacity: 0;
+  transition: 1.2s ease-out;
+
+  &.fade-in {
+    opacity: 1;
+  }
+}

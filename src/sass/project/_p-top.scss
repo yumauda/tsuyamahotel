@@ -5,7 +5,7 @@
   isolation: auto;
   overflow-x: clip;
   z-index: 0;
-  background: url(../images/common/bg.svg) no-repeat center center / cover;
+  background: url(../images/common/bg.webp) no-repeat center center / cover;
   @include mq(md) {
     padding-left: rem(30);
     padding-right: rem(30);

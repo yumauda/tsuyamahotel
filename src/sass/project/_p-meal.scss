@@ -72,7 +72,8 @@
   justify-content: space-between;
   flex-direction: column;
   @include mq(md) {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .p-meal--lunch .p-menu__price,

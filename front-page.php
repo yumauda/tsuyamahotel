@@ -3,36 +3,36 @@
   <section class="p-mv">
     <div class="p-mv__inner">
       <div class="p-mv__content">
-        <div class="p-mv__title js-fadeIn">
+        <div class="p-mv__title js-top">
           <h2 class="p-mv__title-text">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/mv_title.svg" alt="時代を超えて、愛される、おもてなし。" width="800" height="282">
           </h2>
         </div>
-        <figure class="p-mv__img js-fadeIn">
+        <figure class="p-mv__img js-top">
           <img src="<?php echo get_template_directory_uri() ?>/images/common/mv_img.jpg" alt="" width="1860" height="1080">
         </figure>
       </div>
     </div>
   </section>
-  <section class="p-beautiful">
+  <section class="p-beautiful js-second-section">
     <div class="l-inner">
-      <div class="p-beautiful__content">
-        <div class="p-beautiful__title js-fadeIn">
+      <div class="p-beautiful__content js-second">
+        <div class="p-beautiful__title">
           <h3 class="p-beautiful__title-text">
             津山という美しい街の記憶に、<br>
             そっと寄り添う。
           </h3>
         </div>
-        <p class="p-beautiful__text js-fadeIn">ひと息つけるような、静かなもてなし。<br>
+        <p class="p-beautiful__text">ひと息つけるような、静かなもてなし。<br>
           津山という町が大切にしてきた、<br class="u-mobile">“しつらえ”と“節度”。<br>
           鶴山ホテルは、これからも丁寧に迎えます。</p>
       </div>
     </div>
   </section>
-  <figure class="p-top-img js-fadeIn">
+  <figure class="p-top-img js-second">
     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_bg_image.jpg" alt="" width="1860" height="700">
   </figure>
-  <div class="p-swiper p-swiper--top p-swiper--transparent pb170 pt170 js-fadeIn">
+  <div class="p-swiper p-swiper--top p-swiper--transparent pb170 pt170 js-fadeUp">
     <div class="l-inner">
       <div class="p-swiper__header">
         <h3 class="c-main-title">
@@ -399,17 +399,17 @@
       </div>
     </div>
   </div>
-  <section class="p-top-service js-fadeIn">
+  <section class="p-top-service js-fadeUp">
     <div class="l-inner">
       <div class="p-top-service__content">
         <div class="p-top-service__detail">
-          <div class="p-top-service__title">
+          <div class="p-top-service__title js-fadeUp">
             <h2 class="c-section-title">
               <span class="c-section-title__ja">館内案内</span>
               <span class="c-section-title__en">Service</span>
             </h2>
           </div>
-          <div class="p-top-service__data">
+          <div class="p-top-service__data js-fadeUp">
             <p class="p-top-service__subTitle">古き良き趣に寄り添う、<br>洗練されたひととき。</p>
             <p class="p-top-service__text">津山鶴山ホテルは、歴史ある街並みに溶け込みながら、旅の方を温かく迎える迎賓の宿。
               大切な方との会食やご宿泊から、ビジネスでのご利用にも、安心してお選びいただける空間をご用意。
@@ -417,17 +417,17 @@
           </div>
         </div>
         <div class="p-top-service__images">
-          <a href="<?php echo home_url('/stay'); ?>" class="p-top-service__link">
+          <a href="<?php echo home_url('/stay'); ?>" class="p-top-service__link js-fadeUp">
             <figure class="p-top-service__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img1.jpg" alt="ご宿泊" width="850" height="580">
             </figure>
           </a>
-          <a href="<?php echo home_url('/restaurant'); ?>" class="p-top-service__link">
+          <a href="<?php echo home_url('/restaurant'); ?>" class="p-top-service__link js-fadeUp">
             <figure class="p-top-service__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img2.jpg" alt="レストラン" width="850" height="580">
             </figure>
           </a>
-          <a href="<?php echo home_url('/banquet'); ?>" class="p-top-service__link">
+          <a href="<?php echo home_url('/banquet'); ?>" class="p-top-service__link js-fadeUp">
             <figure class="p-top-service__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_service_img3.jpg" alt="宴会・会議" width="850" height="580">
             </figure>
@@ -440,16 +440,16 @@
     <div class="l-inner">
       <div class="p-top-life__content">
         <div class="p-top-life__top">
-          <div class="p-top-life__title js-fadeIn">
+          <div class="p-top-life__title js-fadeUp">
             <h2 class="c-section-title">
               <span class="c-section-title__ja c-section-title__ja--white">しつらえのひととき</span>
               <span class="c-section-title__en c-section-title__en--white">Life Scenes</span>
             </h2>
           </div>
-          <p class="p-top-life__top-text js-fadeIn">人生の節目を彩るウエディングから、日常を支えるサテライトオフィスまで。<br>
+          <p class="p-top-life__top-text js-fadeUp">人生の節目を彩るウエディングから、日常を支えるサテライトオフィスまで。<br>
             特別な時も日常のひとときも快適にお過ごしいただける空間をご用意しております。</p>
         </div>
-        <div class="p-top-life__middle js-fadeIn">
+        <div class="p-top-life__middle js-fadeUp">
           <figure class="p-top-life__topImg">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_life_img1.jpg" alt="マイス" width="1860" height="400">
           </figure>
@@ -465,7 +465,7 @@
           </div>
         </div>
         <div class="p-top-line__bg">
-          <div class="p-top-life__center js-fadeIn">
+          <div class="p-top-life__center js-fadeUp">
             <p class="p-top-life__center-text">
               当ホテルは、企業研修、展示会、パーティーなど、<br class="u-desktop">
               多様なMICEイベントに対応可能です。<br>
@@ -473,7 +473,7 @@
             </p>
           </div>
 
-          <div class="p-top-life__about js-fadeIn">
+          <div class="p-top-life__about js-fadeUp">
             <div class="p-top-life__about-top">
               <div class="c-main-title">
                 <h3 class="c-main-title__main">miceとは</h3>
@@ -483,7 +483,7 @@
                 利便性の良い立地と、大中小と多彩な宴会・会議室をご用意して人々の活発な交流の場を創出するお手伝いをいたします。</p>
             </div>
             <ul class="p-top-life__about-grid">
-              <li class="p-top-life__about-item">
+              <li class="p-top-life__about-item js-fadeUp">
                 <figure class="p-top-life__about-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about1.png" alt="会議" width="320" height="220">
                 </figure>
@@ -492,7 +492,7 @@
                   <p class="p-top-life__about-detailText">会議</p>
                 </div>
               </li>
-              <li class="p-top-life__about-item">
+              <li class="p-top-life__about-item js-fadeUp">
                 <figure class="p-top-life__about-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about2.png" alt="報奨、研修旅行" width="320" height="220">
                 </figure>
@@ -501,7 +501,7 @@
                   <p class="p-top-life__about-detailText">報奨、研修旅行</p>
                 </div>
               </li>
-              <li class="p-top-life__about-item">
+              <li class="p-top-life__about-item js-fadeUp">
                 <figure class="p-top-life__about-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about3.png" alt="国際会議" width="320" height="220">
                 </figure>
@@ -510,7 +510,7 @@
                   <p class="p-top-life__about-detailText">国際会議</p>
                 </div>
               </li>
-              <li class="p-top-life__about-item">
+              <li class="p-top-life__about-item js-fadeUp">
                 <figure class="p-top-life__about-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_about4.png" alt="イベント" width="320" height="220">
                 </figure>
@@ -520,7 +520,7 @@
                 </div>
               </li>
             </ul>
-            <div class="p-top-life__bottom">
+            <div class="p-top-life__bottom js-fadeUp">
               <a href="<?php echo esc_url(home_url('/banquet')); ?>" class="p-top-life__bottom-link">
                 <p class="p-top-life__bottom-text">宴会・会議会場を見る</p>
                 <div class="p-top-life__icon">
@@ -539,7 +539,7 @@
       </div>
     </div>
   </section>
-  <section class="p-btns js-fadeIn">
+  <section class="p-btns js-fadeUp">
     <div class="p-btns__content">
       <a href="#" class="p-btns__btn">
         <div class="p-btns__detail">
@@ -570,10 +570,10 @@
     </div>
   </section>
 
-  <section class="p-top-news js-fadeIn">
+  <section class="p-top-news js-fadeUp">
     <div class="l-inner">
       <div class="p-top-news__content">
-        <div class="p-top-news__header">
+        <div class="p-top-news__header js-fadeUp">
           <div class="c-main-title">
             <h3 class="c-main-title__main">お知らせ</h3>
             <p class="c-main-title__sub">News</p>
@@ -595,7 +595,7 @@
             while ($my_query->have_posts()) : $my_query->the_post();
           ?>
 
-              <a href="<?php the_permalink(); ?>" class="p-top-news__item">
+              <a href="<?php the_permalink(); ?>" class="p-top-news__item js-fadeUp">
                 <time class="p-top-news__date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
                 <?php
                 $categories = get_the_category();
@@ -614,7 +614,7 @@
 
         </div>
       </div>
-      <div class="p-top-news__link-wrapper">
+      <div class="p-top-news__link-wrapper js-fadeUp">
         <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-top-news__link">
           <span class="p-top-news__link-text">お知らせ一覧を見る</span>
           <div class="p-top-news__link-icon">

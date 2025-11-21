@@ -1,7 +1,5 @@
-<div class="p-top">
-
-  <?php get_header(); ?>
-  <main>
+<?php get_header(); ?>
+  <main class="p-top">
     <section class="p-stay-mv">
       <div class="p-stay-mv__inner">
         <div class="p-stay-mv__content">
@@ -79,13 +77,10 @@
       <div class="l-inner">
         <div class="p-location__content">
           <div class="p-location__title-wrapper">
-            <h3 class="p-location__title">アジアンテイストの<br class='u-mobile'>スイートルームで過ごす、<br>
-              いつもと違う最高のひと時。</h3>
+            <h3 class="p-location__title">木の質感と柔らかな照明が調和した、<br>上品で落ち着きのあるスイートルーム。</h3>
           </div>
           <div class="p-location__text-wrapper">
-            <p class="p-location__text">お部屋の紹介テキストが入ります。<br>
-              ダミーテキストダミーテキストダミーテキストダミーテキスト<br>
-              ダミーテキストダミーテキストダミーテキストダミー</p>
+            <p class="p-location__text">特別な時間をより優雅に。<br>大人の上質な滞在を叶える、津山鶴山ホテル自慢の一室です。</p>
           </div>
           <div class="p-suite__spec">
 
@@ -135,7 +130,7 @@
     <section class="p-service">
       <div class="l-inner">
         <div class="p-service__content">
-          <div class="p-rooms__qa">
+          <div class="p-rooms__qa mt66">
             <div class="p-service__left">
               <h3 class="c-main-title">
                 <span class="c-main-title__ja">宿泊サービス</span>
@@ -331,7 +326,7 @@
           </div>
           <div class="p-other__cards">
             <div class="p-other__grid">
-              <a href="#" class="p-other__card">
+              <a href="<?php echo esc_url(home_url('/suite-b')); ?>" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_1.jpg" alt="スイートルーム B-type" width="360" height="240">
                 </figure>
@@ -339,7 +334,7 @@
                   <p class="p-other__card-name">スイートルーム B-type</p>
                 </div>
               </a>
-              <a href="#" class="p-other__card">
+              <a href="<?php echo esc_url(home_url('/twin')); ?>" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_2.jpg" alt="ツインルーム" width="360" height="240">
                 </figure>
@@ -347,7 +342,7 @@
                   <p class="p-other__card-name">ツインルーム</p>
                 </div>
               </a>
-              <a href="#" class="p-other__card">
+              <a href="<?php echo esc_url(home_url('/double')); ?>" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_3.jpg" alt="ダブルルーム" width="360" height="240">
                 </figure>
@@ -355,7 +350,7 @@
                   <p class="p-other__card-name">ダブルルーム</p>
                 </div>
               </a>
-              <a href="#" class="p-other__card">
+              <a href="<?php echo esc_url(home_url('/single')); ?>" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_4.jpg" alt="シングルルーム" width="360" height="240">
                 </figure>
@@ -363,7 +358,7 @@
                   <p class="p-other__card-name">シングルルーム</p>
                 </div>
               </a>
-              <a href="#" class="p-other__card">
+              <a href="<?php echo esc_url(home_url('/japanese')); ?>" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_5.jpg" alt="和室" width="360" height="240">
                 </figure>
@@ -382,5 +377,4 @@
 
     <?php get_template_part('includes/submit'); ?>
   </main>
-  <?php get_footer() ?>
-</div>
+<?php get_footer() ?>

@@ -1,7 +1,5 @@
-<div class="p-top">
-
-  <?php get_header(); ?>
-  <main>
+<?php get_header(); ?>
+  <main class="p-top">
     <section class="p-page-mv">
       <div class="p-page-mv__inner">
         <div class="p-page-mv__content">
@@ -261,5 +259,4 @@
 
     <?php get_template_part('includes/submit'); ?>
   </main>
-  <?php get_footer() ?>
-</div>
+<?php get_footer() ?>

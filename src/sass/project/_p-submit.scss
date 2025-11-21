@@ -2,7 +2,7 @@
 
 .p-submit {
   position: relative;
-  background: url(../images/common/bg_submit.png);
+  background: url(../images/common/bg_submit.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,22 +13,8 @@
     padding-bottom: rem(226);
   }
 }
-.p-submit::before {
-  position: absolute;
-  content: "";
-  background: rgba($color: #000, $alpha: 0.3);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
 
 .p-submit__content {
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%; */
   z-index: 2;
   position: relative;
 }
@@ -45,6 +31,9 @@
   font-weight: 500;
   font-size: rem(20);
   @include mq(md) {
+    font-size: clamp(18px, 2vw, 20px);
+  }
+  @include mq(lg) {
     font-size: rem(28);
   }
 }

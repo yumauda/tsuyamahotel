@@ -34,12 +34,16 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9);
   max-width: 90%;
+  width: 90%;
   max-height: 90vh;
   transition: transform 0.3s ease-in-out;
   z-index: 10000;
 
   .p-layout-modal.is-active & {
     transform: translate(-50%, -50%) scale(1);
+  }
+  @include mq(md) {
+    width: initial;
   }
 }
 

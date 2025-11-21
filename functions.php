@@ -34,25 +34,18 @@ add_action('after_setup_theme', 'my_setup');
 function my_script_init()
 {
 	wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.6.0.min.js', '', "1.0.1", true);
-	if (is_front_page() || is_page('about') || is_page('consultation')) {
-		wp_enqueue_style('splide', '//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css', 'all');
-	}
+
 	wp_enqueue_style('my', get_template_directory_uri() . '/css/styles.css', array(), filemtime(get_theme_file_path('/css/styles.css')), 'all');
-	
-	if (is_page('about')) {
-		wp_enqueue_script('splide-js', '//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js', array('jquery'), "1.0.1", true);
-		wp_enqueue_script('js-about-splide', get_template_directory_uri() . '/js/splide-about.js', array('jquery'), filemtime(get_theme_file_path('/js/splide-about.js')), true);
-	}
-	if (is_page('consultation')) {
-		wp_enqueue_script('splide-js', '//cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js', array('jquery'), "1.0.1", true);
-		wp_enqueue_script('js-consultation-splide', get_template_directory_uri() . '/js/splide-consultation.js', array('jquery'), filemtime(get_theme_file_path('/js/splide-consultation.js')), true);
-	}
+	wp_enqueue_script('gsap', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js', '', "1.0.1", true);
+	wp_enqueue_script('scrollTrigger', '//cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js', '', "1.0.1", true);
+	wp_enqueue_script('js-gsap', get_template_directory_uri() . '/js/gsap.js', array('jquery'), filemtime(get_theme_file_path('/js/gsap.js')), true);
+
 	if (is_front_page()) {
 		wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), filemtime(get_theme_file_path('/css/swiper-bundle.min.css')), 'all');
 		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
 		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
 	}
-	if (is_page('banquet') || is_page('restaurant') || is_page('suite')) {
+	if (is_page('banquet') || is_page('restaurant') || is_page('suite-a') || is_page('suite-b') || is_page('twin') || is_page('double') || is_page('single') || is_page('japanese')) {
 		wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper-bundle.min.css', array(), filemtime(get_theme_file_path('/css/swiper-bundle.min.css')), 'all');
 		wp_enqueue_script('js-swiper-bundle', get_template_directory_uri() . '/js/swiper.min.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.min.js')), true);
 		wp_enqueue_script('js-swiper-init', get_template_directory_uri() . '/js/swiper.js', array('jquery'), filemtime(get_theme_file_path('/js/swiper.js')), true);
@@ -297,7 +290,7 @@ function login_logo()
 		height: 70px; //ログインの高さ
 	  }
 	  body{
-		background: url(' . get_template_directory_uri() . '/images/common/mv_bg.jpg) no-repeat top center;
+		background: url(' . get_template_directory_uri() . '/images/common/mv_img.jpg) no-repeat top center;
 		background-color:rgba(255,255,255,0.5);
 		background-blend-mode:lighten;
 		background-size: cover;
@@ -394,7 +387,8 @@ register_taxonomy('allcolumn_tag', 'allcolumn', array(
 /**
  * 季節を判定する関数
  */
-function get_current_season() {
+function get_current_season()
+{
 	$current_date = current_time('n-j'); // 月-日の形式で取得 (例: 3-15, 12-1)
 	$month = (int) current_time('n');
 	$day = (int) current_time('j');
@@ -431,7 +425,8 @@ add_filter('body_class', function ($classes) {
 /**
  * home.phpのカテゴリーフィルタリング
  */
-function filter_home_posts_by_category($query) {
+function filter_home_posts_by_category($query)
+{
 	// 管理画面やメインクエリ以外は除外
 	if (is_admin() || !$query->is_main_query()) {
 		return;

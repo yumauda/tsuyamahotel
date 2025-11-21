@@ -82,11 +82,31 @@
   line-height: 1.5;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  position: relative;
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
   }
   @include mq(lg) {
     font-size: rem(16);
+  }
+}
+
+.p-header__menu-link.is-active {
+  font-weight: 700;
+  padding-top: rem(18);
+  color: #E8C2C2;
+
+  &::before {
+    content: "";
+    display: block;
+    width: rem(8);
+    height: rem(8);
+    background-color: #E8C2C2;
+    border-radius: 50%;
+    position: absolute;
+    top: rem(0);
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

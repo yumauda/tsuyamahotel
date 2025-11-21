@@ -6,16 +6,49 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
-    <title>津山鶴山ホテル</title>
+    <?php
+    // ページごとにタイトルを設定
+    if (is_front_page()) {
+        $page_title = '津山鶴山ホテル';
+    } elseif (is_page('single')) {
+        $page_title = 'シングルルーム | 津山鶴山ホテル';
+    } elseif (is_page('double')) {
+        $page_title = 'ダブルルーム | 津山鶴山ホテル';
+    } elseif (is_page('twin')) {
+        $page_title = 'ツインルーム | 津山鶴山ホテル';
+    } elseif (is_page('suite-a')) {
+        $page_title = 'スイートルームA-type | 津山鶴山ホテル';
+    } elseif (is_page('suite-b')) {
+        $page_title = 'スイートルームB-type | 津山鶴山ホテル';
+    } elseif (is_page('japanese')) {
+        $page_title = '和室 | 津山鶴山ホテル';
+    } elseif (is_page('stay')) {
+        $page_title = 'ご宿泊 | 津山鶴山ホテル';
+    } elseif (is_page('restaurant')) {
+        $page_title = 'レストラン | 津山鶴山ホテル';
+    } elseif (is_page('banquet')) {
+        $page_title = '宴会・会議 | 津山鶴山ホテル';
+    } elseif (is_page('office')) {
+        $page_title = 'サテライトオフィス | 津山鶴山ホテル';
+    } elseif (is_page('facilities')) {
+        $page_title = '館内のご案内 | 津山鶴山ホテル';
+    } elseif (is_page('access')) {
+        $page_title = '交通のご案内 | 津山鶴山ホテル';
+    } else {
+        $page_title = '津山鶴山ホテル';
+    }
+    ?>
+    <title><?php echo $page_title; ?></title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta property="og:title" content="津山鶴山ホテル" />
+    <meta property="og:title" content="<?php echo $page_title; ?>" />
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
-    <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
     <meta property="og:site_name" content="津山鶴山ホテル" />
     <meta property="og:description" content="津山鶴山ホテルは、津山市の中心部にあるホテルです。" />
 
+
+    <meta property="og:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="<?php echo get_template_directory_uri() ?>/images/common/ogp.jpg">
 
@@ -112,25 +145,25 @@
             <nav class="p-header__nav">
                 <ul class="p-header__menu">
                     <li class="p-header__menu-item">
-                        <a href="<?php echo home_url('/stay'); ?>" class="p-header__menu-link">ご宿泊</a>
+                        <a href="<?php echo home_url('/stay'); ?>" class="p-header__menu-link <?php echo (is_page('stay') || is_page('single') || is_page('double') || is_page('twin') || is_page('suite-a') || is_page('suite-b') || is_page('japanese')) ? 'is-active' : ''; ?>">ご宿泊</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="<?php echo home_url('/restaurant'); ?>" class="p-header__menu-link">レストラン</a>
+                        <a href="<?php echo home_url('/restaurant'); ?>" class="p-header__menu-link <?php echo is_page('restaurant') ? 'is-active' : ''; ?>">レストラン</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="<?php echo home_url('/banquet'); ?>" class="p-header__menu-link">宴会・会議</a>
+                        <a href="<?php echo home_url('/banquet'); ?>" class="p-header__menu-link <?php echo is_page('banquet') ? 'is-active' : ''; ?>">宴会・会議</a>
                     </li>
                     <li class="p-header__menu-item">
                         <a href="#" class="p-header__menu-link">ウェディング</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="<?php echo home_url('/office'); ?>" class="p-header__menu-link">サテライトオフィス</a>
+                        <a href="<?php echo home_url('/office'); ?>" class="p-header__menu-link <?php echo is_page('office') ? 'is-active' : ''; ?>">サテライトオフィス</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="<?php echo home_url('/facilities'); ?>" class="p-header__menu-link">館内のご案内</a>
+                        <a href="<?php echo home_url('/facilities'); ?>" class="p-header__menu-link <?php echo is_page('facilities') ? 'is-active' : ''; ?>">館内のご案内</a>
                     </li>
                     <li class="p-header__menu-item">
-                        <a href="<?php echo home_url('/access'); ?>" class="p-header__menu-link">交通のご案内</a>
+                        <a href="<?php echo home_url('/access'); ?>" class="p-header__menu-link <?php echo is_page('access') ? 'is-active' : ''; ?>">交通のご案内</a>
                     </li>
                 </ul>
             </nav>

@@ -3,7 +3,7 @@
 .p-rooms {
   padding-top: rem(64);
   padding-bottom: rem(64);
-  background: url(../images/common/room_bg.svg) no-repeat center center / cover;
+  background: url(../images/common/room_bg.webp) no-repeat center center / cover;
   @include mq(md) {
     padding-top: rem(180);
     padding-bottom: rem(200);
@@ -12,6 +12,9 @@
 
 .p-rooms--stay {
   background: initial;
+}
+.pt60 {
+  padding-top: rem(60);
 }
 .p-rooms__content {
   max-width: rem(1300);
@@ -214,7 +217,7 @@
   grid-template-columns: 1fr;
   gap: rem(8);
   padding: rem(8) 0;
-  border-bottom: 1px solid rgba($color: #c7c1b0, $alpha: 0.5);
+  border-bottom: 1px solid rgba($color: #c7c1b0, $alpha: 1);
   @include mq(md) {
     grid-template-columns: rem(100) 1fr;
     gap: rem(40);
@@ -233,6 +236,7 @@
   line-height: calc(36 / 14);
   @include mq(md) {
     font-size: clamp(14px, 2vw, 14px);
+    white-space: nowrap;
   }
   @include mq(lg) {
     font-size: rem(14);
@@ -388,6 +392,11 @@
     gap: rem(100);
     flex-direction: row;
     margin-top: rem(120);
+  }
+}
+.mt66 {
+  @include mq(md) {
+    margin-top: rem(66);
   }
 }
 .p-rooms__qa-img {
@@ -548,4 +557,13 @@
   bottom: rem(-8);
   left: 50%;
   transform: translateX(-50%);
+}
+.bt {
+  border-top: 1px solid #c7c1b0;
+}
+.mt40 {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }

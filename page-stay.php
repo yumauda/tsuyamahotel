@@ -1,7 +1,6 @@
-<div class="p-top">
 
   <?php get_header(); ?>
-  <main>
+  <main class="p-top">
     <section class="p-page-mv">
       <div class="p-page-mv__inner">
         <div class="p-page-mv__content">
@@ -17,13 +16,13 @@
         </div>
       </div>
     </section>
-    <section class="p-location">
+    <section class="p-location js-fadeUp">
       <div class="l-inner">
         <div class="p-location__content">
-          <div class="p-location__title-wrapper">
+          <div class="p-location__title-wrapper js-fadeUp">
             <h3 class="p-location__title">心を満たす滞在を、<br class="u-mobile">ここ津山にて</h3>
           </div>
-          <div class="p-location__text-wrapper">
+          <div class="p-location__text-wrapper js-fadeUp">
             <p class="p-location__text">静かに流れる吉井川と、歴史ある津山の街並み。<br>
               その風情を背景に、私たちは「くつろぎ」と「しつらえ」を大切にした客室をご用意しています。<br>
               旅の目的や人数に合わせて選べる多彩なお部屋で、ゆったりと心休まるひとときをお過ごしください。</p>
@@ -48,11 +47,11 @@
 
 
 
-    <section class="p-rooms p-rooms--stay" id="anc01">
+    <section class="p-rooms p-rooms--stay js-fadeUp pt60" id="anc01">
       <div class="l-inner">
 
         <div class="p-rooms__content">
-          <div class="p-rooms__kind">
+          <div class="p-rooms__kind js-fadeUp">
             <p class="p-rooms__kind-text">お部屋のご案内</p>
             <div class="p-rooms__line"></div>
           </div>
@@ -61,14 +60,14 @@
 
           <div class="p-rooms__panel p-rooms__panel--active">
             <div class="p-rooms__flex">
-              <div class="p-rooms__flex-title">
+              <div class="p-rooms__flex-title js-fadeUp">
                 <span class="p-rooms__flex-title-ja">スイート</span>
                 <span class="p-rooms__flex-title-en">Suite</span>
               </div>
               <div class="p-rooms__items">
 
 
-                <div class="p-rooms__vertical">
+                <div class="p-rooms__vertical js-fadeUp">
                   <figure class="p-rooms__vertical-img">
                     <img src="<?php echo get_template_directory_uri() ?>/images/common/suite_room_1.jpg" alt="ダブルルーム" width="660" height="440">
                   </figure>
@@ -93,7 +92,7 @@
                         </div>
                       </dl>
                       <div class="p-rooms__buttons">
-                        <a href="#" class="p-rooms__button">
+                        <a href="<?php echo home_url('/suite-a'); ?>" class="p-rooms__button">
                           <p class="p-rooms__button-text">お部屋の詳細を見る</p>
                           <span class="p-rooms__button-icon">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -135,7 +134,7 @@
                         </div>
                       </dl>
                       <div class="p-rooms__buttons">
-                        <a href="#" class="p-rooms__button">
+                        <a href="<?php echo home_url('/suite-b'); ?>" class="p-rooms__button">
                           <p class="p-rooms__button-text">お部屋の詳細を見る</p>
                           <span class="p-rooms__button-icon">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -156,12 +155,12 @@
               </div>
             </div>
             <div class="p-rooms__flex mt160">
-              <div class="p-rooms__flex-title">
+              <div class="p-rooms__flex-title js-fadeUp">
                 <span class="p-rooms__flex-title-ja">スタンダード</span>
                 <span class="p-rooms__flex-title-en">Standard</span>
               </div>
               <div class="p-rooms__items">
-                <div class="p-rooms__item p-rooms__item--stay">
+                <div class="p-rooms__item p-rooms__item--stay js-fadeUp">
                   <figure class="p-rooms__img p-rooms__img--stay">
                     <img src="<?php echo get_template_directory_uri() ?>/images/common/standard_1.jpg" alt="ツインルーム" width="660" height="440">
                   </figure>
@@ -183,7 +182,7 @@
                       </div>
                     </dl>
                     <div class="p-rooms__buttons">
-                      <a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.jpg">
+                      <a href="<?php echo home_url('/twin'); ?>" class="p-rooms__button p-rooms__button--layout">
                         <p class="p-rooms__button-text">お部屋の詳細を見る</p>
                         <span class="p-rooms__button-icon">
                           <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -198,7 +197,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="p-rooms__item p-rooms__item--stay">
+                <div class="p-rooms__item p-rooms__item--stay js-fadeUp">
                   <figure class="p-rooms__img p-rooms__img--stay">
                     <img src="<?php echo get_template_directory_uri() ?>/images/common/standard_2.jpg" alt="ダブルルーム" width="660" height="440">
                   </figure>
@@ -220,7 +219,7 @@
                       </div>
                     </dl>
                     <div class="p-rooms__buttons">
-                      <a href="#" class="p-rooms__button">
+                      <a href="<?php echo home_url('/double'); ?>" class="p-rooms__button">
                         <p class="p-rooms__button-text">お部屋の詳細を見る</p>
                         <span class="p-rooms__button-icon">
                           <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -235,7 +234,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="p-rooms__vertical mt100">
+                <div class="p-rooms__vertical mt100 js-fadeUp">
                   <figure class="p-rooms__vertical-img">
                     <img src="<?php echo get_template_directory_uri() ?>/images/common/standard_3.jpg" alt="ダブルルーム" width="660" height="440">
                   </figure>
@@ -261,7 +260,7 @@
                         </div>
                       </dl>
                       <div class="p-rooms__buttons">
-                        <a href="#" class="p-rooms__button">
+                        <a href="<?php echo home_url('/japanese'); ?>" class="p-rooms__button">
                           <p class="p-rooms__button-text">お部屋の詳細を見る</p>
                           <span class="p-rooms__button-icon">
                             <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -285,11 +284,11 @@
         </div>
       </div>
     </section>
-    <section class="p-information">
+    <section class="p-information js-fadeUp">
       <div class="l-inner">
 
         <div class="p-information__content" id="anc02">
-          <div class="p-information__title-wrapper">
+          <div class="p-information__title-wrapper js-fadeUp">
             <div class="p-information__title">
               <h3 class="c-main-title">
                 <span class="c-main-title__ja c-main-title__ja--black">快適なご滞在のために</span>
@@ -298,7 +297,7 @@
             </div>
           </div>
           <div class="p-information__cards">
-            <div class="p-information__card">
+            <div class="p-information__card js-fadeUp">
               <div class="p-information__card-header">
                 <h4 class="p-information__card-title">全室禁煙</h4>
               </div>
@@ -311,7 +310,7 @@
                 </div>
               </div>
             </div>
-            <div class="p-information__card">
+            <div class="p-information__card js-fadeUp">
               <div class="p-information__card-header">
                 <h4 class="p-information__card-title">フリーWi-Fi</h4>
               </div>
@@ -324,7 +323,7 @@
                 </div>
               </div>
             </div>
-            <div class="p-information__card">
+            <div class="p-information__card js-fadeUp">
               <div class="p-information__card-header">
                 <h4 class="p-information__card-title">バリアフリー対応</h4>
               </div>
@@ -337,7 +336,7 @@
                 </div>
               </div>
             </div>
-            <div class="p-information__card">
+            <div class="p-information__card js-fadeUp">
               <div class="p-information__card-header">
                 <h4 class="p-information__card-title">売店</h4>
               </div>
@@ -354,8 +353,8 @@
 
 
         </div>
-        <div class="p-information__amenity p-amenity" id="anc03">
-          <div class="p-amenity__content">
+        <div class="p-information__amenity p-amenity js-fadeUp" id="anc03">
+          <div class="p-amenity__content js-fadeUp">
             <figure class="p-amenity__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/amenity_img.jpg" alt="アメニティバー" width="400" height="600">
             </figure>
@@ -386,7 +385,7 @@
               </div>
             </div>
           </div>
-          <div class="p-amenity__content" id="anc04">
+          <div class="p-amenity__content js-fadeUp" id="anc04">
             <figure class="p-amenity__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/eco_img.jpg" alt="エコスタイル" width="400" height="600">
             </figure>
@@ -417,17 +416,17 @@
       </div>
 
     </section>
-    <section class="p-heart">
+    <section class="p-heart js-fadeUp">
       <div class="l-inner">
         <div class="p-heart__content">
-          <div class="p-heart__detail">
+          <div class="p-heart__detail js-fadeUp">
             <h3 class="p-heart__title">
               <span class="p-heart__title-ja">和の品格と、<br class='u-mobile'>心を込めたおもてなし</span>
             </h3>
             <p class="p-heart__text">街中にありながらも自然を身近に感じられる立地は、まさに隠れ家のような安らぎの空間。落ち着いた内装は、まるで自宅にいるかのような安心感と心地よさを演出し、ここで過ごす時間を、より豊かで特別なひとときへと導きます。<br>
               また、私たちスタッフ一人ひとりが、「心地よい癒しと温かなひとときをお届けしたい」という想いを胸に、真心を込めてお迎えいたします。心に寄り添うおもてなしこそが、ここでの滞在をより特別なものにいたします。</p>
           </div>
-          <figure class="p-heart__img">
+          <figure class="p-heart__img js-fadeUp">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/heart_img.jpg" alt="和の品格と、心を込めたおもてなし" width="570" height="380">
           </figure>
         </div>
@@ -441,7 +440,7 @@
   </main>
 
   <!-- レイアウト画像モーダル -->
-  <div class="p-layout-modal">
+ <!--  <div class="p-layout-modal">
     <div class="p-layout-modal__overlay"></div>
     <div class="p-layout-modal__content">
       <button class="p-layout-modal__close">&times;</button>
@@ -449,7 +448,6 @@
         <img src="" alt="レイアウト" class="p-layout-modal__image">
       </figure>
     </div>
-  </div>
+  </div> -->
 
   <?php get_footer() ?>
-</div>

@@ -38,12 +38,11 @@ const animationPatterns = {
     to: { duration: 1.2, opacity: 1, scale: 1, stagger: 0.2, ease: "power3.out" },
     useScrollTrigger: true,
   },
-  // 既存のセカンドアニメーション（後方互換性のため残す）
+  // 既存のセカンドアニメーション
   "js-second": {
     from: { opacity: 0, y: 30 },
     to: { duration: 1.5, opacity: 1, y: 0, stagger: 0.3, ease: "power3.out" },
     useScrollTrigger: true,
-    trigger: ".js-second-section", // カスタムトリガー
   },
 };
 
@@ -60,17 +59,22 @@ function initScrollAnimations() {
     const { from, to, useScrollTrigger, trigger } = pattern;
 
     if (useScrollTrigger) {
-      // ScrollTriggerを使用する場合
-      const toConfig = { ...to };
+      // ScrollTriggerを使用する場合 - 各要素に個別に適用
+      elements.forEach((element, index) => {
+        const toConfig = { ...to };
 
-      // ScrollTrigger設定
-      toConfig.scrollTrigger = {
-        trigger: trigger || `.${className}`, // カスタムトリガーがあれば使用、なければ要素自身
-        start: "0% 80%", // 画面の80%の位置で発火
-        // markers: true, // デバッグ用（必要に応じてコメント解除）
-      };
+        // staggerは個別要素には不要なので削除
+        delete toConfig.stagger;
 
-      gsap.fromTo(`.${className}`, from, toConfig);
+        // ScrollTrigger設定 - カスタムトリガーがあれば使用、なければ要素自身をトリガーに
+        toConfig.scrollTrigger = {
+          trigger: trigger || element, // カスタムトリガーがあれば使用、なければ要素自身
+          start: "0% 80%", // 画面の80%の位置で発火
+          // markers: true, // デバッグ用（必要に応じてコメント解除）
+        };
+
+        gsap.fromTo(element, from, toConfig);
+      });
     } else {
       // ScrollTrigger無し（即座にアニメーション）
       gsap.fromTo(`.${className}`, from, to);

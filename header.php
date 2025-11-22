@@ -130,6 +130,7 @@
                     </div>
                 </div>
             <?php endif; ?>
+            
             <div class="p-header__btns">
                 <a href="#" class="p-header__btn-link p-header__btn-link--language">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/button_1.png" alt="language" width="70" height="180">

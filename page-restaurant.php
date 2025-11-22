@@ -41,13 +41,13 @@
 			<a href="#anc08" class="p-lists__link">営業時間</a>
 		</li>
 	</ul>
-	<section class="p-location">
+	<section class="p-location js-fadeUp">
 		<div class="l-inner">
 			<div class="p-location__content">
-				<div class="p-location__title-wrapper">
+				<div class="p-location__title-wrapper js-fadeUp">
 					<h3 class="p-location__title">四季を味わう、<br class="u-mobile">至福のひととき</h3>
 				</div>
-				<div class="p-location__text-wrapper">
+				<div class="p-location__text-wrapper js-fadeUp">
 					<p class="p-location__text fz18">津山鶴山ホテルのレストランでは、旬の食材と地元の恵みを活かした料理を、心を込めてご提供しております。<br>
 						ご宿泊のお客様はもちろん、お食事だけで訪れる方にもご好評をいただいております。<br>
 						四季折々の味わいと上質なおもてなしで、特別なひとときをお過ごしください。</p>
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="p-swiper">
+	<div class="p-swiper js-fadeUp">
 		<div class="p-swiper__inner">
 			<div class="swiper slider3">
 				<!-- Additional required wrapper -->
@@ -122,23 +122,23 @@
 			</div>
 		</div>
 	</div>
-	<section class="p-facilities p-facilities--taste">
+	<section class="p-facilities p-facilities--taste js-fadeUp">
 		<div class="l-inner">
 			<div class="p-facilities__content" id="anc01">
-				<div class="p-facilities__title">
+				<div class="p-facilities__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">鶴山の美味</span>
 						<span class="c-main-title__en">Kakuzan Taste</span>
 					</h3>
 				</div>
-				<div class="p-facilities__top-textWrapper">
+				<div class="p-facilities__top-textWrapper js-fadeUp">
 					<p class="p-facilities__top-text">津山鶴山ホテルのお食事は、選び抜かれた地元食材に支えられています。<br>
 						とりわけ、お米と肉には強いこだわりを持ち、一粒一粒の輝きと、一口ごとに広がる旨みを大切にしています。<br>
 						土地の恵みを活かした味わいを、ぜひご堪能ください。</p>
 				</div>
 
 				<div class="p-facilities__list p-facilities__list--taste">
-					<div class="p-facilities__item">
+					<div class="p-facilities__item js-fadeUp">
 						<figure class="p-facilities__img p-facilities__img--taste">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/taste_1.jpg" alt="きぬむすめ" width="360" height="240">
 						</figure>
@@ -148,7 +148,7 @@
 						</div>
 					</div>
 
-					<div class="p-facilities__item">
+					<div class="p-facilities__item js-fadeUp">
 						<figure class="p-facilities__img p-facilities__img--taste">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/taste_2.jpg" alt="つやま和牛" width="360" height="240">
 						</figure>
@@ -158,7 +158,7 @@
 						</div>
 					</div>
 
-					<div class="p-facilities__item">
+					<div class="p-facilities__item js-fadeUp">
 						<figure class="p-facilities__img p-facilities__img--taste">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/taste_3.jpg" alt="奈義和牛（なぎビーフ）" width="360" height="240">
 						</figure>
@@ -178,7 +178,7 @@
 		<div class="l-inner">
 
 			<div class="p-rooms__content" id="anc02">
-				<div class="p-rooms__title">
+				<div class="p-rooms__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja c-main-title__ja--black">特別メニュー</span>
 						<span class="c-main-title__en c-main-title__en--black">Special menu</span>
@@ -186,7 +186,7 @@
 				</div>
 				<div class="p-rooms__menu">
 					<div class="p-menu">
-						<div class="p-menu__top">
+						<div class="p-menu__top js-fadeUp">
 							<figure class="p-menu__img">
 								<img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img1.webp" alt="和牛サーロインのロースト" width="360" height="240">
 							</figure>
@@ -207,7 +207,7 @@
 								<p class="p-menu__text-small">奈義和牛（なぎビーフ）サーロイン120g もしくは つやま和牛サーロイン120g</p>
 							</div>
 						</div>
-						<div class="p-menu__double">
+						<div class="p-menu__double js-fadeUp">
 							<div class="p-menu__double-item">
 								<figure class="p-menu__double-img">
 									<img src="<?php echo get_template_directory_uri() ?>/images/common/menu_img2.webp" alt="津山城下町御膳" width="360" height="240">
@@ -247,11 +247,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="p-rooms__tabs p-rooms__tabs--menu">
+						<div class="p-rooms__tabs p-rooms__tabs--menu js-fadeUp">
 							<button class="p-rooms__tab p-rooms__tab--active" data-tab="small">つやま和牛</button>
 							<button class="p-rooms__tab" data-tab="medium">奈義和牛（なぎビーフ）</button>
 						</div>
-						<div class="p-rooms__panel p-rooms__panel--active" data-panel="small">
+						<div class="p-rooms__panel p-rooms__panel--active js-fadeUp" data-panel="small">
 							<div class="p-rooms__item">
 								<figure class="p-rooms__img">
 									<img src="<?php echo get_template_directory_uri() ?>/images/common/menu_tab1_img1.webp" alt="つやま和牛 鉄板焼き御膳" width="450" height="300">
@@ -268,7 +268,7 @@
 							</div>
 						</div>
 
-						<div class="p-rooms__panel" data-panel="medium">
+						<div class="p-rooms__panel js-fadeUp" data-panel="medium">
 							<div class="p-rooms__item">
 								<figure class="p-rooms__img">
 									<img src="<?php echo get_template_directory_uri() ?>/images/common/menu_tab2_img1.webp" alt="つやま和牛 すき焼き御膳" width="450" height="300">
@@ -292,7 +292,7 @@
 	<section class="p-meal p-meal--lunch">
 		<div class="l-inner">
 			<div class="p-meal__content" id="anc03">
-				<div class="p-meal__flex">
+				<div class="p-meal__flex js-fadeUp">
 					<div class="p-meal__title">
 						<h3 class="c-main-title">
 							<span class="c-main-title__ja">今月のランチ</span>
@@ -304,10 +304,10 @@
 							この季節ならではの美味しさを、心ゆくまでお楽しみください。</p>
 					</div>
 				</div>
-				<div class="p-meal__date">
+				<div class="p-meal__date js-fadeUp">
 					<p class="p-meal__date-text">期間：2025年9月1日（月）〜30日（火）</p>
 				</div>
-				<div class="p-menu__double">
+				<div class="p-menu__double js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/lunch_1.jpg" alt="和食ランチ" width="360" height="240">
@@ -348,7 +348,7 @@
 	<section class="p-meal p-meal--lunch pt0">
 		<div class="l-inner">
 			<div class="p-meal__content" id="anc04">
-				<div class="p-meal__flex">
+				<div class="p-meal__flex js-fadeUp">
 					<div class="p-meal__title">
 						<h3 class="c-main-title">
 							<span class="c-main-title__ja">お食事メニュー</span>
@@ -357,12 +357,12 @@
 					</div>
 
 				</div>
-				<div class="p-meal__menu">
+				<div class="p-meal__menu js-fadeUp">
 					<div class="p-meal__menu-text">和食メニュー</div>
 					<div class="p-meal__menu-line"></div>
 				</div>
 
-				<div class="p-menu__triple mt40">
+				<div class="p-menu__triple mt40 js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_1.jpg" alt="作州御膳" width="360" height="240">
@@ -413,7 +413,7 @@
 				</div>
 
 				<div class="p-menu__table">
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">特製ロースカツ重 100g</p>
 							<p class="p-menu__table-desc">国産ブランド八女豚使用 / 小鉢 / 漬物 / 吸物 付</p>
@@ -423,7 +423,7 @@
 							<p class="p-menu__table-tax">（税込み）</p>
 						</div>
 					</div>
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">熟成厚切りロースカツ膳 250g</p>
 							<p class="p-menu__table-desc">国産ブランド八女豚使用 / ご飯 / 漬物 / 吸物 付</p>
@@ -433,7 +433,7 @@
 							<p class="p-menu__table-tax">（税込み）</p>
 						</div>
 					</div>
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">大海老の天丼</p>
 							<p class="p-menu__table-desc">小鉢 / 漬物 / 吸物 付</p>
@@ -445,11 +445,11 @@
 					</div>
 				</div>
 
-				<div class="p-meal__menu mt120">
+				<div class="p-meal__menu mt120 js-fadeUp">
 					<div class="p-meal__menu-text">洋食メニュー</div>
 					<div class="p-meal__menu-line"></div>
 				</div>
-				<div class="p-meal__big">
+				<div class="p-meal__big js-fadeUp">
 					<figure class="p-meal__big-img">
 						<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/menu_main1.jpg" alt="和風ステーキセット" width="750" height="500">
 					</figure>
@@ -469,7 +469,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-menu__triple mt80">
+				<div class="p-menu__triple mt80 js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_4.jpg" alt="奈義和牛ステーキ重" width="360" height="240">
@@ -518,7 +518,7 @@
 					</div>
 				</div>
 				<div class="p-menu__table">
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">ホテル特製ビーフカレー</p>
 							<p class="p-menu__table-desc">サラダ 付</p>
@@ -528,7 +528,7 @@
 							<p class="p-menu__table-tax">（税込み）</p>
 						</div>
 					</div>
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">ホテル特製八女豚のカツカレー</p>
 							<p class="p-menu__table-desc">サラダ 付</p>
@@ -538,7 +538,7 @@
 							<p class="p-menu__table-tax">（税込み）</p>
 						</div>
 					</div>
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">ミックスサンド</p>
 						</div>
@@ -548,11 +548,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-meal__menu mt120">
+				<div class="p-meal__menu mt120 js-fadeUp">
 					<div class="p-meal__menu-text">中華メニュー</div>
 					<div class="p-meal__menu-line"></div>
 				</div>
-				<div class="p-menu__triple mt40">
+				<div class="p-menu__triple mt40 js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_7.jpg" alt="海老のチリソース定食" width="360" height="240">
@@ -600,7 +600,7 @@
 					</div>
 				</div>
 				<div class="p-menu__table">
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">チャーハンセット</p>
 							<p class="p-menu__table-desc">スープ / 自家製漬物 / 唐揚げ 付</p>
@@ -610,7 +610,7 @@
 							<p class="p-menu__table-tax">（税込み）</p>
 						</div>
 					</div>
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">熟成厚切りロースカツ膳 250g</p>
 							<p class="p-menu__table-desc">スープ / 自家製漬物 付</p>
@@ -620,7 +620,7 @@
 							<p class="p-menu__table-tax">（税込み）</p>
 						</div>
 					</div>
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">五目焼きそば（揚げ麺）</p>
 						</div>
@@ -629,7 +629,7 @@
 							<p class="p-menu__table-tax">（税込み）</p>
 						</div>
 					</div>
-					<div class="p-menu__table-row">
+					<div class="p-menu__table-row js-fadeUp">
 						<div class="p-menu__table-left">
 							<p class="p-menu__table-title">五目ラーメン</p>
 						</div>
@@ -645,13 +645,13 @@
 	<section class="p-desert">
 		<div class="l-inner">
 			<div class="p-desert__content" id="anc05">
-				<div class="p-desert__title">
+				<div class="p-desert__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">軽食 & デザート</span>
 						<span class="c-main-title__en">Light meals and Desserts</span>
 					</h3>
 				</div>
-				<div class="p-desert__menu">
+				<div class="p-desert__menu js-fadeUp">
 					<div class="p-desert__images">
 						<figure class="p-desert__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/desert_1.jpg" alt="軽食" width="360" height="240">
@@ -749,13 +749,13 @@
 	<section class="p-drink">
 		<div class="l-inner">
 			<div class="p-drink__content" id="anc06">
-				<div class="p-drink__title">
+				<div class="p-drink__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">ドリンク</span>
 						<span class="c-main-title__en">Drink and Alcohol</span>
 					</h3>
 				</div>
-				<div class="p-drink__menu">
+				<div class="p-drink__menu js-fadeUp">
 					<div class="p-drink__columns">
 						<div class="p-drink__column">
 							<div class="p-drink__category">
@@ -924,7 +924,7 @@
 	<section class="p-meal p-meal--lunch">
 		<div class="l-inner">
 			<div class="p-meal__content" id="anc07">
-				<div class="p-meal__flex">
+				<div class="p-meal__flex js-fadeUp">
 					<div class="p-meal__title">
 						<h3 class="c-main-title">
 							<span class="c-main-title__ja">団体様向けお食事メニュー</span>
@@ -933,7 +933,7 @@
 					</div>
 
 				</div>
-				<div class="p-menu__double mt120">
+				<div class="p-menu__double mt120 js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/lunch_3.jpg" alt="津山づくし膳" width="360" height="240">
@@ -968,7 +968,7 @@
 				</div>
 
 
-				<div class="p-menu__triple mt100">
+				<div class="p-menu__triple mt100 js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/ja_lunch_10.jpg" alt="鶴山弁当" width="360" height="240">

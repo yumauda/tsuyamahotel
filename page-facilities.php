@@ -18,14 +18,14 @@
     <section class="p-guide">
       <div class="l-inner">
         <div class="p-guide__content">
-          <div class="p-guide__title">
+          <div class="p-guide__title js-fadeUp">
             <h2 class="c-main-title">
               <span class="c-main-title__ja">フロアガイド</span>
               <span class="c-main-title__en">Floor guide</span>
             </h2>
           </div>
 
-          <div class="p-guide__main">
+          <div class="p-guide__main js-fadeUp">
             <div class="p-guide__left">
               <div class="p-guide__box">
                 <div class="p-guide__floor-item">
@@ -188,7 +188,7 @@
     <section class="p-facilities">
       <div class="l-inner">
         <div class="p-facilities__content">
-          <div class="p-facilities__title">
+          <div class="p-facilities__title js-fadeUp">
             <h3 class="c-main-title">
               <span class="c-main-title__ja">館内設備</span>
               <span class="c-main-title__en">Facilities</span>
@@ -196,7 +196,7 @@
           </div>
 
           <div class="p-facilities__list">
-            <div class="p-facilities__item">
+            <div class="p-facilities__item js-fadeUp">
               <figure class="p-facilities__img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facilities_1.jpg" alt="共用サービス" width="360" height="240">
               </figure>
@@ -206,7 +206,7 @@
               </div>
             </div>
 
-            <div class="p-facilities__item">
+            <div class="p-facilities__item js-fadeUp">
               <figure class="p-facilities__img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facilities_2.jpg" alt="喫煙室" width="360" height="240">
               </figure>
@@ -216,7 +216,7 @@
               </div>
             </div>
 
-            <div class="p-facilities__item">
+            <div class="p-facilities__item js-fadeUp">
               <figure class="p-facilities__img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facilities_3.jpg" alt="授乳室" width="360" height="240">
               </figure>
@@ -225,7 +225,7 @@
                 <p class="p-facilities__item-text">小さなお子さまをお連れのお客さまのために、授乳室を完備。個室タイプで気兼ねなくご利用いただけると好評です。</p>
               </div>
             </div>
-            <div class="p-facilities__item">
+            <div class="p-facilities__item js-fadeUp">
               <figure class="p-facilities__img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facilities_4.jpg" alt="パウダールーム" width="360" height="240">
               </figure>
@@ -234,7 +234,7 @@
                 <p class="p-facilities__item-text">大きな鏡をそなえ、快適にご利用いただけるパウダールーム。女性のお客様にうれしい、おもてなしの心づかいです。</p>
               </div>
             </div>
-            <div class="p-facilities__item">
+            <div class="p-facilities__item js-fadeUp">
               <figure class="p-facilities__img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facilities_5.jpg" alt="バリアフリー" width="360" height="240">
               </figure>
@@ -243,7 +243,7 @@
                 <p class="p-facilities__item-text">各会場とも段差をなくし、バリアフリー対策は万全。車イス対応も可能なため、どなたさまも安心してご来館いただけます。</p>
               </div>
             </div>
-            <div class="p-facilities__item">
+            <div class="p-facilities__item js-fadeUp">
               <figure class="p-facilities__img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facilities_6.jpg" alt="売店" width="360" height="240">
               </figure>

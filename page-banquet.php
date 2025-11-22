@@ -29,13 +29,13 @@
 			<a href="#anc04" class="p-lists__link">設備・備品</a>
 		</li>
 	</ul>
-	<section class="p-location">
+	<section class="p-location js-fadeUp">
 		<div class="l-inner">
 			<div class="p-location__content">
-				<div class="p-location__title-wrapper">
+				<div class="p-location__title-wrapper js-fadeUp">
 					<h3 class="p-location__title">心を尽くす、おもてなしの場</h3>
 				</div>
-				<div class="p-location__text-wrapper">
+				<div class="p-location__text-wrapper js-fadeUp">
 					<p class="p-location__text fz18">津山鶴山ホテルでは、接遇のスペシャリストとされるサービス技能士１級の有資格者をはじめ、<br>
 						経験豊かなスタッフが揃い、きめ細やかなサービスをご提供いたします。<br>
 						大切なご宴会や会議の場を、心からのおもてなしと上質な演出で彩り、お客様にご満足いただけるひとときをお約束いたします。</p>
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 	</section>
-	<div class="p-swiper">
+	<div class="p-swiper js-fadeUp">
 		<div class="p-swiper__inner">
 			<div class="swiper slider3">
 				<!-- Additional required wrapper -->
@@ -113,10 +113,10 @@
 			</div>
 		</div>
 	</div>
-	<section class="p-facilities" id="anc01">
+	<section class="p-facilities js-fadeUp" id="anc01">
 		<div class="l-inner">
 			<div class="p-facilities__content p-facilities__content--scene">
-				<div class="p-facilities__title">
+				<div class="p-facilities__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">ご利用シーン</span>
 						<span class="c-main-title__en">Scene</span>
@@ -124,7 +124,7 @@
 				</div>
 
 				<div class="p-facilities__list">
-					<div class="p-facilities__item p-facilities__item--scene">
+					<div class="p-facilities__item p-facilities__item--scene js-fadeUp">
 						<figure class="p-facilities__img">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scene_1.webp" alt="新年会・忘年会・同窓会" width="360" height="240">
 						</figure>
@@ -134,7 +134,7 @@
 						</div>
 					</div>
 
-					<div class="p-facilities__item p-facilities__item--scene">
+					<div class="p-facilities__item p-facilities__item--scene js-fadeUp">
 						<figure class="p-facilities__img">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scene_2.webp" alt="会議・リモート会議" width="360" height="240">
 						</figure>
@@ -144,7 +144,7 @@
 						</div>
 					</div>
 
-					<div class="p-facilities__item p-facilities__item--scene">
+					<div class="p-facilities__item p-facilities__item--scene js-fadeUp">
 						<figure class="p-facilities__img">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scene_3.webp" alt="懇親会" width="360" height="240">
 						</figure>
@@ -153,7 +153,7 @@
 							<p class="p-facilities__item-text p-facilities__item-text--scene">職場や団体での交流を深める懇親の場として最適です。落ち着いた空間と心のこもったおもてなしが、参加者同士のつながりをより一層強めます。</p>
 						</div>
 					</div>
-					<div class="p-facilities__item p-facilities__item--scene">
+					<div class="p-facilities__item p-facilities__item--scene js-fadeUp">
 						<figure class="p-facilities__img">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scene_4.webp" alt="お食い初め" width="360" height="240">
 						</figure>
@@ -162,7 +162,7 @@
 							<p class="p-facilities__item-text p-facilities__item-text--scene">お子さまの健やかな成長を願うご家族の行事に、専用のお食い初め膳をご用意。伝統を大切にしながら、温かく和やかな時間をお過ごしいただけます。</p>
 						</div>
 					</div>
-					<div class="p-facilities__item p-facilities__item--scene">
+					<div class="p-facilities__item p-facilities__item--scene js-fadeUp">
 						<figure class="p-facilities__img">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scene_5.webp" alt="特別な日のお祝い" width="360" height="240">
 						</figure>
@@ -171,7 +171,7 @@
 							<p class="p-facilities__item-text p-facilities__item-text--scene">誕生日や結婚記念日など、人生の節目を祝う大切なひとときに。お料理とサービスで心に残るお祝いの場を演出いたします。</p>
 						</div>
 					</div>
-					<div class="p-facilities__item p-facilities__item--scene">
+					<div class="p-facilities__item p-facilities__item--scene js-fadeUp">
 						<figure class="p-facilities__img">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scene_6.webp" alt="法要・偲ぶ会" width="360" height="240">
 						</figure>
@@ -189,23 +189,23 @@
 		<div class="l-inner">
 
 			<div class="p-rooms__content">
-				<div class="p-rooms__title">
+				<div class="p-rooms__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja c-main-title__ja--black">会場一覧</span>
 						<span class="c-main-title__en c-main-title__en--black">Banquet Rooms</span>
 					</h3>
 				</div>
-				<div class="p-rooms__top-textWrapper">
+				<div class="p-rooms__top-textWrapper js-fadeUp">
 					<p class="p-rooms__top-text">津山鶴山ホテルでは、目的や規模に応じてお選びいただける多彩な会場をご用意しております。<br>
 						華やかなご宴会からフォーマルな会議、記念日やセレモニーまで、上質な空間ときめ細やかなサービスで大切なひとときをサポートいたします。</p>
 				</div>
-				<div class="p-rooms__tabs">
+				<div class="p-rooms__tabs js-fadeUp">
 					<button class="p-rooms__tab p-rooms__tab--active" data-tab="small">4名～59名</button>
-					<button class="p-rooms__tab" data-tab="medium">60～99名</button>
+					<button class="p-rooms__tab" data-tab="medium">60～399名</button>
 					<button class="p-rooms__tab" data-tab="large">400～1,100名</button>
 				</div>
-				<div class="p-rooms__panel p-rooms__panel--active" data-panel="small">
-					<div class="p-rooms__item">
+				<div class="p-rooms__panel p-rooms__panel--active js-fadeUp" data-panel="small">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp" alt="さつきの間" width="450" height="300">
 						</figure>
@@ -242,7 +242,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="p-rooms__item">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_ayame.webp" alt="あやめの間" width="450" height="300">
 						</figure>
@@ -260,7 +260,7 @@
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">レイアウト</dt>
-									<dd class="p-rooms__info-value">正餐、会議、シアター</dd>
+									<dd class="p-rooms__info-value">正餐・会議・シアター</dd>
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
@@ -316,7 +316,7 @@
 								</div>
 							</div>
 						</div> -->
-					<div class="p-rooms__item">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_takase.webp" alt="高瀬の間" width="450" height="300">
 						</figure>
@@ -334,7 +334,7 @@
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">レイアウト</dt>
-									<dd class="p-rooms__info-value">正餐、立食、会議、シアター</dd>
+									<dd class="p-rooms__info-value">正餐・立食・会議・シアター</dd>
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
@@ -353,7 +353,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="p-rooms__item">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_nagi.webp" alt="那岐の間" width="450" height="300">
 						</figure>
@@ -371,7 +371,7 @@
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">レイアウト</dt>
-									<dd class="p-rooms__info-value">正餐、立食、会議、シアター</dd>
+									<dd class="p-rooms__info-value">正餐・立食・会議・シアター</dd>
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
@@ -390,7 +390,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="p-rooms__item">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_yayoi.webp" alt="弥生の間" width="450" height="300">
 						</figure>
@@ -408,7 +408,7 @@
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">レイアウト</dt>
-									<dd class="p-rooms__info-value">正餐、立食、会議、シアター</dd>
+									<dd class="p-rooms__info-value">正餐・立食・会議・シアター</dd>
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
@@ -429,30 +429,30 @@
 					</div>
 				</div>
 
-				<div class="p-rooms__panel" data-panel="medium">
-					<div class="p-rooms__item">
+				<div class="p-rooms__panel js-fadeUp" data-panel="medium">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
-							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp" alt="さつきの間" width="450" height="300">
+							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_sakura.webp" alt="桜の間" width="450" height="300">
 						</figure>
 						<div class="p-rooms__detail">
-							<h3 class="p-rooms__name">さつき2の間</h3>
-							<p class="p-rooms__description">最大30名収容可能な会場です。<br />リーダー・マネージャー会議などで使用可能です。</p>
+							<h3 class="p-rooms__name">桜の間</h3>
+							<p class="p-rooms__description">最大130名収容可能な会場です。<br />企業の全社会議や学会、研究発表会などで使用可能です。</p>
 							<dl class="p-rooms__info">
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">間取</dt>
-									<dd class="p-rooms__info-value">42㎡</dd>
+									<dd class="p-rooms__info-value">117㎡</dd>
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">収容人数</dt>
-									<dd class="p-rooms__info-value">～45名</dd>
+									<dd class="p-rooms__info-value">～130名</dd>
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">レイアウト</dt>
-									<dd class="p-rooms__info-value">正装・会議・シアター</dd>
+									<dd class="p-rooms__info-value">正装・立食・会議・シアター</dd>
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp">
+								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_sakura.webp">
 									<p class="p-rooms__button-text">レイアウトを見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -469,30 +469,30 @@
 					</div>
 				</div>
 
-				<div class="p-rooms__panel" data-panel="large">
-					<div class="p-rooms__item">
+				<div class="p-rooms__panel js-fadeUp" data-panel="large">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
-							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp" alt="さつきの間" width="450" height="300">
+							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_tsuru.webp" alt="鶴の間" width="450" height="300">
 						</figure>
 						<div class="p-rooms__detail">
-							<h3 class="p-rooms__name">さつき3の間</h3>
-							<p class="p-rooms__description">最大30名収容可能な会場です。<br />リーダー・マネージャー会議などで使用可能です。</p>
+							<h3 class="p-rooms__name">鶴の間</h3>
+							<p class="p-rooms__description">３つの部屋に区切ることができる津山鶴山ホテル最大の宴会場です。<br />一面を使えば1,000人規模の大型カンファレンスやフォーラムにも対応可能です。</p>
 							<dl class="p-rooms__info">
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">間取</dt>
-									<dd class="p-rooms__info-value">42㎡</dd>
+									<dd class="p-rooms__info-value">684㎡</dd>
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">収容人数</dt>
-									<dd class="p-rooms__info-value">～45名</dd>
+									<dd class="p-rooms__info-value">～1,100名</dd>
 								</div>
 								<div class="p-rooms__info-row">
 									<dt class="p-rooms__info-label">レイアウト</dt>
-									<dd class="p-rooms__info-value">正装・会議・シアター</dd>
+									<dd class="p-rooms__info-value">正装・立食・会議・シアター</dd>
 								</div>
 							</dl>
 							<div class="p-rooms__buttons">
-								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_satsuki.webp">
+								<a href="#" class="p-rooms__button p-rooms__button--layout js-layout-btn p-rooms__button-blue" data-layout-image="<?php echo get_template_directory_uri() ?>/images/common/room_tsuru.webp">
 									<p class="p-rooms__button-text">レイアウトを見る</p>
 									<span class="p-rooms__button-icon">
 										<img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
@@ -511,21 +511,21 @@
 			</div>
 		</div>
 	</section>
-	<section class="p-meal" id="anc03">
+	<section class="p-meal js-fadeUp" id="anc03">
 		<div class="l-inner">
 			<div class="p-meal__content">
-				<div class="p-meal__title">
+				<div class="p-meal__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">お食事</span>
 						<span class="c-main-title__en">Meal</span>
 					</h3>
 				</div>
-				<div class="p-meal__text">
+				<div class="p-meal__text js-fadeUp">
 					<p class="p-meal__text-item">津山鶴山ホテルでは、会議やご宴席に合わせたお食事をご用意しております。<br>
 						季節の食材を取り入れたお弁当から、懇親会や会食にふさわしいコース料理まで、目的に応じてお選びいただけます。<br>
 						大切なお集まりにふさわしい味わいと心づくしのおもてなしで、円滑で充実したひとときをサポートいたします。</p>
 				</div>
-				<div class="p-meal__swiper">
+				<div class="p-meal__swiper js-fadeUp">
 					<div class="swiper slider4">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -683,16 +683,16 @@
 				</div>
 			</div>
 		</section> -->
-	<section class="p-lunch">
+	<section class="p-lunch js-fadeUp">
 		<div class="l-inner">
 			<div class="p-lunch__content">
-				<div class="p-lunch__title">
+				<div class="p-lunch__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">団体昼食メニュー</span>
 						<span class="c-main-title__en">Lunch Menu</span>
 					</h3>
 				</div>
-				<div class="p-menu__double mt60">
+				<div class="p-menu__double mt60 js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/lunch_menu_1.jpg" alt="奈義和牛すき焼き膳" width="360" height="240">
@@ -701,7 +701,7 @@
 							<h4 class="p-menu__double-title font-white fz30">奈義和牛すき焼き膳</h4>
 						</div>
 						<div class="p-menu__price-wrapper p-menu__price-wrapper--right">
-							<p class="p-menu__price font-white">4,600<span>円</span></p>
+							<p class="p-menu__price font-white">5,060<span>円</span></p>
 							<p class="p-menu__tax font-white">（税込み）</p>
 						</div>
 						<div class="p-menu__text-wrapper p-menu__text-wrapper--right">
@@ -716,7 +716,7 @@
 							<h4 class="p-menu__double-title font-white fz30">津山づくし膳</h4>
 						</div>
 						<div class="p-menu__price-wrapper p-menu__price-wrapper--right">
-							<p class="p-menu__price font-white">4,000<span>円</span></p>
+							<p class="p-menu__price font-white">4,400<span>円</span></p>
 							<p class="p-menu__tax font-white">（税込み）</p>
 						</div>
 						<div class="p-menu__text-wrapper p-menu__text-wrapper--right">
@@ -724,7 +724,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-menu__triple">
+				<div class="p-menu__triple js-fadeUp">
 					<div class="p-menu__double-item">
 						<figure class="p-menu__double-img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/lunch_menu_3.jpg" alt="作州御膳" width="360" height="240">
@@ -733,7 +733,7 @@
 							<h4 class="p-menu__double-title font-white fz28">奈義和牛ステーキと岡山名物海老飯</h4>
 						</div>
 						<div class="p-menu__price-wrapper p-menu__price-wrapper--right">
-							<p class="p-menu__price font-white">3,800<span>円</span></p>
+							<p class="p-menu__price font-white">4,180<span>円</span></p>
 							<p class="p-menu__tax font-white">（税込み）</p>
 						</div>
 						<div class="p-menu__text-wrapper p-menu__text-wrapper--right">
@@ -748,7 +748,7 @@
 							<h4 class="p-menu__double-title font-white fz28">岡山寿司と天麩羅膳</h4>
 						</div>
 						<div class="p-menu__price-wrapper p-menu__price-wrapper--right">
-							<p class="p-menu__price font-white">3,300<span>円</span></p>
+							<p class="p-menu__price font-white">3,630<span>円</span></p>
 							<p class="p-menu__tax font-white">（税込み）</p>
 						</div>
 						<div class="p-menu__text-wrapper p-menu__text-wrapper--right">
@@ -763,7 +763,7 @@
 							<h4 class="p-menu__double-title font-white fz28">津山鶴山弁当</h4>
 						</div>
 						<div class="p-menu__price-wrapper p-menu__price-wrapper--right">
-							<p class="p-menu__price font-white">3,300<span>円</span></p>
+							<p class="p-menu__price font-white">3,630<span>円</span></p>
 							<p class="p-menu__tax font-white">（税込み）</p>
 						</div>
 						<div class="p-menu__text-wrapper p-menu__text-wrapper--right">

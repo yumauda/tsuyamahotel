@@ -33,13 +33,13 @@
 		</li>
 
 	</ul>
-	<section class="p-location">
+	<section class="p-location js-fadeUp">
 		<div class="l-inner">
 			<div class="p-location__content">
-				<div class="p-location__title-wrapper">
+				<div class="p-location__title-wrapper js-fadeUp">
 					<h3 class="p-location__title">ビジネスを支える、<br class="u-mobile">もうひとつの拠点</h3>
 				</div>
-				<div class="p-location__text-wrapper">
+				<div class="p-location__text-wrapper js-fadeUp">
 					<p class="p-location__text fz18">津山鶴山ホテルでは、落ち着いた空間と充実した設備を備えたサテライトオフィスをご用意しています。<br>
 						仕事に集中できる静かな環境と、ホテルならではの快適なサービスを兼ね備え、ワークスタイルに新しい可能性を広げます。</p>
 				</div>
@@ -47,17 +47,17 @@
 		</div>
 	</section>
 
-	<section class="p-about" id="anc01">
+	<section class="p-about js-fadeUp" id="anc01">
 		<div class="l-inner">
 			<div class="p-about__content">
-				<div class="p-about__title">
+				<div class="p-about__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">サテライトオフィスとは</span>
 						<span class="c-main-title__en">about</span>
 					</h3>
 				</div>
-				<div class="p-about__img-wrapper">
-					<div class="p-about__triple">
+				<div class="p-about__img-wrapper js-fadeUp">
+					<div class="p-about__triple js-fadeUp">
 						<div class="p-about__triple-block">
 							<figure class="p-about__img">
 								<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_icon1.png" alt="宴会など" width="364" height="98">
@@ -81,7 +81,7 @@
 					<figure class="p-about__img--cross">
 						<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_cross.png" alt="" width="50" height="50">
 					</figure>
-					<div class="p-about__double">
+					<div class="p-about__double js-fadeUp">
 						<div class="p-about__triple-block">
 							<figure class="p-about__img">
 								<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/about_icon4.png" alt="オフィス" width="364" height="98">
@@ -98,16 +98,16 @@
 
 					</div>
 				</div>
-				<div class="p-about__text-wrapper">
+				<div class="p-about__text-wrapper js-fadeUp">
 					<p class="p-about__text">サテライトオフィスとは、本社や自宅に加え、必要に応じて利用できる「もうひとつの働く拠点」です。<br>
 						都市部や地方、出張先などに柔軟に設けられ、テレワークやリモート会議、短期的な業務拠点として近年ますます注目を集めています。<br>
 						津山鶴山ホテルのサテライトオフィスは、落ち着いた空間と整えられた設備で、集中して仕事に向き合える環境を実現。<br>
 						さらにホテル併設ならではの安心感とおもてなしを兼ね備え、ビジネスの効率を高めるだけでなく、心地よい滞在時間をご提供いたします。</p>
 				</div>
-				<div class="p-about__movie">
+				<div class="p-about__movie js-fadeUp">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/E5jtCFz6SAk?si=w-exXm0r2q-ZqRvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
-				<div class="p-about__reserve">
+				<div class="p-about__reserve js-fadeUp">
 					<?php get_template_part('includes/reserve'); ?>
 				</div>
 			</div>
@@ -117,19 +117,19 @@
 	<section class="p-rooms" id="anc02">
 		<div class="l-inner">
 			<div class="p-rooms__content">
-				<div class="p-rooms__title">
+				<div class="p-rooms__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja c-main-title__ja--black">設備・サービス</span>
 						<span class="c-main-title__en c-main-title__en--black">Service</span>
 					</h3>
 				</div>
-				<div class="p-rooms__top-textWrapper">
+				<div class="p-rooms__top-textWrapper js-fadeUp">
 					<p class="p-rooms__top-text">完全個室のプライベート空間で、豊かな自然を望みながら快適にお過ごしいただけます。<br>
 						ビジネスに必要な設備を整えたお部屋には、パソコンや書類をお持ち込みいただくだけで、すぐに業務を始めていただけます。<br>
 						静けさと機能性を兼ね備えた環境で、集中とリフレッシュの両方を叶えるひとときをお過ごしください。</p>
 				</div>
-				<div class="p-rooms__panel p-rooms__panel--active">
-					<div class="p-rooms__item">
+				<div class="p-rooms__panel p-rooms__panel--active js-fadeUp">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_601.jpg" alt="601号室" width="450" height="300">
 						</figure>
@@ -160,7 +160,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="p-rooms__item">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_608.jpg" alt="608号室" width="450" height="300">
 						</figure>
@@ -191,7 +191,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="p-rooms__item">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_609.jpg" alt="608号室" width="450" height="300">
 						</figure>
@@ -223,7 +223,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="p-rooms__item">
+					<div class="p-rooms__item js-fadeUp">
 						<figure class="p-rooms__img">
 							<img src="<?php echo get_template_directory_uri() ?>/images/common/room_610.jpg" alt="610号室" width="450" height="300">
 						</figure>
@@ -262,15 +262,15 @@
 				</div>
 				<div class="p-rooms__all">
 					<div class="p-rooms__all-title-wrapper">
-						<div class="p-rooms__title-row">
+						<div class="p-rooms__title-row js-fadeUp">
 							<p class="p-rooms__all-title">設備一覧</p>
 							<div class="p-rooms__all-line"></div>
 						</div>
-						<p class="p-rooms__all-text"><span>当ホテルは全室禁煙となっております。</span><br>
+						<p class="p-rooms__all-text js-fadeUp"><span>当ホテルは全室禁煙となっております。</span><br>
 							4階には喫煙ブースを設けており、愛煙家のお客様にも安心してご利用いただけます。<br>
 							また、同フロアにはソフトドリンクの自動販売機や、自由にお使いいただける電子レンジ・製氷機もご用意し、快適なご滞在をサポートいたします。</p>
 					</div>
-					<div class="p-all">
+					<div class="p-all js-fadeUp">
 						<table class="p-all__table">
 							<thead>
 								<tr>
@@ -428,7 +428,7 @@
 							</tbody>
 						</table>
 					</div>
-					<div class="p-rooms__qa">
+					<div class="p-rooms__qa js-fadeUp">
 						<figure class="p-rooms__qa-img">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/room_qa.jpg" alt="設備一覧" width="400" height="600">
 						</figure>
@@ -508,14 +508,14 @@
 		<div class="l-inner">
 			<div class="p-facilities__content p-facilities__content--scene">
 				<?php get_template_part('includes/reserve'); ?>
-				<div class="p-facilities__title mt200">
+				<div class="p-facilities__title mt200 js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">ご利用特典</span>
 						<span class="c-main-title__en">Visitor's Benefit</span>
 					</h3>
 				</div>
 
-				<div class="p-facilities__list p-facilities__list--benefit">
+				<div class="p-facilities__list p-facilities__list--benefit js-fadeUp">
 					<a href="#" class="p-facilities__item p-facilities__item--scene">
 						<figure class="p-facilities__img p-facilities__img--benefit">
 							<img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/benefit_1.jpg" alt="宿泊特別割引" width="360" height="220">
@@ -600,14 +600,14 @@
 	<section class="p-fee">
 		<div class="l-inner">
 			<div class="p-fee__content" id="anc04">
-				<div class="p-fee__title">
+				<div class="p-fee__title js-fadeUp">
 					<h3 class="c-main-title">
 						<span class="c-main-title__ja">ご利用金額</span>
 						<span class="c-main-title__en">Usage Fee</span>
 					</h3>
 				</div>
 				<div class="p-fee__table">
-					<div class="p-all">
+					<div class="p-all js-fadeUp">
 						<table class="p-all__table">
 							<thead>
 								<tr>
@@ -722,7 +722,7 @@
 						</table>
 					</div>
 				</div>
-				<div class="p-fee__submit" id="anc05">
+				<div class="p-fee__submit js-fadeUp" id="anc05">
 					<?php get_template_part('includes/reserve'); ?>
 				</div>
 

@@ -109,7 +109,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="p-rooms__vertical mt100">
+                <div class="p-rooms__vertical mt100 js-fadeUp">
                   <figure class="p-rooms__vertical-img">
                     <img src="<?php echo get_template_directory_uri() ?>/images/common/suite_room_2.jpg" alt="スイートルーム B-type" width="660" height="440">
                   </figure>
@@ -234,9 +234,46 @@
                     </div>
                   </div>
                 </div>
+                <div class="p-rooms__item p-rooms__item--stay js-fadeUp">
+                  <figure class="p-rooms__img p-rooms__img--stay">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/standard_3.webp" alt="シングルルーム" width="660" height="440">
+                  </figure>
+                  <div class="p-rooms__detail">
+                    <h3 class="p-rooms__name p-rooms__name--stay">シングルルーム</h3>
+                    <p class="p-rooms__description p-rooms__description--stay">2タイプをご用意。シンプルながらも快適性を重視した空間で、ビジネスにも観光にも適しています。</p>
+                    <dl class="p-rooms__info">
+                      <div class="p-rooms__info-row p-rooms__info-row--stay">
+                        <dt class="p-rooms__info-label p-rooms__info-label--stay">人数</dt>
+                        <dd class="p-rooms__info-value p-rooms__info-value--stay">１名</dd>
+                      </div>
+                      <div class="p-rooms__info-row p-rooms__info-row--stay">
+                        <dt class="p-rooms__info-label p-rooms__info-label--stay">面積</dt>
+                        <dd class="p-rooms__info-value p-rooms__info-value--stay">A-type 16.6㎡ / B-type 16.6㎡</dd>
+                      </div>
+                      <div class="p-rooms__info-row p-rooms__info-row--stay">
+                        <dt class="p-rooms__info-label p-rooms__info-label--stay">ベッド</dt>
+                        <dd class="p-rooms__info-value p-rooms__info-value--stay">セミダブル（W120×H195）</dd>
+                      </div>
+                    </dl>
+                    <div class="p-rooms__buttons">
+                      <a href="<?php echo home_url('/single'); ?>" class="p-rooms__button">
+                        <p class="p-rooms__button-text">お部屋の詳細を見る</p>
+                        <span class="p-rooms__button-icon">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
+                        </span>
+                      </a>
+                      <a href="#" class="p-rooms__button">
+                        <p class="p-rooms__button-text">宿泊プランを見る</p>
+                        <span class="p-rooms__button-icon">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
                 <div class="p-rooms__vertical mt100 js-fadeUp">
                   <figure class="p-rooms__vertical-img">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/common/standard_3.jpg" alt="ダブルルーム" width="660" height="440">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/common/standard_3.jpg" alt="和室" width="660" height="440">
                   </figure>
                   <div class="p-rooms__vertical-detail">
                     <div class="p-rooms__vertical-row">
@@ -356,7 +393,7 @@
         <div class="p-information__amenity p-amenity js-fadeUp" id="anc03">
           <div class="p-amenity__content js-fadeUp">
             <figure class="p-amenity__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/amenity_img.jpg" alt="アメニティバー" width="400" height="600">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/amenity_img.webp" alt="アメニティバー" width="400" height="600">
             </figure>
             <div class="p-amenity__detail">
               <h4 class="p-amenity__title">アメニティバーの導入</h4>

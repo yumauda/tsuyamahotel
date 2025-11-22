@@ -1,19 +1,21 @@
-<?php get_header(); ?>
-  <main class="p-top">
-    <section class="p-stay-mv js-fadeUp">
+<div class="p-top">
+
+  <?php get_header(); ?>
+  <main>
+    <section class="p-stay-mv">
       <div class="p-stay-mv__inner">
         <div class="p-stay-mv__content">
           <div class="p-stay-mv__detail">
             <h2 class="c-main-title">
               <span class="c-main-title__kind">ご宿泊</span>
-              <span class="c-main-title__ja">ダブルルーム</span>
-              <span class="c-main-title__en">Double Room</span>
+              <span class="c-main-title__ja">スイートルーム A-type</span>
+              <span class="c-main-title__en">Suite Room A-type</span>
             </h2>
           </div>
         </div>
       </div>
     </section>
-    <ul class="p-lists js-fadeUp">
+    <ul class="p-lists">
       <li class="p-lists__list">
         <a href="<?php echo esc_url(home_url('/suite-a')); ?>" class="p-lists__link">スイートルームA-type</a>
       </li>
@@ -34,24 +36,24 @@
       </li>
     </ul>
     <!-- Slider main container -->
-    <div class="p-suite-swiper js-fadeUp">
+    <div class="p-suite-swiper">
       <div class="swiper slider5">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
             <figure class="p-suite-swiper__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/stay/double/img01.webp" alt="ダブルルーム" width="1300" height="970">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/suite_1.jpg" alt="スイートルーム A-type" width="1300" height="970">
             </figure>
           </div>
           <div class="swiper-slide">
             <figure class="p-suite-swiper__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/stay/double/img02.webp" alt="ダブルルーム" width="1300" height="970">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/suite_1.jpg" alt="スイートルーム A-type" width="1300" height="970">
             </figure>
           </div>
           <div class="swiper-slide">
             <figure class="p-suite-swiper__img">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/stay/double/img03.webp" alt="ダブルルーム" width="1300" height="970">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/suite_1.jpg" alt="スイートルーム A-type" width="1300" height="970">
             </figure>
           </div>
 
@@ -73,16 +75,19 @@
         </div>
       </div>
     </div>
-    <section class="p-location p-location--suite js-fadeUp">
+    <section class="p-location p-location--suite">
       <div class="l-inner">
         <div class="p-location__content">
-          <div class="p-location__title-wrapper js-fadeUp">
-            <h3 class="p-location__title">柔らかな自然光が差し込む、<br>落ち着いた雰囲気のダブルルーム。</h3>
+          <div class="p-location__title-wrapper">
+            <h3 class="p-location__title">アジアンテイストの<br class='u-mobile'>スイートルームで過ごす、<br>
+              いつもと違う最高のひと時。</h3>
           </div>
-          <div class="p-location__text-wrapper js-fadeUp">
-            <p class="p-location__text">ゆとりあるベッドで快適な滞在をお過ごしいただけます。<br>カップルやご夫婦のご利用にも最適です。</p>
+          <div class="p-location__text-wrapper">
+            <p class="p-location__text">お部屋の紹介テキストが入ります。<br>
+              ダミーテキストダミーテキストダミーテキストダミーテキスト<br>
+              ダミーテキストダミーテキストダミーテキストダミー</p>
           </div>
-          <div class="p-suite__spec js-fadeUp">
+          <div class="p-suite__spec">
 
             <table class="p-suite__spec-table">
               <tbody>
@@ -127,17 +132,17 @@
         </div>
       </div>
     </section>
-    <section class="p-service js-fadeUp">
+    <section class="p-service">
       <div class="l-inner">
         <div class="p-service__content">
-          <div class="p-rooms__qa mt66 js-fadeUp">
+          <div class="p-rooms__qa">
             <div class="p-service__left">
               <h3 class="c-main-title">
                 <span class="c-main-title__ja">宿泊サービス</span>
                 <span class="c-main-title__en">Service</span>
               </h3>
               <figure class="p-service__img mt50">
-                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/stay/room-double.webp" alt="宿泊サービス" width="400" height="600">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/service_img.jpg" alt="宿泊サービス" width="400" height="600">
               </figure>
             </div>
             <div class="p-qa__block">
@@ -289,7 +294,7 @@
               </div>
             </div>
           </div>
-          <div class="p-service__reserve js-fadeUp">
+          <div class="p-service__reserve">
             <div class="p-reserve">
               <div class="p-reserve__title-wrapper">
                 <p class="p-reserve__title">ご予約</p>
@@ -317,24 +322,16 @@
       </div>
     </section>
 
-    <section class="p-other js-fadeUp">
+    <section class="p-other">
       <div class="l-inner">
         <div class="p-other__content">
-          <div class="p-other__title js-fadeUp">
+          <div class="p-other__title">
             <h3 class="p-other__title-text">別のお部屋を見る</h3>
             <div class="p-other__line"></div>
           </div>
           <div class="p-other__cards">
             <div class="p-other__grid">
-              <a href="<a href="<?php echo esc_url(home_url('/suite-a')); ?>" class="p-other__card js-fadeUp">" class="p-other__card js-fadeUp">
-                <figure class="p-other__card-img">
-                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_1.jpg" alt="スイートルーム B-type" width="360" height="240">
-                </figure>
-                <div class="p-other__card-bg">
-                  <p class="p-other__card-name">スイートルーム A-type</p>
-                </div>
-              </a>
-              <a href="<a href="<?php echo esc_url(home_url('/suite-b')); ?>" class="p-other__card js-fadeUp">" class="p-other__card js-fadeUp">
+              <a href="#" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_1.jpg" alt="スイートルーム B-type" width="360" height="240">
                 </figure>
@@ -342,7 +339,7 @@
                   <p class="p-other__card-name">スイートルーム B-type</p>
                 </div>
               </a>
-              <a href="<a href="<?php echo esc_url(home_url('/twin')); ?>" class="p-other__card js-fadeUp">" class="p-other__card js-fadeUp">
+              <a href="#" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_2.jpg" alt="ツインルーム" width="360" height="240">
                 </figure>
@@ -350,8 +347,15 @@
                   <p class="p-other__card-name">ツインルーム</p>
                 </div>
               </a>
-              
-              <a href="<a href="<?php echo esc_url(home_url('/single')); ?>" class="p-other__card js-fadeUp">" class="p-other__card js-fadeUp">
+              <a href="#" class="p-other__card">
+                <figure class="p-other__card-img">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_3.jpg" alt="ダブルルーム" width="360" height="240">
+                </figure>
+                <div class="p-other__card-bg">
+                  <p class="p-other__card-name">ダブルルーム</p>
+                </div>
+              </a>
+              <a href="#" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_4.jpg" alt="シングルルーム" width="360" height="240">
                 </figure>
@@ -359,7 +363,7 @@
                   <p class="p-other__card-name">シングルルーム</p>
                 </div>
               </a>
-              <a href="<a href="<?php echo esc_url(home_url('/japanese')); ?>" class="p-other__card js-fadeUp">" class="p-other__card js-fadeUp">
+              <a href="#" class="p-other__card">
                 <figure class="p-other__card-img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/other_5.jpg" alt="和室" width="360" height="240">
                 </figure>
@@ -378,4 +382,5 @@
 
     <?php get_template_part('includes/submit'); ?>
   </main>
-<?php get_footer() ?>
+  <?php get_footer() ?>
+</div>

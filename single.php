@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="p-top p-top--news">
-  <section class="p-stay-mv">
+  <section class="p-stay-mv js-fadeUp">
     <div class="p-stay-mv__inner">
       <div class="p-stay-mv__content">
         <div class="p-stay-mv__detail">
@@ -12,9 +12,9 @@
       </div>
     </div>
   </section>
-  <section class="p-single-news">
+  <section class="p-single-news js-fadeUp">
     <div class="l-inner">
-      <div class="p-single-news__header">
+      <div class="p-single-news__header js-fadeUp">
         <?php the_title('<h1 class="p-single-news__title">', '</h1>'); ?>
         <div class="p-single-news__meta">
           <time class="p-single-news__date" datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time>
@@ -26,10 +26,10 @@
           ?>
         </div>
       </div>
-      <div class="p-single-news__content">
+      <div class="p-single-news__content js-fadeUp">
         <?php the_content(); ?>
       </div>
-      <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-rooms__button p-news__button">
+      <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-rooms__button p-news__button js-fadeUp">
         <p class="p-rooms__button-text">一覧へ戻る</p>
         <span class="p-rooms__button-icon">
           <img src="<?php echo get_template_directory_uri() ?>/images/common/icon_arrow.svg" alt="" width="20" height="20">

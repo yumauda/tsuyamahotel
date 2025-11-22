@@ -15,22 +15,22 @@
         </div>
       </div>
     </section>
-    <section class="p-location">
+    <section class="p-location js-fadeUp">
       <div class="l-inner">
         <div class="p-location__content">
-          <div class="p-location__title-wrapper">
+          <div class="p-location__title-wrapper js-fadeUp">
             <h3 class="p-location__title">津山の歴史と<br class="u-mobile">自然を感じるロケーション</h3>
           </div>
-          <div class="p-location__text-wrapper">
+          <div class="p-location__text-wrapper js-fadeUp">
             <p class="p-location__text fz18">古き良き歴史と豊かな自然に包まれた津山の街に位置しながら、<br class="u-desktop">
               鉄道やお車で快適にお越しいただける利便性を兼ね備えた最適な立地。<br>
               お客様の大切なひとときが、ここから始まるように。<br>
               私たちは上質な旅の玄関口として、皆さまを心よりお迎えいたします。</p>
           </div>
-          <div class="p-location__map">
+          <div class="p-location__map js-fadeUp">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3265.733998177537!2d134.01718307576033!3d35.063388972793064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554314aaa62567f%3A0x2b57a129742e5fbf!2z5rSl5bGx6ba05bGx44Ob44OG44Or!5e0!3m2!1sja!2sjp!4v1761973738430!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <div class="p-location__hotel">
+          <div class="p-location__hotel js-fadeUp">
             <figure class="p-location__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/hotel_img.jpg" alt="津山鶴山ホテル" width="600" height="350">
             </figure>
@@ -52,7 +52,7 @@
               </dl>
             </div>
           </div>
-          <dl class="p-location__trafic">
+          <dl class="p-location__trafic js-fadeUp">
             <div class="p-location__trafic-row">
               <dt class="p-location__trafic-dt">
                 お車をご利用の方
@@ -105,16 +105,16 @@
         </div>
       </div>
     </section>
-    <section class="p-parking">
+    <section class="p-parking js-fadeUp">
       <div class="l-inner">
         <div class="p-parking__content">
-          <div class="p-parking__title">
+          <div class="p-parking__title js-fadeUp">
             <h3 class="c-main-title">
               <span class="c-main-title__ja">駐車場のご案内</span>
               <span class="c-main-title__en">Parking</span>
             </h3>
           </div>
-          <div class="p-parking__row">
+          <div class="p-parking__row js-fadeUp">
             <figure class="p-parking__img">
               <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/parking_img.jpg" alt="駐車場" width="600" height="350">
             </figure>
@@ -123,7 +123,7 @@
               なお、夜間（22:00～翌6:00）はセキュリティ確保のため閉鎖しております。<br>
               トラックや大型車のご利用は承っておりませんが、団体宿泊でお越しのバスにつきましては事前にご相談ください。</p>
           </div>
-          <div class="p-parking__grid">
+          <div class="p-parking__grid js-fadeUp">
             <div class="p-parking__item">
               <figure class="p-parking__img">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/parking_img2.jpg" alt="駐車場" width="600" height="350">
